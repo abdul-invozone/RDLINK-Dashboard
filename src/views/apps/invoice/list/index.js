@@ -213,7 +213,7 @@ const InvoiceList = () => {
               />
             }
           />
-        <p>Shwoing 1 to {rowsPerPage} of {store.total} entries</p>
+        <p className="showEntries">Shwoing 1 to {rowsPerPage} of {store.total} entries</p>
         </div>
       </Card>
     </div>
