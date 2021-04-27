@@ -8,13 +8,13 @@ export default [
     id: 'blog',
     title: 'Blog',
     icon: <Mail size={20} />,
-    navLink: '/apps/chat'
+    navLink: '#'
   },
   {
     id: 'faqs',
     title: "FAQ's",
     icon: <MessageSquare size={20} />,
-    navLink: '/apps/chat'
+    navLink: '#'
   },
   {
     id: 'resoures',
@@ -25,7 +25,7 @@ export default [
         id: 'agreementTemplates',
         title: 'Agreement Templates',
         icon: <Circle size={12} />,
-        navLink: '/apps/invoice/list'
+        navLink: '#'
       }
     ]
   }

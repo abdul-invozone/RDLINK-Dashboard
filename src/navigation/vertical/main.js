@@ -14,19 +14,19 @@ export default [
     id: 'manageRDs',
     title: "Manage RD's",
     icon: <MessageSquare size={20} />,
-    navLink: '/apps/chat'
+    navLink: '#'
   },
   {
     id: 'manageBrands',
     title: 'Manage Brands',
     icon: <CheckSquare size={20} />,
-    navLink: '/apps/todo'
+    navLink: '#'
   },
   {
     id: 'payments',
     title: 'Payments',
     icon: <Calendar size={20} />,
-    navLink: '/apps/calendar'
+    navLink: '#'
   },
   {
     id: 'chatConversations',
@@ -34,7 +34,7 @@ export default [
     icon: <FileText size={20} />,
     badge: 'danger',
     badgeText: '9',
-    navLink: '/apps/chat'
+    navLink: '#'
     // children: [
     //   {
     //     id: 'invoiceList',

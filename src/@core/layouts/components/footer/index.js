@@ -12,8 +12,13 @@ const Footer = () => {
         <span className='d-none d-sm-inline-block'>, All rights Reserved</span>
       </span>
       <span className='float-md-right d-none d-md-block'>
-        Hand-crafted & Made with
-        <Heart size={14} />
+        {/* Hand-crafted & Made with
+        <Heart size={14} /> */}
+        <ul>
+          <li style={{display:'inline-block', fontSize: '14px', padding:'0 3px'}}><a href="#">Privacy Policy</a></li>
+          <li style={{display:'inline-block', fontSize: '14px', padding:'0 3px'}}><a href="#">|</a></li>
+          <li style={{display:'inline-block', fontSize: '14px', padding:'0 3px'}}><a href="#">Logout</a></li>
+        </ul>
       </span>
     </p>
   )

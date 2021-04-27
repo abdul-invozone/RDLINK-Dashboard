@@ -85,13 +85,13 @@ const UserDropdown = () => {
       <span className='user-name font-weight-medium text-white'>Jenna Gorham</span>
       <ul>
         <li className="d-inline-block mr-1" style={{marginTop: '3px'}}>
-          <NavLink to="/pages/profile" className="text-white"><User size={18} /></NavLink>
+          <NavLink to="#" className="text-white"><User size={18} /></NavLink>
           </li>
           <li className="d-inline-block mr-1">
-          <NavLink to="/apps/email" className="text-white"><Mail size={18} /></NavLink>
+          <NavLink to="#" className="text-white"><Mail size={18} /></NavLink>
           </li>
           <li className="d-inline-block">
-          <NavLink to="/apps/todo" className="text-white"><CheckSquare size={18} /></NavLink>
+          <NavLink to="#" className="text-white"><CheckSquare size={18} /></NavLink>
           </li>
       </ul>
       </div>
