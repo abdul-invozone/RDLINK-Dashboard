@@ -1,0 +1,73 @@
+.main-menu {
+	border-radius: 0px 10px 10px 0px;
+}
+.main-menu .navbar-header .navbar-brand .brand-text {
+	font-size: 24px !important;
+	font-weight: 500 !important;
+}
+.main-menu .navbar-header {
+	padding: 9px 20px 65px !important;
+	border-bottom: 1px solid #303547;
+}
+.menu-collapsed .main-menu:not(.expanded) .avatar img {
+	width: 100% !important;
+	height: 100% !important;
+}
+.userDropDown {
+	padding: 37px 0 0;
+}
+.user-name {
+	font-size: 18px !important;
+}
+.menu-expanded .main-menu.menu-light .navigation .navigation-header {
+	text-transform: capitalize !important;
+	margin: 37px 0 0 !important;
+	padding: 1.3rem 1.5rem !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	color: #515974;
+	border-top: 1px solid #303547;
+}
+.menu-expanded .main-menu.menu-light .navigation > li.active,
+.menu-expanded .main-menu.menu-light .navigation > li.menu-collapsed-open.sidebar-group-active > li.active {
+	border-left: 5px solid #208cd4;
+}
+.menu-expanded .main-menu.menu-light .navigation > li.active > a {
+	background: #0c1124 !important;
+}
+.menu-expanded .main-menu.menu-light .navigation li a {
+	padding: 20px !important;
+	font-size: 16px !important;
+	margin: 0 !important;
+	color: #fff !important;
+}
+
+.menu-collapsed .expanded.main-menu.menu-light .navigation .navigation-header {
+	text-transform: capitalize !important;
+	margin: 37px 0 0 !important;
+	padding: 1.3rem 1.5rem !important;
+	font-size: 20px !important;
+	font-weight: 400 !important;
+	color: #515974;
+	border-top: 1px solid #303547;
+}
+.menu-collapsed .expanded.main-menu.menu-light .navigation > li.active,
+.menu-expanded .main-menu.menu-light .navigation > li.menu-collapsed-open.sidebar-group-active > li.active{
+	border-left: 5px solid #208cd4;
+}
+.menu-collapsed .expanded.main-menu.menu-light .navigation > li.active > a {
+	background: #0c1124 !important;
+}
+.menu-collapsed .expanded.main-menu.menu-light .navigation li a {
+	padding: 20px !important;
+	font-size: 16px !important;
+	margin: 0 !important;
+	color: #fff !important;
+}
+.header-navbar.floating-nav {
+	margin: 0 2rem !important;
+	border-radius: 0px 0px 15px 15px !important;
+}
+.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub > a:after {
+	top: 28px !important;
+}
