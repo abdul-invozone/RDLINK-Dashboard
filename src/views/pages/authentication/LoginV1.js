@@ -11,7 +11,7 @@ const LoginV1 = () => {
         <Card className='mb-0'>
           <CardBody>
             <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
-              <svg viewBox='0 0 139 95' version='1.1' height='28'>
+              {/* <svg viewBox='0 0 139 95' version='1.1' height='28'>
                 <defs>
                   <linearGradient x1='100%' y1='10.5120544%' x2='50%' y2='89.4879456%' id='linearGradient-1'>
                     <stop stopColor='#000000' offset='0%'></stop>
@@ -58,11 +58,11 @@ const LoginV1 = () => {
                     </g>
                   </g>
                 </g>
-              </svg>
-              <h2 className='brand-text text-primary ml-1'>Vuexy</h2>
+              </svg> */}
+              <h2 className='brand-text text-primary ml-1'>RD LINK</h2>
             </Link>
             <CardTitle tag='h4' className='mb-1'>
-              Welcome to Vuexy! 👋
+              Welcome to RD LINK! 👋
             </CardTitle>
             <CardText className='mb-2'>Please sign-in to your account and start the adventure</CardText>
             <Form className='auth-login-form mt-2' onSubmit={e => e.preventDefault()}>
