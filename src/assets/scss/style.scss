@@ -1,17 +1,56 @@
 .main-menu {
 	border-radius: 0px 10px 10px 0px;
+	height: 100vh;
+	overflow: auto;
+	.navbar-header {
+		.navbar-brand {
+			.brand-text {
+				font-size: 24px !important;
+				font-weight: 500 !important;
+			}
+		}
+		padding: 9px 20px 65px !important;
+		border-bottom: 1px solid #303547;
+	}
 }
-.main-menu .navbar-header .navbar-brand .brand-text {
-	font-size: 24px !important;
-	font-weight: 500 !important;
-}
-.main-menu .navbar-header {
-	padding: 9px 20px 65px !important;
-	border-bottom: 1px solid #303547;
-}
-.menu-collapsed .main-menu:not(.expanded) .avatar img {
-	width: 100% !important;
-	height: 100% !important;
+.menu-collapsed {
+	.main-menu {
+		&:not(.expanded) {
+			.avatar {
+				img {
+					width: 100% !important;
+					height: 100% !important;
+				}
+			}
+		}
+	}
+	.expanded.main-menu.menu-light {
+		.navigation {
+			.navigation-header {
+				text-transform: capitalize !important;
+				margin: 37px 0 0 !important;
+				padding: 1.3rem 1.5rem !important;
+				font-size: 20px !important;
+				font-weight: 400 !important;
+				color: #515974;
+				border-top: 1px solid #303547;
+			}
+			>li.active {
+				border-left: 5px solid #208cd4;
+				>a {
+					background: #0c1124 !important;
+				}
+			}
+			li {
+				a {
+					padding: 20px !important;
+					font-size: 16px !important;
+					margin: 0 !important;
+					color: #fff !important;
+				}
+			}
+		}
+	}
 }
 .userDropDown {
 	padding: 37px 0 0;
@@ -19,96 +58,116 @@
 .user-name {
 	font-size: 18px !important;
 }
-.menu-expanded .main-menu.menu-light .navigation .navigation-header {
-	text-transform: capitalize !important;
-	margin: 37px 0 0 !important;
-	padding: 1.3rem 1.5rem !important;
-	font-size: 20px !important;
-	font-weight: 400 !important;
-	color: #515974;
-	border-top: 1px solid #303547;
-}
-.menu-expanded .main-menu.menu-light .navigation > li.active,
-.menu-expanded .main-menu.menu-light .navigation > li.menu-collapsed-open.sidebar-group-active > li.active {
-	border-left: 5px solid #208cd4;
-}
-.menu-expanded .main-menu.menu-light .navigation > li.active > a {
-	background: #0c1124 !important;
-}
-.menu-expanded .main-menu.menu-light .navigation li a {
-	padding: 20px !important;
-	font-size: 16px !important;
-	margin: 0 !important;
-	color: #fff !important;
-}
-
-.menu-collapsed .expanded.main-menu.menu-light .navigation .navigation-header {
-	text-transform: capitalize !important;
-	margin: 37px 0 0 !important;
-	padding: 1.3rem 1.5rem !important;
-	font-size: 20px !important;
-	font-weight: 400 !important;
-	color: #515974;
-	border-top: 1px solid #303547;
-}
-.menu-collapsed .expanded.main-menu.menu-light .navigation > li.active,
-.menu-expanded .main-menu.menu-light .navigation > li.menu-collapsed-open.sidebar-group-active > li.active{
-	border-left: 5px solid #208cd4;
-}
-.menu-collapsed .expanded.main-menu.menu-light .navigation > li.active > a {
-	background: #0c1124 !important;
-}
-.menu-collapsed .expanded.main-menu.menu-light .navigation li a {
-	padding: 20px !important;
-	font-size: 16px !important;
-	margin: 0 !important;
-	color: #fff !important;
+.menu-expanded {
+	.main-menu.menu-light {
+		.navigation {
+			.navigation-header {
+				text-transform: capitalize !important;
+				margin: 37px 0 0 !important;
+				padding: 1.3rem 1.5rem !important;
+				font-size: 20px !important;
+				font-weight: 400 !important;
+				color: #515974;
+				border-top: 1px solid #303547;
+			}
+			>li.active {
+				border-left: 5px solid #208cd4;
+				>a {
+					background: #0c1124 !important;
+				}
+			}
+			>li.menu-collapsed-open.sidebar-group-active {
+				>li.active {
+					border-left: 5px solid #208cd4;
+					border-left: 5px solid #208cd4;
+				}
+			}
+			li {
+				a {
+					padding: 20px !important;
+					font-size: 16px !important;
+					margin: 0 !important;
+					color: #fff !important;
+				}
+			}
+		}
+	}
 }
 .header-navbar.floating-nav {
 	margin: 0 2rem !important;
 	border-radius: 0px 0px 15px 15px !important;
 }
-.vertical-layout.vertical-menu-modern.menu-expanded .main-menu .navigation li.has-sub > a:after {
-	top: 28px !important;
+.vertical-layout.vertical-menu-modern.menu-expanded {
+	.main-menu {
+		.navigation {
+			li.has-sub {
+				>a {
+					&:after {
+						top: 28px !important;
+					}
+				}
+			}
+		}
+	}
 }
-.card-statistics .statistics-body .avatar .avatar-content {
-	width: 62px !important;
-	height: 62px !important;
+.card-statistics {
+	.statistics-body {
+		.avatar {
+			.avatar-content {
+				width: 62px !important;
+				height: 62px !important;
+			}
+		}
+	}
 }
-#dashboard-analytics .card-statistics.card {
-	border-radius: 25px;
-}
-#dashboard-analytics .card-statistics .statistics-body {
-	padding: 4.4rem 2.8rem !important;
+#dashboard-analytics {
+	.card-statistics.card {
+		border-radius: 25px;
+	}
+	.card-statistics {
+		.statistics-body {
+			padding: 4.4rem 2.8rem !important;
+		}
+	}
 }
 .statsDropdown {
 	position: absolute;
-    top: -70px;
-    z-index: 99;
-    right: 90px;
+	top: -70px;
+	z-index: 99;
+	right: 90px;
+	.btn-flat-primary {
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 4px;
+		color: #aeacb9;
+		&:hover {
+			&:not(.disabled) {
+				&:not(:disabled) {
+					background-color: transparent !important;
+				}
+			}
+		}
+		&:focus {
+			background-color: transparent !important;
+		}
+	}
 }
-.statsDropdown .btn-flat-primary {
-	font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    color: #aeacb9;
-}
-.statsDropdown .btn-flat-primary:hover:not(.disabled):not(:disabled),
-.statsDropdown .btn-flat-primary:focus {
-	background-color: transparent !important;
-}
-.invoice-list-wrapper .card {
-	padding: 30px 0 0;
-}
-.invoice-list-wrapper h2 {
-	padding: 0 18px;
-}
-.invoice-list-wrapper .showEntries {
-	position: relative;
-    top: -50px;
-    left: 30px;
-    display: inline-block;
-}
-.invoice-list-wrapper .page-item.active .page-link {
-	background-color: #7468f1;
+.invoice-list-wrapper {
+	.card {
+		padding: 30px 0 0;
+	}
+	h2 {
+		padding: 0 18px;
+	}
+	.showEntries {
+		position: relative;
+		top: -50px;
+		left: 30px;
+		display: inline-block;
+	}
+	.page-item.active {
+		.page-link {
+			background-color: #7468f1;
+		}
+	}
 }

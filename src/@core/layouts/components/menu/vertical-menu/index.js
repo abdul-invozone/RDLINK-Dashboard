@@ -67,11 +67,7 @@ const Sidebar = props => {
             {/* Vertical Menu Header Shadow */}
             {/* <div className='shadow-bottom' ref={shadowRef}></div> */}
             {/* Perfect Scrollbar */}
-            <PerfectScrollbar
-              className='main-menu-content'
-              options={{ wheelPropagation: false }}
-              // onScrollY={container => scrollMenu(container)}
-            >
+            
               <ul className='navigation navigation-main'>
                 <VerticalNavMenuItems
                   items={navigation}
@@ -87,7 +83,7 @@ const Sidebar = props => {
                   currentActiveItem={currentActiveItem}
                 />
               </ul>
-            </PerfectScrollbar>
+            
           </Fragment>
         )}
       </div>
