@@ -13,6 +13,9 @@ import StatsCard from '@src/views/ui-elements/cards/statistics/StatsCard'
 import Revenue from '@src/views/ui-elements/cards/analytics/Revenue'
 import Customers from '@src/views/ui-elements/cards/analytics/Customers'
 import SessionByDevice from '@src/views/ui-elements/cards/analytics/SessionByDevice'
+import ChartjsDoughnutChart from '@src/views/charts/chart-js/ChartjsDoughnutChart'
+import ChartjsDoughnutChart2 from '@src/views/charts/chart-js/ChartjsDoughnutChart2'
+import PieChart from '@src/views/charts/recharts/PieChart'
 import AvgSessions from '@src/views/ui-elements/cards/analytics/AvgSessions'
 import CardAppDesign from '@src/views/ui-elements/cards/advance/CardAppDesign'
 import SupportTracker from '@src/views/ui-elements/cards/analytics/SupportTracker'
@@ -129,12 +132,13 @@ const AnalyticsDashboard = () => {
         <Customers />
         </Col>
       </Row> */}
-      <Row className='match-height'>
+      <Row className='match-height allRD'>
         <Col lg='3' sm='6'>
-          <SubscribersGained kFormatter={kFormatter} />
+        <ChartjsDoughnutChart2 primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
         </Col>
         <Col lg='3' sm='6'>
-          <OrdersReceived kFormatter={kFormatter} warning={colors.warning.main} />
+          {/* <OrdersReceived kFormatter={kFormatter} warning={colors.warning.main} /> */}
+          <ChartjsDoughnutChart primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
         </Col>
         <Col lg='6' sm='12'>
         <AvgSessions primary={colors.primary.main} />
