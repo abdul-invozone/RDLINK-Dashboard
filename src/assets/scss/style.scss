@@ -187,22 +187,23 @@
 	background-color: #2cb6d1;
 }
 
-.allRD .card-body {
-	position: relative;
-}
+// .allRD .card-body {
+// 	position: relative;
+// }
 .allRD .card-body .totalRD {
 	text-align: center;
     font-size: 30px;
     color: #000;
     font-weight: bold;
     position: absolute;
-    top: calc(50% - 4.5rem);
+    top: 50%;
+	transform: translateY(-30%);
     left: 0;
     right: 0;
 }
 .allRD .card-body .totalRD.totalRDBrands {
 	color: #fff;
-	top: calc(50% - 1.2rem);
+	top: calc(100% - 50px);
 	font-size: 26px;
 }
 .allRD .card-body .totalRD p {

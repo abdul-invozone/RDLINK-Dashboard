@@ -169,6 +169,7 @@ export const columns = [
     minWidth: '110px',
     selector: '',
     sortable: true,
+    justifyContent: 'center',
     cell: row => (
       <div className='column-action d-flex align-items-center'>
         <Send size={17} id={`send-tooltip-${row.id}`} />

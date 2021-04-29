@@ -61,8 +61,8 @@ const ChartjsRadarChart2 = ({ tooltipShadow, successColorShade, warningLightColo
         </div>
       </CardHeader>
       <CardBody>
+        <div style={{ height: '200px', position: 'relative' }}>
         <div className="totalRD totalRDBrands"><p>1773</p><span>Total Brands</span></div>
-        <div style={{ height: '200px' }}>
           <Doughnut data={data} options={options} height={200} />
         </div>
         <div className='d-inline-flex justify-content-between mt-3 mb-1 mx-2'>
