@@ -6,81 +6,68 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 const data = [
   {
     name: '7/12',
-    sales: 20,
-    clicks: 60,
-    visits: 100
+    brandCampaigns: 20,
+  rdOpportunities: 60
   },
   {
     name: '8/12',
-    sales: 40,
-    clicks: 80,
-    visits: 120
+    brandCampaigns: 40,
+  rdOpportunities: 80
   },
   {
     name: '9/12',
-    sales: 30,
-    clicks: 70,
-    visits: 90
+    brandCampaigns: 30,
+  rdOpportunities: 7
   },
   {
     name: '10/12',
-    sales: 70,
-    clicks: 110,
-    visits: 170
+    brandCampaigns: 70,
+    rdOpportunities: 110
   },
   {
     name: '11/12',
-    sales: 40,
-    clicks: 80,
-    visits: 130
+    brandCampaigns: 40,
+  rdOpportunities: 80
   },
   {
     name: '12/12',
-    sales: 60,
-    clicks: 80,
-    visits: 160
+    brandCampaigns: 60,
+  rdOpportunities: 80
   },
   {
     name: '13/12',
-    sales: 50,
-    clicks: 100,
-    visits: 140
+    brandCampaigns: 50,
+    rdOpportunities: 100
   },
   {
     name: '14/12',
-    sales: 140,
-    clicks: 90,
-    visits: 240
+    brandCampaigns: 140,
+  rdOpportunities: 90
   },
   {
     name: '15/12',
-    sales: 120,
-    clicks: 180,
-    visits: 220
+    brandCampaigns: 120,
+    rdOpportunities: 180
   },
   {
     name: '16/12',
-    sales: 100,
-    clicks: 160,
-    visits: 180
+    brandCampaigns: 100,
+    rdOpportunities: 160
   },
   {
     name: '17/12',
-    sales: 140,
-    clicks: 140,
-    visits: 270
+    brandCampaigns: 140,
+    rdOpportunities: 140
   },
   {
     name: '18/12',
-    sales: 180,
-    clicks: 200,
-    visits: 280
+    brandCampaigns: 180,
+    rdOpportunities: 200
   },
   {
     name: '19/12',
-    sales: 220,
-    clicks: 220,
-    visits: 375
+    brandCampaigns: 220,
+    rdOpportunities: 220
   }
 ]
 
@@ -118,8 +105,8 @@ const SimpleAreaChart = ({ primary }) => {
   return (
     <Card>
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
-        <CardTitle tag='h4'>Website Data</CardTitle>
-        <div className='d-flex align-items-center'>
+        <CardTitle tag='h4'>Current Partnerships</CardTitle>
+        {/* <div className='d-flex align-items-center'>
           <Calendar size={15} />
           <Flatpickr
             options={{
@@ -128,30 +115,10 @@ const SimpleAreaChart = ({ primary }) => {
             }}
             className='form-control flat-picker bg-transparent border-0 shadow-none'
           />
-        </div>
+        </div> */}
       </CardHeader>
 
       <CardBody>
-        <div className='d-flex align-items-center mb-2'>
-          <div className='mr-2'>
-            <span className='bullet bullet-sm bullet-primary bullet-bordered mr-50'></span>
-            <span className='align-middle'>Clicks</span>
-          </div>
-          <div className='mr-2'>
-            <span
-              className='bullet bullet-sm bullet-bordered mr-50'
-              style={{ backgroundColor: 'rgba(115, 103, 240, .5)' }}
-            ></span>
-            <span className='align-middle mr-75'>Sales</span>
-          </div>
-          <div>
-            <span
-              className='bullet bullet-sm bullet-bordered mr-50'
-              style={{ backgroundColor: 'rgba(115, 103, 240, .2)' }}
-            ></span>
-            <span className='align-middle'>Visits</span>
-          </div>
-        </div>
         <div className='recharts-wrapper'>
           <ResponsiveContainer>
             <AreaChart height={400} data={data}>
@@ -159,11 +126,23 @@ const SimpleAreaChart = ({ primary }) => {
               <XAxis dataKey='name' />
               <YAxis />
               <Tooltip content={CustomTooltip} />
-              <Area dataKey='sales' stackId='sales' stroke='0' fill='rgba(115, 103, 240, .5)' />
-              <Area dataKey='clicks' stackId='clicks' stroke='0' fill='rgb(115, 103, 240)' />
-              <Area dataKey='visits' stackId='visits' stroke='0' fill='rgba(115, 103, 240, .2)' />
+              <Area dataKey='brandCampaigns' stackId='brandCampaigns' stroke='0' fill='rgba(115, 103, 240, .5)' />
+              <Area dataKey='rdOpportunities' stackId='rdOpportunities' stroke='0' fill='rgba(115, 103, 240, .2)' />
             </AreaChart>
           </ResponsiveContainer>
+        </div>
+        <div className='d-flex align-items-center mb-2'>
+          <div className='mr-2'>
+            <span className='bullet bullet-sm bullet-primary bullet-bordered mr-50'></span>
+            <span className='align-middle'>Brand Campaigns</span>
+          </div>
+          <div className='mr-2'>
+            <span
+              className='bullet bullet-sm bullet-bordered mr-50'
+              style={{ backgroundColor: 'rgba(115, 103, 240, .5)' }}
+            ></span>
+            <span className='align-middle mr-75'>RD Opportunities</span>
+          </div>
         </div>
       </CardBody>
     </Card>

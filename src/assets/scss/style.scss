@@ -122,8 +122,8 @@
 	}
 }
 #dashboard-analytics {
-	.card-statistics.card {
-		border-radius: 25px;
+	.card {
+		border-radius: 20px;
 	}
 	.card-statistics {
 		.statistics-body {
@@ -200,3 +200,105 @@
 // 	font-size: 12px;
 // 	justify-content: center !important;
 // }
+
+.dot {
+	width: 11px;
+    height: 11px;
+	border-radius: 50%;
+}
+.dot-dark {
+	background-color: #214090;
+}
+.dot-red {
+	background-color: #e63b20;
+}
+.dot-green {
+	background-color: #2cb6d1;
+}
+
+// .allRD .card-body {
+// 	position: relative;
+// }
+.allRD .card-body .totalRD {
+	text-align: center;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+	transform: translateY(-30%);
+    left: 0;
+    right: 0;
+}
+.allRD .card-body .totalRD.totalRDBrands {
+	color: #fff;
+	top: calc(100% - 50px);
+	font-size: 26px;
+}
+.allRD .card-body .totalRD p {
+	margin: 0;
+	line-height: 0.1em;
+}
+.allRD .card-body .totalRD span {
+	font-size: 14px;
+}
+.allRD .card-header {
+	border-bottom: 1px solid #f4f5f8;
+	padding: 1.3rem;
+	margin-bottom: 25px;
+}
+.allRD .card-header .allRdTopLinks ul li a {
+	padding: 20px 10px;
+	border-bottom: 1px solid transparent;
+	color: #646464;
+}
+  
+.allRD .card-header .allRdTopLinks ul li a:hover {
+	border-bottom: 1px solid #556fe6;
+	color: #556fe6;
+  }
+  
+  .allRD .card-header .allRdTopLinks ul li a.active {
+	border-bottom: 1px solid #556fe6;
+	color: #556fe6;
+  }
+
+  .allRD .card-footer {
+	border-top: none;
+    text-align: center;
+    padding: 0 0 30px;
+  }
+.allRD .card-footer .btn {
+	background-color: #edf2f7 !important;
+    color: #bec5d4 !important;
+    font-weight: bold;
+    font-size: 16px;
+    width: 103px;
+    min-height: 37px; 
+}
+.allRD .card-footer .btn.btn-active {
+	background-color: #142e70 !important;
+    color: #fff !important;
+	position: relative;
+	right: -2px;
+}
+
+.allRD .allRdBrandsStats {
+	position: relative;
+	top: -40px;
+}
+
+.allRD .allRdBrandsStats ul li {
+	font-weight: 700;
+    margin: 0 10px;
+    color: #000;
+    font-size: 18px;
+}
+
+.allRD .allRdBrandsStats ul li span {
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 12px;
+    color: #646464;
+}

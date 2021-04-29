@@ -13,6 +13,11 @@ import StatsCard from '@src/views/ui-elements/cards/statistics/StatsCard'
 import Revenue from '@src/views/ui-elements/cards/analytics/Revenue'
 import Customers from '@src/views/ui-elements/cards/analytics/Customers'
 import SessionByDevice from '@src/views/ui-elements/cards/analytics/SessionByDevice'
+import ChartjsDoughnutChart from '@src/views/charts/chart-js/ChartjsDoughnutChart'
+import ChartjsDoughnutChart2 from '@src/views/charts/chart-js/ChartjsDoughnutChart2'
+import SubConversion from '@src/views/charts/chart-js/SubConversion'
+import AreaChart from '@src/views/charts/recharts/AreaChart'
+import PieChart from '@src/views/charts/recharts/PieChart'
 import AvgSessions from '@src/views/ui-elements/cards/analytics/AvgSessions'
 import CardAppDesign from '@src/views/ui-elements/cards/advance/CardAppDesign'
 import SupportTracker from '@src/views/ui-elements/cards/analytics/SupportTracker'
@@ -22,6 +27,9 @@ import CardCongratulations from '@src/views/ui-elements/cards/advance/CardCongra
 import SubscribersGained from '@src/views/ui-elements/cards/statistics/SubscribersGained'
 
 import '@styles/react/libs/charts/apex-charts.scss'
+// ** Styles
+import '@styles/react/libs/flatpickr/flatpickr.scss'
+import '@styles/react/libs/charts/recharts.scss'
 
 const AnalyticsDashboard = () => {
   const { colors } = useContext(ThemeColors)
@@ -129,25 +137,27 @@ const AnalyticsDashboard = () => {
         <Customers />
         </Col>
       </Row> */}
-      <Row className='match-height'>
+      <Row className='match-height allRD'>
         <Col lg='3' sm='6'>
-          <SubscribersGained kFormatter={kFormatter} />
+        <ChartjsDoughnutChart2 primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
         </Col>
         <Col lg='3' sm='6'>
-          <OrdersReceived kFormatter={kFormatter} warning={colors.warning.main} />
+          {/* <OrdersReceived kFormatter={kFormatter} warning={colors.warning.main} /> */}
+          <ChartjsDoughnutChart primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
         </Col>
         <Col lg='6' sm='12'>
-        <AvgSessions primary={colors.primary.main} />
+        <AreaChart primary={colors.primary.main} />
+        {/* <AvgSessions primary={colors.primary.main} /> */}
         </Col>
       </Row>
-      {/* <Row className='match-height'>
-      <Col lg='6' md='6' xs='12'>
-          <Sales primary={colors.primary.main} info={colors.info.main} />
+      <Row className='match-height'>
+      <Col lg='4' md='4' xs='12'>
+          <SubConversion />
         </Col>
-        <Col lg='6' xs='12'>
+        <Col lg='8' xs='12'>
           <SupportTracker primary={colors.primary.main} danger={colors.danger.main} />
         </Col>
-      </Row> */}
+      </Row>
       <Row className='match-height'>
         <Col xs='12'>
           <InvoiceList />
