@@ -24,8 +24,8 @@ const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, han
     <div className='invoice-list-table-header w-100 py-2'>
       <Row>
         <Col lg='6' className='d-flex align-items-center px-0 px-lg-1'>
-          <div className='d-flex align-items-center mr-2'>
-            <Label for='rows-per-page'>Show</Label>
+          <div className='d-flex align-items-center mr-2 Bold text'>
+            <Label for='rows-per-page'>Entries</Label>
             <CustomInput
               className='form-control ml-50 pr-3'
               type='select'

@@ -56,7 +56,8 @@
 	padding: 37px 0 0;
 }
 .user-name {
-	font-size: 18px !important;
+	font-size: 13px !important;
+	font-weight: 550;
 }
 .menu-expanded {
 	.main-menu.menu-light {
@@ -171,3 +172,31 @@
 		}
 	}
 }
+.rdt_Table .rdt_TableCol{
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+	// margin-right: 0.005rem !important;
+}
+// .rdt_TableHeadRow{
+// 	padding-right: 1.5rem !important;
+// 	padding-left: 1.5rem !important;
+// }
+
+.invoice-list-dataTable .rdt_TableCol:last-child{
+	justify-content: center;
+}	
+.rdt_TableBody .rdt_TableRow .rdt_TableCell{
+	font-weight: 500;
+	color: #716f7b;
+}
+.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
+	font-size: 13px;
+	color: #5a5571;
+	font-weight: 500;
+	justify-content: center;
+}
+// .rdt_TableHeadRow .rdt_TableCol #column-monthlyLogins,
+// .rdt_TableHeadRow .rdt_TableCol #column-loginTime{ 
+// 	font-size: 12px;
+// 	justify-content: center !important;
+// }

@@ -90,7 +90,7 @@ export const columns = [
   // },
   {
     name: 'Rd name',
-    minWidth: '350px',
+    minWidth: '300px',
     selector: 'client',
     sortable: true,
     cell: row => {
@@ -111,7 +111,7 @@ export const columns = [
     name: 'registration Date',
     selector: 'dueDate',
     sortable: true,
-    minWidth: '200px',
+    minWidth: '180px',
     cell: row => row.dueDate
   },
   // {
@@ -125,28 +125,29 @@ export const columns = [
     name: 'Subscription Plan',
     selector: 'subscriptionPlan',
     sortable: true,
-    minWidth: '150px',
+    minWidth: '180px',
+    className: 'text',
     cell: row => <span>{row.client.subscriptionPlan || 0}</span>
   },
   {
     name: 'Partnerships',
     selector: 'partnerships',
     sortable: true,
-    minWidth: '150px',
+    minWidth: '130px',
     cell: row => <span>{row.client.partnerships || 0}</span>
   },
   {
     name: 'Monthly Logins',
     selector: 'monthlyLogins',
     sortable: true,
-    minWidth: '150px',
+    minWidth: '130px',
     cell: row => <span>{row.client.monthlyLogins || 0}</span>
   },
   {
     name: 'Login Time p/m',
     selector: 'loginTime',
     sortable: true,
-    minWidth: '150px',
+    minWidth: '130px',
     cell: row => <span>{row.client.loginTime || 0}</span>
   },
   // {
