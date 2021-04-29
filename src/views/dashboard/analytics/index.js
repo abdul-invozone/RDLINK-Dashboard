@@ -17,6 +17,7 @@ import ChartjsDoughnutChart from '@src/views/charts/chart-js/ChartjsDoughnutChar
 import ChartjsDoughnutChart2 from '@src/views/charts/chart-js/ChartjsDoughnutChart2'
 import SubConversion from '@src/views/charts/chart-js/SubConversion'
 import AreaChart from '@src/views/charts/recharts/AreaChart'
+import BarChart from '@src/views/charts/recharts/BarChart'
 import PieChart from '@src/views/charts/recharts/PieChart'
 import AvgSessions from '@src/views/ui-elements/cards/analytics/AvgSessions'
 import CardAppDesign from '@src/views/ui-elements/cards/advance/CardAppDesign'
@@ -155,7 +156,7 @@ const AnalyticsDashboard = () => {
           <SubConversion />
         </Col>
         <Col lg='8' xs='12'>
-          <SupportTracker primary={colors.primary.main} danger={colors.danger.main} />
+          <BarChart primary={colors.primary.main} danger={colors.danger.main} />
         </Col>
       </Row>
       <Row className='match-height'>

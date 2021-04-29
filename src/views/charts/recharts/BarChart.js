@@ -5,74 +5,76 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContaine
 
 const data = [
   {
-    name: '7/12',
-    apple: 80,
-    samsung: 130,
-    oneplus: 150,
-    motorola: 210
+    name: 'Jan',
+    new: 350,
+    recurring: 130,
+    churned: 180
   },
   {
-    name: '8/12',
-    apple: 100,
-    samsung: 150,
-    oneplus: 170,
-    motorola: 380
+    name: 'Feb',
+    new: 330,
+    recurring: 110,
+    churned: 170
   },
   {
-    name: '9/12',
-    apple: 80,
-    samsung: 140,
-    oneplus: 160,
-    motorola: 220
+    name: 'Mar',
+    new: 230,
+    recurring: 140,
+    churned: 160
   },
   {
-    name: '10/12',
-    apple: 100,
-    samsung: 150,
-    oneplus: 170,
-    motorola: 380
+    name: 'Apr',
+    new: 40,
+    recurring:250,
+    churned: 370
   },
   {
-    name: '11/12',
-    apple: 50,
-    samsung: 90,
-    oneplus: 110,
-    motorola: 150
+    name: 'May',
+    new: 250,
+    recurring: 290,
+    churned: 110
   },
   {
-    name: '12/12',
-    apple: 125,
-    samsung: 90,
-    oneplus: 100,
-    motorola: 65
+    name: 'Jun',
+    new: 325,
+    recurring: 290,
+    churned: 200
   },
   {
-    name: '13/12',
-    apple: 70,
-    samsung: 110,
-    oneplus: 130,
-    motorola: 210
+    name: 'July',
+    new: 330,
+    recurring: 210,
+    churned: 330
   },
   {
-    name: '14/12',
-    apple: 100,
-    samsung: 150,
-    oneplus: 170,
-    motorola: 380
+    name: 'Aug',
+    new: 200,
+    recurring: 250,
+    churned: 170
   },
   {
-    name: '15/12',
-    apple: 80,
-    samsung: 100,
-    oneplus: 120,
-    motorola: 180
+    name: 'Sep',
+    new: 290,
+    recurring: 200,
+    churned: 120
   },
   {
-    name: '16/12',
-    apple: 30,
-    samsung: 60,
-    oneplus: 70,
-    motorola: 110
+    name: 'Oct',
+    new: 130,
+    recurring: 60,
+    churned: 270
+  },
+  {
+    name: 'Nov',
+    new: 310,
+    recurring: 60,
+    churned: 170
+  },
+  {
+    name: 'Dec',
+    new: 130,
+    recurring: 60,
+    churned: 170
   }
 ]
 
@@ -110,53 +112,38 @@ const SimpleBarChart = () => {
   return (
     <Card>
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
-        <CardTitle tag='h4'>Brand Turnover</CardTitle>
-        <div className='d-flex align-items-center'>
-          <Calendar size={15} />
-          <Flatpickr
-            options={{
-              mode: 'range',
-              defaultDate: ['2019-05-01', '2019-05-10']
-            }}
-            className='form-control flat-picker bg-transparent border-0 shadow-none'
-          />
-        </div>
+        <CardTitle tag='h4'>Monthly Recurring Revenue Report</CardTitle>
       </CardHeader>
 
       <CardBody>
-        <div className='d-flex align-items-center flex-wrap mb-2'>
-          <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#826af9' }}></span>
-            <span className='align-middle mr-75'>Apple</span>
-          </div>
-          <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#9f87ff' }}></span>
-            <span className='align-middle mr-75'>Samsung</span>
-          </div>
-          <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#d2b0ff' }}></span>
-            <span className='align-middle mr-75'>Oneplus</span>
-          </div>
-          <div>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f8d3ff' }}></span>
-            <span className='align-middle'>Motorola</span>
-          </div>
-        </div>
         <div className='recharts-wrapper bar-chart'>
           <ResponsiveContainer>
-            <BarChart height={300} data={data} barSize={15}>
+            <BarChart height={300} data={data} barSize={10}>
               <CartesianGrid strokeDasharray='3 3' />
               <XAxis dataKey='name' />
               <YAxis />
               <Tooltip content={CustomTooltip} />
-              <Bar dataKey='apple' stackId='a' fill='#826af9' />
-              <Bar dataKey='samsung' stackId='a' fill='#9f87ff' />
-              <Bar dataKey='oneplus' stackId='a' fill='#d2b0ff' />
-              <Bar dataKey='motorola' stackId='a' fill='#f8d3ff' radius={[15, 15, 0, 0]} />
+              <Bar dataKey='new' stackId='a' fill='#566fe7' radius={[7, 7, 0, 0]} />
+              <Bar dataKey='recurring' stackId='a' fill='#f2b44d' radius={[7, 7, 0, 0]} />
+              <Bar dataKey='churned' stackId='a' fill='#34c38e' radius={[7, 7, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </div>
       </CardBody>
+      <div className='d-flex align-items-center flex-wrap mb-2 justify-content-center'>
+          <div className='mr-1'>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#566fe7', borderRadius: '0' }}></span>
+            <span className='mr-75'>New</span>
+          </div>
+          <div className='mr-1'>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f2b44d', borderRadius: '0' }}></span>
+            <span className='mr-75'>Recurring</span>
+          </div>
+          <div className='mr-1'>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#34c38e', borderRadius: '0' }}></span>
+            <span className='mr-75'>Churrned</span>
+          </div>
+        </div>
     </Card>
   )
 }
