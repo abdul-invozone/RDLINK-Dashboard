@@ -302,3 +302,50 @@
     font-size: 12px;
     color: #646464;
 }
+.subconcardtitle{
+	color: #5167e1 ;
+	font-weight: bold; 
+	font-size: 16px;
+}
+.row .paid h5{
+	color: #4a4d55;
+	font-size: 14px;
+	font-weight: bold;
+}
+.row .paid p{
+	color: #b2b3b5;
+	font-weight: bold;
+	font-size: 14px;
+}
+.row .previous-period .previous-period-text{
+	font-size: 15px;
+	font-weight:600;
+	color: #616166;
+	margin-left: 5px;
+}
+.row .previous-period .arrow-up{
+	color: #33cd85;
+	margin-bottom: 5px !important;
+}
+.row .main-column a{
+	padding: 11px 29px 11px 15px;
+	background-color: #5167e1;
+	color: white;
+	font-size: 15px;
+	font-weight: bold; 
+	position:relative; 
+	border-radius:7px;
+	 margin-top:20px;
+}
+.row .main-column a .arrow-right{
+	position: absolute;
+	top: 13px;
+	margin-left: 5px;
+	
+}
+.dot-sub{
+	background-color: #34ce86;
+}
+.dot-trial{
+	background-color: #5167e1;
+}

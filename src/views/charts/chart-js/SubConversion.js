@@ -5,10 +5,10 @@ import ChartjsDoughnutChart3 from '@src/views/charts/chart-js/ChartjsDoughnutCha
 const SubConversion = () => {
   return (
     <>
-    <Card>
+    <Card className="subconcard">
         <CardHeader>
-                <h4>Subscription Conversion Rate</h4>
-                    <RefreshCw />
+                <h4 className="subconcardtitle">Subscription Conversion Rate</h4>
+                    <RefreshCw  />
                     <UncontrolledButtonDropdown className="statsDropdown" style={{position: 'relative', top: '-5px', left:'0'}}>
         <DropdownToggle color='flat-primary'>
           ...
@@ -27,30 +27,26 @@ const SubConversion = () => {
       </UncontrolledButtonDropdown>
         </CardHeader>
         <CardBody className="row">
-         <Col lg="6">
+         <Col lg="6" className="main-column">
          <div className="paid">
                   <div style={{position: 'relative', paddingLeft: '40px'}}>
-                  <span className="dot dot-dark" style={{width: '18px', height: '18px', position: 'absolute', top: '3px', left: '0'}}/>
+                  <span className="dot dot-sub" style={{width: '18px', height: '18px', position: 'absolute', top: '3px', left: '0'}}/>
                     <h5>Paid Subscription</h5>
                     <p>75.5% over</p>
                   </div>
                 </div>
                 <div className="paid">
-                  <div>
-                    <h5>Free Trail</h5>
+                  <div style={{position: 'relative', paddingLeft: '40px'}}>
+                  <span className="dot dot-trial" style={{width: '18px', height: '18px', position: 'absolute', top: '3px', left: '0'}}/>
+                    <h5>Free Trial</h5>
                     <p>24.5% over</p>
                   </div>
                 </div>
-              <div className="previous-period">
+              <div className="previous-period mb-3">
                 <p>
-                  <span>12%</span>
-                  <ArrowUp color={'green'} size="12" />
-                  <span
-                    style={{
-                      fontSize: "15.5px",
-                      fontWeight: 540,
-                      color: "#616166"
-                    }}
+                  <span style={{color:'#33cd85'}} >12%</span>
+                  <ArrowUp className="arrow-up" size="18" />
+                  <span className="previous-period-text"
                   >
                     From previous period
                   </span>
@@ -58,11 +54,11 @@ const SubConversion = () => {
               </div>
               <a href="#">
               View More
-              <ArrowRight />
+              <ArrowRight className="arrow-right" size="15"/>
             </a>
          </Col>
          <Col lg="6">
-         <ChartjsDoughnutChart3 warningLightColor="red" successColorShade="#2cb6d1" />
+         <ChartjsDoughnutChart3 warningLightColor="#5167e1" successColorShade="#34ce86" />
          </Col>
         </CardBody>
     </Card>
