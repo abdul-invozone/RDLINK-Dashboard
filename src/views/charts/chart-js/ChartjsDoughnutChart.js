@@ -6,10 +6,10 @@ import React, { useState } from 'react'
 
 const ChartjsRadarChart = ({ tooltipShadow, successColorShade, warningLightColor, primary }) => {
 
-  const [active, setActive] = useState(null)
+  const [isActive, setActive] = useState(true)
 
-  const handleClick = () => {
-    console.log('clicked')
+  const toggleClass = () => {
+    setActive(!isActive)
   }
   
   const options = {
@@ -55,7 +55,7 @@ const ChartjsRadarChart = ({ tooltipShadow, successColorShade, warningLightColor
         <CardTitle tag='h4'>All RD's</CardTitle>
         <div className="allRdTopLinks">
           <ul className="p-0 m-0">
-            <li className="d-inline-block"><a className="active" href="#">Week</a></li>
+            <li className="d-inline-block"><a className={isActive ? 'active' : null} onClick={toggleClass} href="#">Week</a></li>
             <li className="d-inline-block"><a href="#">Month</a></li>
             <li className="d-inline-block"><a href="#">Year</a></li>
           </ul>

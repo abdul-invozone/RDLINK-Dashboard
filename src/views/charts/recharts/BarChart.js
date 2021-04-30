@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardTitle, CardBody } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap'
 import { Calendar } from 'react-feather'
 import Flatpickr from 'react-flatpickr'
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
@@ -113,6 +113,18 @@ const SimpleBarChart = () => {
     <Card>
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
         <h4 className="subconcardtitle">Monthly Recurring Revenue Report</h4>
+        <UncontrolledButtonDropdown>
+      <DropdownToggle outline color='primary' caret>
+        Sort by
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem href='/' tag='a'>Option 1</DropdownItem>
+        <DropdownItem href='/' tag='a' disabled>
+          Option 2
+        </DropdownItem>
+        <DropdownItem href='/' tag='a'>Option 3</DropdownItem>
+      </DropdownMenu>
+    </UncontrolledButtonDropdown>
       </CardHeader>
 
       <CardBody>

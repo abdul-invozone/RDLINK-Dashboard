@@ -97,6 +97,7 @@
 .header-navbar.floating-nav {
 	margin: 0 2rem !important;
 	border-radius: 0px 0px 15px 15px !important;
+	padding: 1.2rem 1rem !important;
 }
 .vertical-layout.vertical-menu-modern.menu-expanded {
 	.main-menu {
@@ -302,30 +303,33 @@
 	font-weight: bold; 
 	font-size: 20px !important;
 }
-.row .paid h5{
+.subconcardtitle-gray {
+	color: #5e5973;
+}
+.subconcard .paid h5{
 	color: #4a4d55;
 	font-size: 14px;
 	font-weight: bold;
 }
-.row .paid p{
+.subconcard .paid p{
 	color: #b2b3b5;
 	font-weight: bold;
 	font-size: 14px;
 }
-.row .previous-period{
+.subconcard .previous-period{
 	margin-left: 5px;
 }
-.row .previous-period .previous-period-text{
+.subconcard .previous-period .previous-period-text{
 	font-size: 15px;
 	font-weight:600;
 	color: #616166;
 	margin-left: 5px;
 }
-.row .previous-period .arrow-up{
+.subconcard .previous-period .arrow-up{
 	color: #33cd85;
 	margin-bottom: 5px !important;
 }
-.row .view-more{
+.subconcard .view-more{
 	padding: 9px 28px 9px 15px;
 	background-color: #5167e1;
 	color: white;
@@ -333,9 +337,10 @@
 	font-weight: bold; 
 	position:relative; 
 	border-radius:7px;
-	margin-left: 10px;
+	display: inline-block;
+	margin-top: 7rem;
 }
-.row .view-more .arrow-right{
+.subconcard .view-more .arrow-right{
 	position: absolute;
 	top: 14px;
 	margin-left: 5px;
