@@ -132,15 +132,15 @@ const SimpleBarChart = () => {
       </CardBody>
       <div className='d-flex align-items-center flex-wrap mb-2 justify-content-center'>
           <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#566fe7', borderRadius: '0' }}></span>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#566fe7', borderRadius: '0', fontWeight: 'bolder' }}></span>
             <span className='mr-75'>New</span>
           </div>
           <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f2b44d', borderRadius: '0' }}></span>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f2b44d', borderRadius: '0', fontWeight: 'bolder' }}></span>
             <span className='mr-75'>Recurring</span>
           </div>
           <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#34c38e', borderRadius: '0' }}></span>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#34c38e', borderRadius: '0', fontWeight: 'bolder' }}></span>
             <span className='mr-75'>Churrned</span>
           </div>
         </div>
