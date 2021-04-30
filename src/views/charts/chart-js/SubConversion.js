@@ -9,7 +9,7 @@ const SubConversion = () => {
         <CardHeader>
                 <h4 className="subconcardtitle">Subscription Conversion Rate</h4>
                     <RefreshCw  />
-                    <UncontrolledButtonDropdown className="statsDropdown" style={{position: 'relative', top: '-5px', left:'0'}}>
+                    <UncontrolledButtonDropdown className="statsDropdown" style={{position: 'relative', top: '-5px', left:'0', color:'#020202'}}>
         <DropdownToggle color='flat-primary'>
           ...
         </DropdownToggle>
@@ -42,7 +42,7 @@ const SubConversion = () => {
                     <p>24.5% over</p>
                   </div>
                 </div>
-              <div className="previous-period mb-3">
+              <div className="previous-period">
                 <p>
                   <span style={{color:'#33cd85'}} >12%</span>
                   <ArrowUp className="arrow-up" size="18" />
@@ -52,14 +52,14 @@ const SubConversion = () => {
                   </span>
                 </p>
               </div>
-              <a href="#">
-              View More
-              <ArrowRight className="arrow-right" size="15"/>
-            </a>
          </Col>
          <Col lg="6">
          <ChartjsDoughnutChart3 warningLightColor="#5167e1" successColorShade="#34ce86" />
          </Col>
+              <a href="#" className="view-more">
+              View More
+              <ArrowRight className="arrow-right" size="15"/>
+            </a>
         </CardBody>
     </Card>
     </>

@@ -112,19 +112,7 @@ const SimpleBarChart = () => {
   return (
     <Card>
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
-        <CardTitle tag='h4'>Monthly Recurring Revenue Report</CardTitle>
-        <UncontrolledButtonDropdown>
-      <DropdownToggle outline color='primary' caret>
-        Sort by
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem href='/' tag='a'>Option 1</DropdownItem>
-        <DropdownItem href='/' tag='a' disabled>
-          Option 2
-        </DropdownItem>
-        <DropdownItem href='/' tag='a'>Option 3</DropdownItem>
-      </DropdownMenu>
-    </UncontrolledButtonDropdown>
+        <h4 className="subconcardtitle">Monthly Recurring Revenue Report</h4>
       </CardHeader>
 
       <CardBody>

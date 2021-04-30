@@ -177,10 +177,7 @@
 	padding-left: 5px !important;
 	// margin-right: 0.005rem !important;
 }
-// .rdt_TableHeadRow{
-// 	padding-right: 1.5rem !important;
-// 	padding-left: 1.5rem !important;
-// }
+
 
 .invoice-list-dataTable .rdt_TableCol:last-child{
 	justify-content: center;
@@ -190,16 +187,14 @@
 	color: #716f7b;
 }
 .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-	font-size: 13px;
+	font-size: 10px;
 	color: #5a5571;
 	font-weight: 500;
 	justify-content: center;
 }
-// .rdt_TableHeadRow .rdt_TableCol #column-monthlyLogins,
-// .rdt_TableHeadRow .rdt_TableCol #column-loginTime{ 
-// 	font-size: 12px;
-// 	justify-content: center !important;
-// }
+.rdt_TableHeadRow .rdt_TableCol #column-client{
+	margin-left: 20px;
+}
 
 .dot {
 	width: 11px;
@@ -305,7 +300,7 @@
 .subconcardtitle{
 	color: #5167e1 ;
 	font-weight: bold; 
-	font-size: 16px;
+	font-size: 20px !important;
 }
 .row .paid h5{
 	color: #4a4d55;
@@ -317,6 +312,9 @@
 	font-weight: bold;
 	font-size: 14px;
 }
+.row .previous-period{
+	margin-left: 5px;
+}
 .row .previous-period .previous-period-text{
 	font-size: 15px;
 	font-weight:600;
@@ -327,19 +325,19 @@
 	color: #33cd85;
 	margin-bottom: 5px !important;
 }
-.row .main-column a{
-	padding: 11px 29px 11px 15px;
+.row .view-more{
+	padding: 9px 28px 9px 15px;
 	background-color: #5167e1;
 	color: white;
 	font-size: 15px;
 	font-weight: bold; 
 	position:relative; 
 	border-radius:7px;
-	 margin-top:20px;
+	margin-left: 10px;
 }
-.row .main-column a .arrow-right{
+.row .view-more .arrow-right{
 	position: absolute;
-	top: 13px;
+	top: 14px;
 	margin-left: 5px;
 	
 }
@@ -349,3 +347,18 @@
 .dot-trial{
 	background-color: #5167e1;
 }
+
+
+// MEDIA QUERY
+
+@media screen and (max-width: 992px){
+	// .subconcardtitle{
+	// 	font-size:20px ;
+	// }
+	
+	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
+		font-size: 10px !important;
+	}
+}
+// @media screen and (min-width: 993px){
+// }
