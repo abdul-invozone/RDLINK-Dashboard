@@ -52,14 +52,14 @@ const SubConversion = () => {
                   </span>
                 </p>
               </div>
-         </Col>
-         <Col lg="6">
-         <ChartjsDoughnutChart3 warningLightColor="#5167e1" successColorShade="#34ce86" />
-         </Col>
               <a href="#" className="view-more">
               View More
               <ArrowRight className="arrow-right" size="15"/>
             </a>
+         </Col>
+         <Col lg="6">
+         <ChartjsDoughnutChart3 warningLightColor="#5167e1" successColorShade="#34ce86" />
+         </Col>
         </CardBody>
     </Card>
     </>

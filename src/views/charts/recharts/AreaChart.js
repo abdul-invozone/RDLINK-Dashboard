@@ -105,7 +105,7 @@ const SimpleAreaChart = ({ primary }) => {
   return (
     <Card>
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
-        <CardTitle tag='h4'>Current Partnerships</CardTitle>
+        <h4 className="subconcardtitle subconcardtitle-gray">Current Partnerships</h4>
         {/* <div className='d-flex align-items-center'>
           <Calendar size={15} />
           <Flatpickr
