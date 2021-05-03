@@ -136,7 +136,7 @@
 	position: absolute;
 	top: -70px;
 	z-index: 99;
-	right: 90px;
+	right: -20px;
 	.btn-flat-primary {
 		font-size: 24px;
 		font-weight: 700;
@@ -352,7 +352,18 @@
 .dot-trial{
 	background-color: #5167e1;
 }
-
+.sortby-btn{
+	border: 2px solid #dbdae0;
+	padding-left: 10px;
+	padding-right: 50px;
+	border-radius: 5px;
+}
+.total-partnership{
+	// margin-top: 0.5rem;
+	margin-bottom: 0;
+	font-size: 12px;
+	font-weight: 500;
+}
 
 // MEDIA QUERY
 
@@ -362,8 +373,26 @@
 	// }
 	
 	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-		font-size: 10px !important;
+		font-size: 11px !important;
 	}
 }
-// @media screen and (min-width: 993px){
-// }
+
+@media screen and (min-width: 992px){
+	// .statsDropdown {
+	// 	position: absolute;
+	// 	top: -50px;
+	// 	z-index: 99;
+	// 	// right: 10px;
+	// }
+
+	// .total-partnership{
+	// 	font-size: 10px !important;
+	// }
+}
+@media screen and (max-width: 1200px){
+	.statsDropdown {
+		position: absolute;
+		top: -20px;
+	}
+	
+}

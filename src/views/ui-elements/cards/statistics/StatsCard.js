@@ -43,7 +43,7 @@ const StatsCard = ({ cols }) => {
           })}
         >
           <UncontrolledButtonDropdown className="statsDropdown">
-        <DropdownToggle color='flat-primary'>
+        <DropdownToggle color='flat-primary' className="dropdown-button">
           ...
         </DropdownToggle>
         <DropdownMenu>
@@ -62,7 +62,7 @@ const StatsCard = ({ cols }) => {
             <Avatar color={item.color} icon={item.icon} className='mr-2' />
             <Media className='my-auto' body>
               <h4 className='font-weight-bolder mb-0' style={{fontSize:'30px'}}>{item.title}</h4>
-              <CardText className='font-small-3 mb-0'>{item.subtitle}</CardText>
+              <CardText className='total-partnership'>{item.subtitle}</CardText>
             </Media>
           </Media>
         </Col>
