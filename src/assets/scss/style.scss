@@ -373,14 +373,14 @@
 	font-weight: 700;
 }
 
-.sortby-btn{
-	border: 2px solid #dbdae0;
-	padding-left: 10px;
-	padding-right: 80px;
-	border-radius: 5px;
-	background-color: white;
-	color: #72707d;
-}
+// .sortby-btn{
+// 	border: 2px solid #dbdae0;
+// 	padding-left: 10px;
+// 	padding-right: 80px;
+// 	border-radius: 5px;
+// 	background-color: white;
+// 	color: #72707d;
+// }
 .total-partnership{
 	// margin-top: 0.5rem;
 	margin-bottom: 0;
@@ -428,4 +428,17 @@
 		position: absolute;
 		top: -70px;
 	}
+}
+
+.monthly-report .sortby-btn {
+	padding: 1rem 10rem 1rem 1rem !important;
+    width: 100% !important;
+    max-width: 215px !important;
+    border: 1px solid #dbd8e0 !important;
+    border-radius: 7px !important;
+}
+
+.monthly-report .sortby-btn::after {
+	right: 0 !important;
+    left: calc(100% - -65px) !important;
 }
