@@ -203,13 +203,22 @@
 	border-radius: 50%;
 }
 .dot-dark {
-	background-color: #214090;
+	background-color: #34ce86;
 }
 .dot-red {
-	background-color: #e63b20;
+	background-color: #6165eb;
 }
 .dot-green {
-	background-color: #2cb6d1;
+	background-color: #ff8f0f;
+}
+.dot-navy{
+	background-color: #25428e;
+}
+.dot-maroon{
+	background-color: #e83723;
+}
+.dot-sky{
+	background-color: #28b7d7;
 }
 
 // .allRD .card-body {
@@ -230,6 +239,7 @@
 	color: #fff;
 	top: calc(100% - 50px);
 	font-size: 26px;
+	font-weight: 600;
 }
 .allRD .card-body .totalRD p {
 	margin: 0;
@@ -245,18 +255,23 @@
 }
 .allRD .card-header .allRdTopLinks ul li a {
 	padding: 20px 10px;
-	border-bottom: 1px solid transparent;
-	color: #646464;
+	border-bottom: 3px solid transparent;
+	color: #8488ad;
+	// font-size: 10px;
 }
   
 .allRD .card-header .allRdTopLinks ul li a:hover {
-	border-bottom: 1px solid #556fe6;
+	border-bottom: 3px solid #556fe6;
 	color: #556fe6;
   }
   
   .allRD .card-header .allRdTopLinks ul li a.active {
-	border-bottom: 1px solid #556fe6;
+	border-bottom: 3px solid #556fe6;
 	color: #556fe6;
+  }
+ .allRdactivelinks{
+	  display: inline-block;
+	  font-weight: 500;
   }
 
   .allRD .card-footer {
@@ -286,9 +301,10 @@
 
 .allRD .allRdBrandsStats ul li {
 	font-weight: 700;
-    margin: 0 10px;
+    margin: 10px 10px 0 10px;
     color: #000;
     font-size: 18px;
+	
 }
 
 .allRD .allRdBrandsStats ul li span {
@@ -296,12 +312,12 @@
     display: inline-block;
     margin: 0 5px;
     font-size: 12px;
-    color: #646464;
+    color: #5d5970;
 }
 .subconcardtitle{
 	color: #5167e1 ;
-	font-weight: bold; 
-	font-size: 20px !important;
+	font-weight: bolder; 
+	font-size:22px !important;
 }
 .subconcardtitle-gray {
 	color: #5e5973;
@@ -355,13 +371,15 @@
 .sortby-btn{
 	border: 2px solid #dbdae0;
 	padding-left: 10px;
-	padding-right: 50px;
+	padding-right: 80px;
 	border-radius: 5px;
+	background-color: white;
+	color: #72707d;
 }
 .total-partnership{
 	// margin-top: 0.5rem;
 	margin-bottom: 0;
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 500;
 }
 
@@ -385,14 +403,24 @@
 	// 	// right: 10px;
 	// }
 
-	// .total-partnership{
-	// 	font-size: 10px !important;
-	// }
+	
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1199px){
 	.statsDropdown {
 		position: absolute;
 		top: -20px;
 	}
-	
+
+}
+@media screen and (min-width: 1200px){
+	// .total-partnership{
+	// 	font-size: 9px !important;
+	// }
+	// .allRD .card-header .allRdTopLinks ul li a {
+	// 	padding: 20px 10px !important;
+	// }
+	.statsDropdown {
+		position: absolute;
+		top: -70px;
+	}
 }

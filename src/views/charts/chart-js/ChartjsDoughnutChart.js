@@ -52,12 +52,12 @@ const ChartjsRadarChart = ({ tooltipShadow, successColorShade, warningLightColor
   return (
     <Card>
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
-        <CardTitle tag='h4'>All RD's</CardTitle>
+        <p className="subconcardtitle subconcardtitle-gray">All RD's</p>
         <div className="allRdTopLinks">
           <ul className="p-0 m-0">
-            <li className="d-inline-block"><a className={isActive ? 'active' : null} onClick={toggleClass} href="#">Week</a></li>
-            <li className="d-inline-block"><a href="#">Month</a></li>
-            <li className="d-inline-block"><a href="#">Year</a></li>
+            <li className="allRdactivelinks"><a className={isActive ? 'active' : null} onClick={toggleClass} href="#">Week</a></li>
+            <li className="allRdactivelinks"><a href="#">Month</a></li>
+            <li className="allRdactivelinks"><a href="#">Year</a></li>
           </ul>
         </div>
       </CardHeader>
@@ -68,19 +68,19 @@ const ChartjsRadarChart = ({ tooltipShadow, successColorShade, warningLightColor
         </div>
         <div className='d-inline-flex justify-content-between mt-3 mb-1 mr-2'>
           <div className='d-flex align-items-center'>
-          <span class="dot dot-dark"></span>
+          <span class="dot dot-navy"></span>
             <span className='font-weight-bold ml-75 mr-25'>Speciality</span>
           </div>
         </div>
         <div className='d-inline-flex justify-content-between mb-1 mr-2'>
           <div className='d-flex align-items-center'>
-          <span class="dot dot-red"></span>
+          <span class="dot dot-maroon"></span>
             <span className='font-weight-bold ml-75 mr-25'>Industry</span>
           </div>
         </div>
         <div className='d-inline-flex justify-content-between'>
           <div className='d-flex align-items-center'>
-          <span class="dot dot-green"></span>
+          <span class="dot dot-sky"></span>
             <span className='font-weight-bold ml-75 mr-25'>Region</span>
           </div>
         </div>

@@ -133,12 +133,12 @@ const SimpleAreaChart = ({ primary }) => {
         </div>
         <div className='d-flex align-items-center mb-2'>
           <div className='mr-2'>
-            <span className='bullet bullet-md bullet-primary bullet-bordered mr-50'></span>
-            <span className='align-middle '>Brand Campaigns</span>
+            <span className='bullet bullet-sm bullet-primary bullet-bordered mr-50'></span>
+            <span className='align-middle'>Brand Campaigns</span>
           </div>
           <div className='mr-2'>
             <span
-              className='bullet bullet-md bullet-bordered mr-50'
+              className='bullet bullet-sm bullet-bordered mr-50'
               style={{ backgroundColor: 'rgba(115, 103, 240, .5)' }}
             ></span>
             <span className='align-middle mr-75'>RD Opportunities</span>

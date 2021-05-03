@@ -51,18 +51,18 @@ const ChartjsRadarChart2 = ({ tooltipShadow, successColorShade, warningLightColo
   return (
     <Card>
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
-        <CardTitle tag='h4'>All Brands</CardTitle>
+        <p className="subconcardtitle subconcardtitle-gray">All Brands</p>
         <div className="allRdTopLinks">
           <ul className="p-0 m-0">
-            <li className="d-inline-block"><a href="#" className={isActive ? 'active' : null} onClick={toggleClass}>Week</a></li>
-            <li className="d-inline-block"><a href="#">Month</a></li>
-            <li className="d-inline-block"><a href="#">Year</a></li>
+            <li className="allRdactivelinks"><a href="#" className={isActive ? 'active' : null} onClick={toggleClass}>Week</a></li>
+            <li className="allRdactivelinks"><a href="#">Month</a></li>
+            <li className="allRdactivelinks"><a href="#">Year</a></li>
           </ul>
         </div>
       </CardHeader>
       <CardBody>
-        <div style={{ height: '200px', position: 'relative' }}>
-        <div className="totalRD totalRDBrands"><p>1773</p><span>Total Brands</span></div>
+        <div style={{ height: '200px', position: 'relative'}}>
+        <div className="totalRD totalRDBrands"><p style={{fontWeight:'600'}}>1773</p><span>Total Brands</span></div>
           <Doughnut data={data} options={options} height={200} />
         </div>
         <div className='d-inline-flex justify-content-between mt-3 mb-1 mx-2'>
