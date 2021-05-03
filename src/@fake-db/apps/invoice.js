@@ -14,7 +14,7 @@ const data = {
         contact: '(616) 865-4180',
         name: 'Jordan Stevenson',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -36,7 +36,7 @@ const data = {
         contact: '(226) 204-8287',
         name: 'Stephanie Burns',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -58,7 +58,7 @@ const data = {
         contact: '(955) 676-1076',
         name: 'Tony Herrera',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -80,7 +80,7 @@ const data = {
         contact: '(832) 323-6914',
         name: 'Kevin Patton',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -102,7 +102,7 @@ const data = {
         contact: '(970) 982-3353',
         name: 'Mrs. Julie Donovan MD',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -124,7 +124,7 @@ const data = {
         contact: '(511) 938-9617',
         name: 'Amanda Phillips',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -146,7 +146,7 @@ const data = {
         contact: '(504) 859-2893',
         name: 'Christina Collier',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -168,7 +168,7 @@ const data = {
         contact: '(758) 403-7718',
         name: 'David Flores',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -190,7 +190,7 @@ const data = {
         contact: '(292) 873-8254',
         name: 'Valerie Perez',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -212,7 +212,7 @@ const data = {
         contact: '(956) 803-2008',
         name: 'Susan Dickerson',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -234,7 +234,7 @@ const data = {
         contact: '(716) 962-8635',
         name: 'Kelly Smith',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -256,7 +256,7 @@ const data = {
         contact: '(523) 449-0782',
         name: 'Jamie Jones',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -278,7 +278,7 @@ const data = {
         contact: '(583) 470-8356',
         name: 'Ruben Garcia',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -300,7 +300,7 @@ const data = {
         contact: '(366) 906-6467',
         name: 'Ryan Meyer',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -322,7 +322,7 @@ const data = {
         contact: '(320) 616-3915',
         name: 'Valerie Valdez',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -344,7 +344,7 @@ const data = {
         contact: '(435) 899-1963',
         name: 'Melissa Wheeler',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -366,7 +366,7 @@ const data = {
         contact: '(254) 399-4728',
         name: 'Alan Jimenez',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -388,7 +388,7 @@ const data = {
         contact: '(648) 500-4338',
         name: 'Jennifer Morris',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -410,7 +410,7 @@ const data = {
         contact: '(896) 544-3796',
         name: 'Timothy Stevenson',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -432,7 +432,7 @@ const data = {
         contact: '(236) 784-5142',
         name: 'Erik Hayden',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -454,7 +454,7 @@ const data = {
         contact: '(436) 717-2419',
         name: 'Katherine Kennedy',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -476,7 +476,7 @@ const data = {
         contact: '(489) 946-3041',
         name: 'Monica Fuller',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -498,7 +498,7 @@ const data = {
         contact: '(274) 246-3725',
         name: 'Stacey Carter',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -520,7 +520,7 @@ const data = {
         contact: '(258) 211-5970',
         name: 'Chad Davis',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -542,7 +542,7 @@ const data = {
         contact: '(593) 965-4100',
         name: 'Chris Reyes',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -564,7 +564,7 @@ const data = {
         contact: '(585) 829-2603',
         name: 'Laurie Summers',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -586,7 +586,7 @@ const data = {
         contact: '(527) 351-5517',
         name: 'Lindsay Wilson',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -608,7 +608,7 @@ const data = {
         contact: '(628) 903-0132',
         name: 'Jenna Castro',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -630,7 +630,7 @@ const data = {
         contact: '(847) 396-9904',
         name: 'Wendy Weber',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -652,7 +652,7 @@ const data = {
         contact: '(852) 249-4539',
         name: 'April Yates',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -674,7 +674,7 @@ const data = {
         contact: '(917) 984-2232',
         name: 'Daniel Marshall PhD',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -696,7 +696,7 @@ const data = {
         contact: '(670) 409-3703',
         name: 'Randy Rich',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -718,7 +718,7 @@ const data = {
         contact: '(646) 263-0257',
         name: 'Mrs. Jodi Chapman',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -740,7 +740,7 @@ const data = {
         contact: '(751) 213-4288',
         name: 'Steven Myers',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -762,7 +762,7 @@ const data = {
         contact: '(655) 649-7872',
         name: 'Charles Alexander',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -784,7 +784,7 @@ const data = {
         contact: '(402) 935-0735',
         name: 'Elizabeth Jones',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -806,7 +806,7 @@ const data = {
         contact: '(915) 448-6271',
         name: 'Heidi Walton',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -828,7 +828,7 @@ const data = {
         contact: '(817) 700-2984',
         name: 'Christopher Allen',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -850,7 +850,7 @@ const data = {
         contact: '(266) 611-9482',
         name: 'Joseph Oliver',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -872,7 +872,7 @@ const data = {
         contact: '(739) 745-9728',
         name: 'Megan Roberts',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -894,7 +894,7 @@ const data = {
         contact: '(682) 804-6506',
         name: 'Mary Garcia',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -916,7 +916,7 @@ const data = {
         contact: '(775) 366-0411',
         name: 'Crystal Mays',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -938,7 +938,7 @@ const data = {
         contact: '(510) 536-6029',
         name: 'Nicholas Tanner',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -960,7 +960,7 @@ const data = {
         contact: '(253) 230-4657',
         name: 'Mr. Justin Richardson',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -982,7 +982,7 @@ const data = {
         contact: '(612) 546-3485',
         name: 'Jennifer Summers',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -1004,7 +1004,7 @@ const data = {
         contact: '(203) 601-8603',
         name: 'Richard Payne',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -1026,7 +1026,7 @@ const data = {
         contact: '(895) 401-4255',
         name: 'Lori Wells',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -1048,7 +1048,7 @@ const data = {
         contact: '(602) 336-9806',
         name: 'Tammy Sanchez',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -1070,7 +1070,7 @@ const data = {
         contact: '(936) 550-1638',
         name: 'Dana Carey',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },
@@ -1092,7 +1092,7 @@ const data = {
         contact: '(687) 660-2473',
         name: 'Andrew Burns',
         subscriptionPlan: 'monthly',
-        partnerships: 'Participated',
+        partnerships: '34',
         monthlyLogins: 23,
         loginTime: '2hrs'
       },

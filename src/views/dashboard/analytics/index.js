@@ -6,6 +6,7 @@ import Timeline from '@components/timeline'
 import AvatarGroup from '@components/avatar-group'
 import jsonImg from '@src/assets/images/icons/json.png'
 import InvoiceList from '@src/views/apps/invoice/list'
+import InvoiceList2 from '@src/views/apps/invoice/list/index2'
 import ceo from '@src/assets/images/portrait/small/avatar-s-9.jpg'
 import { ThemeColors } from '@src/utility/context/ThemeColors'
 import Sales from '@src/views/ui-elements/cards/analytics/Sales'
@@ -162,6 +163,11 @@ const AnalyticsDashboard = () => {
       <Row className='match-height'>
         <Col xs='12'>
           <InvoiceList />
+        </Col>
+      </Row>
+      <Row className='match-height'>
+        <Col xs='12'>
+          <InvoiceList2 />
         </Col>
       </Row>
     </div>
