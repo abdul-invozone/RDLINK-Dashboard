@@ -14,7 +14,7 @@ export default [
     id: 'manageRDs',
     title: "Manage RD's",
     icon: <MessageSquare size={20} />,
-    navLink: '/dashboard/ecommerce'
+    navLink: '#'
   },
   {
     id: 'manageBrands',

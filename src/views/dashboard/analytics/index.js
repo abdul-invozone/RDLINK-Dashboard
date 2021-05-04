@@ -23,7 +23,8 @@ import PieChart from '@src/views/charts/recharts/PieChart'
 import AvgSessions from '@src/views/ui-elements/cards/analytics/AvgSessions'
 import CardAppDesign from '@src/views/ui-elements/cards/advance/CardAppDesign'
 import SupportTracker from '@src/views/ui-elements/cards/analytics/SupportTracker'
-import { Row, Col, Card, CardHeader, CardTitle, CardBody, Media } from 'reactstrap'
+import { Row, Col, Card, CardHeader, CardTitle, CardBody, Media, Breadcrumb, BreadcrumbItem } from 'reactstrap'
+import { Link } from 'react-router-dom'
 import OrdersReceived from '@src/views/ui-elements/cards/statistics/OrdersReceived'
 import CardCongratulations from '@src/views/ui-elements/cards/advance/CardCongratulations'
 import SubscribersGained from '@src/views/ui-elements/cards/statistics/SubscribersGained'
@@ -123,6 +124,22 @@ const AnalyticsDashboard = () => {
 
   return (
     <div id='dashboard-analytics'>
+      <Row className="mx-0 mb-2 align-items-center">
+        <Col sm="6">
+          <span>Admin Dashboard</span>
+        </Col>
+        <Col sm="6">
+        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end'>
+        <BreadcrumbItem>
+          <Link to='#'> Home </Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem active>
+          <span> Admin Dashboard </span>
+        </BreadcrumbItem>
+      </Breadcrumb>
+        </Col>
+      </Row>
+       
       <Row className='match-height'>
         <Col xl='12' md='12' xs='12'>
           <StatsCard cols={{ xl: '3', sm: '6' }} />

@@ -27,7 +27,7 @@ export const searchArr = [
         isBookmarked: true,
         title: 'Email',
         icon: 'Mail',
-        link: '/apps/email'
+        link: '#'
       },
       {
         id: 4,
@@ -35,7 +35,7 @@ export const searchArr = [
         isBookmarked: true,
         title: 'Chat',
         icon: 'MessageSquare',
-        link: '/apps/chat'
+        link: '#'
       },
       {
         id: 5,
@@ -43,7 +43,7 @@ export const searchArr = [
         isBookmarked: true,
         title: 'Todo',
         icon: 'CheckSquare',
-        link: '/apps/todo'
+        link: '#'
       },
       {
         id: 6,
@@ -51,7 +51,7 @@ export const searchArr = [
         isBookmarked: true,
         title: 'Calendar',
         icon: 'Calendar',
-        link: '/apps/calendar'
+        link: '#'
       },
       {
         id: 7,
