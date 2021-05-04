@@ -110,11 +110,11 @@ const CustomTooltip = data => {
 
 const SimpleBarChart = () => {
   return (
-    <Card>
+    <Card className="monthly-report">
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
         <h4 className="subconcardtitle">Monthly Recurring Revenue Report</h4>
         <UncontrolledButtonDropdown>
-      <DropdownToggle outline color='primary' caret>
+      <DropdownToggle outline color='primary' caret className="sortby-btn"> 
         Sort by
       </DropdownToggle>
       <DropdownMenu>
@@ -144,16 +144,16 @@ const SimpleBarChart = () => {
       </CardBody>
       <div className='d-flex align-items-center flex-wrap mb-2 justify-content-center'>
           <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#566fe7', borderRadius: '0' }}></span>
-            <span className='mr-75 fwbold'>New</span>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#566fe7', borderRadius: '0', fontWeight: 'bolder' }}></span>
+            <span className='mr-75'>New</span>
           </div>
           <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f2b44d', borderRadius: '0' }}></span>
-            <span className='mr-75 fwbold'>Recurring</span>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f2b44d', borderRadius: '0', fontWeight: 'bolder' }}></span>
+            <span className='mr-75'>Recurring</span>
           </div>
           <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#34c38e', borderRadius: '0' }}></span>
-            <span className='mr-75 fwbold'>Churrned</span>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#34c38e', borderRadius: '0', fontWeight: 'bolder' }}></span>
+            <span className='mr-75'>Churrned</span>
           </div>
         </div>
     </Card>
