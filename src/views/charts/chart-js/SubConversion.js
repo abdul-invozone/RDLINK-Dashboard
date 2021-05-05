@@ -8,9 +8,9 @@ const SubConversion = () => {
     <Card className="subconcard">
         <CardHeader>
                 <h4 className="subconcardtitle">Subscription Conversion Rate</h4>
-                    <RefreshCw  />
-                    <UncontrolledButtonDropdown className="statsDropdown" style={{position: 'relative', top: '-5px', left:'0', color:'#020202'}}>
-        <DropdownToggle color='flat-primary'>
+                    <RefreshCw className="Subscription" />
+                    <UncontrolledButtonDropdown className="statsDropdown" style={{position: 'relative', top: '-5px', left:'0'}}>
+        <DropdownToggle color='flat-primary' className="Subscription">
           ...
         </DropdownToggle>
         <DropdownMenu>

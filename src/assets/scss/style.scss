@@ -116,8 +116,8 @@
 	.statistics-body {
 		.avatar {
 			.avatar-content {
-				width: 62px !important;
-				height: 62px !important;
+				width: 55px !important;
+				height: 55px !important;
 			}
 		}
 	}
@@ -131,6 +131,10 @@
 			padding: 4.4rem 2.8rem !important;
 		}
 	}
+}
+.subconcard .Subscription{
+	color: #030303 !important;
+	font-weight: 950;
 }
 .statsDropdown {
 	position: absolute;
@@ -238,7 +242,7 @@
 .allRD .card-body .totalRD.totalRDBrands {
 	color: #fff;
 	top: calc(100% - 50px);
-	font-size: 26px;
+	font-size: 24px;
 	font-weight: 600;
 }
 .allRD .card-body .totalRD p {
@@ -246,7 +250,7 @@
 	line-height: 0.1em;
 }
 .allRD .card-body .totalRD span {
-	font-size: 14px;
+	font-size: 12px;
 }
 .allRD .card-header {
 	border-bottom: 1px solid #f4f5f8;
@@ -255,18 +259,18 @@
 }
 .allRD .card-header .allRdTopLinks ul li a {
 	padding: 20px 10px;
-	border-bottom: 3px solid transparent;
+	border-bottom: 1px solid transparent;
 	color: #8488ad;
-	// font-size: 10px;
+	font-size: 12px;
 }
   
 .allRD .card-header .allRdTopLinks ul li a:hover {
-	border-bottom: 3px solid #556fe6;
+	border-bottom: 1px solid #556fe6;
 	color: #556fe6;
   }
   
   .allRD .card-header .allRdTopLinks ul li a.active {
-	border-bottom: 3px solid #556fe6;
+	border-bottom: 1px solid #556fe6;
 	color: #556fe6;
   }
  .allRdactivelinks{
@@ -318,9 +322,14 @@
 	color: #5167e1 ;
 	font-weight: bolder; 
 	font-size:22px !important;
+	margin-bottom: 0 !important;
 }
 .subconcardtitle-gray {
 	color: #5e5973;
+}
+.subconcard .subconcardtitle{
+	width: 100% !important;
+    max-width: 210px !important;
 }
 .subconcard .paid h5{
 	color: #4a4d55;
@@ -352,15 +361,15 @@
 	font-size: 15px;
 	font-weight: bold; 
 	position:relative; 
-	border-radius:7px;
+	border-radius:5px;
 	display: inline-block;
-	margin-top: 7rem;
+	margin-top: 5rem;
+	max-width: 100%;
 }
 .subconcard .view-more .arrow-right{
 	position: absolute;
 	top: 14px;
-	margin-left: 5px;
-	
+	margin-left: 5px;	
 }
 .dot-sub{
 	background-color: #34ce86;
@@ -372,64 +381,6 @@
 .fwbold {
 	font-weight: 700;
 }
-
-// .sortby-btn{
-// 	border: 2px solid #dbdae0;
-// 	padding-left: 10px;
-// 	padding-right: 80px;
-// 	border-radius: 5px;
-// 	background-color: white;
-// 	color: #72707d;
-// }
-.total-partnership{
-	// margin-top: 0.5rem;
-	margin-bottom: 0;
-	font-size: 14px;
-	font-weight: 500;
-}
-
-// MEDIA QUERY
-
-@media screen and (max-width: 992px){
-	// .subconcardtitle{
-	// 	font-size:20px ;
-	// }
-	
-	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-		font-size: 11px !important;
-	}
-}
-
-@media screen and (min-width: 992px){
-	// .statsDropdown {
-	// 	position: absolute;
-	// 	top: -50px;
-	// 	z-index: 99;
-	// 	// right: 10px;
-	// }
-
-	
-}
-@media screen and (max-width: 1199px){
-	.statsDropdown {
-		position: absolute;
-		top: -20px;
-	}
-
-}
-@media screen and (min-width: 1200px){
-	// .total-partnership{
-	// 	font-size: 9px !important;
-	// }
-	// .allRD .card-header .allRdTopLinks ul li a {
-	// 	padding: 20px 10px !important;
-	// }
-	.statsDropdown {
-		position: absolute;
-		top: -70px;
-	}
-}
-
 .monthly-report .sortby-btn {
 	padding: 1rem 10rem 1rem 1rem !important;
     width: 100% !important;
@@ -441,4 +392,137 @@
 .monthly-report .sortby-btn::after {
 	right: 0 !important;
     left: calc(100% - -65px) !important;
+}
+
+.media-avatar{
+	max-width: 100%;
+	margin: auto;
+}
+.total-partnership{
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 500;
+	margin: auto;
+}
+
+// MEDIA QUERY
+
+// @media screen and (max-width: 992px){
+// 	// .subconcardtitle{
+// 	// 	font-size:20px ;
+// 	// }
+	
+// 	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
+// 		font-size: 11px !important;
+// 	}
+// }
+
+// @media screen and (min-width: 992px){
+	// .statsDropdown {
+	// 	position: absolute;
+	// 	top: -50px;
+	// 	z-index: 99;
+	// 	// right: 10px;
+	// }
+// }
+// @media screen and (max-width: 1199px){
+// 	.statsDropdown {
+// 		position: absolute;
+// 		top: -20px;
+// 	}
+	// .subconcard .subconcardtitle{
+	// 	width: 100% !important;
+	// 	max-width: 180px !important;
+	// }
+// }
+// @media screen and (min-width: 1200px){
+	// .total-partnership{
+	// 	font-size: 9px !important;
+	// }
+// 	.allRD .card-header .allRdTopLinks ul li a {
+// 		padding: 20px 5px !important;
+// 	}
+// 	.statsDropdown {
+// 		position: absolute;
+// 		top: -70px;
+// 	}
+// }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+	.subconcard .view-more{
+		margin: 2rem 0 ;
+	}
+	.statsDropdown {
+		position: absolute;
+		top: -20px;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.subconcard .view-more{
+		margin: 2rem 0 ;
+	}
+	.statsDropdown {
+		position: absolute;
+		top: -20px;
+	}
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.subconcard .subconcardtitle{
+		width: 100% !important;
+		max-width: 250px !important;
+	}
+	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
+		font-size: 11px !important;
+	}
+	.subconcard .view-more{
+		margin: 2rem 0 ;
+	}
+	.statsDropdown {
+		position: absolute;
+		top: -20px;
+	}
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px){ 
+	.statsDropdown {
+		position: absolute;
+		top: -20px;
+	}
+	.subconcard .view-more{
+		padding: 9px 25px 9px 10px;
+	}
+	// .subconcard .view-more .arrow-right{
+	// 	position: absolute;
+	// 	top: 12px;	
+	// }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+		.total-partnership{
+		font-size: 12px !important;
+	}
+	.allRD .card-header .allRdTopLinks ul li a {
+		padding: 20px 5px !important;
+	}
+	.statsDropdown {
+		position: absolute;
+		top: -70px;
+	}
+	.subconcard .view-more{
+		margin: 2rem 0 ;
+		padding: 9px 16px 9px 10px;
+	}
+	.subconcard .view-more .arrow-right{
+		margin-left: 3px;	
+		font-size: 10px;
+	}
 }
