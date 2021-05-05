@@ -20,7 +20,7 @@ export default [
     id: 'manageBrands',
     title: 'Manage Brands',
     icon: <CheckSquare size={20} />,
-    navLink: '#'
+    navLink: '/dashboard/brands'
   },
   {
     id: 'payments',
