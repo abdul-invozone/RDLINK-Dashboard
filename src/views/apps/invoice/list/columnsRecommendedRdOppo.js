@@ -59,7 +59,7 @@ const renderClient = row => {
 }
 
 // ** Table columns
-export const columns2 = [
+export const columnsRecommendedRdOppo = [
   // {
   //   name: '#',
   //   minWidth: '107px',
@@ -89,30 +89,31 @@ export const columns2 = [
   //   }
   // },
   {
-    name: 'Brand name',
+    name: 'Event name',
     minWidth: '300px',
-    selector: 'client',
+    selector: 'eventName',
     sortable: true,
-    cell: row => {
-      const name = row.client ? row.client.name : 'John Doe',
-        email = row.client ? row.client.companyEmail : 'johnDoe@email.com'
-      return (
-        <div className='d-flex justify-content-left align-items-center'>
-          {renderClient(row)}
-          <div className='d-flex flex-column'>
-            <h6 className='user-name text-truncate mb-0'>{name}</h6>
-            {/* <small className='text-truncate text-muted mb-0'>{email}</small> */}
-          </div>
-        </div>
-      )
-    }
+    // cell: row => {
+    //   const name = row.client ? row.client.name : 'John Doe',
+    //     email = row.client ? row.client.companyEmail : 'johnDoe@email.com'
+    //   return (
+    //     <div className='d-flex justify-content-left align-items-center'>
+    //       {renderClient(row)}
+    //       <div className='d-flex flex-column'>
+    //         <h6 className='user-name text-truncate mb-0'>{name}</h6>
+    //         {/* <small className='text-truncate text-muted mb-0'>{email}</small> */}
+    //       </div>
+    //     </div>
+    //   )
+    // }
+    cell: row => row.client.eventName
   },
   {
-    name: 'registration Date',
-    selector: 'dueDate',
+    name: 'Event Date',
+    selector: 'eventDate',
     sortable: true,
     minWidth: '180px',
-    cell: row => row.dueDate
+    cell: row => row.eventDate
   },
   // {
   //   name: 'Total',
@@ -122,33 +123,33 @@ export const columns2 = [
   //   cell: row => <span>${row.total || 0}</span>
   // },
   {
-    name: 'Subscription Plan',
-    selector: 'subscriptionPlan',
+    name: 'Type of Partnership',
+    selector: 'typeOfPartnership',
     sortable: true,
     minWidth: '180px',
     className: 'text',
-    cell: row => <span>{row.client.subscriptionPlan || 0}</span>
+    cell: row => <span>{row.client.typeOfPartnership || 0}</span>
   },
   {
-    name: 'Partnerships',
-    selector: 'partnerships',
+    name: 'Location',
+    selector: 'location',
     sortable: true,
     minWidth: '130px',
-    cell: row => <span>{row.client.partnerships || 0}</span>
+    cell: row => <span>{row.client.location || 0}</span>
   },
   {
-    name: 'Monthly Logins',
-    selector: 'monthlyLogins',
+    name: 'Cost',
+    selector: 'cost',
     sortable: true,
     minWidth: '130px',
-    cell: row => <span>{row.client.monthlyLogins || 0}</span>
+    cell: row => <span>{row.cost || 0}</span>
   },
   {
-    name: 'Login Time p/m',
-    selector: 'loginTime',
+    name: 'Reach',
+    selector: 'reach',
     sortable: true,
     minWidth: '130px',
-    cell: row => <span>{row.client.loginTime || 0}</span>
+    cell: row => <span>{row.client.reach || 0}</span>
   },
   // {
   //   name: 'Balance',

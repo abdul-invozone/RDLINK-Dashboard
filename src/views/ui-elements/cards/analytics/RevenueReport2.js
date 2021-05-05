@@ -104,14 +104,15 @@ const RevenueReport2 = props => {
         dashArray: [0, 5],
         width: [2]
       },
-      colors: [props.primary, '#dcdae3'],
+      colors: [props.primary, '#7468f1'],
       tooltip: {
         enabled: false
       }
     }
+    
 
   return data !== null ? (
-    <Card className='card-revenue-budget'>
+    <Card className='card-revenue-budget pt-5'>
       <Row className='mx-0'>
         {/* <Col className='revenue-report-wrapper' md='8' xs='12'>
           <div className='d-sm-flex justify-content-between align-items-center mb-3'>
@@ -131,7 +132,7 @@ const RevenueReport2 = props => {
         </Col> */}
         <Col className='budget-wrapper' md='12' xs='12'>
           <UncontrolledButtonDropdown>
-            <DropdownToggle className='budget-dropdown' outline color='primary' size='sm' caret>
+            <DropdownToggle className='budget-dropdown' outline color='secondary' size='sm' caret>
               2020
             </DropdownToggle>
             <DropdownMenu>
@@ -148,7 +149,7 @@ const RevenueReport2 = props => {
             <span>{data.budget}</span>
           </div>
           <Chart id='budget-chart' type='line' height='80' options={budgetOptions} series={budgetSeries} />
-          <Button color='primary'>Increase Budget</Button>
+          <Button color='secondary'>Increase Budget</Button>
         </Col>
       </Row>
     </Card>

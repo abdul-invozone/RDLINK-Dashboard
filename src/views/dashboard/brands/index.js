@@ -1,6 +1,8 @@
 import { useContext } from 'react'
 import InvoiceList from '@src/views/apps/invoice/list'
-import InvoiceList2 from '@src/views/apps/invoice/list/index2'
+import InvoiceListRecommendedRds from '@src/views/apps/invoice/list/indexRecommendedRds'
+import InvoiceListRecommendedRdOppo from '@src/views/apps/invoice/list/indexRecommendedRdOppo'
+import InvoiceListMyPartnerships from '@src/views/apps/invoice/list/indexMyPartnerships'
 import InvoiceListNewRds from '@src/views/apps/invoice/list/indexNewRds'
 import { ThemeColors } from '@src/utility/context/ThemeColors'
 import RDStatsCard from '@src/views/ui-elements/cards/statistics/RDStatsCard'
@@ -9,7 +11,7 @@ import ChartjsDoughnutChart2 from '@src/views/charts/chart-js/ChartjsDoughnutCha
 import SubConversion from '@src/views/charts/chart-js/SubConversion'
 import NewRds from '@src/views/charts/chart-js/NewRds'
 import AreaChart from '@src/views/charts/recharts/AreaChart'
-import BarChartOld from '@src/views/charts/recharts/BarChartOld'
+import BarChartExpense from '@src/views/charts/recharts/BarChartExpense'
 import BarChart from '@src/views/charts/recharts/BarChart'
 import ApexRadiarChart2 from '@src/views/charts/apex/ApexDonutChart2'
 import RevenueReport2 from '@src/views/ui-elements/cards/analytics/RevenueReport2'
@@ -47,10 +49,37 @@ const BrandsDashboard = () => {
           <RDStatsCard cols={{ xl: '', sm: '6' }} />
         </Col>
         <Col lg='9' md='12'>
-        <BarChartOld primary={colors.primary.main} danger={colors.danger.main} />
+        <BarChartExpense primary={colors.primary.main} danger={colors.danger.main} />
         </Col>
         <Col lg='3' md='12'>
-          <RevenueReport2 primary={colors.primary.main} warning={colors.warning.main} />
+          <RevenueReport2 primary='#7468f1' warning={colors.warning.main} />
+        </Col>
+      </Row>
+      )
+    },
+    {
+      title: 'Recommended For You',
+      content: (
+        <>
+        <Row className='match-height mb-2'>
+        <Col xs='12'>
+          <InvoiceListRecommendedRds />
+        </Col>
+      </Row>
+      <Row className='match-height'>
+        <Col xs='12'>
+          <InvoiceListRecommendedRdOppo />
+        </Col>
+      </Row>
+      </>
+      )
+    },
+    {
+      title: 'My Partnerships',
+      content: (
+        <Row className='match-height mb-2'>
+        <Col xs='12'>
+          <InvoiceListMyPartnerships />
         </Col>
       </Row>
       )
@@ -60,7 +89,7 @@ const BrandsDashboard = () => {
 
   return (
     <div id='dashboard-brands'>
-      <Row className="mx-0 mb-2 align-items-center">
+      <Row className="mx-0 align-items-center">
         <Col sm="6">
           <span>Manitoba Milling Dashboard</span>
         </Col>
@@ -76,16 +105,6 @@ const BrandsDashboard = () => {
         </Col>
       </Row>
       <div><CollapseDefault></CollapseDefault></div>
-      <Row className='match-height'>
-        <Col xs='12'>
-          <InvoiceList />
-        </Col>
-      </Row>
-      <Row className='match-height'>
-        <Col xs='12'>
-          <InvoiceList2 />
-        </Col>
-      </Row>
     </div>
   )
 }
