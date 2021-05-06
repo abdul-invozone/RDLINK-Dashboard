@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 // ** Table Columns
-import { columns2 } from './columns2'
+import { columnsManageBrands } from './columnsManageBrands'
 
 // ** Third Party Components
 import ReactPaginate from 'react-paginate'
@@ -72,7 +72,7 @@ const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, han
   )
 }
 
-const InvoiceList2 = () => {
+const InvoiceListManageBrands = () => {
   const dummyData = {
     invoices: [
       {
@@ -717,7 +717,7 @@ const InvoiceList2 = () => {
             pagination
             paginationServer
             subHeader={true}
-            columns={columns2}
+            columns={columnsManageBrands}
             responsive={true}
             sortIcon={<ChevronDown />}
             className='react-dataTable'
@@ -743,4 +743,4 @@ const InvoiceList2 = () => {
   )
 }
 
-export default InvoiceList2
+export default InvoiceListManageBrands

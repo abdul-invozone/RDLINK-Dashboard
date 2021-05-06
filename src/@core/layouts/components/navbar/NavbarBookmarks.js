@@ -45,7 +45,7 @@ const NavbarBookmarks = props => {
           const IconTag = Icon[item.icon]
           return (
             <NavItem key={item.target} className='d-none d-lg-block'>
-              <NavLink tag={Link} to={item.link} id={item.target}>
+              <NavLink tag={Link} id={item.target}>
                 <IconTag className='ficon' />
                 <UncontrolledTooltip target={item.target}>{item.title}</UncontrolledTooltip>
               </NavLink>
