@@ -82,7 +82,7 @@ const UserDropdown = () => {
     <Avatar img={userAvatar} imgHeight='91' imgWidth='91' status='online' />
       </div>
       <div className="col">
-      <span className='user-name font-weight-medium text-white'>Jenna Gorham</span>
+      <Link to="/loginrd" className='user-name font-weight-medium text-white'>Jenna Gorham</Link>
       <ul>
         <li className="d-inline-block mr-1" style={{marginTop: '3px'}}>
           <NavLink to="#" className="text-white"><User size={18} /></NavLink>

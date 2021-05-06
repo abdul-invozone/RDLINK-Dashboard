@@ -2,7 +2,7 @@
 import main from './main'
 import more from './more'
 // import pages from './pages'
-// import forms from './forms'
+import forms from './forms'
 // import tables from './tables'
 // import others from './others'
 import dashboards from './dashboards'
