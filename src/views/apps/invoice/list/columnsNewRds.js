@@ -64,7 +64,7 @@ export const columnsNewRds = [
     name: 'Date',
     selector: 'dueDate',
     sortable: true,
-    minWidth: '80px',
+    minWidth: '130px',
     cell: row => row.dueDate
   },
   {

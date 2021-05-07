@@ -308,7 +308,6 @@
     margin: 10px 10px 0 10px;
     color: #000;
     font-size: 18px;
-	
 }
 
 .allRD .allRdBrandsStats ul li span {
@@ -404,50 +403,89 @@
 	font-weight: 500;
 	margin: auto;
 }
+// DASHBOARD ADMIN SECTION END 
 
-// MEDIA QUERY
+// DASHBOARD BRANDS SECTION START 
 
-// @media screen and (max-width: 992px){
-// 	// .subconcardtitle{
-// 	// 	font-size:20px ;
-// 	// }
-	
-// 	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-// 		font-size: 11px !important;
-// 	}
-// }
+.monthly-report .sortby-btn::after {
+	right: 0 !important;
+    left: calc(100% - -65px) !important;
+}
 
-// @media screen and (min-width: 992px){
-	// .statsDropdown {
-	// 	position: absolute;
-	// 	top: -50px;
-	// 	z-index: 99;
-	// 	// right: 10px;
-	// }
-// }
-// @media screen and (max-width: 1199px){
-// 	.statsDropdown {
-// 		position: absolute;
-// 		top: -20px;
-// 	}
-	// .subconcard .subconcardtitle{
-	// 	width: 100% !important;
-	// 	max-width: 180px !important;
-	// }
-// }
-// @media screen and (min-width: 1200px){
-	// .total-partnership{
-	// 	font-size: 9px !important;
-	// }
-// 	.allRD .card-header .allRdTopLinks ul li a {
-// 		padding: 20px 5px !important;
-// 	}
-// 	.statsDropdown {
-// 		position: absolute;
-// 		top: -70px;
-// 	}
-// }
+#dashboard-brands .card {
+	border-radius: 20px;
+}
+#dashboard-brands .Milling {
+	color: #828594;
+}
+#dashboard-brands .breadcrumb-home {
+	color: #7467f1;
+}
 
+.app-collapse.card {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.collapse-title.card-title {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.app-collapse.card .card-header svg {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+[class*='collapse-'] .card:not(:last-of-type) {
+	border-bottom: none;
+}
+
+.rd-list-wrapper {
+	background: #fff;
+    border-radius: 20px;
+    padding: 35px 0 5px;
+}
+
+.rd-list-wrapper .card {
+	border-radius: 0;
+	padding: 0;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableHead .rdt_TableHeadRow {
+	height: 50px;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableHead .rdt_TableRow {
+	min-height: 72px;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell {
+	height: 72px;
+}
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell .partnershiptype {
+	justify-content: center;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
+	font-size: 14px;
+}
+.statistics-sub-text .my-rds{
+	// font-size: 11px !important;
+}
+
+// DASHBOARD BRANDS SECTION END 
+
+
+
+
+
+
+
+
+
+
+// RESPONSIVE
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { 
@@ -458,6 +496,7 @@
 		position: absolute;
 		top: -20px;
 	}
+	// DASHBOARD BRANDS SECTION START
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -469,6 +508,8 @@
 		position: absolute;
 		top: -20px;
 	}
+	// DASHBOARD BRANDS SECTION START
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -487,6 +528,12 @@
 		position: absolute;
 		top: -20px;
 	}
+	// DASHBOARD BRANDS SECTION START
+	.rdt_Pagination {
+		.ncoBp {
+			min-width: 95px !important;
+		}
+	  }
  }
 
 // Large devices (desktops, 992px and up)
@@ -498,10 +545,9 @@
 	.subconcard .view-more{
 		padding: 9px 25px 9px 10px;
 	}
-	// .subconcard .view-more .arrow-right{
-	// 	position: absolute;
-	// 	top: 12px;	
-	// }
+
+	// DASHBOARD BRANDS SECTION START
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -525,49 +571,27 @@
 		margin-left: 3px;	
 		font-size: 10px;
 	}
-}
-.monthly-report .sortby-btn::after {
-	right: 0 !important;
-    left: calc(100% - -65px) !important;
+	// DASHBOARD BRANDS SECTION START
+
+	.card-statistics {
+		.statistics-body {
+			.avatar {
+				.avatar-content {
+					width: 45px !important;
+					height: 45px !important;
+				}
+			}
+		}
+	}
+	.statistics-sub-text {
+		.my-rds{
+		// font-size: 10px !important;
+	}
 }
 
-#dashboard-brands .card {
-	border-radius: 20px;
 }
-
-.app-collapse.card {
-	background-color: transparent;
-	box-shadow: none;
-}
-.collapse-title.card-title {
-	font-size: 26px;
-	font-weight: 600;
-}
-.app-collapse.card .card-header svg {
-	width: 30px !important;
-	height: 30px !important;
-}
-[class*='collapse-'] .card:not(:last-of-type) {
-	border-bottom: none;
-}
-.rd-list-wrapper {
-	background: #fff;
-    border-radius: 20px;
-    padding: 35px 0 5px;
-}
-.rd-list-wrapper .card {
-	border-radius: 0;
-	padding: 0;
-}
-.rd-list-wrapper .react-dataTable .rdt_TableHead .rdt_TableHeadRow {
-	height: 50px;
-}
-.rd-list-wrapper .react-dataTable .rdt_TableHead .rdt_TableRow {
-	min-height: 72px;
-}
-.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell {
-	height: 72px;
-}
-.rd-list-wrapper .react-dataTable .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
-	font-size: 14px;
-}
+// @media (min-width: 1200px) and (max-width: 1300px) { 
+// 	.statistics-sub-text .my-rds{
+// 		// font-size: 10px !important;
+// 	}
+// }

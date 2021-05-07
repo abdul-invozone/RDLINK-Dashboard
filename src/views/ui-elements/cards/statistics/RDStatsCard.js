@@ -50,9 +50,9 @@ const RDStatsCard = ({ cols }) => {
         >
           <Media>
             <Avatar color={item.color} icon={item.icon} className='mr-2' />
-            <Media className='my-auto' body>
-              <h4 className='font-weight-bolder mb-0' style={{fontSize:'30px'}}>{item.title}</h4>
-              <CardText className='total-partnership'>{item.subtitle}</CardText>
+            <Media className='my-auto statistics-sub-text' body>
+              <h4 className='font-weight-bolder mb-0' style={{fontSize:'28px'}}>{item.title}</h4>
+              <CardText className='total-partnership my-rds'>{item.subtitle}</CardText>
             </Media>
           </Media>
         </Col>
