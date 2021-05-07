@@ -51,7 +51,7 @@ const ChartjsRadarChart2 = ({ tooltipShadow, successColorShade, warningLightColo
   return (
     <Card>
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
-        <p className="subconcardtitle subconcardtitle-gray">All Brands</p>
+        <h4 className="subconcardtitle subconcardtitle-gray">All Brands</h4>
         <div className="allRdTopLinks">
           <ul className="p-0 m-0">
             <li className="allRdactivelinks"><a href="#" className={isActive ? 'active' : null} onClick={toggleClass}>Week</a></li>

@@ -160,7 +160,7 @@ const InvoiceList = () => {
         previousClassName={'page-item prev'}
         previousLinkClassName={'page-link'}
         pageLinkClassName={'page-link'}
-        containerClassName={'pagination react-paginate justify-content-end p-1'}
+        containerClassName={'pagination react-paginate justify-content-end p-1 '}
       />
     )
   }
@@ -213,7 +213,7 @@ const InvoiceList = () => {
               />
             }
           />
-        <p className="showEntries">Shwoing 1 to {rowsPerPage} of {store.total} entries</p>
+        <p className="showEntries" style={{color:'#c1c0c5', fontWeight:'500'}}>Showing 1 to {rowsPerPage} of {store.total} entries</p>
         </div>
       </Card>
     </div>

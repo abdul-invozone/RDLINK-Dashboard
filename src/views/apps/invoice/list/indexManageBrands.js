@@ -736,7 +736,7 @@ const InvoiceListManageBrands = () => {
               />
             }
           />
-        <p className="showEntries">Shwoing 1 to {rowsPerPage} of {dummyData.total} entries</p>
+        <p className="showEntries"style={{color:'#c1c0c5', fontWeight:'500'}} >Showing 1 to {rowsPerPage} of {dummyData.total} entries</p>
         </div>
       </Card>
     </div>

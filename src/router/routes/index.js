@@ -10,7 +10,7 @@ import ExtensionsRoutes from './Extensions'
 import PageLayoutsRoutes from './PageLayouts'
 
 // ** Document title
-const TemplateTitle = '%s - Vuexy React Admin Template'
+const TemplateTitle = '%s - RD Link'
 
 // ** Default Route
 const DefaultRoute = '/dashboard/analytics'
