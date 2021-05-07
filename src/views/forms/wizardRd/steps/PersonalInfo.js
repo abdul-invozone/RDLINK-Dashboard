@@ -3,7 +3,7 @@ import Select, { components } from 'react-select'
 import { ArrowLeft, ArrowRight } from 'react-feather'
 import { selectThemeColors } from '@utils'
 import makeAnimated from 'react-select/animated'
-import { Label, FormGroup, Row, Col, Form, Input, Button } from 'reactstrap'
+import { Label, FormGroup, Row, Col, Form, Input, Button, CustomInput } from 'reactstrap'
 
 import '@styles/react/libs/react-select/_react-select.scss'
 
@@ -28,22 +28,32 @@ const PersonalInfo = ({ stepper, type }) => {
       <Form onSubmit={e => e.preventDefault()}>
         <Row>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`company-${type}`}>
-              Company:
+            <Label className='form-label' for={`full-name-${type}`}>
+              Full Name:
             </Label>
-            <Input type='text' name='company' id={`company-${type}`} placeholder='Company' />
+            <Input type='text' name='full-name' id={`full-name-${type}`} placeholder='Full Name' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`company-name-${type}`}>
-              Contact Name:
+            <Label className='form-label' for={`cdr-number-${type}`}>
+              CDR Registration Number:
             </Label>
-            <Input type='text' name='contactName' id={`contact-name-${type}`} placeholder='Contact Name' />
+            <Input type='number' name='cdrRegistrationNumber' id={`cdr-number-${type}`} placeholder='Contact Name' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`website-${type}`}>
-              Website:
+            <Label className='form-label' for={`cdr-number-${type}`}>
+            Are you a RD or RD2Be?
             </Label>
-            <Input type='text' name='website' id={`website-${type}`} placeholder='Website' />
+            <div className='demo-inline-spacing'>
+          <CustomInput type='radio' id='CustomRadioRd' name='customRadio' inline label='Rd' defaultChecked />
+          <CustomInput type='radio' id='CustomRadioRd2Be' name='customRadio' inline label='Rd2Be' />
+          <CustomInput type='radio' id='CustomRadioOther' name='customRadio' inline label='Other' />
+        </div>
+          </FormGroup>
+          <FormGroup tag={Col} md='12'>
+            <Label class="waves-effect mr-75 btn btn-primary btn-sm">
+              Upload License Certificate
+              <Input hidden="" accept="image/*" type="file" class="form-control-file mt-1" />
+              </Label>
           </FormGroup>
           <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`contact-number-${type}`}>
@@ -52,46 +62,34 @@ const PersonalInfo = ({ stepper, type }) => {
             <Input type='number' name='contactNumber' id={`contact-number-${type}`} placeholder='Contact Number' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`linkedin-profile-${type}`}>
-              Linkedin Profile:
+            <Label className='form-label' for={`website-${type}`}>
+              Website:
             </Label>
-            <Input type='text' name='linkedinProfile' id={`linkedin-profile-${type}`} placeholder='Linkedin Profile' />
+            <Input type='text' name='website' id={`website-${type}`} placeholder='Website' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`facebook-link-${type}`}>
-              Facebook Link:
+            <Label className='form-label' for={`zip-code-${type}`}>
+              Zip Code:
             </Label>
-            <Input type='text' name='facebookLink' id={`facebook-link-${type}`} placeholder='Facebook Link' />
+            <Input type='number' name='zipCode' id={`zip-code-${type}`} placeholder='Zip Code' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`instagram-link-${type}`}>
-              Instagram Link:
+            <Label className='form-label' for={`city-${type}`}>
+              City:
             </Label>
-            <Input type='text' name='instagramLink' id={`instagram-link-${type}`} placeholder='Instagram Link' />
+            <Input type='text' name='city' id={`city-${type}`} placeholder='City' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-          <Label>About company & products</Label>
-          <Input type='textarea' name='aboutCompanyProducts' id='about-company-products' rows='3' placeholder='About company & products' />
+            <Label className='form-label' for={`state-${type}`}>
+              State:
+            </Label>
+            <Input type='text' name='state' id={`state-${type}`} placeholder='State' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-          <Label>Choose Product Attributes</Label>
-            <Select
-              isClearable={false}
-              theme={selectThemeColors}
-              closeMenuOnSelect={false}
-              components={animatedComponents}
-              defaultValue={[colorOptions[4], colorOptions[5]]}
-              isMulti
-              options={colorOptions}
-              className='react-select'
-              classNamePrefix='select'
-            />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label class="waves-effect mr-75 btn btn-primary btn-sm">
-              Company Logo
-              <Input hidden="" accept="image/*" type="file" class="form-control-file mt-1" />
-              </Label>
+            <Label className='form-label' for={`country-${type}`}>
+              Country:
+            </Label>
+            <Input type='text' name='country' id={`country-${type}`} placeholder='Country' />
           </FormGroup>
         </Row>
         <div className='d-flex justify-content-between'>

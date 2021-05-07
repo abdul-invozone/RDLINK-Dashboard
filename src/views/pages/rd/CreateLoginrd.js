@@ -34,7 +34,7 @@ const Createloginrd = () => {
             <Link to='/registerbrandrd'>Brand</Link>
               </li>
             <li style={{textDecoration: 'underline'}}>
-            <Link to='/'>Registered Dietation</Link>
+            <Link to='/registerrd'>Registered Dietation</Link>
               </li>
           </ul>
           </div>

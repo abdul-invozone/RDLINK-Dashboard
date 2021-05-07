@@ -188,6 +188,14 @@ const PagesRoutes = [
     meta: {
       publicRoute: true
     }
+  },
+  {
+    path: '/registerrd',
+    component: lazy(() => import('../../views/pages/rd/RegisterRd')),
+    layout: 'BlankLayout',
+    meta: {
+      publicRoute: true
+    }
   }
 ]
 
