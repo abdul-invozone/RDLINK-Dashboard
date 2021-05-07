@@ -177,227 +177,284 @@
 		}
 	}
 }
-// .rdt_Table .rdt_TableCol{
-// 	padding-right: 5px !important;
-// 	padding-left: 5px !important;
-// 	// margin-right: 0.005rem !important;
-// }
 
-
-.invoice-list-wrapper .invoice-list-dataTable .rdt_TableCol:last-child{
-	justify-content: center;
-}	
-.invoice-list-wrapper .rdt_TableBody .rdt_TableRow .rdt_TableCell{
-	font-weight: 500;
-	color: #716f7b;
-}
-.invoice-list-wrapper .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-	font-size: 10px;
-	color: #5a5571;
-	font-weight: 500;
-	justify-content: center;
-}
-.invoice-list-wrapper .rdt_TableHeadRow .rdt_TableCol #column-client{
-	margin-left: 20px;
-}
-
-.dot {
-	width: 11px;
-    height: 11px;
-	border-radius: 50%;
-}
-.dot-dark {
-	background-color: #34ce86;
-}
-.dot-red {
-	background-color: #6165eb;
-}
-.dot-green {
-	background-color: #ff8f0f;
-}
-.dot-navy{
-	background-color: #25428e;
-}
-.dot-maroon{
-	background-color: #e83723;
-}
-.dot-sky{
-	background-color: #28b7d7;
-}
-
-// .allRD .card-body {
-// 	position: relative;
-// }
-.allRD .card-body .totalRD {
-	text-align: center;
-    font-size: 30px;
-    color: #000;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-	transform: translateY(-30%);
-    left: 0;
-    right: 0;
-}
-.allRD .card-body .totalRD.totalRDBrands {
-	color: #fff;
-	top: calc(100% - 50px);
-	font-size: 24px;
-	font-weight: 600;
-}
-.allRD .card-body .totalRD p {
-	margin: 0;
-	line-height: 0.1em;
-}
-.allRD .card-body .totalRD span {
-	font-size: 12px;
-}
-.allRD .card-header {
-	border-bottom: 1px solid #f4f5f8;
-	padding: 1.3rem;
-	margin-bottom: 25px;
-}
-.allRD .card-header .allRdTopLinks ul li a {
-	padding: 20px 10px;
-	border-bottom: 1px solid transparent;
-	color: #8488ad;
-	font-size: 12px;
-}
+.main-menu.menu-light {
+	background: #1b2033 !important;
   
-.allRD .card-header .allRdTopLinks ul li a:hover {
-	border-bottom: 1px solid #556fe6;
-	color: #556fe6;
+	.navigation {
+	  background: #1b2033 !important;
+  
+	  > li {
+		&.active > a {
+		  box-shadow: none;
+		}
+  
+		&.open:not(.menu-item-closing) > a, &.sidebar-group-active > a {
+		  background: none;
+		}
+	  }
+	}
   }
   
-  .allRD .card-header .allRdTopLinks ul li a.active {
-	border-bottom: 1px solid #556fe6;
-	color: #556fe6;
-  }
- .allRdactivelinks{
-	  display: inline-block;
+  // .rdt_Table .rdt_TableCol{
+  // 	padding-right: 5px !important;
+  // 	padding-left: 5px !important;
+  // 	// margin-right: 0.005rem !important;
+  // }
+  
+  .invoice-list-wrapper {
+	.invoice-list-dataTable .rdt_TableCol:last-child {
+	  justify-content: center;
+	}
+  
+	.rdt_TableBody .rdt_TableRow .rdt_TableCell {
 	  font-weight: 500;
+	  color: #716f7b;
+	}
+  
+	.rdt_TableHeadRow .rdt_TableCol {
+	  .rdt_TableCol_Sortable {
+		font-size: 10px;
+		color: #5a5571;
+		font-weight: 500;
+		justify-content: center;
+	  }
+  
+	  #column-client {
+		margin-left: 20px;
+	  }
+	}
   }
-
-  .allRD .card-footer {
-	border-top: none;
-    text-align: center;
-    padding: 0 0 30px;
+  
+  .dot {
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
   }
-.allRD .card-footer .btn {
-	background-color: #edf2f7 !important;
-    color: #bec5d4 !important;
-    font-weight: bold;
-    font-size: 16px;
-    width: 103px;
-    min-height: 37px; 
-}
-.allRD .card-footer .btn.btn-active {
-	background-color: #142e70 !important;
-    color: #fff !important;
-	position: relative;
-	right: -2px;
-}
-
-.allRD .allRdBrandsStats {
-	position: relative;
-	top: -40px;
-}
-
-.allRD .allRdBrandsStats ul li {
-	font-weight: 700;
-    margin: 10px 10px 0 10px;
-    color: #000;
-    font-size: 18px;
-}
-
-.allRD .allRdBrandsStats ul li span {
-    font-weight: 400;
-    display: inline-block;
-    margin: 0 5px;
-    font-size: 12px;
-    color: #5d5970;
-}
-.subconcardtitle{
-	color: #5167e1 ;
-	font-weight: bolder; 
-	font-size:22px !important;
-	margin-bottom: 0 !important;
-}
-.subconcardtitle-gray {
-	color: #5e5973;
-}
-.subconcard .subconcardtitle{
-	width: 100% !important;
-    max-width: 210px !important;
-}
-.subconcard .paid h5{
-	color: #4a4d55;
-	font-size: 14px;
-	font-weight: bold;
-}
-.subconcard .paid p{
-	color: #b2b3b5;
-	font-weight: bold;
-	font-size: 14px;
-}
-.subconcard .previous-period{
-	margin-left: 5px;
-}
-.subconcard .previous-period .previous-period-text{
-	font-size: 15px;
-	font-weight:600;
-	color: #616166;
-	margin-left: 5px;
-}
-.subconcard .previous-period .arrow-up{
-	color: #33cd85;
-	margin-bottom: 5px !important;
-}
-.subconcard .view-more{
-	padding: 9px 28px 9px 15px;
-	background-color: #5167e1;
-	color: white;
-	font-size: 15px;
-	font-weight: bold; 
-	position:relative; 
-	border-radius:5px;
-	display: inline-block;
-	margin-top: 5rem;
-	max-width: 100%;
-}
-.subconcard .view-more .arrow-right{
-	position: absolute;
-	top: 14px;
-	margin-left: 5px;	
-}
-.dot-sub{
+  
+  .dot-dark {
 	background-color: #34ce86;
-}
-.dot-trial{
+  }
+  
+  .dot-red {
+	background-color: #6165eb;
+  }
+  
+  .dot-green {
+	background-color: #ff8f0f;
+  }
+  
+  .dot-navy {
+	background-color: #25428e;
+  }
+  
+  .dot-maroon {
+	background-color: #e83723;
+  }
+  
+  .dot-sky {
+	background-color: #28b7d7;
+  }
+  
+  // .allRD .card-body {
+  // 	position: relative;
+  // }
+  
+  .allRD {
+	.card-body .totalRD {
+	  text-align: center;
+	  font-size: 30px;
+	  color: #000;
+	  font-weight: bold;
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-30%);
+	  left: 0;
+	  right: 0;
+  
+	  &.totalRDBrands {
+		color: #fff;
+		top: calc(100% - 50px);
+		font-size: 24px;
+		font-weight: 600;
+	  }
+  
+	  p {
+		margin: 0;
+		line-height: 0.1em;
+	  }
+  
+	  span {
+		font-size: 12px;
+	  }
+	}
+  
+	.card-header {
+	  border-bottom: 1px solid #f4f5f8;
+	  padding: 1.3rem;
+	  margin-bottom: 25px;
+  
+	  .allRdTopLinks ul li a {
+		padding: 20px 10px;
+		border-bottom: 1px solid transparent;
+		color: #8488ad;
+		font-size: 12px;
+  
+		&:hover, &.active {
+		  border-bottom: 1px solid #556fe6;
+		  color: #556fe6;
+		}
+	  }
+	}
+  }
+  
+  .allRdactivelinks {
+	display: inline-block;
+	font-weight: 500;
+  }
+  
+  .allRD {
+	.card-footer {
+	  border-top: none;
+	  text-align: center;
+	  padding: 0 0 30px;
+  
+	  .btn {
+		background-color: #edf2f7 !important;
+		color: #bec5d4 !important;
+		font-weight: bold;
+		font-size: 16px;
+		width: 103px;
+		min-height: 37px;
+  
+		&.btn-active {
+		  background-color: #142e70 !important;
+		  color: #fff !important;
+		  position: relative;
+		  right: -2px;
+		}
+	  }
+	}
+  
+	.allRdBrandsStats {
+	  position: relative;
+	  top: -40px;
+  
+	  ul li {
+		font-weight: 700;
+		margin: 10px 10px 0 10px;
+		color: #000;
+		font-size: 18px;
+  
+		span {
+		  font-weight: 400;
+		  display: inline-block;
+		  margin: 0 5px;
+		  font-size: 12px;
+		  color: #5d5970;
+		}
+	  }
+	}
+  }
+  
+  .subconcardtitle {
+	color: #5167e1;
+	font-weight: bolder;
+	font-size: 22px !important;
+	margin-bottom: 0 !important;
+  }
+  
+  .subconcardtitle-gray {
+	color: #5e5973;
+  }
+  
+  .subconcard {
+	.subconcardtitle {
+	  width: 100% !important;
+	  max-width: 210px !important;
+	}
+  
+	.paid {
+	  h5 {
+		color: #4a4d55;
+		font-size: 14px;
+		font-weight: bold;
+	  }
+  
+	  p {
+		color: #b2b3b5;
+		font-weight: bold;
+		font-size: 14px;
+	  }
+	}
+  
+	.previous-period {
+	  margin-left: 5px;
+  
+	  .previous-period-text {
+		font-size: 15px;
+		font-weight: 600;
+		color: #616166;
+		margin-left: 5px;
+	  }
+  
+	  .arrow-up {
+		color: #33cd85;
+		margin-bottom: 5px !important;
+	  }
+	}
+  
+	.view-more {
+	  padding: 9px 28px 9px 15px;
+	  background-color: #5167e1;
+	  color: white;
+	  font-size: 15px;
+	  font-weight: bold;
+	  position: relative;
+	  border-radius: 5px;
+	  display: inline-block;
+	  margin-top: 5rem;
+	  max-width: 100%;
+  
+	  .arrow-right {
+		position: absolute;
+		top: 14px;
+		margin-left: 5px;
+	  }
+	}
+  }
+  
+  .dot-sub {
+	background-color: #34ce86;
+  }
+  
+  .dot-trial {
 	background-color: #5167e1;
-}
-
-.fwbold {
+  }
+  
+  .fwbold {
 	font-weight: 700;
-}
-.monthly-report .sortby-btn {
+  }
+  
+  .monthly-report .sortby-btn {
 	padding: 1rem 10rem 1rem 1rem !important;
-    width: 100% !important;
-    max-width: 215px !important;
-    border: 1px solid #dbd8e0 !important;
-    border-radius: 7px !important;
-}
-
-.monthly-report .sortby-btn::after {
-	right: 0 !important;
-    left: calc(100% - -65px) !important;
-}
-
-.media-avatar{
+	width: 100% !important;
+	max-width: 215px !important;
+	border: 1px solid #dbd8e0 !important;
+	border-radius: 7px !important;
+  
+	&::after {
+	  right: 0 !important;
+	  left: calc(100% - -65px) !important;
+	}
+  }
+  
+  .media-avatar {
 	max-width: 100%;
 	margin: auto;
-}
-.total-partnership{
+  }
+  
+  .total-partnership {
 	margin-bottom: 0;
 	font-size: 14px;
 	font-weight: 500;
@@ -491,42 +548,93 @@
 @media (max-width: 575.98px) { 
 	.subconcard .view-more{
 		margin: 2rem 0 ;
+  }
+  
+  // MEDIA QUERY
+  
+  // @media screen and (max-width: 992px){
+  // 	// .subconcardtitle{
+  // 	// 	font-size:20px ;
+  // 	// }
+  
+  // 	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
+  // 		font-size: 11px !important;
+  // 	}
+  // }
+  
+  // @media screen and (min-width: 992px){
+  // .statsDropdown {
+  // 	position: absolute;
+  // 	top: -50px;
+  // 	z-index: 99;
+  // 	// right: 10px;
+  // }
+  // }
+  // @media screen and (max-width: 1199px){
+  // 	.statsDropdown {
+  // 		position: absolute;
+  // 		top: -20px;
+  // 	}
+  // .subconcard .subconcardtitle{
+  // 	width: 100% !important;
+  // 	max-width: 180px !important;
+  // }
+  // }
+  // @media screen and (min-width: 1200px){
+  // .total-partnership{
+  // 	font-size: 9px !important;
+  // }
+  // 	.allRD .card-header .allRdTopLinks ul li a {
+  // 		padding: 20px 5px !important;
+  // 	}
+  // 	.statsDropdown {
+  // 		position: absolute;
+  // 		top: -70px;
+  // 	}
+  // }
+  
+  // Extra small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+	.subconcard .view-more {
+	  margin: 2rem 0;
 	}
+  
 	.statsDropdown {
-		position: absolute;
-		top: -20px;
+	  position: absolute;
+	  top: -20px;
 	}
-	// DASHBOARD BRANDS SECTION START
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {
-	.subconcard .view-more{
-		margin: 2rem 0 ;
+  }
+  
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) and (max-width: 767.98px) {
+	.subconcard .view-more {
+	  margin: 2rem 0;
 	}
+  
 	.statsDropdown {
-		position: absolute;
-		top: -20px;
+	  position: absolute;
+	  top: -20px;
 	}
-	// DASHBOARD BRANDS SECTION START
-
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { 
-	.subconcard .subconcardtitle{
-		width: 100% !important;
-		max-width: 250px !important;
+  }
+  
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) and (max-width: 991.98px) {
+	.subconcard .subconcardtitle {
+	  width: 100% !important;
+	  max-width: 250px !important;
 	}
-	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-		font-size: 11px !important;
+  
+	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
+	  font-size: 11px !important;
 	}
-	.subconcard .view-more{
-		margin: 2rem 0 ;
+  
+	.subconcard .view-more {
+	  margin: 2rem 0;
 	}
+  
 	.statsDropdown {
-		position: absolute;
-		top: -20px;
+	  position: absolute;
+	  top: -20px;
 	}
 	// DASHBOARD BRANDS SECTION START
 	.rdt_Pagination {
@@ -538,38 +646,48 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px){ 
+  }
+  
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) and (max-width: 1199.98px) {
 	.statsDropdown {
-		position: absolute;
-		top: -20px;
+	  position: absolute;
+	  top: -20px;
 	}
-	.subconcard .view-more{
-		padding: 9px 25px 9px 10px;
+  
+	.subconcard .view-more {
+	  padding: 9px 25px 9px 10px;
 	}
-
-	// DASHBOARD BRANDS SECTION START
-
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
-		.total-partnership{
-		font-size: 12px !important;
+  
+	// .subconcard .view-more .arrow-right{
+	// 	position: absolute;
+	// 	top: 12px;	
+	// }
+  }
+  
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+	.total-partnership {
+	  font-size: 12px !important;
 	}
+  
 	.allRD .card-header .allRdTopLinks ul li a {
-		padding: 20px 5px !important;
+	  padding: 20px 5px !important;
 	}
+  
 	.statsDropdown {
-		position: absolute;
-		top: -70px;
+	  position: absolute;
+	  top: -70px;
 	}
-	.subconcard .view-more{
-		margin: 2rem 0 ;
-		padding: 9px 16px 9px 10px;
-	}
-	.subconcard .view-more .arrow-right{
-		margin-left: 3px;	
+  
+	.subconcard .view-more {
+	  margin: 2rem 0;
+	  padding: 9px 16px 9px 10px;
+  
+	  .arrow-right {
+		margin-left: 3px;
 		font-size: 10px;
+	  }
 	}
 	// DASHBOARD BRANDS SECTION START
 
@@ -595,3 +713,63 @@
 // 		// font-size: 10px !important;
 // 	}
 // }
+  }
+  
+  .monthly-report .sortby-btn::after {
+	right: 0 !important;
+	left: calc(100% - -65px) !important;
+  }
+  
+  #dashboard-brands .card {
+	border-radius: 20px;
+  }
+  
+  .app-collapse.card {
+	background-color: transparent;
+	box-shadow: none;
+  }
+  
+  .collapse-title.card-title {
+	font-size: 26px;
+	font-weight: 600;
+  }
+  
+  .app-collapse.card .card-header svg {
+	width: 30px !important;
+	height: 30px !important;
+  }
+  
+  [class*='collapse-'] .card:not(:last-of-type) {
+	border-bottom: none;
+  }
+  
+  .rd-list-wrapper {
+	background: #fff;
+	border-radius: 20px;
+	padding: 35px 0 5px;
+  
+	.card {
+	  border-radius: 0;
+	  padding: 0;
+	}
+  
+	.react-dataTable {
+	  .rdt_TableHead {
+		.rdt_TableHeadRow {
+		  height: 50px;
+		}
+  
+		.rdt_TableRow {
+		  min-height: 72px;
+		}
+	  }
+  
+	  .rdt_TableBody .rdt_TableRow .rdt_TableCell {
+		height: 72px;
+	  }
+  
+	  .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
+		font-size: 14px;
+	  }
+	}
+  }

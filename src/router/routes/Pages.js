@@ -164,6 +164,38 @@ const PagesRoutes = [
     meta: {
       publicRoute: true
     }
+  },
+  {
+    path: '/loginrd',
+    component: lazy(() => import('../../views/pages/rd/Loginrd')),
+    layout: 'BlankLayout',
+    meta: {
+      publicRoute: true
+    }
+  },
+  {
+    path: '/createloginrd',
+    component: lazy(() => import('../../views/pages/rd/CreateLoginrd')),
+    layout: 'BlankLayout',
+    meta: {
+      publicRoute: true
+    }
+  },
+  {
+    path: '/registerbrandrd',
+    component: lazy(() => import('../../views/pages/rd/RegisterBrandRd')),
+    layout: 'BlankLayout',
+    meta: {
+      publicRoute: true
+    }
+  },
+  {
+    path: '/registerrd',
+    component: lazy(() => import('../../views/pages/rd/RegisterRd')),
+    layout: 'BlankLayout',
+    meta: {
+      publicRoute: true
+    }
   }
 ]
 
