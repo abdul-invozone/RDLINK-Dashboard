@@ -125,9 +125,9 @@ const SimpleBarChartExpense = () => {
     <Card>
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
         <CardTitle tag='h4'>Expense Report</CardTitle>
-        <div className='d-flex align-items-center'>
+        <div className='d-flex align-items-center expense-report'>
         <UncontrolledButtonDropdown>
-        <DropdownToggle color='flat-primary' caret>
+        <DropdownToggle color='flat-primary' className="expense-2021" caret>
           2021
         </DropdownToggle>
         <DropdownMenu>
@@ -137,7 +137,7 @@ const SimpleBarChartExpense = () => {
         </DropdownMenu>
       </UncontrolledButtonDropdown>
         <UncontrolledButtonDropdown>
-        <DropdownToggle color='flat-primary' caret>
+        <DropdownToggle color='flat-primary' className="expense-2021" caret>
           Month
         </DropdownToggle>
         <DropdownMenu>
@@ -156,7 +156,7 @@ const SimpleBarChartExpense = () => {
             <span className='align-middle mr-75'>Monthly Budget</span>
           </div>
           <div className='mr-1'>
-            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#9f87ff' }}></span>
+            <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f8d3ff' }}></span>
             <span className='align-middle mr-75'>Monthly Spending</span>
           </div>
         </div>

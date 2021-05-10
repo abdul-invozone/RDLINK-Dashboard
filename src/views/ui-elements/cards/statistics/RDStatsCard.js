@@ -66,8 +66,8 @@ const RDStatsCard = ({ cols }) => {
         <CardTitle tag='h4'>Statistics</CardTitle>
         <CardText className='card-text font-small-2 mr-25 mb-0'>Updated 1 month ago</CardText>
       </CardHeader> */}
-      <CardBody className='statistics-body'>
-      <h4 style={{marginBottom: '4rem', fontSize: '26px'}}>Statisticts</h4>
+      <CardBody className='statistics-body stat-brands'>
+      <h4 style={{marginBottom: '2rem', fontSize: '26px'}}>Statisticts</h4>
         <Row>{renderData()}</Row>
       </CardBody>
     </Card>

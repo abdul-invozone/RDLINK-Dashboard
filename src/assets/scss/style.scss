@@ -527,9 +527,14 @@
 .rd-list-wrapper .react-dataTable .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
 	font-size: 14px;
 }
-.statistics-sub-text .my-rds{
-	// font-size: 11px !important;
+.expense-report .expense-2021{
+	color: #404447;
 }
+	// Recommended RD Opportunities & MY Partnerships (3rd child)
+	.recommended-rd .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+	.my-partnerships .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3) {
+		justify-content: center;
+	}
 
 // DASHBOARD BRANDS SECTION END 
 
@@ -543,55 +548,6 @@
 
 
 // RESPONSIVE
-
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { 
-	.subconcard .view-more{
-		margin: 2rem 0 ;
-  }
-  
-  // MEDIA QUERY
-  
-  // @media screen and (max-width: 992px){
-  // 	// .subconcardtitle{
-  // 	// 	font-size:20px ;
-  // 	// }
-  
-  // 	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-  // 		font-size: 11px !important;
-  // 	}
-  // }
-  
-  // @media screen and (min-width: 992px){
-  // .statsDropdown {
-  // 	position: absolute;
-  // 	top: -50px;
-  // 	z-index: 99;
-  // 	// right: 10px;
-  // }
-  // }
-  // @media screen and (max-width: 1199px){
-  // 	.statsDropdown {
-  // 		position: absolute;
-  // 		top: -20px;
-  // 	}
-  // .subconcard .subconcardtitle{
-  // 	width: 100% !important;
-  // 	max-width: 180px !important;
-  // }
-  // }
-  // @media screen and (min-width: 1200px){
-  // .total-partnership{
-  // 	font-size: 9px !important;
-  // }
-  // 	.allRD .card-header .allRdTopLinks ul li a {
-  // 		padding: 20px 5px !important;
-  // 	}
-  // 	.statsDropdown {
-  // 		position: absolute;
-  // 		top: -70px;
-  // 	}
-  // }
   
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
@@ -641,13 +597,9 @@
 		.ncoBp {
 			min-width: 95px !important;
 		}
-	  }
- }
+	}
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px){ 
-  }
-  
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) and (max-width: 1199.98px) {
 	.statsDropdown {
@@ -658,12 +610,8 @@
 	.subconcard .view-more {
 	  padding: 9px 25px 9px 10px;
 	}
-  
-	// .subconcard .view-more .arrow-right{
-	// 	position: absolute;
-	// 	top: 12px;	
-	// }
-  }
+	// DASHBOARD BRANDS SECTION START
+}
   
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
@@ -683,12 +631,13 @@
 	.subconcard .view-more {
 	  margin: 2rem 0;
 	  padding: 9px 16px 9px 10px;
-  
+	  display: block;
+	}
 	  .arrow-right {
 		margin-left: 3px;
 		font-size: 10px;
 	  }
-	}
+
 	// DASHBOARD BRANDS SECTION START
 
 	.card-statistics {
@@ -701,20 +650,7 @@
 			}
 		}
 	}
-	.statistics-sub-text {
-		.my-rds{
-		// font-size: 10px !important;
-	}
-}
 
-}
-// @media (min-width: 1200px) and (max-width: 1300px) { 
-// 	.statistics-sub-text .my-rds{
-// 		// font-size: 10px !important;
-// 	}
-// }
-  }
-  
   .monthly-report .sortby-btn::after {
 	right: 0 !important;
 	left: calc(100% - -65px) !important;
@@ -747,7 +683,7 @@
 	background: #fff;
 	border-radius: 20px;
 	padding: 35px 0 5px;
-  
+  }
 	.card {
 	  border-radius: 0;
 	  padding: 0;
@@ -770,6 +706,30 @@
   
 	  .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
 		font-size: 14px;
-	  }
 	}
-  }
+}
+}
+
+// RESPONSIVNESS FOR STATISTICS CARD
+
+@media (min-width: 1200px) and (max-width: 1600px) { 
+	.stat-brands .col-xl {
+		padding-left:5px;
+		padding-right:5px;
+	}
+		.card-statistics .statistics-body.stat-brands .avatar .avatar-content {
+		 width:35px !important; 
+		 height:35px !important;
+		}
+		.card-statistics .statistics-body.stat-brands .avatar .avatar-content svg {
+		 width:25px;
+		 height:25px;
+		}
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6) {
+	justify-content: center;
+}
+.statistics-sub-text .my-rds{
+	font-size: 11px !important;
+}
+}
