@@ -90,7 +90,7 @@ export const columnsManageBrands = [
   // },
   {
     name: 'Brand name',
-    minWidth: '300px',
+    minWidth: '270px',
     selector: 'client',
     sortable: true,
     cell: row => {
@@ -140,14 +140,14 @@ export const columnsManageBrands = [
     name: 'Monthly Logins',
     selector: 'monthlyLogins',
     sortable: true,
-    minWidth: '130px',
+    minWidth: '165px',
     cell: row => <span>{row.client.monthlyLogins || 0}</span>
   },
   {
     name: 'Login Time p/m',
     selector: 'loginTime',
     sortable: true,
-    minWidth: '130px',
+    minWidth: '160px',
     cell: row => <span>{row.client.loginTime || 0}</span>
   },
   // {

@@ -133,7 +133,7 @@ export const columnsMyPartnerships = [
     name: 'Notes',
     selector: 'notes',
     sortable: true,
-    minWidth: '200px',
+    minWidth: '130px',
     cell: row => <span>{row.client.notes || 0}</span>
   },
   // {

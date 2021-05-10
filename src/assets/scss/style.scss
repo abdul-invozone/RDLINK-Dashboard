@@ -404,7 +404,7 @@
 	  }
 	}
   
-	.view-more {
+	 .main-column .view-more {
 	  padding: 9px 28px 9px 15px;
 	  background-color: #5167e1;
 	  color: white;
@@ -413,16 +413,15 @@
 	  position: relative;
 	  border-radius: 5px;
 	  display: inline-block;
-	  margin-top: 5rem;
+	  margin:3rem 0;
 	  max-width: 100%;
-  
+	}
 	  .arrow-right {
 		position: absolute;
 		top: 14px;
 		margin-left: 5px;
 	  }
 	}
-  }
   
   .dot-sub {
 	background-color: #34ce86;
@@ -530,11 +529,19 @@
 .expense-report .expense-2021{
 	color: #404447;
 }
-	// Recommended RD Opportunities & MY Partnerships (3rd child)
-	.recommended-rd .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
-	.my-partnerships .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3) {
-		justify-content: center;
-	}
+	// Dasboard & Manage brands table cell  
+.recommended-rd .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+.my-partnerships .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4),
+.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5),
+.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6),
+.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(2),
+.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4), 
+.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5), 
+.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6) {
+	justify-content: center;
+}
 
 // DASHBOARD BRANDS SECTION END 
 
@@ -551,9 +558,6 @@
   
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	}
   
 	.statsDropdown {
 	  position: absolute;
@@ -563,10 +567,7 @@
   
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) and (max-width: 767.98px) {
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	}
-  
+	
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
@@ -579,15 +580,12 @@
 	  width: 100% !important;
 	  max-width: 250px !important;
 	}
-  
-	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
-	  font-size: 11px !important;
+
+	// Dashboard view-more-a
+	.main-column .view-more {
+		padding: 9px 20px 9px 15px;
+		font-size: 12px;
 	}
-  
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	}
-  
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
@@ -602,14 +600,17 @@
 
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) and (max-width: 1199.98px) {
+
+	  // Dashboard view-more-a
+	.main-column .view-more {
+		padding: 9px 20px 9px 15px;
+		font-size: 12px;
+	}
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
 	}
   
-	.subconcard .view-more {
-	  padding: 9px 25px 9px 10px;
-	}
 	// DASHBOARD BRANDS SECTION START
 }
   
@@ -628,16 +629,6 @@
 	  top: -70px;
 	}
   
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	  padding: 9px 16px 9px 10px;
-	  display: block;
-	}
-	  .arrow-right {
-		margin-left: 3px;
-		font-size: 10px;
-	  }
-
 	// DASHBOARD BRANDS SECTION START
 
 	.card-statistics {
@@ -704,9 +695,9 @@
 		height: 72px;
 	  }
   
-	  .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
-		font-size: 14px;
-	}
+	//   .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
+	// 	font-size: 10px;
+	// }
 }
 }
 

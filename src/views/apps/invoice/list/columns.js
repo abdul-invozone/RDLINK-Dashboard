@@ -90,7 +90,7 @@ export const columns = [
   // },
   {
     name: 'Rd name',
-    minWidth: '300px',
+    minWidth: '250px',
     selector: 'client',
     sortable: true,
     cell: row => {
@@ -140,14 +140,14 @@ export const columns = [
     name: 'Monthly Logins',
     selector: 'monthlyLogins',
     sortable: true,
-    minWidth: '130px',
+    minWidth: '162px',
     cell: row => <span>{row.client.monthlyLogins || 0}</span>
   },
   {
     name: 'Login Time p/m',
     selector: 'loginTime',
     sortable: true,
-    minWidth: '130px',
+    minWidth: '152px',
     cell: row => <span>{row.client.loginTime || 0}</span>
   },
   // {
