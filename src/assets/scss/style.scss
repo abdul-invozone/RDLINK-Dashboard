@@ -544,6 +544,60 @@
 }
 
 // DASHBOARD BRANDS SECTION END 
+// Recommended For You Cards-head Start
+
+.recommended-for-you .brands {
+	font-weight: 700;
+	font-size: 24px;
+	display: inline-block;
+}
+.recommended-for-you .showing-paid {
+	display: inline-block;
+	margin-left: 4px;
+	font-size: 18px;
+	color: #7a6eec;
+	font-weight: 500;
+}
+// Recommended For You Cards-head End
+
+
+// Recommended For You Cards-body Start
+.brandContent {
+	background-color: white;
+	border-radius: 20px !important;
+	padding: 4rem 3rem;
+	text-align: center;
+}
+
+.brandContent .antonio {
+	margin: 16px;
+	color: #000518;
+	font-size: 19px;
+	font-weight: 650;
+}
+.brandContent .healthcare {
+	border-radius: 3px;
+	margin: 0 0px 20px;
+	padding: 9px 6px;
+	font-size: 12px;
+	max-width: 100%;
+}
+.brandContent .general-wellness {
+	margin: 0;
+}
+.brandContent .social-media .social-media-icons {
+	display: inline-block;
+	width: 46px;
+	height: 46px; 
+	margin: 0 3px; 
+	background-color:#e9f6fd;
+	border-radius: 999px;
+}
+.brandContent .social-media .social-media-icons .social-media-anchor {
+	position: relative;
+	top: 10px;
+}
+// Recommended For You Cards-body End
 
 
 

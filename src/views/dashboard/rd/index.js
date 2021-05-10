@@ -106,6 +106,10 @@ const RdDashboard = () => {
       title: 'Recommended For You',
       content: (
         <>
+      <div className="recommended-for-you">
+        <h1 className="brands">Brands</h1>
+        <h6 className="showing-paid">(Showing Paid Brands Only)</h6>
+      </div>
           <RdBrandsSlides />
         <Row className='match-height mb-2'>
         <Col xs='12'>
