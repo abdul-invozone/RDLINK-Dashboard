@@ -829,3 +829,21 @@
 }
 // Recommended For You Cards-body End
 }
+.brandSlides .swiper-pagination {
+	display: none;
+}
+.brandSlides .swiper-button-prev {
+	left: auto;
+	right: 50px;
+}
+.brandSlides .swiper-button-next {
+	right: -35px;
+}
+.brandSlides .swiper-button-prev,
+.brandSlides .swiper-button-next {
+	position: relative;
+	margin-top: 0;
+	display: inline-flex;
+	float: right;
+	margin-bottom: 30px;
+}
