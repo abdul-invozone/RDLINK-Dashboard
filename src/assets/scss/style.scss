@@ -532,14 +532,14 @@
 	// Dasboard & Manage brands table cell  
 .recommended-rd .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
 .my-partnerships .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
-.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4),
-.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5),
-.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6),
-.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(2),
-.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
-.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4), 
-.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5), 
-.manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
+.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4)
+// .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5),
+// .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(2),
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4), 
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5), 
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
 // .upcoming-opportunitie .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
 // .upcoming-opportunitie .invoice-list-dataTable .react-dataTable .rdt_Table .rdt_TableHead .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable:nth-child(6) 
 {
@@ -600,10 +600,10 @@
 	background-color:#e9f6fd;
 	border-radius: 999px;
 }
-.brandContent .social-media .social-media-icons .social-media-anchor {
-	position: relative;
-	top: 10px;
-}
+// .brandContent .social-media .social-media-icons .social-media-anchor {
+// 	position: relative;
+// 	top: 50px;
+// }
 .brandContent .brandContent-menu {
 	position: relative;
 	top: -60px;
@@ -823,9 +823,9 @@
 	width: 46px;
 	height: 46px; 
 }
-.brandContent .social-media .social-media-icons .social-media-anchor {
-	position: relative;
-	top: 10px;
-}
+// .brandContent .social-media .social-media-icons .social-media-anchor {
+// 	position: relative;
+// 	top: 10px;
+// }
 // Recommended For You Cards-body End
 }

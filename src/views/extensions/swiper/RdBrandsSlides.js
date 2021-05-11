@@ -6,6 +6,11 @@ import img2 from '@src/assets/images/banner/banner-42.jpg'
 import img3 from '@src/assets/images/banner/banner-43.jpg'
 import img4 from '@src/assets/images/banner/banner-44.jpg'
 import img5 from '@src/assets/images/banner/banner-35.jpg'
+import img6 from '@src/assets/images/banner/logofb.png'
+import img7 from '@src/assets/images/banner/logotwitter.png'
+import img8 from '@src/assets/images/banner/logolinkedin.png'
+
+
 import CardSubtitle from 'reactstrap/lib/CardSubtitle'
 
 const params = {
@@ -47,9 +52,9 @@ const RdBrandsSlides = () => {
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
               <ul className="list-unstyled social-media">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Facebook /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Twitter /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Linkedin /></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img6} alt='swiper 1'/></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img7} alt='swiper 1'/></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img8} alt='swiper 1'/></a></li>
               </ul>
             </div>
           </SwiperSlide>
@@ -77,9 +82,9 @@ const RdBrandsSlides = () => {
                 <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
               </div>
               <ul className="list-unstyled social-media">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Facebook /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Twitter /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Linkedin /></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img6} alt='swiper 1'/></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img7} alt='swiper 1'/></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img8} alt='swiper 1'/></a></li>
               </ul>
             </div>
           </SwiperSlide>
@@ -107,9 +112,9 @@ const RdBrandsSlides = () => {
                 <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
               </div>
               <ul className="list-unstyled social-media">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Facebook /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Twitter /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Linkedin /></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img6} alt='swiper 1'/></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img7} alt='swiper 1'/></a></li>
+                <li className="social-media-icons"><a href="#" className="social-media-anchor"><img src={img8} alt='swiper 1'/></a></li>
               </ul>
             </div>
           </SwiperSlide>
@@ -137,9 +142,9 @@ const RdBrandsSlides = () => {
                 <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
               </div>
               <ul className="list-unstyled social-media">
-                <li className="social-media-icons"><a className="social-media-anchor" href="#"><Facebook /></a></li>
-                <li className="social-media-icons"><a className="social-media-anchor" href="#"><Twitter /></a></li>
-                <li className="social-media-icons"><a className="social-media-anchor" href="#"><Linkedin /></a></li>
+                <li className="social-media-icons"><a className="social-media-anchor" href="#"><img src={img6} alt='swiper 1' /></a></li>
+                <li className="social-media-icons"><a className="social-media-anchor" href="#"><img src={img7} alt='swiper 1' /></a></li>
+                <li className="social-media-icons"><a className="social-media-anchor" href="#"><img src={img8} alt='swiper 1' /></a></li>
               </ul>
             </div>
           </SwiperSlide>
@@ -167,9 +172,9 @@ const RdBrandsSlides = () => {
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
               <ul className="list-unstyled social-media">
-                <li className="social-media-icons"><a className="social-media-anchor" href="#"><Facebook /></a></li>
-                <li className="social-media-icons"><a className="social-media-anchor" href="#"><Twitter /></a></li>
-                <li className="social-media-icons"><a className="social-media-anchor" href="#"><Linkedin /></a></li>
+                <li className="social-media-icons"><a className="social-media-anchor" href="#"><img src={img6} alt='swiper 1' /></a></li>
+                <li className="social-media-icons"><a className="social-media-anchor" href="#"><img src={img7} alt='swiper 1' /></a></li>
+                <li className="social-media-icons"><a className="social-media-anchor" href="#"><img src={img8} alt='swiper 1' /></a></li>
               </ul>
             </div>
           </SwiperSlide>
