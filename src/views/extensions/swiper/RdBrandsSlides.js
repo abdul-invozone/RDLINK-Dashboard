@@ -40,7 +40,7 @@ const RdBrandsSlides = () => {
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledButtonDropdown>
-              <img src={img1} alt='swiper 1' className='img-fluid' width='150' height='150' />
+              <img src={img1} alt='swiper 1' className='brandContent-img' />
               <h2 className="antonio">Antonio Pastore</h2>
               <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
@@ -54,7 +54,7 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-              <img src={img2} alt='swiper 2' className='img-fluid' width='150' height='150' />
+              <img src={img2} alt='swiper 2' className='brandContent-img' />
               <h2 className="antonio">Jessica Miles</h2>
               <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
                 <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
@@ -68,7 +68,7 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-              <img src={img3} alt='swiper 3' className='img-fluid' width='150' height='150' />
+              <img src={img3} alt='swiper 3' className='brandContent-img' />
               <h2 className="antonio">John Beans</h2>
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
                 <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
@@ -82,7 +82,7 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-              <img src={img4} alt='swiper 4' className='img-fluid' width='150' height='150' />
+              <img src={img4} alt='swiper 4' className='brandContent-img' />
               <h2 className="antonio">Matt Pears</h2>
               <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
                 <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
@@ -96,7 +96,7 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-              <img src={img3} alt='swiper 3' className='img-fluid' width='150' height='150' />
+              <img src={img3} alt='swiper 3' className='brandContent-img' />
               <h2 className="antonio">John Beans</h2>
               <div className="healthcare" style={{backgroundColor: '#b0cef2'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
