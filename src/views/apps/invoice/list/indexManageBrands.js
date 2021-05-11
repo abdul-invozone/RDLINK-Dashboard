@@ -708,7 +708,7 @@ const InvoiceListManageBrands = () => {
   }
 
   return (
-    <div className='invoice-list-wrapper'>
+    <div className='invoice-list-wrapper manage-brands'>
       <Card>
       <h2>Manage Brands</h2>
         <div className='invoice-list-dataTable'>

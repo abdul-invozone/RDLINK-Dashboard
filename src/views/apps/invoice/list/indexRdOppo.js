@@ -268,7 +268,7 @@ const InvoiceListRdOppo = () => {
   }
 
   return (
-    <div className='rd-list-wrapper'>
+    <div className='rd-list-wrapper upcoming-opportunities'>
       <Card>
       <h2 style={{padding: '0 25px 25px'}}>Upcoming Opportunities</h2>
         <div className='invoice-list-dataTable'>

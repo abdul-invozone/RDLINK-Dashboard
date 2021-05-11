@@ -90,7 +90,7 @@ export const columnsMyPartnerships = [
   // },
   {
     name: 'Rd name',
-    minWidth: '300px',
+    minWidth: '280px',
     selector: 'client',
     sortable: true,
     cell: row => {
@@ -111,7 +111,7 @@ export const columnsMyPartnerships = [
     name: 'Partnership',
     selector: 'partnership',
     sortable: true,
-    minWidth: '180px',
+    minWidth: '200px',
     cell: row => row.client.partnership
   },
   // {
@@ -125,7 +125,7 @@ export const columnsMyPartnerships = [
     name: 'Amount/Product',
     selector: 'amountProduct',
     sortable: true,
-    minWidth: '180px',
+    minWidth: '200px',
     className: 'text',
     cell: row => <span>{row.client.amountProduct || 0}</span>
   },
@@ -167,7 +167,7 @@ export const columnsMyPartnerships = [
   // },
   {
     name: 'Actions',
-    minWidth: '110px',
+    minWidth: '130px',
     selector: '',
     sortable: true,
     justifyContent: 'center',

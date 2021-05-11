@@ -404,7 +404,7 @@
 	  }
 	}
   
-	.view-more {
+	 .main-column .view-more {
 	  padding: 9px 28px 9px 15px;
 	  background-color: #5167e1;
 	  color: white;
@@ -413,16 +413,15 @@
 	  position: relative;
 	  border-radius: 5px;
 	  display: inline-block;
-	  margin-top: 5rem;
+	  margin:3rem 0;
 	  max-width: 100%;
-  
+	}
 	  .arrow-right {
 		position: absolute;
 		top: 14px;
 		margin-left: 5px;
 	  }
 	}
-  }
   
   .dot-sub {
 	background-color: #34ce86;
@@ -459,56 +458,174 @@
 	font-size: 14px;
 	font-weight: 500;
 	margin: auto;
-  }
-  
-  // MEDIA QUERY
-  
-  // @media screen and (max-width: 992px){
-  // 	// .subconcardtitle{
-  // 	// 	font-size:20px ;
-  // 	// }
-  
-  // 	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable{
-  // 		font-size: 11px !important;
-  // 	}
-  // }
-  
-  // @media screen and (min-width: 992px){
-  // .statsDropdown {
-  // 	position: absolute;
-  // 	top: -50px;
-  // 	z-index: 99;
-  // 	// right: 10px;
-  // }
-  // }
-  // @media screen and (max-width: 1199px){
-  // 	.statsDropdown {
-  // 		position: absolute;
-  // 		top: -20px;
-  // 	}
-  // .subconcard .subconcardtitle{
-  // 	width: 100% !important;
-  // 	max-width: 180px !important;
-  // }
-  // }
-  // @media screen and (min-width: 1200px){
-  // .total-partnership{
-  // 	font-size: 9px !important;
-  // }
-  // 	.allRD .card-header .allRdTopLinks ul li a {
-  // 		padding: 20px 5px !important;
-  // 	}
-  // 	.statsDropdown {
-  // 		position: absolute;
-  // 		top: -70px;
-  // 	}
-  // }
+}
+// DASHBOARD ADMIN SECTION END 
+
+// DASHBOARD BRANDS SECTION START 
+
+.monthly-report .sortby-btn::after {
+	right: 0 !important;
+    left: calc(100% - -65px) !important;
+}
+
+#dashboard-brands .card {
+	border-radius: 20px;
+}
+#dashboard-brands .Milling {
+	color: #828594;
+}
+#dashboard-brands .breadcrumb-home {
+	color: #7467f1;
+}
+
+.app-collapse.card {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.collapse-title.card-title {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.app-collapse.card .card-header svg {
+	width: 30px !important;
+	height: 30px !important;
+}
+
+[class*='collapse-'] .card:not(:last-of-type) {
+	border-bottom: none;
+}
+
+.rd-list-wrapper {
+	background: #fff;
+    border-radius: 20px;
+    padding: 35px 0 5px;
+}
+
+.rd-list-wrapper .card {
+	border-radius: 0;
+	padding: 0;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableHead .rdt_TableHeadRow {
+	height: 50px;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableHead .rdt_TableRow {
+	min-height: 72px;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell {
+	height: 72px;
+}
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell .partnershiptype {
+	justify-content: center;
+}
+
+.rd-list-wrapper .react-dataTable .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
+	font-size: 14px;
+}
+.expense-report .expense-2021{
+	color: #404447;
+}
+	// Dasboard & Manage brands table cell  
+.recommended-rd .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+.my-partnerships .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4)
+// .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5),
+// .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(2),
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4), 
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5), 
+// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
+// .upcoming-opportunitie .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+// .upcoming-opportunitie .invoice-list-dataTable .react-dataTable .rdt_Table .rdt_TableHead .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable:nth-child(6) 
+{
+	justify-content: center;
+}
+
+// DASHBOARD BRANDS SECTION END 
+// Recommended For You Cards-head Start
+
+.recommended-for-you .brands {
+	font-weight: 700;
+	font-size: 24px;
+	display: inline-block;
+}
+.recommended-for-you .showing-paid {
+	display: inline-block;
+	margin-left: 4px;
+	font-size: 18px;
+	color: #7a6eec;
+	font-weight: 500;
+}
+// Recommended For You Cards-head End
+
+
+// Recommended For You Cards-body Start
+.brandContent {
+	background-color: white;
+	border-radius: 20px !important;
+	padding: 3rem;
+	text-align: center;
+	max-height: 380px;
+}
+.brandContent .brandContent-img{
+	min-height: 110px !important;
+}
+
+.brandContent .antonio {
+	margin: 16px;
+	color: #000518;
+	font-size: 19px;
+	font-weight: 650;
+}
+.brandContent .healthcare {
+	border-radius: 3px;
+	margin: 0 0px 20px;
+	padding: 9px 6px;
+	font-size: 12px;
+	max-width: 100%;
+}
+.brandContent .general-wellness {
+	margin: 0;
+}
+.brandContent .social-media .social-media-icons {
+	display: inline-block;
+	width: 46px;
+	height: 46px; 
+	margin: 0 3px; 
+	background-color:#e9f6fd;
+	border-radius: 999px;
+}
+// .brandContent .social-media .social-media-icons .social-media-anchor {
+// 	position: relative;
+// 	top: 50px;
+// }
+.brandContent .brandContent-menu {
+	position: relative;
+	top: -60px;
+	left: 90px;
+	color: black;
+	font-size: 30px;
+}
+// Recommended For You Cards-body End
+
+
+
+
+
+
+
+
+
+
+// RESPONSIVE
   
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	}
   
 	.statsDropdown {
 	  position: absolute;
@@ -518,10 +635,7 @@
   
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) and (max-width: 767.98px) {
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	}
-  
+	
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
@@ -534,37 +648,39 @@
 	  width: 100% !important;
 	  max-width: 250px !important;
 	}
-  
-	.rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
-	  font-size: 11px !important;
+
+	// Dashboard view-more-a
+	.main-column .view-more {
+		padding: 9px 20px 9px 15px;
+		font-size: 12px;
 	}
-  
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	}
-  
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
 	}
-  }
-  
+	// DASHBOARD BRANDS SECTION START
+	.rdt_Pagination {
+		.ncoBp {
+			min-width: 95px !important;
+		}
+	}
+}
+
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) and (max-width: 1199.98px) {
+
+	  // Dashboard view-more-a
+	.main-column .view-more {
+		padding: 9px 20px 9px 15px;
+		font-size: 12px;
+	}
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
 	}
   
-	.subconcard .view-more {
-	  padding: 9px 25px 9px 10px;
-	}
-  
-	// .subconcard .view-more .arrow-right{
-	// 	position: absolute;
-	// 	top: 12px;	
-	// }
-  }
+	// DASHBOARD BRANDS SECTION START
+}
   
   // Extra large devices (large desktops, 1200px and up)
   @media (min-width: 1200px) {
@@ -581,17 +697,19 @@
 	  top: -70px;
 	}
   
-	.subconcard .view-more {
-	  margin: 2rem 0;
-	  padding: 9px 16px 9px 10px;
-  
-	  .arrow-right {
-		margin-left: 3px;
-		font-size: 10px;
-	  }
+	// DASHBOARD BRANDS SECTION START
+
+	.card-statistics {
+		.statistics-body {
+			.avatar {
+				.avatar-content {
+					width: 45px !important;
+					height: 45px !important;
+				}
+			}
+		}
 	}
-  }
-  
+
   .monthly-report .sortby-btn::after {
 	right: 0 !important;
 	left: calc(100% - -65px) !important;
@@ -624,7 +742,7 @@
 	background: #fff;
 	border-radius: 20px;
 	padding: 35px 0 5px;
-  
+  }
 	.card {
 	  border-radius: 0;
 	  padding: 0;
@@ -645,8 +763,87 @@
 		height: 72px;
 	  }
   
-	  .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
-		font-size: 14px;
-	  }
+	//   .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable {
+	// 	font-size: 10px;
+	// }
+}
+}
+
+// RESPONSIVNESS FOR STATISTICS CARD
+
+@media (min-width: 1200px) and (max-width: 1600px) { 
+	.stat-brands .col-xl {
+		padding-left:5px;
+		padding-right:5px;
 	}
-  }
+		.card-statistics .statistics-body.stat-brands .avatar .avatar-content {
+		 width:35px !important; 
+		 height:35px !important;
+		}
+		.card-statistics .statistics-body.stat-brands .avatar .avatar-content svg {
+		 width:25px;
+		 height:25px;
+		}
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+.rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6) {
+	justify-content: center;
+}
+.statistics-sub-text .my-rds{
+	font-size: 11px !important;
+}
+
+// Recommended For You Cards-head Start
+
+.recommended-for-you .showing-paid {
+	font-size: 14px;
+}
+// Recommended For You Cards-head End
+
+// Recommended For You Cards-body Start
+.brandContent {
+	padding: 2rem 1rem;
+	max-height: 380px !important;
+}
+
+.brandContent .brandContent-img{
+	min-height: 70px !important;
+	max-width: 90px !important;
+}
+
+.brandContent .antonio {
+	margin: 13px;
+	font-size: 12px;
+}
+.brandContent .healthcare {
+	margin: 0 0px 16px;
+	padding: 5px 6px;
+	font-size: 10px;
+}
+.brandContent .social-media .social-media-icons {
+	width: 46px;
+	height: 46px; 
+}
+// .brandContent .social-media .social-media-icons .social-media-anchor {
+// 	position: relative;
+// 	top: 10px;
+// }
+// Recommended For You Cards-body End
+}
+.brandSlides .swiper-pagination {
+	display: none;
+}
+.brandSlides .swiper-button-prev {
+	left: auto;
+	right: 50px;
+}
+.brandSlides .swiper-button-next {
+	right: -35px;
+}
+.brandSlides .swiper-button-prev,
+.brandSlides .swiper-button-next {
+	position: relative;
+	margin-top: 0;
+	display: inline-flex;
+	float: right;
+	margin-bottom: 30px;
+}

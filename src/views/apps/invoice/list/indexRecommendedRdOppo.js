@@ -430,7 +430,7 @@ const InvoiceListRecommendedRdOppo = () => {
   }
 
   return (
-    <div className='invoice-list-wrapper'>
+    <div className='invoice-list-wrapper recommended-rd'>
       <Card>
       <h2>Recommended RD Opportunities</h2>
         <div className='invoice-list-dataTable'>
@@ -458,7 +458,7 @@ const InvoiceListRecommendedRdOppo = () => {
               />
             }
           />
-        <p className="showEntries">Shwoing 1 to {rowsPerPage} of {dummyData.total} entries</p>
+        <p className="showEntries">Showing 1 to {rowsPerPage} of {dummyData.total} entries</p>
         </div>
       </Card>
     </div>

@@ -10,7 +10,7 @@ const NewRds = () => {
                 <h4 className="subconcardtitle subconcardtitle-gray">New RDs</h4>
         </CardHeader>
         <CardBody>       
-         <ChartjsDoughnutChart4 colorHealthcare="#ffe600" colorWellness="#02d4be" colorWomen="#826cf8" colorPeds="#ffa1a1" />
+         <ChartjsDoughnutChart4 colorHealthcare="#ffe600" colorWellness="#02d4be" colorWomen="#828594" colorPeds="#ffa1a1" />
          <div class="d-flex flex-row flex-wrap justify-content-between mt-3 mb-1 mx-2">
             <div class="d-flex align-items-center">
               <span class="dot" style={{backgroundColor : '#ffe600'}}></span>
@@ -21,7 +21,7 @@ const NewRds = () => {
               <span class="font-weight-bold ml-75 mr-25">Wellness</span>
               </div>
               <div class="d-flex align-items-center">
-              <span class="dot" style={{backgroundColor : '#826cf8'}}></span>
+              <span class="dot" style={{backgroundColor : '#828594'}}></span>
               <span class="font-weight-bold ml-75 mr-25">Women</span>
               </div>
               <div class="d-flex align-items-center">

@@ -50,9 +50,9 @@ const RDStatsCard = ({ cols }) => {
         >
           <Media>
             <Avatar color={item.color} icon={item.icon} className='mr-2' />
-            <Media className='my-auto' body>
-              <h4 className='font-weight-bolder mb-0' style={{fontSize:'30px'}}>{item.title}</h4>
-              <CardText className='total-partnership'>{item.subtitle}</CardText>
+            <Media className='my-auto statistics-sub-text' body>
+              <h4 className='font-weight-bolder mb-0' style={{fontSize:'28px'}}>{item.title}</h4>
+              <CardText className='total-partnership my-rds'>{item.subtitle}</CardText>
             </Media>
           </Media>
         </Col>
@@ -66,8 +66,8 @@ const RDStatsCard = ({ cols }) => {
         <CardTitle tag='h4'>Statistics</CardTitle>
         <CardText className='card-text font-small-2 mr-25 mb-0'>Updated 1 month ago</CardText>
       </CardHeader> */}
-      <CardBody className='statistics-body'>
-      <h4 style={{marginBottom: '4rem', fontSize: '26px'}}>Statisticts</h4>
+      <CardBody className='statistics-body stat-brands'>
+      <h4 style={{marginBottom: '2rem', fontSize: '26px'}}>Statisticts</h4>
         <Row>{renderData()}</Row>
       </CardBody>
     </Card>

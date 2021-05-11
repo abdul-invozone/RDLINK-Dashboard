@@ -126,7 +126,7 @@ export const columnsRecommendedRdOppo = [
     name: 'Type of Partnership',
     selector: 'typeOfPartnership',
     sortable: true,
-    minWidth: '180px',
+    minWidth: '240px',
     className: 'text',
     cell: row => <span>{row.client.typeOfPartnership || 0}</span>
   },

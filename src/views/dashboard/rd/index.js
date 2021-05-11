@@ -42,8 +42,8 @@ const RdDashboard = () => {
   const { colors } = useContext(ThemeColors),
     tooltipShadow = 'rgba(0, 0, 0, 0.25)',
     gridLineColor = 'rgba(200, 200, 200, 0.2)',
-    lineChartPrimary = '#666ee8',
-    lineChartDanger = '#ff4961',
+    lineChartPrimary = '#f0aa37',
+    lineChartDanger = '#566fe7',
     warningColorShade = '#ffe802',
     warningLightColor = '#FDAC34',
     successColorShade = '#28dac6',
@@ -106,6 +106,10 @@ const RdDashboard = () => {
       title: 'Recommended For You',
       content: (
         <>
+      <div className="recommended-for-you">
+        <h1 className="brands">Brands</h1>
+        <h6 className="showing-paid">(Showing Paid Brands Only)</h6>
+      </div>
           <RdBrandsSlides />
         <Row className='match-height mb-2'>
         <Col xs='12'>

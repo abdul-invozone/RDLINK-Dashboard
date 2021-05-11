@@ -46,7 +46,7 @@ const BrandsDashboard = () => {
       content: (
         <Row className='match-height'>
         <Col xl='12' md='12' xs='12' className="mb-2">
-          <RDStatsCard cols={{ xl: '', sm: '6' }} />
+          <RDStatsCard cols={{ xl: '', sm: '6', md: '4' }} />
         </Col>
         <Col lg='9' md='12'>
         <BarChartExpense primary={colors.primary.main} danger={colors.danger.main} />
@@ -91,15 +91,15 @@ const BrandsDashboard = () => {
     <div id='dashboard-brands'>
       <Row className="mx-0 align-items-center">
         <Col sm="6">
-          <span>Manitoba Milling Dashboard</span>
+          <span className="Milling">Manitoba Milling Dashboard</span>
         </Col>
         <Col sm="6">
-        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end'>
+        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end '>
         <BreadcrumbItem>
-          <Link to='#'> Home </Link>
+          <Link to='#' className="breadcrumb-home"> Home </Link>
         </BreadcrumbItem>
         <BreadcrumbItem active>
-          <span> Brands Dashboard </span>
+          <span className="breadcrumb-home"> Brands Dashboard </span>
         </BreadcrumbItem>
       </Breadcrumb>
         </Col>
