@@ -48,7 +48,7 @@ const InvoiceEditCard = ({ data }) => {
       <CardBody className='invoice-padding pb-0'>
         <div className='d-flex justify-content-between flex-md-row flex-column invoice-spacing mt-0'>
           <div>
-            <div className='logo-wrapper'>
+            {/* <div className='logo-wrapper'>
               <svg viewBox='0 0 139 95' version='1.1' height='24'>
                 <defs>
                   <linearGradient id='invoice-linearGradient-1' x1='100%' y1='10.5120544%' x2='50%' y2='89.4879456%'>
@@ -99,7 +99,7 @@ const InvoiceEditCard = ({ data }) => {
                 </g>
               </svg>
               <h3 className='text-primary invoice-logo'>Vuexy</h3>
-            </div>
+            </div> */}
             <p className='card-text mb-25'>Office 149, 450 South Brand Brooklyn</p>
             <p className='card-text mb-25'>San Diego County, CA 91905, USA</p>
             <p className='card-text mb-0'>+1 (123) 456 7891, +44 (876) 543 2198</p>
