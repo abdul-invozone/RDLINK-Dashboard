@@ -11,7 +11,10 @@ import CardSubtitle from 'reactstrap/lib/CardSubtitle'
 const params = {
   slidesPerView: 4,
   spaceBetween: 30,
-  navigation: true
+  pagination: {
+    clickable: true
+  },
+  navigation:true
 }
 
 const RdBrandsSlides = () => {
