@@ -25,8 +25,7 @@ const params = {
 const RdBrandsSlides = () => {
   return (
     <div className="mb-2">
-   
-      <CardBody>
+      <CardBody className="brandSlides">
         <Swiper {...params}>
           <SwiperSlide>
             <div className="brandContent">
