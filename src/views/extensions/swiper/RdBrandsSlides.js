@@ -29,7 +29,7 @@ const RdBrandsSlides = () => {
         <Swiper {...params}>
           <SwiperSlide>
             <div className="brandContent">
-            <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
+            <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '-10px', right:'0px'}}>
         <DropdownToggle color='flat-primary'>
           ...
         </DropdownToggle>

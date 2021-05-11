@@ -64,7 +64,7 @@ export const columnsRdOppo = [
     name: 'Date',
     selector: 'dueDate',
     sortable: true,
-    minWidth: '80px',
+    minWidth: '120px',
     cell: row => row.dueDate
   },
   {

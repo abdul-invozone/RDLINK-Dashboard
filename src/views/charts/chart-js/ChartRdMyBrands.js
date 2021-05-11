@@ -1,5 +1,5 @@
 import { Line } from 'react-chartjs-2'
-import { Card, CardHeader, CardTitle, CardBody, CardSubtitle } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, CardSubtitle, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle} from 'reactstrap'
 
 const ChartRdMyBrands = ({
   tooltipShadow,
@@ -148,8 +148,24 @@ const ChartRdMyBrands = ({
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
         <div>
           <CardTitle className='mb-75' tag='h4'>
-            My Brands
+            My Brands 
           </CardTitle>
+          <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
+        <DropdownToggle color='flat-primary'>
+          ...
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href='/' tag='a'>
+            Option 1
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 2
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 3
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledButtonDropdown>
         </div>
       </CardHeader>
       <CardBody>
