@@ -568,7 +568,7 @@
 .brandContent {
 	background-color: white;
 	border-radius: 20px !important;
-	padding: 4rem 3rem;
+	padding: 3rem;
 	text-align: center;
 	max-height: 380px;
 }
@@ -603,6 +603,13 @@
 .brandContent .social-media .social-media-icons .social-media-anchor {
 	position: relative;
 	top: 10px;
+}
+.brandContent .brandContent-menu {
+	position: relative;
+	top: -60px;
+	left: 90px;
+	color: black;
+	font-size: 30px;
 }
 // Recommended For You Cards-body End
 
@@ -784,4 +791,41 @@
 .statistics-sub-text .my-rds{
 	font-size: 11px !important;
 }
+
+// Recommended For You Cards-head Start
+
+.recommended-for-you .showing-paid {
+	font-size: 14px;
+}
+// Recommended For You Cards-head End
+
+// Recommended For You Cards-body Start
+.brandContent {
+	padding: 2rem 1rem;
+	max-height: 380px !important;
+}
+
+.brandContent .brandContent-img{
+	min-height: 70px !important;
+	max-width: 90px !important;
+}
+
+.brandContent .antonio {
+	margin: 13px;
+	font-size: 12px;
+}
+.brandContent .healthcare {
+	margin: 0 0px 16px;
+	padding: 5px 6px;
+	font-size: 10px;
+}
+.brandContent .social-media .social-media-icons {
+	width: 46px;
+	height: 46px; 
+}
+.brandContent .social-media .social-media-icons .social-media-anchor {
+	position: relative;
+	top: 10px;
+}
+// Recommended For You Cards-body End
 }

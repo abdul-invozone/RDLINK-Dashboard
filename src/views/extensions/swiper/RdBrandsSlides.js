@@ -11,9 +11,7 @@ import CardSubtitle from 'reactstrap/lib/CardSubtitle'
 const params = {
   slidesPerView: 4,
   spaceBetween: 30,
-  pagination: {
-    clickable: true
-  }
+  navigation: true
 }
 
 const RdBrandsSlides = () => {
@@ -24,8 +22,8 @@ const RdBrandsSlides = () => {
         <Swiper {...params}>
           <SwiperSlide>
             <div className="brandContent">
-            <UncontrolledButtonDropdown className="statsDropdown">
-        <DropdownToggle color='flat-primary' className="dropdown-button Subscription">
+            <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
+        <DropdownToggle color='flat-primary'>
           ...
         </DropdownToggle>
         <DropdownMenu>
@@ -54,6 +52,22 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
+          <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
+        <DropdownToggle color='flat-primary'>
+          ...
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href='/' tag='a'>
+            Option 1
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 2
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 3
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledButtonDropdown>
               <img src={img2} alt='swiper 2' className='brandContent-img' />
               <h2 className="antonio">Jessica Miles</h2>
               <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
@@ -68,6 +82,22 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
+          <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
+        <DropdownToggle color='flat-primary'>
+          ...
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href='/' tag='a'>
+            Option 1
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 2
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 3
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledButtonDropdown>
               <img src={img3} alt='swiper 3' className='brandContent-img' />
               <h2 className="antonio">John Beans</h2>
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
@@ -82,6 +112,22 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
+          <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
+        <DropdownToggle color='flat-primary'>
+          ...
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href='/' tag='a'>
+            Option 1
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 2
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 3
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledButtonDropdown>
               <img src={img4} alt='swiper 4' className='brandContent-img' />
               <h2 className="antonio">Matt Pears</h2>
               <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
@@ -96,6 +142,22 @@ const RdBrandsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
+          <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
+        <DropdownToggle color='flat-primary'>
+          ...
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href='/' tag='a'>
+            Option 1
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 2
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Option 3
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledButtonDropdown>
               <img src={img3} alt='swiper 3' className='brandContent-img' />
               <h2 className="antonio">John Beans</h2>
               <div className="healthcare" style={{backgroundColor: '#b0cef2'}}>
