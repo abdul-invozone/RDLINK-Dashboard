@@ -438,7 +438,7 @@ const InvoiceListRdBrandPartnerships = () => {
               />
             }
           />
-        <p className="showEntries">Shwoing 1 to {rowsPerPage} of {dummyData.total} entries</p>
+        <p className="showEntries">Showing 1 to {rowsPerPage} of {dummyData.total} entries</p>
         </div>
       </Card>
     </div>

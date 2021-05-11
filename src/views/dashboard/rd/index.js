@@ -144,7 +144,7 @@ const RdDashboard = () => {
           <Link to='#'> Home </Link>
         </BreadcrumbItem>
         <BreadcrumbItem active>
-          <span> RD Dashboard </span>
+          <span style={{color: '#7467f1'}}> RD Dashboard </span>
         </BreadcrumbItem>
       </Breadcrumb>
         </Col>

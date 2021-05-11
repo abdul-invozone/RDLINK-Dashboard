@@ -611,8 +611,29 @@
 	color: black;
 	font-size: 30px;
 }
+.brandSlides .swiper-pagination {
+	display: none;
+}
+.brandSlides .swiper-button-prev {
+	left: auto;
+	right: 50px;
+}
+.brandSlides .swiper-button-next {
+	right: -35px;
+}
+.brandSlides .swiper-button-prev,
+.brandSlides .swiper-button-next {
+	position: relative;
+	margin-top: 0;
+	display: inline-flex;
+	float: right;
+	margin-bottom: 30px;
+}
 // Recommended For You Cards-body End
-
+// Manage RDs >> My Statistics >> Statistics Section
+.consumer-impact{
+	font-size: 12px !important;
+}
 
 
 
@@ -797,7 +818,6 @@
 .recommended-for-you .showing-paid {
 	font-size: 14px;
 }
-// Recommended For You Cards-head End
 
 // Recommended For You Cards-body Start
 .brandContent {
@@ -828,22 +848,9 @@
 // 	top: 10px;
 // }
 // Recommended For You Cards-body End
+
+// Manage RDs >> My Statistics >> Statistics Section
+.consumer-impact{
+	font-size: 10px !important;
 }
-.brandSlides .swiper-pagination {
-	display: none;
-}
-.brandSlides .swiper-button-prev {
-	left: auto;
-	right: 50px;
-}
-.brandSlides .swiper-button-next {
-	right: -35px;
-}
-.brandSlides .swiper-button-prev,
-.brandSlides .swiper-button-next {
-	position: relative;
-	margin-top: 0;
-	display: inline-flex;
-	float: right;
-	margin-bottom: 30px;
 }
