@@ -30,14 +30,14 @@ const loginrd = () => {
           </Col>
         </Col>
         <Col className='d-none d-lg-flex align-items-center p-5 auth-bg' lg='7' sm='12'>
-          <ul class="list-unstyled" style={{position: 'absolute', top: '0', right: '0', margin: '2rem'}}>
-            <li class="d-inline-block">
+          <ul className="list-unstyled" style={{position: 'absolute', top: '0', right: '0', margin: '2rem'}}>
+            <li className="d-inline-block">
             <Link to='/pages/login-v2'>Login</Link>
               </li>
-            <li class="d-inline-block" style={{padding: '0 2px'}}> 
+            <li className="d-inline-block" style={{padding: '0 2px'}}> 
             |
               </li>
-            <li class="d-inline-block">
+            <li className="d-inline-block">
             <Link to='/createloginrd'>Create Account</Link>
               </li>
           </ul>

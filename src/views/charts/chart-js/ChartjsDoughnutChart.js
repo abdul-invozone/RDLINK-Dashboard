@@ -68,19 +68,19 @@ const ChartjsRadarChart = ({ tooltipShadow, successColorShade, warningLightColor
         </div>
         <div className='d-inline-flex justify-content-between mt-3 mb-1 mr-2'>
           <div className='d-flex align-items-center'>
-          <span class="dot dot-navy"></span>
+          <span className="dot dot-navy"></span>
             <span className='font-weight-bold ml-75 mr-25'>Speciality</span>
           </div>
         </div>
         <div className='d-inline-flex justify-content-between mb-1 mr-2'>
           <div className='d-flex align-items-center'>
-          <span class="dot dot-maroon"></span>
+          <span className="dot dot-maroon"></span>
             <span className='font-weight-bold ml-75 mr-25'>Industry</span>
           </div>
         </div>
         <div className='d-inline-flex justify-content-between'>
           <div className='d-flex align-items-center'>
-          <span class="dot dot-sky"></span>
+          <span className="dot dot-sky"></span>
             <span className='font-weight-bold ml-75 mr-25'>Region</span>
           </div>
         </div>

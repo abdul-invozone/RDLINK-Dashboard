@@ -76,7 +76,7 @@ const InvoiceListNewRds = () => {
   const dummyData = {
     invoices: [
       {
-        id: 4987,
+        id: 7035,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -98,7 +98,7 @@ const InvoiceListNewRds = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7036,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -120,7 +120,7 @@ const InvoiceListNewRds = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7037,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -142,7 +142,7 @@ const InvoiceListNewRds = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7038,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',

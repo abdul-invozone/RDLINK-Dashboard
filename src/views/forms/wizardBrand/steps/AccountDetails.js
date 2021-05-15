@@ -37,7 +37,7 @@ const AccountDetails = ({ stepper, type }) => {
             </Label>
             <Input type='password' id={`confirm-password-${type}`} />
             <p className="my-1">*Save this as your login information</p>
-            <Input className="ml-0" id="termsConditions" type='checkbox' /> <label class="form-label ml-2" for="termsConditions">I agree to the Terms & Conditions</label>
+            <Input className="ml-0" id="termsConditions" type='checkbox' /> <label className="form-label ml-2" for="termsConditions">I agree to the Terms & Conditions</label>
           </div>
         </Row>
         <div className='d-flex justify-content-between'>

@@ -13,7 +13,7 @@ import PageLayoutsRoutes from './PageLayouts'
 const TemplateTitle = '%s - RD Link'
 
 // ** Default Route
-const DefaultRoute = '/dashboard/analytics'
+const DefaultRoute = '/dashboard/admin'
 
 // ** Merge Routes
 const Routes = [
