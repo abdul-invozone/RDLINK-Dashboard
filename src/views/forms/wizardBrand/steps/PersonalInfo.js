@@ -88,9 +88,9 @@ const PersonalInfo = ({ stepper, type }) => {
             />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label class="waves-effect mr-75 btn btn-primary btn-sm">
+            <Label className="waves-effect mr-75 btn btn-primary btn-sm">
               Company Logo
-              <Input hidden="" accept="image/*" type="file" class="form-control-file mt-1" />
+              <Input hidden="" accept="image/*" type="file" className="form-control-file mt-1" />
               </Label>
           </FormGroup>
         </Row>

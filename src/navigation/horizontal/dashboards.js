@@ -8,9 +8,9 @@ export default [
     children: [
       {
         id: 'analyticsDash',
-        title: 'Analytics',
+        title: 'Admin',
         icon: <Activity />,
-        navLink: '/dashboard/analytics'
+        navLink: '/dashboard/admin'
       },
       {
         id: 'eCommerceDash',

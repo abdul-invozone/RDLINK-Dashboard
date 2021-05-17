@@ -166,6 +166,22 @@ const PagesRoutes = [
     }
   },
   {
+    path: '/dashboard/brands',
+    component: lazy(() => import('../../views/dashboard/brands')),
+    layout: 'VerticalLayoutBrands',
+    meta: {
+      publicRoute: true
+    }
+  },
+  {
+    path: '/dashboard/rd',
+    component: lazy(() => import('../../views/dashboard/rd')),
+    layout: 'VerticalLayoutRd',
+    meta: {
+      publicRoute: true
+    }
+  },
+  {
     path: '/loginrd',
     component: lazy(() => import('../../views/pages/rd/Loginrd')),
     layout: 'BlankLayout',

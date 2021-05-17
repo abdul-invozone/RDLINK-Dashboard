@@ -76,7 +76,7 @@ const InvoiceListManageBrands = () => {
   const dummyData = {
     invoices: [
       {
-        id: 4987,
+        id: 7001,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -98,7 +98,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7002,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -120,7 +120,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7003,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -142,7 +142,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7004,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -164,7 +164,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7005,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -186,7 +186,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7006,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -208,7 +208,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7007,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -230,7 +230,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7008,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -252,7 +252,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7009,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -274,7 +274,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7010,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -296,7 +296,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7011,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -318,7 +318,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7012,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -340,7 +340,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7013,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -362,7 +362,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7014,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -384,7 +384,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7015,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -406,7 +406,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7016,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -428,7 +428,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7017,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -450,7 +450,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7018,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -472,7 +472,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7019,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -494,7 +494,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7020,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -516,7 +516,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7021,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
@@ -538,7 +538,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '03 Nov 2019'
       },
       {
-        id: 4987,
+        id: 7022,
         issuedDate: '13 Dec 2019',
         client: {
           address: '7777 Mendez Plains',
@@ -560,7 +560,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '23 Apr 2019'
       },
       {
-        id: 4988,
+        id: 7023,
         issuedDate: '17 Jul 2019',
         client: {
           address: '04033 Wesley Wall Apt. 961',
@@ -582,7 +582,7 @@ const InvoiceListManageBrands = () => {
         dueDate: '15 Dec 2019'
       },
       {
-        id: 4989,
+        id: 7024,
         issuedDate: '19 Oct 2019',
         client: {
           address: '5345 Robert Squares',
