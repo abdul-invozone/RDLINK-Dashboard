@@ -9,9 +9,9 @@ export const searchArr = [
         id: 1,
         target: 'analyticsDash',
         isBookmarked: false,
-        title: 'Analytics Dashboard',
+        title: 'Admin Dashboard',
         icon: 'Home',
-        link: '/dashboard/analytics'
+        link: '/dashboard/admin'
       },
       {
         id: 2,

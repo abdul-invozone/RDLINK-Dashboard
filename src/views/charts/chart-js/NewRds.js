@@ -11,22 +11,22 @@ const NewRds = () => {
         </CardHeader>
         <CardBody>       
          <ChartjsDoughnutChart4 colorHealthcare="#ffe600" colorWellness="#02d4be" colorWomen="#828594" colorPeds="#ffa1a1" />
-         <div class="d-flex flex-row flex-wrap justify-content-between mt-3 mb-1 mx-2">
-            <div class="d-flex align-items-center">
-              <span class="dot" style={{backgroundColor : '#ffe600'}}></span>
-              <span class="font-weight-bold ml-75 mr-25">Healthcare</span>
+         <div className="d-flex flex-row flex-wrap justify-content-between mt-3 mb-1 mx-2">
+            <div className="d-flex align-items-center">
+              <span className="dot" style={{backgroundColor : '#ffe600'}}></span>
+              <span className="font-weight-bold ml-75 mr-25">Healthcare</span>
               </div>
-              <div class="d-flex align-items-center">
-              <span class="dot" style={{backgroundColor : '#02d4be'}}></span>
-              <span class="font-weight-bold ml-75 mr-25">Wellness</span>
+              <div className="d-flex align-items-center">
+              <span className="dot" style={{backgroundColor : '#02d4be'}}></span>
+              <span className="font-weight-bold ml-75 mr-25">Wellness</span>
               </div>
-              <div class="d-flex align-items-center">
-              <span class="dot" style={{backgroundColor : '#828594'}}></span>
-              <span class="font-weight-bold ml-75 mr-25">Women</span>
+              <div className="d-flex align-items-center">
+              <span className="dot" style={{backgroundColor : '#828594'}}></span>
+              <span className="font-weight-bold ml-75 mr-25">Women</span>
               </div>
-              <div class="d-flex align-items-center">
-              <span class="dot" style={{backgroundColor : '#ffa1a1'}}></span>
-              <span class="font-weight-bold ml-75 mr-25">Peds</span>
+              <div className="d-flex align-items-center">
+              <span className="dot" style={{backgroundColor : '#ffa1a1'}}></span>
+              <span className="font-weight-bold ml-75 mr-25">Peds</span>
               </div>
               </div>
         </CardBody>

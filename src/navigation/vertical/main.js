@@ -8,19 +8,19 @@ export default [
     id: 'dashboard',
     title: 'Dashboard',
     icon: <Mail size={20} />,
-    navLink: '/dashboard/analytics'
+    navLink: '/dashboard/admin'
   },
   {
     id: 'manageRDs',
     title: "Manage RD's",
     icon: <MessageSquare size={20} />,
-    navLink: '/dashboard/rd'
+    navLink: '#'
   },
   {
     id: 'manageBrands',
     title: 'Manage Brands',
     icon: <CheckSquare size={20} />,
-    navLink: '/dashboard/brands'
+    navLink: '#'
   },
   {
     id: 'payments',
