@@ -13,6 +13,10 @@ const PersonalInfo = ({ stepper, type }) => {
     { value: 'option2', label: 'Option 2'},
     { value: 'option3', label: 'Option 3'}
   ]
+  const countryOptions = [
+    { value: 'US', label: 'US' },
+    { value: 'Canada', label: 'Canada' }
+  ]
   const stateOptions = [
     { value: 'Quebec', label: 'Quebec' },
     { value: 'NewBrunswick', label: 'New Brunswick' },
@@ -87,7 +91,14 @@ const PersonalInfo = ({ stepper, type }) => {
             <Label className='form-label' for={`country-${type}`}>
               Country:
             </Label>
-            <Input type='text' name='country' id={`country-${type}`} placeholder='Country' />
+            <Select
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              options={countryOptions}
+              className='react-select'
+              classNamePrefix='select'
+            />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`zip-code-${type}`}>
