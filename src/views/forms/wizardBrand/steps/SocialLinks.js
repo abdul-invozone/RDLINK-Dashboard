@@ -46,9 +46,9 @@ const SocialLinks = ({ stepper, type }) => {
                 <Input type='number' placeholder='123' id='payment-cvv' />
               </FormGroup>
             </Col>
-            <Col sm="12">
+            {/* <Col sm="12">
             <p>*You will be charged after 1 week of trial period. Trial week will be included in payment period eith monthly or yearly subscription plan</p>
-            </Col>
+            </Col> */}
           </Row>
         </Form>
     <div className='d-flex justify-content-between'>

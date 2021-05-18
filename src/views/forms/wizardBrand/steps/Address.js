@@ -24,25 +24,16 @@ const Address = ({ stepper, type }) => {
       <Form onSubmit={e => e.preventDefault()}>
         <Row>
         <FormGroup tag={Col} md='12'>
-          <Label>What do I hope to get of using Link?</Label>
+          <Label>What do you hope to get out of using Link?</Label>
           <Input type='textarea' name='aboutUsingLink' id='about-using-link' rows='3' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-          <Label>What are your goals for connecting with nutrition experts?</Label>
-          <Input type='textarea' name='aboutConnectingNutritionExperts' id='about-nutrition-experts' rows='3' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-          <Label>What types of RDs and partnerships are you most interested in?</Label>
-          <Input type='textarea' name='aboutPartnershipInterest' id='about-partnership-interest' rows='3' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-          <Label>How did you hear about LINK?</Label>
+          <Label>How did you hear about Link?</Label>
             <Select
               isClearable={false}
               theme={selectThemeColors}
               closeMenuOnSelect={false}
               components={animatedComponents}
-              defaultValue={[colorOptions[4], colorOptions[5]]}
               isMulti
               options={colorOptions}
               className='react-select'

@@ -14,28 +14,28 @@ const WizardModern = () => {
     {
       id: 'create-account',
       title: 'Create Account',
-      subtitle: 'Create Your Account Details.',
+      // subtitle: 'Create Your Account Details.',
       icon: <FileText size={18} />,
       content: <AccountDetails stepper={stepper} type='wizard-modern' />
     },
     {
       id: 'company-info',
       title: 'Company Info',
-      subtitle: 'Add Company Info',
+      // subtitle: 'Add Company Info',
       icon: <User size={18} />,
       content: <PersonalInfo stepper={stepper} type='wizard-modern' />
     },
     {
       id: 'goals',
       title: 'Goals',
-      subtitle: 'Add Goals',
+      // subtitle: 'Add Goals',
       icon: <MapPin size={18} />,
       content: <Address stepper={stepper} type='wizard-modern' />
     },
     {
       id: 'payment-info',
       title: 'Payment Info',
-      subtitle: 'Add payment info',
+      // subtitle: 'Add payment info',
       icon: <Link size={18} />,
       content: <SocialLinks stepper={stepper} type='wizard-modern' />
     }

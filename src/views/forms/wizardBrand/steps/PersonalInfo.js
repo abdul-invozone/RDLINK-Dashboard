@@ -8,13 +8,29 @@ import { Label, FormGroup, Row, Col, Form, Input, Button } from 'reactstrap'
 import '@styles/react/libs/react-select/_react-select.scss'
 
 const PersonalInfo = ({ stepper, type }) => {
-  const colorOptions = [
-    { value: 'glutenFree', label: 'Gluten Free', color: '#00B8D9', isFixed: true },
-    { value: 'dairyFree', label: 'Dairy Free', color: '#0052CC', isFixed: true },
-    { value: 'top', label: 'Top 8 Allergen friendly', color: '#5243AA', isFixed: true },
-    { value: 'vegan', label: 'Vegan', color: '#FF5630', isFixed: false },
-    { value: 'nutFree', label: 'Nut Free', color: '#FF8B00', isFixed: false },
-    { value: 'yellow', label: 'Yellow', color: '#FFC400', isFixed: false }
+  const valuesOptions = [
+    { value: 'SustainablySourcedorProduced', label: 'Sustainably Sourced or Produced' },
+    { value: 'SocialMissionDriven', label: 'Social Mission Driven' },
+    { value: 'CertifiedBCorp', label: 'Certified BCorp' },
+    { value: 'WomenOwned/FemaleFounded', label: 'Women Owned/Female Founded' },
+    { value: 'BIPOCOwned', label: 'BIPOC Owned'},
+    { value: 'Organic', label: 'Organic'}
+  ]
+  const specialDietOptions = [
+    { value: 'Vegan', label: 'Vegan' },
+    { value: 'SLowCarbDiabetesFriendly', label: 'SLow Carb / Diabetes Friendly' },
+    { value: 'Lowaddedsugar', label: 'Low added sugar' },
+    { value: 'Top9AllergenFriendly', label: 'Top 9 Allergen Friendly'},
+    { value: 'GlutenFree', label: 'Gluten Free'},
+    { value: 'NutFree', label: 'Nut Free'},
+    { value: 'Kosher', label: 'Kosher'},
+    { value: 'NonDiet', label: 'Non-Diet!'}
+  ]
+  const categoryOptions = [
+    { value: 'Hydration', label: 'Hydration' },
+    { value: 'Snack', label: 'Snack' },
+    { value: 'Breakfast', label: 'Breakfast' },
+    { value: 'SingleIngredientWholeFoods', label: 'Single Ingredient Whole Foods'}
   ]
 
   const animatedComponents = makeAnimated()
@@ -23,39 +39,69 @@ const PersonalInfo = ({ stepper, type }) => {
     <Fragment>
       <div className='content-header'>
         <h5 className='mb-0'>Company Info</h5>
-        <small>Enter Your Company Info.</small>
+        <small>Tell us about your company and products.</small>
       </div>
       <Form onSubmit={e => e.preventDefault()}>
         <Row>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`company-${type}`}>
-              Company:
-            </Label>
-            <Input type='text' name='company' id={`company-${type}`} placeholder='Company' />
+        <FormGroup tag={Col} md='12'>
+          <Label className="mb-2 font-weight-bolder">Choose Product Attributes:</Label>
+          <Row>
+          <FormGroup tag={Col} sm="2">
+            <Label>Values</Label>
           </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`company-name-${type}`}>
-              Contact Name:
-            </Label>
-            <Input type='text' name='contactName' id={`contact-name-${type}`} placeholder='Contact Name' />
+          <FormGroup tag={Col} sm="10">
+          <Select
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              components={animatedComponents}
+              isMulti
+              options={valuesOptions}
+              className='react-select'
+              classNamePrefix='select'
+            />
+          </FormGroup>
+          </Row>
+          <Row>
+          <FormGroup tag={Col} sm="2">
+            <Label>Special Diet</Label>
+          </FormGroup>
+          <FormGroup tag={Col} sm="10">
+          <Select
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              components={animatedComponents}
+              isMulti
+              options={specialDietOptions}
+              className='react-select'
+              classNamePrefix='select'
+            />
+          </FormGroup>
+          </Row>
+          <Row>
+          <FormGroup tag={Col} sm="2">
+            <Label>Category</Label>
+          </FormGroup>
+          <FormGroup tag={Col} sm="10">
+          <Select
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              components={animatedComponents}
+              isMulti
+              options={categoryOptions}
+              className='react-select'
+              classNamePrefix='select'
+            />
+          </FormGroup>
+          </Row>
           </FormGroup>
           <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`website-${type}`}>
               Website:
             </Label>
             <Input type='text' name='website' id={`website-${type}`} placeholder='Website' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`contact-number-${type}`}>
-              Contact Number:
-            </Label>
-            <Input type='number' name='contactNumber' id={`contact-number-${type}`} placeholder='Contact Number' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`linkedin-profile-${type}`}>
-              Linkedin Profile:
-            </Label>
-            <Input type='text' name='linkedinProfile' id={`linkedin-profile-${type}`} placeholder='Linkedin Profile' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`facebook-link-${type}`}>
@@ -70,28 +116,10 @@ const PersonalInfo = ({ stepper, type }) => {
             <Input type='text' name='instagramLink' id={`instagram-link-${type}`} placeholder='Instagram Link' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-          <Label>About company & products</Label>
-          <Input type='textarea' name='aboutCompanyProducts' id='about-company-products' rows='3' placeholder='About company & products' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-          <Label>Choose Product Attributes</Label>
-            <Select
-              isClearable={false}
-              theme={selectThemeColors}
-              closeMenuOnSelect={false}
-              components={animatedComponents}
-              defaultValue={[colorOptions[4], colorOptions[5]]}
-              isMulti
-              options={colorOptions}
-              className='react-select'
-              classNamePrefix='select'
-            />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className="waves-effect mr-75 btn btn-primary btn-sm">
+            <Label>
               Company Logo
-              <Input hidden="" accept="image/*" type="file" className="form-control-file mt-1" />
               </Label>
+              <Input hidden="" accept="image/*" type="file" className="form-control-file mb-1" />
           </FormGroup>
         </Row>
         <div className='d-flex justify-content-between'>
