@@ -42,7 +42,7 @@ const PersonalInfo = ({ stepper, type }) => {
             </FormGroup>
             <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`cdr-number-${type}`}>
-            Are you a RD or RD2Be?
+            Are you a registered dietitian?
             </Label>
             <div className='demo-inline-spacing'>
           <CustomInput type='radio' id='CustomRadioRd' name='customRadio' inline label='Rd' defaultChecked />
