@@ -486,7 +486,7 @@
 }
 
 .collapse-title.card-title {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 }
 
@@ -678,7 +678,38 @@
 	.collapse-title.card-title {
 		font-size: 18px;
 	}
-  }
+	// navbar
+	.header-navbar.floating-nav {
+		margin: 0 1rem !important;
+	    padding: 0.75rem 0.5rem !important;
+	}
+	// brand-dashboard column 
+	.match-height {
+		> [class*='col'] > .card {
+			margin-bottom: 20px;
+		  }
+		}
+		// Upcoming Opportunities 
+		.rd-list-wrapper .opportunitie-heading{
+			font-size: 18px;
+		}
+		// Recommended Opportunities 
+		.invoice-list-wrapper {
+		.recommended-RDs {
+			font-size: 18px;
+		}
+		 .recommended-opportunities {
+			font-size: 12px;
+		}
+	} 
+	// Pagination entries 
+	.invoice-list-wrapper .showEntries {
+		font-size: 11px;
+		position: relative;
+		top: -55px;
+		left: 10px;
+	}
+}
   
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) and (max-width: 767.98px) {
@@ -762,7 +793,7 @@
   }
   
   .collapse-title.card-title {
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 600;
   }
   

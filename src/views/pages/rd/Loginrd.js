@@ -14,7 +14,7 @@ const loginrd = () => {
     <div className='auth-wrapper auth-v2'>
       <Row className='auth-inner m-0'>
         <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
-          <h2 className='brand-text text-primary ml-1'>Link RD</h2>
+          <h2 className='brand-text text-primary ml-1'>The RD Link</h2>
         </Link>
         <Col className='d-flex align-items-center auth-bg px-2 p-lg-5' lg='5' sm='12'>
           <Col className='px-xl-2 mx-auto' sm='8' md='6' lg='12'>
@@ -38,7 +38,7 @@ const loginrd = () => {
             |
               </li>
             <li className="d-inline-block">
-            <Link to='/createloginrd'>Create Account</Link>
+            <Link to='/createloginrd'>Create Accounts</Link>
               </li>
           </ul>
           <div className='w-100 d-lg-flex align-items-center justify-content-center px-5'>

@@ -432,7 +432,7 @@ const InvoiceListRecommendedRdOppo = () => {
   return (
     <div className='invoice-list-wrapper recommended-rd'>
       <Card>
-      <h2>Recommended RD Opportunities</h2>
+      <h2 className="recommended-opportunities">Recommended RD Opportunities</h2>
         <div className='invoice-list-dataTable'>
           <DataTable
             noHeader
