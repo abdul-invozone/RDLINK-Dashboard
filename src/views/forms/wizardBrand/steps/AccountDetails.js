@@ -6,11 +6,35 @@ const AccountDetails = ({ stepper, type }) => {
   return (
     <Fragment>
       <div className='content-header'>
-        <h5 className='mb-0'>Account Details</h5>
+        <h5 className='mb-0'>Create Account</h5>
         <small className='text-muted'>Enter Your Account Details.</small>
       </div>
       <Form onSubmit={e => e.preventDefault()}>
         <Row>
+        <FormGroup tag={Col} md='12'>
+        <Label className='form-label' for={`username-${type}`}>
+              First and Last Name
+            </Label>
+            <Input
+              name={`username-${type}`}
+              id={`username-${type}`}
+            />
+            </FormGroup>
+            <FormGroup tag={Col} md='12'>
+        <Label className='form-label' for={`company-${type}`}>
+              Company Name
+            </Label>
+            <Input
+              name={`company-${type}`}
+              id={`company-${type}`}
+            />
+            </FormGroup>
+            <FormGroup tag={Col} md='12'>
+            <Label className='form-label' for={`phonr-number-${type}`}>
+              Phone Number
+            </Label>
+            <Input type='number' name='phoneNumber' id={`phone-number-${type}`} />
+          </FormGroup>
           <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`email-${type}`}>
               Email

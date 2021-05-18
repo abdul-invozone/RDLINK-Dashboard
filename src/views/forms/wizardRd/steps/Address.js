@@ -19,22 +19,20 @@ const Address = ({ stepper, type }) => {
     <Fragment>
       <div className='content-header'>
         <h5 className='mb-0'>Goals</h5>
-        <small>Enter Your Goals.</small>
       </div>
       <Form onSubmit={e => e.preventDefault()}>
         <Row>
         <FormGroup tag={Col} md='12'>
-          <Label>How do you primarily want to connect with brands?</Label>
+          <Label>What is your main goal for joining Link?</Label>
           <Input type='textarea' name='connectWithBrands' id='connect-with-brands' rows='3' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-          <Label>How did you hear about LINK?</Label>
+          <Label>How did you hear about Link?</Label>
             <Select
               isClearable={false}
               theme={selectThemeColors}
               closeMenuOnSelect={false}
               components={animatedComponents}
-              defaultValue={[colorOptions[4], colorOptions[5]]}
               isMulti
               options={colorOptions}
               className='react-select'

@@ -14,9 +14,9 @@ const Createloginrd = () => {
     <div className='auth-wrapper auth-v2'>
       <Row className='auth-inner m-0'>
         <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
-          <h2 className='brand-text text-primary ml-1'>Link RD</h2>
+          <h2 className='brand-text text-primary ml-1'>The RD Link</h2>
         </Link>
-        <Col className='d-none d-lg-flex align-items-center p-5 auth-bg' lg='12' sm='12'>
+        <Col className='d-flex align-items-center p-5 auth-bg' lg='12' sm='12'>
           <ul className="list-unstyled" style={{position: 'absolute', top: '0', right: '0', margin: '2rem'}}>
             <li className="d-inline-block">
             <Link to='/'>Home</Link>
@@ -34,7 +34,7 @@ const Createloginrd = () => {
             <Link to='/registerbrandrd'>Brand</Link>
               </li>
             <li style={{textDecoration: 'underline'}}>
-            <Link to='/registerrd'>Registered Dietation</Link>
+            <Link to='/registerrd'>Registered Dietitian</Link>
               </li>
           </ul>
           </div>

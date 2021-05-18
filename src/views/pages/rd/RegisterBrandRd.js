@@ -17,8 +17,8 @@ const RegisterBrandRd = () => {
         <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
           <h2 className='brand-text text-primary ml-1 mb-5'>Brand Registration</h2>
         </Link>
-        <Col className='d-none d-lg-flex align-items-center p-5 auth-bg' lg='12' sm='12'>
-                <div className="w-50 mx-auto"><WizardModern /></div> 
+        <Col className='d-flex align-items-center p-5 auth-bg' lg='12' sm='12'>
+                <div className="w-75 mx-auto"><WizardModern /></div> 
         </Col>
       </Row>
     </div>
