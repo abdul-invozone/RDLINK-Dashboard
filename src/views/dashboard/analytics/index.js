@@ -125,8 +125,8 @@ const AnalyticsDashboard = () => {
   return (
     <div id='dashboard-analytics'>
       <Row className="mx-0 mb-2 align-items-center">
-        <Col sm="6" className="justify-content-center">
-          <span className="admin-dashboard">Admin Dashboard</span>
+        <Col sm="6">
+          <span>Admin Dashboard</span>
         </Col>
         <Col sm="6">
         <Breadcrumb className='breadcrumb-slash d-flex justify-content-end'>
@@ -134,7 +134,7 @@ const AnalyticsDashboard = () => {
           <Link to='#'> Home </Link>
         </BreadcrumbItem>
         <BreadcrumbItem active>
-          <span style={{color:'#7467f1'}}> Admin Dashboard </span>
+          <span> Admin Dashboardooooooo </span>
         </BreadcrumbItem>
       </Breadcrumb>
         </Col>
