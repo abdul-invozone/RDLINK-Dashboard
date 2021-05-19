@@ -27,11 +27,24 @@ import '@styles/react/libs/charts/recharts.scss'
 const BrandsDashboard = () => {
   const { colors } = useContext(ThemeColors)
 
-  const data = [
-    {
-      title: 'New & Upcoming',
-      content: (
-        <Row className='match-height allRD'>
+  return (
+    <div id='dashboard-brands'>
+      <Row className="mx-0 align-items-center my-2">
+        <Col sm="6" className="text-center-sm">
+          <span className="Milling">Manitoba Milling Dashboard</span>
+        </Col>
+        <Col sm="6">
+        <Breadcrumb className='breadcrumb-slash d-flex justify-content-sm-end justify-content-center'>
+        <BreadcrumbItem>
+          <Link to='#' className="breadcrumb-home"> Home </Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem active>
+          <span className="breadcrumb-home"> Brands Dashboard </span>
+        </BreadcrumbItem>
+      </Breadcrumb>
+        </Col>
+      </Row>
+      <Row className='match-height allRD mb-2'>
         <Col lg='4' sm='6'>
         <ApexRadiarChart2 />
         </Col>
@@ -39,12 +52,7 @@ const BrandsDashboard = () => {
         <InvoiceListNewRds />
         </Col>
       </Row>
-      )
-    },
-    {
-      title: 'My Statisticts',
-      content: (
-        <Row className='match-height'>
+      <Row className='match-height'>
         <Col xl='12' md='12' xs='12' className="mb-2">
           <RDStatsCard cols={{ xl: '', sm: '6', md: '4' }} />
         </Col>
@@ -55,13 +63,7 @@ const BrandsDashboard = () => {
           <RevenueReport2 primary='#7468f1' warning={colors.warning.main} />
         </Col>
       </Row>
-      )
-    },
-    {
-      title: 'Recommended For You',
-      content: (
-        <>
-        <Row className='match-height mb-2'>
+      <Row className='match-height mb-2'>
         <Col xs='12'>
           <InvoiceListRecommendedRds />
         </Col>
@@ -71,40 +73,11 @@ const BrandsDashboard = () => {
           <InvoiceListRecommendedRdOppo />
         </Col>
       </Row>
-      </>
-      )
-    },
-    {
-      title: 'My Partnerships',
-      content: (
-        <Row className='match-height mb-2'>
+      <Row className='match-height mb-2'>
         <Col xs='12'>
           <InvoiceListMyPartnerships />
         </Col>
       </Row>
-      )
-    }
-  ]
-  const CollapseDefault = () => <AppCollapse data={data} />
-
-  return (
-    <div id='dashboard-brands'>
-      <Row className="mx-0 align-items-center">
-        <Col sm="6">
-          <span className="Milling">Manitoba Milling Dashboard</span>
-        </Col>
-        <Col sm="6">
-        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end '>
-        <BreadcrumbItem>
-          <Link to='#' className="breadcrumb-home"> Home </Link>
-        </BreadcrumbItem>
-        <BreadcrumbItem active>
-          <span className="breadcrumb-home"> Brands Dashboard </span>
-        </BreadcrumbItem>
-      </Breadcrumb>
-        </Col>
-      </Row>
-      <div><CollapseDefault></CollapseDefault></div>
     </div>
   )
 }

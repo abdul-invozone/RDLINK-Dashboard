@@ -57,11 +57,24 @@ const RdDashboard = () => {
     purpleColor = '#5f00c6',
     purpleLightColor = '#2599f3' 
 
-  const data = [
-    {
-      title: 'New & Upcoming',
-      content: (
-        <Row className='match-height allRD'>
+  return (
+    <div id='dashboard-brands'>
+      <Row className="mx-0 align-items-center my-2">
+        <Col sm="6" className="jenna-gorham">
+          <span>Jenna Gorham's Dashboard</span>
+        </Col>
+        <Col sm="6" className="jenna-gorham">
+        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end'>
+        <BreadcrumbItem >
+          <Link to='#'> Home </Link>
+        </BreadcrumbItem>
+        <BreadcrumbItem active>
+          <span style={{color: '#7467f1'}}> RD Dashboard </span>
+        </BreadcrumbItem>
+      </Breadcrumb>
+        </Col>
+      </Row>
+      <Row className='match-height allRD mb-2'>
         <Col lg='4' sm='6'>
         <ApexRadiarChartRd />
         </Col>
@@ -69,12 +82,7 @@ const RdDashboard = () => {
         <InvoiceListRdOppo />
         </Col>
       </Row>
-      )
-    },
-    {
-      title: 'My Statisticts',
-      content: (
-        <Row className='match-height'>
+      <Row className='match-height'>
         <Col xl='12' md='12' xs='12' className="mb-2">
           <DietatioStatsCard cols={{ xl: '', sm: '6' }} />
         </Col>
@@ -100,12 +108,6 @@ const RdDashboard = () => {
         <ChartRdDailySales />
         </Col>
       </Row>
-      )
-    },
-    {
-      title: 'Recommended For You',
-      content: (
-        <>
       <div className="recommended-for-you">
         <h1 className="brands">Brands</h1>
         <h6 className="showing-paid">(Showing Paid Brands Only)</h6>
@@ -116,40 +118,11 @@ const RdDashboard = () => {
           <InvoiceListRdBrandOppo />
         </Col>
       </Row>
-      </>
-      )
-    },
-    {
-      title: 'My Brand Partnerships',
-      content: (
-        <Row className='match-height mb-2'>
+      <Row className='match-height mb-2'>
         <Col xs='12'>
           <InvoiceListRdBrandPartnerships />
         </Col>
       </Row>
-      )
-    }
-  ]
-  const CollapseDefault = () => <AppCollapse data={data} />
-
-  return (
-    <div id='dashboard-brands'>
-      <Row className="mx-0 align-items-center">
-        <Col sm="6" className="jenna-gorham">
-          <span>Jenna Gorham's Dashboard</span>
-        </Col>
-        <Col sm="6" className="jenna-gorham">
-        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end'>
-        <BreadcrumbItem >
-          <Link to='#'> Home </Link>
-        </BreadcrumbItem>
-        <BreadcrumbItem active>
-          <span style={{color: '#7467f1'}}> RD Dashboard </span>
-        </BreadcrumbItem>
-      </Breadcrumb>
-        </Col>
-      </Row>
-      <div><CollapseDefault></CollapseDefault></div>
     </div>
   )
 }

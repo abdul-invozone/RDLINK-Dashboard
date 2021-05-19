@@ -24,7 +24,7 @@ export const searchArr = [
       {
         id: 3,
         target: 'email',
-        isBookmarked: true,
+        isBookmarked: false,
         title: 'Email',
         icon: 'Mail',
         link: '#'
@@ -32,7 +32,7 @@ export const searchArr = [
       {
         id: 4,
         target: 'chat',
-        isBookmarked: true,
+        isBookmarked: false,
         title: 'Chat',
         icon: 'MessageSquare',
         link: '#'
@@ -48,7 +48,7 @@ export const searchArr = [
       {
         id: 6,
         target: 'calendar',
-        isBookmarked: true,
+        isBookmarked: false,
         title: 'Calendar',
         icon: 'Calendar',
         link: '#'
