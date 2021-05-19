@@ -710,7 +710,7 @@ const InvoiceListManageBrands = () => {
   return (
     <div className='invoice-list-wrapper manage-brands'>
       <Card>
-      <h2>Manage Brands</h2>
+      <h2 className="main-heading">Manage Brands</h2>
         <div className='invoice-list-dataTable'>
           <DataTable
             noHeader

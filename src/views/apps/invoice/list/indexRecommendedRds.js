@@ -442,7 +442,7 @@ const InvoiceListRecommendedRds = () => {
   return (
     <div className='invoice-list-wrapper'>
       <Card>
-      <h2 className="recommended-RDs">Recommended RDs</h2>
+      <h2 className="main-heading">Recommended RDs</h2>
         <div className='invoice-list-dataTable'>
           <DataTable
             noHeader

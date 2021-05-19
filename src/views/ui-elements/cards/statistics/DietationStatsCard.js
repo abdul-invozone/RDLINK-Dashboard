@@ -67,7 +67,7 @@ const DietationStatsCard = ({ cols }) => {
         <CardText className='card-text font-small-2 mr-25 mb-0'>Updated 1 month ago</CardText>
       </CardHeader> */}
       <CardBody className='statistics-body'>
-      <h4 style={{marginBottom: '3rem', fontSize: '26px'}}>Statisticts</h4>
+      <h4 className="statisticts-text">Statisticts</h4>
         <Row>{renderData()}</Row>
       </CardBody>
     </Card>

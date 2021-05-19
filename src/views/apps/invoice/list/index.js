@@ -187,7 +187,7 @@ const InvoiceList = () => {
   return (
     <div className='invoice-list-wrapper manage-rds'>
       <Card>
-      <h2>Manage RD's</h2>
+      <h2 className="main-heading">Manage RD's</h2>
         <div className='invoice-list-dataTable'>
           <DataTable
             noHeader

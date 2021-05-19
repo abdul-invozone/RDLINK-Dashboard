@@ -122,6 +122,14 @@
 		}
 	}
 }
+.card-statistics {
+	.statistics-body {
+		.statisticts-text {
+			margin-bottom: 2rem; 
+			font-size: 26px;
+		}
+	}
+}
 #dashboard-analytics {
 	.card {
 		border-radius: 20px;
@@ -280,40 +288,40 @@
 		font-size: 24px;
 		font-weight: 600;
 	  }
-  
+
 	  p {
-		margin: 0;
-		line-height: 0.1em;
-	  }
-  
-	  span {
-		font-size: 12px;
-	  }
-	}
-  
-	.card-header {
-	  border-bottom: 1px solid #f4f5f8;
-	  padding: 1.3rem;
-	  margin-bottom: 25px;
-  
-	  .allRdTopLinks ul li a {
-		padding: 20px 10px;
-		border-bottom: 1px solid transparent;
-		color: #8488ad;
-		font-size: 12px;
-  
-		&:hover, &.active {
-		  border-bottom: 1px solid #556fe6;
-		  color: #556fe6;
+		  margin: 0;
+		  line-height: 0.1em;
 		}
-	  }
+
+		span {
+			font-size: 12px;
+		}
 	}
-  }
+
+	.card-header {
+		border-bottom: 1px solid #f4f5f8;
+		padding: 1.3rem;
+		margin-bottom: 25px;
+
+		.allRdTopLinks ul li a {
+			padding: 20px 10px;
+			border-bottom: 1px solid transparent;
+			color: #8488ad;
+			font-size: 12px;
+
+			&:hover, &.active {
+				border-bottom: 1px solid #556fe6;
+				color: #556fe6;
+			}
+		}
+	}
+}
   
   .allRdactivelinks {
 	display: inline-block;
 	font-weight: 500;
-  }
+}
   
   .allRD {
 	.card-footer {
@@ -676,7 +684,7 @@
 	} 
 	// (rd page) card-titles
 	.collapse-title.card-title {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	// navbar
 	.header-navbar.floating-nav {
@@ -691,15 +699,15 @@
 		}
 		// Upcoming Opportunities 
 		.rd-list-wrapper .opportunitie-heading{
-			font-size: 18px;
+			font-size: 16px;
 		}
-		// Recommended Opportunities 
+		// cards main-headings 
 		.invoice-list-wrapper {
-		.recommended-RDs {
-			font-size: 18px;
-		}
 		 .recommended-opportunities {
 			font-size: 12px;
+		}
+		.main-heading {
+			font-size: 15px;
 		}
 	} 
 	// Pagination entries 
@@ -709,6 +717,31 @@
 		top: -55px;
 		left: 10px;
 	}
+	// (Admin page) sort-by 
+	.monthly-report .sortby-btn {
+		margin-top: 10px;
+	}
+	// cards statisticts heading 
+	.card-statistics {
+		.statistics-body {
+			.statisticts-text {
+				font-size: 23px;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+}
+// Recommended-for-you Cards-head
+
+.recommended-for-you .brands {
+	font-size: 18px;
+}
+.recommended-for-you .showing-paid {
+	font-size: 14px;
+}
+.card .card-header .card-title {
+	padding: 10px 0 0 10px;
+	margin-bottom: 0;
 }
   
   // Small devices (landscape phones, 576px and up)

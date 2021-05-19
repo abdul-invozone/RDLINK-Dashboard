@@ -124,7 +124,7 @@ const SimpleBarChartExpense = () => {
   return (
     <Card>
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
-        <CardTitle tag='h4'>Expense Report</CardTitle>
+        <h4 className="subconcardtitle subconcardtitle-gray">Expense Report</h4>
         <div className='d-flex align-items-center expense-report'>
         <UncontrolledButtonDropdown>
         <DropdownToggle color='flat-primary' className="expense-2021" caret>
