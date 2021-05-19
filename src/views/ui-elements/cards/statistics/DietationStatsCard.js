@@ -9,31 +9,31 @@ const DietationStatsCard = ({ cols }) => {
       title: '3,209',
       subtitle: "My Partnerships",
       color: 'light-primary',
-      icon: <TrendingUp size={31} />
+      icon: <TrendingUp size={21} />
     },
     {
       title: '549',
       subtitle: "My Brand Partners",
       color: 'light-info',
-      icon: <User size={31} />
+      icon: <User size={21} />
     },
     {
       title: '$9,745',
       subtitle: 'Total Revenue',
       color: 'light-danger',
-      icon: <Box size={31} />
+      icon: <Box size={21} />
     },
     {
       title: '230k',
       subtitle: 'Consumer Impact',
       color: 'light-success',
-      icon: <DollarSign size={31} />
+      icon: <DollarSign size={21} />
     },
     {
       title: '78%',
       subtitle: 'Response Date',
       color: 'light-success',
-      icon: <DollarSign size={31} />
+      icon: <DollarSign size={21} />
     }
   ]
 
@@ -49,10 +49,10 @@ const DietationStatsCard = ({ cols }) => {
           })}
         >
           <Media>
-            <Avatar color={item.color} icon={item.icon} className='mr-2' />
+            <Avatar color={item.color} icon={item.icon} className='mr-1' />
             <Media className='my-auto' body>
-              <h4 className='font-weight-bolder mb-0' style={{fontSize:'30px'}}>{item.title}</h4>
-              <CardText className='total-partnership'>{item.subtitle}</CardText>
+              <h4 className='font-weight-bolder mb-0' style={{fontSize:'27px'}}>{item.title}</h4>
+              <CardText className='total-partnership consumer-impact'>{item.subtitle}</CardText>
             </Media>
           </Media>
         </Col>
@@ -67,7 +67,7 @@ const DietationStatsCard = ({ cols }) => {
         <CardText className='card-text font-small-2 mr-25 mb-0'>Updated 1 month ago</CardText>
       </CardHeader> */}
       <CardBody className='statistics-body'>
-      <h4 style={{marginBottom: '4rem', fontSize: '26px'}}>Statisticts</h4>
+      <h4 className="statisticts-text">Statisticts</h4>
         <Row>{renderData()}</Row>
       </CardBody>
     </Card>

@@ -5,7 +5,7 @@
 	.navbar-header {
 		.navbar-brand {
 			.brand-text {
-				font-size: 24px !important;
+				font-size: 22px !important;
 				font-weight: 500 !important;
 			}
 		}
@@ -28,7 +28,7 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 37px 0 0 !important;
+				margin: 30px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
@@ -43,8 +43,8 @@
 			}
 			li {
 				a {
-					padding: 20px !important;
-					font-size: 16px !important;
+					padding: 18px 20px !important;
+					font-size: 14px !important;
 					margin: 0 !important;
 					color: #fff !important;
 				}
@@ -53,7 +53,7 @@
 	}
 }
 .userDropDown {
-	padding: 37px 0 0;
+	padding: 30px 0 0;
 }
 .user-name {
 	font-size: 13px !important;
@@ -64,7 +64,7 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 37px 0 0 !important;
+				margin: 30px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
@@ -85,8 +85,8 @@
 			}
 			li {
 				a {
-					padding: 20px !important;
-					font-size: 16px !important;
+					padding: 18px 20px !important;
+					font-size: 14px !important;
 					margin: 0 !important;
 					color: #fff !important;
 				}
@@ -119,6 +119,14 @@
 				width: 55px !important;
 				height: 55px !important;
 			}
+		}
+	}
+}
+.card-statistics {
+	.statistics-body {
+		.statisticts-text {
+			margin-bottom: 2rem; 
+			font-size: 26px;
 		}
 	}
 }
@@ -170,6 +178,8 @@
 		top: -50px;
 		left: 30px;
 		display: inline-block;
+		color:#c1c0c5;
+		font-weight: 500;
 	}
 	.page-item.active {
 		.page-link {
@@ -278,40 +288,40 @@
 		font-size: 24px;
 		font-weight: 600;
 	  }
-  
+
 	  p {
-		margin: 0;
-		line-height: 0.1em;
-	  }
-  
-	  span {
-		font-size: 12px;
-	  }
-	}
-  
-	.card-header {
-	  border-bottom: 1px solid #f4f5f8;
-	  padding: 1.3rem;
-	  margin-bottom: 25px;
-  
-	  .allRdTopLinks ul li a {
-		padding: 20px 10px;
-		border-bottom: 1px solid transparent;
-		color: #8488ad;
-		font-size: 12px;
-  
-		&:hover, &.active {
-		  border-bottom: 1px solid #556fe6;
-		  color: #556fe6;
+		  margin: 0;
+		  line-height: 0.1em;
 		}
-	  }
+
+		span {
+			font-size: 12px;
+		}
 	}
-  }
+
+	.card-header {
+		border-bottom: 1px solid #f4f5f8;
+		padding: 1.3rem;
+		margin-bottom: 25px;
+
+		.allRdTopLinks ul li a {
+			padding: 20px 10px;
+			border-bottom: 1px solid transparent;
+			color: #8488ad;
+			font-size: 12px;
+
+			&:hover, &.active {
+				border-bottom: 1px solid #556fe6;
+				color: #556fe6;
+			}
+		}
+	}
+}
   
   .allRdactivelinks {
 	display: inline-block;
 	font-weight: 500;
-  }
+}
   
   .allRD {
 	.card-footer {
@@ -385,8 +395,8 @@
 		color: #b2b3b5;
 		font-weight: bold;
 		font-size: 14px;
-	  }
 	}
+}
   
 	.previous-period {
 	  margin-left: 5px;
@@ -404,7 +414,7 @@
 	  }
 	}
   
-	 .main-column .view-more {
+	.view-more {
 	  padding: 9px 28px 9px 15px;
 	  background-color: #5167e1;
 	  color: white;
@@ -413,7 +423,7 @@
 	  position: relative;
 	  border-radius: 5px;
 	  display: inline-block;
-	  margin:3rem 0;
+	  margin: 5rem 0;
 	  max-width: 100%;
 	}
 	  .arrow-right {
@@ -421,7 +431,7 @@
 		top: 14px;
 		margin-left: 5px;
 	  }
-	}
+}
   
   .dot-sub {
 	background-color: #34ce86;
@@ -484,7 +494,7 @@
 }
 
 .collapse-title.card-title {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 600;
 }
 
@@ -611,8 +621,29 @@
 	color: black;
 	font-size: 30px;
 }
+.brandSlides .swiper-pagination {
+	display: none;
+}
+.brandSlides .swiper-button-prev {
+	left: auto;
+	right: 50px;
+}
+.brandSlides .swiper-button-next {
+	right: -35px;
+}
+.brandSlides .swiper-button-prev,
+.brandSlides .swiper-button-next {
+	position: relative;
+	margin-top: 0;
+	display: inline-flex;
+	float: right;
+	margin-bottom: 30px;
+}
 // Recommended For You Cards-body End
-
+// Manage RDs >> My Statistics >> Statistics Section
+.consumer-impact{
+	font-size: 12px !important;
+}
 
 
 
@@ -626,12 +657,96 @@
   
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
+
+	.text-center-sm {
+		text-align: center;
+	}
   
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
 	}
-  }
+	// (admin page) admin dashboard
+	#dashboard-analytics .admin-dashboard {
+		align-items: center;
+	}
+	.allRdBrandsStats { 
+	margin-top: 20px;
+	}
+	// view-more btn 
+	.subconcard .view-more {
+		justify-content: center;
+		margin: 1rem 0;
+	}
+	// (admin page) Subscription conversion rate 
+	.subconcardtitle {
+		font-size: 17px !important;
+	}
+	// (rd page) Jenna Gorham's Dashboard
+	#dashboard-brands .jenna-gorham {
+		justify-content: center;
+	} 
+	// (rd page) card-titles
+	.collapse-title.card-title {
+		font-size: 16px;
+	}
+	// navbar
+	.header-navbar.floating-nav {
+		margin: 0 1rem !important;
+	    padding: 0.75rem 0.5rem !important;
+	}
+	// brand-dashboard column 
+	.match-height {
+		> [class*='col'] > .card {
+			margin-bottom: 20px;
+		  }
+		}
+		// Upcoming Opportunities 
+		.rd-list-wrapper .opportunitie-heading{
+			font-size: 16px;
+		}
+		// cards main-headings 
+		.invoice-list-wrapper {
+		 .recommended-opportunities {
+			font-size: 12px;
+		}
+		.main-heading {
+			font-size: 15px;
+		}
+	} 
+	// Pagination entries 
+	.invoice-list-wrapper .showEntries {
+		font-size: 11px;
+		position: relative;
+		top: -55px;
+		left: 10px;
+	}
+	// (Admin page) sort-by 
+	.monthly-report .sortby-btn {
+		margin-top: 10px;
+	}
+	// cards statisticts heading 
+	.card-statistics {
+		.statistics-body {
+			.statisticts-text {
+				font-size: 23px;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+}
+// Recommended-for-you Cards-head
+
+.recommended-for-you .brands {
+	font-size: 18px;
+}
+.recommended-for-you .showing-paid {
+	font-size: 14px;
+}
+.card .card-header .card-title {
+	padding: 10px 0 0 10px;
+	margin-bottom: 0;
+}
   
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) and (max-width: 767.98px) {
@@ -649,11 +764,6 @@
 	  max-width: 250px !important;
 	}
 
-	// Dashboard view-more-a
-	.main-column .view-more {
-		padding: 9px 20px 9px 15px;
-		font-size: 12px;
-	}
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
@@ -669,11 +779,6 @@
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) and (max-width: 1199.98px) {
 
-	  // Dashboard view-more-a
-	.main-column .view-more {
-		padding: 9px 20px 9px 15px;
-		font-size: 12px;
-	}
 	.statsDropdown {
 	  position: absolute;
 	  top: -20px;
@@ -725,7 +830,7 @@
   }
   
   .collapse-title.card-title {
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 600;
   }
   
@@ -797,7 +902,6 @@
 .recommended-for-you .showing-paid {
 	font-size: 14px;
 }
-// Recommended For You Cards-head End
 
 // Recommended For You Cards-body Start
 .brandContent {
@@ -828,17 +932,22 @@
 // 	top: 10px;
 // }
 // Recommended For You Cards-body End
+
+// Manage RDs >> My Statistics >> Statistics Section
+.consumer-impact{
+	font-size: 10px !important;
 }
-.brandSlides .swiper-pagination {
-	display: none;
 }
-.brandSlides .swiper-button-prev {
-	left: auto;
-	right: 50px;
-}
-.brandSlides .swiper-button-next {
-	right: -35px;
-}
+// @media (min-width: 992px) and (max-width: 1200px) {
+// 	 .subconcard .main-column .view-more {
+// 		padding: 9px 15px 9px 15px;
+// 		font-style: 12px;
+// 	}
+// 	.subconcard .main-column .view-more .arrow-right {
+// 		margin-left: 3px;
+// 	  }
+// }
+
 .brandSlides .swiper-button-prev,
 .brandSlides .swiper-button-next {
 	position: relative;
@@ -857,5 +966,12 @@
 @media (max-width: 767px) {
 	.rdLoginHeading {
 		font-size: 24px;
+	}
+	.navbarContainerBrands {
+		padding: 0.2rem 1rem !important;
+	}
+	.navbarContainerBrands .avatar {
+		position: relative;
+		top: -3px;
 	}
 }

@@ -160,7 +160,7 @@ const VerticalLayoutBrands = props => {
           `header-navbar navbar align-items-center ${navbarClasses[navbarType] || 'floating-nav'} navbar-shadow`
         )}
       >
-        <div className='navbar-container d-flex content'>
+        <div className='navbar-container d-flex content navbarContainerBrands'>
           {navbar ? navbar : <NavbarComponentBrands setMenuVisibility={setMenuVisibility} skin={skin} setSkin={setSkin} />}
         </div>
       </Navbar>

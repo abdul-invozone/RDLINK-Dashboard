@@ -27,7 +27,7 @@ const loginrd = () => {
             |
               </li>
             <li className="d-inline-block">
-            <Link to='/createloginrd'>Create Account</Link>
+            <Link to='/createloginrd'>Create Accounts</Link>
               </li>
           </ul>
         </Col>

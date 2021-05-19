@@ -442,7 +442,7 @@ const InvoiceListRdOppo = () => {
   return (
     <div className='invoice-list-wrapper'>
       <Card>
-      <h2>Brand Opportunities</h2>
+      <h2 className="main-heading">Brand Opportunities</h2>
         <div className='invoice-list-dataTable'>
           <DataTable
             noHeader
@@ -468,7 +468,7 @@ const InvoiceListRdOppo = () => {
               />
             }
           />
-        <p className="showEntries">Shwoing 1 to {rowsPerPage} of {dummyData.total} entries</p>
+        <p className="showEntries">Showing 1 to {rowsPerPage} of {dummyData.total} entries</p>
         </div>
       </Card>
     </div>

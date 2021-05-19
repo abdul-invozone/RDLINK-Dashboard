@@ -268,10 +268,10 @@ const InvoiceListNewRds = () => {
   }
 
   return (
-    <div className='rd-list-wrapper'>
-      <Card>
-      <h2 style={{padding: '0 25px 25px'}}>Upcoming Opportunities</h2>
-        <div className='invoice-list-dataTable'>
+    <div className='rd-list-wrapper' style={{paddingTop: '0', paddingBottom: '0'}}>
+      <Card style={{marginBottom: '0'}}>
+      <h2 className="opportunitie-heading" style={{padding: '25px'}}>Upcoming Opportunities</h2>
+        <div className='invoice-list-dataTable' style={{padding: '10px'}}>
           <DataTable
             noHeader
             pagination
