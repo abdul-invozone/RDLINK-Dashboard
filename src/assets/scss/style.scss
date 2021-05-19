@@ -944,3 +944,23 @@
 // 	  }
 // }
 
+.brandSlides .swiper-button-prev,
+.brandSlides .swiper-button-next {
+	position: relative;
+	margin-top: 0;
+	display: inline-flex;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.rdLogin-inner {
+	height: calc(var(--vh, 0.9vh) * 100);
+}
+.rdLoginHeading {
+	font-size: 50px;
+}
+@media (max-width: 767px) {
+	.rdLoginHeading {
+		font-size: 24px;
+	}
+}

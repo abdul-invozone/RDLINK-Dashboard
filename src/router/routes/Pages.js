@@ -190,6 +190,11 @@ const PagesRoutes = [
     }
   },
   {
+    path: '/pages/login-rd',
+    component: lazy(() => import('../../views/pages/authentication/LoginRd')),
+    layout: 'BlankLayout'
+  },
+  {
     path: '/createloginrd',
     component: lazy(() => import('../../views/pages/rd/CreateLoginrd')),
     layout: 'BlankLayout',

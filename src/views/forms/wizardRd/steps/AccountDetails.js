@@ -6,7 +6,7 @@ const AccountDetails = ({ stepper, type }) => {
   return (
     <Fragment>
       <div className='content-header'>
-        <h5 className='mb-0'>Account Details</h5>
+        <h5 className='mb-0'>Create Account</h5>
         <small className='text-muted'>Enter Your Account Details.</small>
       </div>
       <Form onSubmit={e => e.preventDefault()}>

@@ -9,12 +9,20 @@ import '@styles/react/libs/react-select/_react-select.scss'
 
 const PersonalInfo = ({ stepper, type }) => {
   const colorOptions = [
-    { value: 'glutenFree', label: 'Gluten Free', color: '#00B8D9', isFixed: true },
-    { value: 'dairyFree', label: 'Dairy Free', color: '#0052CC', isFixed: true },
-    { value: 'top', label: 'Top 8 Allergen friendly', color: '#5243AA', isFixed: true },
-    { value: 'vegan', label: 'Vegan', color: '#FF5630', isFixed: false },
-    { value: 'nutFree', label: 'Nut Free', color: '#FF8B00', isFixed: false },
-    { value: 'yellow', label: 'Yellow', color: '#FFC400', isFixed: false }
+    { value: 'option1', label: 'Option 1'},
+    { value: 'option2', label: 'Option 2'},
+    { value: 'option3', label: 'Option 3'}
+  ]
+  const countryOptions = [
+    { value: 'US', label: 'US' },
+    { value: 'Canada', label: 'Canada' }
+  ]
+  const stateOptions = [
+    { value: 'Quebec', label: 'Quebec' },
+    { value: 'NewBrunswick', label: 'New Brunswick' },
+    { value: 'BritishColumbia', label: 'British Columbia' },
+    { value: 'Alberta', label: 'Alberta' },
+    { value: 'Ontario', label: 'Ontario' }
   ]
 
   const animatedComponents = makeAnimated()
@@ -22,44 +30,37 @@ const PersonalInfo = ({ stepper, type }) => {
   return (
     <Fragment>
       <div className='content-header'>
-        <h5 className='mb-0'>Company Info</h5>
-        <small>Enter Your Company Info.</small>
+        <h5 className='mb-0'>Licensure Info</h5>
+        <small>Enter Your Licensure Info.</small>
       </div>
       <Form onSubmit={e => e.preventDefault()}>
         <Row>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`full-name-${type}`}>
-              Full Name:
+        <FormGroup tag={Col} md='12'>
+        <Label className='form-label' for={`username-${type}`}>
+              First and Last Name
             </Label>
-            <Input type='text' name='full-name' id={`full-name-${type}`} placeholder='Full Name' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
+            <Input
+              name={`username-${type}`}
+              id={`username-${type}`}
+            />
+            </FormGroup>
+            <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`cdr-number-${type}`}>
-              CDR Registration Number:
-            </Label>
-            <Input type='number' name='cdrRegistrationNumber' id={`cdr-number-${type}`} placeholder='Contact Name' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`cdr-number-${type}`}>
-            Are you a RD or RD2Be?
+            Are you a registered dietitian?
             </Label>
             <div className='demo-inline-spacing'>
           <CustomInput type='radio' id='CustomRadioRd' name='customRadio' inline label='Rd' defaultChecked />
-          <CustomInput type='radio' id='CustomRadioRd2Be' name='customRadio' inline label='Rd2Be' />
-          <CustomInput type='radio' id='CustomRadioOther' name='customRadio' inline label='Other' />
+          <CustomInput type='radio' id='CustomRadioDieteticIntern' name='customRadio' inline label='Dietetic Intern' />
+          <Select
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              options={colorOptions}
+              className='react-select w-50'
+              classNamePrefix='select'
+              placeholder="Other..."
+            />
         </div>
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className="waves-effect mr-75 btn btn-primary btn-sm">
-              Upload License Certificate
-              <Input hidden="" accept="image/*" type="file" className="form-control-file mt-1" />
-              </Label>
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`contact-number-${type}`}>
-              Contact Number:
-            </Label>
-            <Input type='number' name='contactNumber' id={`contact-number-${type}`} placeholder='Contact Number' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`website-${type}`}>
@@ -68,28 +69,42 @@ const PersonalInfo = ({ stepper, type }) => {
             <Input type='text' name='website' id={`website-${type}`} placeholder='Website' />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`zip-code-${type}`}>
-              Zip Code:
+            <Label className='form-label' for={`cdr-number-${type}`}>
+              CDR Registration Number:
             </Label>
-            <Input type='number' name='zipCode' id={`zip-code-${type}`} placeholder='Zip Code' />
+            <Select
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              options={stateOptions}
+              className='react-select'
+              classNamePrefix='select'
+            />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`city-${type}`}>
-              City:
-            </Label>
-            <Input type='text' name='city' id={`city-${type}`} placeholder='City' />
-          </FormGroup>
-          <FormGroup tag={Col} md='12'>
-            <Label className='form-label' for={`state-${type}`}>
-              State:
-            </Label>
-            <Input type='text' name='state' id={`state-${type}`} placeholder='State' />
+            <Label>
+            Upload Proof of Certification
+              </Label>
+              <Input hidden="" accept="image/*" type="file" className="form-control-file mb-1" />
           </FormGroup>
           <FormGroup tag={Col} md='12'>
             <Label className='form-label' for={`country-${type}`}>
               Country:
             </Label>
-            <Input type='text' name='country' id={`country-${type}`} placeholder='Country' />
+            <Select
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              options={countryOptions}
+              className='react-select'
+              classNamePrefix='select'
+            />
+          </FormGroup>
+          <FormGroup tag={Col} md='12'>
+            <Label className='form-label' for={`zip-code-${type}`}>
+              Zip Code:
+            </Label>
+            <Input type='number' name='zipCode' id={`zip-code-${type}`} placeholder='Zip Code' />
           </FormGroup>
         </Row>
         <div className='d-flex justify-content-between'>

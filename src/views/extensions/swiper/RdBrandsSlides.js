@@ -19,7 +19,25 @@ const params = {
   pagination: {
     clickable: true
   },
-  navigation:true
+  navigation:true,
+  breakpoints: {
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10
+    }
+  }
 }
 
 const RdBrandsSlides = () => {
