@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight } from 'react-feather'
 import { Label, FormGroup, Row, Col, Input, Form, Button } from 'reactstrap'
 
 const AccountDetails = ({ stepper, type }) => {
+  
   return (
     <Fragment>
       <div className='content-header'>
