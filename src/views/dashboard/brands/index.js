@@ -1,28 +1,22 @@
-import { useContext } from 'react'
-import InvoiceList from '@src/views/apps/invoice/list'
-import InvoiceListRecommendedRds from '@src/views/apps/invoice/list/indexRecommendedRds'
-import InvoiceListRecommendedRdOppo from '@src/views/apps/invoice/list/indexRecommendedRdOppo'
+import { ThemeColors } from '@src/utility/context/ThemeColors'
 import InvoiceListMyPartnerships from '@src/views/apps/invoice/list/indexMyPartnerships'
 import InvoiceListNewRds from '@src/views/apps/invoice/list/indexNewRds'
-import { ThemeColors } from '@src/utility/context/ThemeColors'
-import RDStatsCard from '@src/views/ui-elements/cards/statistics/RDStatsCard'
-import ChartjsDoughnutChart from '@src/views/charts/chart-js/ChartjsDoughnutChart'
-import ChartjsDoughnutChart2 from '@src/views/charts/chart-js/ChartjsDoughnutChart2'
-import SubConversion from '@src/views/charts/chart-js/SubConversion'
-import NewRds from '@src/views/charts/chart-js/NewRds'
-import AreaChart from '@src/views/charts/recharts/AreaChart'
-import BarChartExpense from '@src/views/charts/recharts/BarChartExpense'
-import BarChart from '@src/views/charts/recharts/BarChart'
+import InvoiceListRecommendedRdOppo from '@src/views/apps/invoice/list/indexRecommendedRdOppo'
+import InvoiceListRecommendedRds from '@src/views/apps/invoice/list/indexRecommendedRds'
 import ApexRadiarChart2 from '@src/views/charts/apex/ApexDonutChart2'
+import AdminRdSlides from '@src/views/extensions/swiper/AdminRdSlides'
+import BarChartExpense from '@src/views/charts/recharts/BarChartExpense'
 import RevenueReport2 from '@src/views/ui-elements/cards/analytics/RevenueReport2'
-import { Row, Col, Card, CardHeader, CardTitle, CardText, CardBody, Media, Breadcrumb, BreadcrumbItem } from 'reactstrap'
-import AppCollapse from '@components/app-collapse'
-import { Link } from 'react-router-dom'
-
+import RDStatsCard from '@src/views/ui-elements/cards/statistics/RDStatsCard'
 import '@styles/react/libs/charts/apex-charts.scss'
+import '@styles/react/libs/charts/recharts.scss'
 // ** Styles
 import '@styles/react/libs/flatpickr/flatpickr.scss'
-import '@styles/react/libs/charts/recharts.scss'
+import '@styles/react/libs/swiper/swiper.scss'
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { Breadcrumb, BreadcrumbItem, Col, Row } from 'reactstrap'
+
 
 const BrandsDashboard = () => {
   const { colors } = useContext(ThemeColors)
@@ -66,6 +60,7 @@ const BrandsDashboard = () => {
       <Row className='match-height mb-2'>
         <Col xs='12'>
           <InvoiceListRecommendedRds />
+          {/* <AdminRdSlides /> */}
         </Col>
       </Row>
       <Row className='match-height'>

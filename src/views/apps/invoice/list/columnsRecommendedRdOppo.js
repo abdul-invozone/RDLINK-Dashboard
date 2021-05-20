@@ -123,7 +123,7 @@ export const columnsRecommendedRdOppo = [
   //   cell: row => <span>${row.total || 0}</span>
   // },
   {
-    name: 'Type of Partnership',
+    name: 'Details',
     selector: 'typeOfPartnership',
     sortable: true,
     minWidth: '240px',
@@ -138,14 +138,14 @@ export const columnsRecommendedRdOppo = [
     cell: row => <span>{row.client.location || 0}</span>
   },
   {
-    name: 'Cost',
+    name: 'Investment',
     selector: 'cost',
     sortable: true,
     minWidth: '130px',
     cell: row => <span>{row.cost || 0}</span>
   },
   {
-    name: 'Reach',
+    name: 'Estimated Reach',
     selector: 'reach',
     sortable: true,
     minWidth: '130px',
@@ -176,15 +176,15 @@ export const columnsRecommendedRdOppo = [
       <div className='column-action d-flex align-items-center'>
         <Send size={17} id={`send-tooltip-${row.id}`} />
         <UncontrolledTooltip placement='top' target={`send-tooltip-${row.id}`}>
-          Send Mail
+          Send Message
         </UncontrolledTooltip>
         <Link to={`/apps/invoice/preview/${row.id}`} id={`pw-tooltip-${row.id}`}>
           <Eye size={17} className='mx-1' />
         </Link>
         <UncontrolledTooltip placement='top' target={`pw-tooltip-${row.id}`}>
-          Preview Invoice
+          View
         </UncontrolledTooltip>
-        <UncontrolledDropdown>
+        {/* <UncontrolledDropdown>
           <DropdownToggle tag='span'>
             <MoreVertical size={17} className='cursor-pointer' />
           </DropdownToggle>
@@ -214,7 +214,7 @@ export const columnsRecommendedRdOppo = [
               <span className='align-middle'>Duplicate</span>
             </DropdownItem>
           </DropdownMenu>
-        </UncontrolledDropdown>
+        </UncontrolledDropdown> */}
       </div>
     )
   }

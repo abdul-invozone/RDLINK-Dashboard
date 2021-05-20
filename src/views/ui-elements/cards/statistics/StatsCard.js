@@ -1,13 +1,14 @@
-import classnames from 'classnames'
 import Avatar from '@components/avatar'
-import { TrendingUp, User, Box, DollarSign } from 'react-feather'
-import { Card, CardHeader, CardTitle, CardBody, CardText, Row, Col, Media, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap'
+import classnames from 'classnames'
+import { Box, DollarSign, TrendingUp, User } from 'react-feather'
+import { Card, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown } from 'reactstrap'
 
 const StatsCard = ({ cols }) => {
   const data = [
     {
       title: '4239',
       subtitle: 'All Brands',
+      subtitleHover: 'paid vs. free',
       color: 'light-primary',
       icon: <TrendingUp size={31} />
     },
@@ -18,16 +19,42 @@ const StatsCard = ({ cols }) => {
       icon: <User size={31} />
     },
     {
-      title: '1329',
-      subtitle: 'Total Partnerships',
-      color: 'light-danger',
-      icon: <Box size={31} />
+      title: '5409',
+      subtitle: "Open Brand Campaigns",
+      color: 'light-info',
+      icon: <User size={31} />
+    },
+    {
+      title: '5409',
+      subtitle: "Available RD Opportunities",
+      color: 'light-info',
+      icon: <User size={31} />
+    },
+    {
+      title: '4239',
+      subtitle: 'Partnerships Secured',
+      subtitleHover: 'total vs monthly vs quarterly',
+      color: 'light-primary',
+      icon: <TrendingUp size={31} />
+    },
+    {
+      title: '4239',
+      subtitle: 'Unique Monthly Logins',
+      color: 'light-primary',
+      icon: <TrendingUp size={31} />
     },
     {
       title: '$9,745',
       subtitle: 'Total Revenue',
+      subtitleHover: 'Subscription and Comission',
       color: 'light-success',
       icon: <DollarSign size={31} />
+    },
+    {
+      title: '1329',
+      subtitle: 'Churn',
+      color: 'light-danger',
+      icon: <Box size={31} />
     }
   ]
 
@@ -48,17 +75,17 @@ const StatsCard = ({ cols }) => {
         </DropdownToggle>
         <DropdownMenu>
           <DropdownItem href='/' tag='a'>
-            Option 1
+            Month
           </DropdownItem>
           <DropdownItem href='/' tag='a'>
-            Option 2
+            Quarter
           </DropdownItem>
           <DropdownItem href='/' tag='a'>
-            Option 3
+            Year
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledButtonDropdown>
-          <Media>
+          <Media data-toggle="tooltip" data-placement="top" title={item.subtitleHover}>
             <Avatar color={item.color} icon={item.icon} className='mr-1' />
             <Media className='media-avatar m-auto' body>
               <h4 className='font-weight-bolder mb-0' style={{fontSize:'26px'}}>{item.title}</h4>

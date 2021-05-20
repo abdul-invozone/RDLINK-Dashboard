@@ -1,7 +1,7 @@
-import classnames from 'classnames'
 import Avatar from '@components/avatar'
-import { TrendingUp, User, Box, DollarSign } from 'react-feather'
-import { Card, CardHeader, CardTitle, CardBody, CardText, Row, Col, Media, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap'
+import classnames from 'classnames'
+import { Box, DollarSign, TrendingUp, User } from 'react-feather'
+import { Card, CardBody, CardText, Col, Media, Row } from 'reactstrap'
 
 const DietationStatsCard = ({ cols }) => {
   const data = [
