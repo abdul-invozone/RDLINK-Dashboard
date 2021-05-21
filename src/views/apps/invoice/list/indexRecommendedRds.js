@@ -22,8 +22,8 @@ import '@styles/react/libs/tables/react-dataTable-component.scss'
 const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, handlePerPage, rowsPerPage }) => {
   return (
     <div className='invoice-list-table-header w-100 py-2'>
-      <Row>
-        <Col lg='6' className='d-flex align-items-center px-0 px-lg-1'>
+      <Row className="invoicedata">
+        <Col lg='6' sm='12' sm='12' className='d-flex align-items-center px-0 px-lg-1'>
           <div className='d-flex align-items-center mr-2 Bold text'>
             <Label className="text-lg Bold text" for='rows-per-page'>Entries</Label>
             <CustomInput

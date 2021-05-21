@@ -49,7 +49,7 @@ const ChartjsRadarChart2 = ({ tooltipShadow, successColorShade, warningLightColo
     }
 
   return (
-    <Card>
+    <Card className="all-brands">
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
         <h4 className="subconcardtitle subconcardtitle-gray">All Brands</h4>
         <div className="allRdTopLinks">
@@ -60,24 +60,24 @@ const ChartjsRadarChart2 = ({ tooltipShadow, successColorShade, warningLightColo
           </ul>
         </div>
       </CardHeader>
-      <CardBody>
+      <CardBody className="admin-card-doughnut">
         <div style={{ height: '200px', position: 'relative'}}>
         <div className="totalRD totalRDBrands"><p style={{fontWeight:'600'}}>1773</p><span>Total Brands</span></div>
           <Doughnut data={data} options={options} height={200} />
         </div>
-        <div className='d-inline-flex justify-content-between mt-3 mb-1 mx-2'>
+        <div className='d-inline-flex justify-content-between mt-3 mb-1 mx-2 admin-card-subscribed'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-dark"></span>
             <span className='font-weight-bold ml-75 mr-25'>Subscribed</span>
           </div>
         </div>
-        <div className='d-inline-flex justify-content-between mb-1 mr-2'>
+        <div className='d-inline-flex justify-content-between mb-1 mr-2 admin-card-new'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-red"></span>
             <span className='font-weight-bold ml-75 mr-25'>New</span>
           </div>
         </div>
-        <div className='d-inline-flex justify-content-between'>
+        <div className='d-inline-flex justify-content-between admin-card-trial'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-green"></span>
             <span className='font-weight-bold ml-75 mr-25'>Trial</span>

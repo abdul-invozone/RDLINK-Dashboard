@@ -61,27 +61,27 @@ const ChartjsRadarChart = ({ tooltipShadow, successColorShade, warningLightColor
           </ul>
         </div>
       </CardHeader>
-      <CardBody>
+      <CardBody className="all-rds">
         <div style={{ height: '200px', position: 'relative' }}>
         <div className="totalRD"><p>6521</p><span>Total RD's</span></div>
           <Doughnut data={data} options={options} height={200} />
         </div>
-        <div className='d-inline-flex justify-content-between mt-3 mb-1 mr-2'>
+        <div className='d-inline-flex justify-content-between mt-3 mb-1 mr-2 all-rds-speciality'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-navy"></span>
-            <span className='font-weight-bold ml-75 mr-25'>Speciality</span>
+            <span className='font-weight-bold ml-75 mr-25 all-rds-span'>Speciality</span>
           </div>
         </div>
-        <div className='d-inline-flex justify-content-between mb-1 mr-2'>
+        <div className='d-inline-flex justify-content-between mb-1 mr-2 all-rds-industry'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-maroon"></span>
-            <span className='font-weight-bold ml-75 mr-25'>Industry</span>
+            <span className='font-weight-bold ml-75 mr-25 all-rds-span'>Industry</span>
           </div>
         </div>
-        <div className='d-inline-flex justify-content-between'>
+        <div className='d-inline-flex justify-content-between all-rds-region'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-sky"></span>
-            <span className='font-weight-bold ml-75 mr-25'>Region</span>
+            <span className='font-weight-bold ml-75 mr-25 all-rds-span'>Region</span>
           </div>
         </div>
       </CardBody>

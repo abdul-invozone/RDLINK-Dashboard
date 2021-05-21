@@ -72,7 +72,7 @@ const LoginV2 = () => {
         </Col>
         <Col className='d-flex align-items-center auth-bg px-2 p-lg-2' lg='4' sm='12'>
           <Col className='px-xl-2 mx-auto' sm='8' md='6' lg='12'>
-            <CardTitle tag='h2' className='font-weight-bold mb-1'>
+            <CardTitle tag='h2' className='font-weight-bold mb-1 welcome-rd-link'>
             Welcome to The RD Link! 👋
             </CardTitle>
             <CardText className='mb-2'>Please sign-in to your account to pick up where you left off.</CardText>

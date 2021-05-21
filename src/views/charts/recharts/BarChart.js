@@ -112,7 +112,7 @@ const SimpleBarChart = () => {
   return (
     <Card className="monthly-report">
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
-        <h4 className="subconcardtitle">Monthly Recurring Revenue Report</h4>
+        <h4 className="subconcardtitle monthly-recurring">Monthly Recurring Revenue Report</h4>
         <UncontrolledButtonDropdown>
       <DropdownToggle outline color='primary' caret className="sortby-btn"> 
         Sort by
@@ -142,18 +142,18 @@ const SimpleBarChart = () => {
           </ResponsiveContainer>
         </div>
       </CardBody>
-      <div className='d-flex align-items-center flex-wrap mb-2 justify-content-center'>
+      <div className='d-flex align-items-center flex-wrap mb-2 justify-content-center recurring-parent'>
           <div className='mr-1'>
             <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#566fe7', borderRadius: '0', fontWeight: 'bolder' }}></span>
-            <span className='mr-75'>New</span>
+            <span className='mr-75 recurring'>New</span>
           </div>
           <div className='mr-1'>
             <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#f2b44d', borderRadius: '0', fontWeight: 'bolder' }}></span>
-            <span className='mr-75'>Recurring</span>
+            <span className='mr-75 recurring'>Recurring</span>
           </div>
           <div className='mr-1'>
             <span className='bullet bullet-sm bullet-bordered mr-50' style={{ backgroundColor: '#34c38e', borderRadius: '0', fontWeight: 'bolder' }}></span>
-            <span className='mr-75'>Churrned</span>
+            <span className='mr-75 recurring'>Churrned</span>
           </div>
         </div>
     </Card>

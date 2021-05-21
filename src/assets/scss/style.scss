@@ -677,6 +677,7 @@
 	// (admin page) Subscription conversion rate 
 	.subconcardtitle {
 		font-size: 17px !important;
+		justify-content: center;
 	}
 	// (rd page) Jenna Gorham's Dashboard
 	#dashboard-brands .jenna-gorham {
@@ -701,6 +702,18 @@
 		.rd-list-wrapper .opportunitie-heading{
 			font-size: 16px;
 		}
+		.invoice-list-wrapper {
+		h2 {
+			text-align: center !important;
+		}
+	}
+	.invoice-list-table-header .invoice-list-row {
+		display: flex;
+		flex-wrap: wrap;
+		.invoice-list-column {
+			text-align: center;
+		}
+	}
 		// cards main-headings 
 		.invoice-list-wrapper {
 		 .recommended-opportunities {
@@ -727,10 +740,10 @@
 			.statisticts-text {
 				font-size: 23px;
 				margin-bottom: 1.5rem;
+				justify-content: center;
 			}
 		}
 	}
-}
 // Recommended-for-you Cards-head
 
 .recommended-for-you .brands {
@@ -742,6 +755,88 @@
 .card .card-header .card-title {
 	padding: 10px 0 0 10px;
 	margin-bottom: 0;
+} 
+// login/rd (RD-Link) subheading
+.auth-inner .welcome-rd-link {
+	font-size: 17px;
+	margin-top: 3rem;
+}
+// admin statistics card 
+#dashboard-analytics {
+	.card-statistics {
+		.statistics-body {
+			padding: 3rem 2rem !important;
+		}
+	}
+}
+.admin-card-heading .admin-card-header {
+		
+			justify-content: center;
+		
+}
+ .all-brands .subconcardtitle {
+	text-align: center !important;
+}
+.subconcardtitle, .allRdTopLinks {
+	justify-content: center !important;
+}
+// admin card doughnut section 
+.admin-card-doughnut {
+	justify-content: center !important;
+
+	.admin-card-subscribed {
+		margin: 1rem 0.25rem  !important;
+	}
+	.admin-card-new {
+		margin: 0.5rem  !important
+	}
+	.admin-card-trial {
+		margin-left: 1rem;
+	}
+}
+.all-brands .allRdTopLinks {
+	justify-content: center !important;
+	text-align: center;
+}
+// admin card rd section 
+.all-rds {
+	.all-rds-speciality {
+		margin: 0.5rem 0.25rem  !important;
+		font-size: 12px !important;
+	}
+	.all-rds-industry {
+		margin: 0.5rem  !important;
+		font-size: 12px !important;
+	}
+	.all-rds-region {
+		margin: 0 0.25rem !important;
+		font-size: 12px !important;
+	}
+	.all-rds-span {
+		margin-right: 5px !important;
+		margin-left: 3px !important;
+	}
+}
+.invoice-list-table-header .invoicedata {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center !important;
+}
+.monthly-report {
+	.recurring {
+	font-size: 13px !important;
+	margin-right: 3px;
+}
+.monthly-recurring {
+	font-size: 15px !important;
+	text-align: center;
+}
+}
+// admin card monthly recurring
+.monthly-report .recurring-parent {
+	justify-content: center !important;
+	margin-right: -19px;
+}
 }
   
   // Small devices (landscape phones, 576px and up)
