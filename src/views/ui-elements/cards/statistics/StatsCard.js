@@ -1,12 +1,13 @@
 import Avatar from '@components/avatar'
 import classnames from 'classnames'
 import { Box, DollarSign, TrendingUp, User } from 'react-feather'
-import { Card, CardHeader, CardTitle, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown, UncontrolledTooltip } from 'reactstrap'
 
 const StatsCard = ({ cols }) => {
   const data = [
     {
       title: '4239',
+      id: 970,
       subtitle: 'All Brands',
       subtitleHover: 'paid vs. free',
       color: 'light-primary',
@@ -14,24 +15,28 @@ const StatsCard = ({ cols }) => {
     },
     {
       title: '5409',
+      id: 971,
       subtitle: "All RD's",
       color: 'light-info',
       icon: <User size={31} />
     },
     {
       title: '5409',
+      id: 972,
       subtitle: "Open Brand Campaigns",
       color: 'light-info',
       icon: <User size={31} />
     },
     {
       title: '5409',
+      id: 973,
       subtitle: "Available RD Opportunities",
       color: 'light-info',
       icon: <User size={31} />
     },
     {
       title: '4239',
+      id: 974,
       subtitle: 'Partnerships Secured',
       subtitleHover: 'total vs monthly vs quarterly',
       color: 'light-primary',
@@ -39,12 +44,14 @@ const StatsCard = ({ cols }) => {
     },
     {
       title: '4239',
+      id: 975,
       subtitle: 'Unique Monthly Logins',
       color: 'light-primary',
       icon: <TrendingUp size={31} />
     },
     {
       title: '$9,745',
+      id: 976,
       subtitle: 'Total Revenue',
       subtitleHover: 'Subscription and Comission',
       color: 'light-success',
@@ -52,6 +59,7 @@ const StatsCard = ({ cols }) => {
     },
     {
       title: '1329',
+      id: 977,
       subtitle: 'Churn',
       color: 'light-danger',
       icon: <Box size={31} />
@@ -69,8 +77,9 @@ const StatsCard = ({ cols }) => {
             [`mb-3`]: index !== data.length - 1
           })}
         >
-          <Media data-toggle="tooltip" data-placement="top" title={item.subtitleHover}>
-            <Avatar color={item.color} icon={item.icon} className='mr-1' />
+          <Media>
+            <Avatar id={`av-tooltip-${item.id}`} color={item.color} icon={item.icon} className='mr-1' />
+          {item.subtitleHover && <UncontrolledTooltip placement='top' target={`av-tooltip-${item.id}`}>{item.subtitleHover}</UncontrolledTooltip>}
             <Media className='media-avatar m-auto' body>
               <h4 className='font-weight-bolder mb-0' style={{fontSize:'26px'}}>{item.title}</h4>
               <CardText className='total-partnership'>{item.subtitle}</CardText>

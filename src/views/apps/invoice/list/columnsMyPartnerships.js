@@ -108,21 +108,28 @@ export const columnsMyPartnerships = [
     }
   },
   {
-    name: 'Partnership',
+    name: 'Partnership Details',
     selector: 'partnership',
     sortable: true,
     minWidth: '200px',
     cell: row => row.client.partnership
   },
-  // {
-  //   name: 'Total',
-  //   selector: 'total',
-  //   sortable: true,
-  //   minWidth: '150px',
-  //   cell: row => <span>${row.total || 0}</span>
-  // },
   {
-    name: 'Amount/Product',
+    name: 'reach',
+    selector: 'reach',
+    sortable: true,
+    minWidth: '200px',
+    cell: row => row.client.partnership
+  },
+  {
+    name: 'Investment',
+    selector: 'investment',
+    sortable: true,
+    minWidth: '150px',
+    cell: row => <span>${row.total || 0}</span>
+  },
+  {
+    name: 'Cost/Impression',
     selector: 'amountProduct',
     sortable: true,
     minWidth: '200px',
