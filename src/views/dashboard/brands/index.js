@@ -46,17 +46,20 @@ const BrandsDashboard = () => {
         </Col>
       </Row>
       <Row className='match-height allRD mb-2'>
-        <Col lg='4' sm='6'>
+        {/* <Col lg='4' sm='6'>
         <ApexRadiarChart2 />
+        </Col> */}
+        <Col xl='12' md='12' xs='12'>
+          <RDStatsCard cols={{ xl: '3', sm: '4', md: '4' }} />
         </Col>
-        <Col lg='8' sm='6'>
+        <Col lg='12' sm='12'>
         <InvoiceListNewRds />
         </Col>
       </Row>
       <Row className='match-height'>
-        <Col xl='12' md='12' xs='12' className="mb-2">
+        {/* <Col xl='12' md='12' xs='12' className="mb-2">
           <RDStatsCard cols={{ xl: '3', sm: '4', md: '4' }} />
-        </Col>
+        </Col> */}
         <Col lg='9' md='12'>
         <BarChartExpense primary={colors.primary.main} danger={colors.danger.main} />
         </Col>

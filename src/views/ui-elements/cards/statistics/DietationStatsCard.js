@@ -1,36 +1,43 @@
 import Avatar from '@components/avatar'
 import classnames from 'classnames'
 import { Box, DollarSign, TrendingUp, User } from 'react-feather'
-import { Card, CardHeader, CardTitle, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown, UncontrolledTooltip } from 'reactstrap'
 
 const DietationStatsCard = ({ cols }) => {
   const data = [
     {
       title: '3,209',
+      id: 985,
       subtitle: "My Partnerships",
+      subtitleHover: "Partnerships",
       color: 'light-primary',
       icon: <TrendingUp size={21} />
     },
     {
       title: '549',
+      id: 986,
       subtitle: "My Brand Partners",
+      subtitleHover: "Partners",
       color: 'light-info',
       icon: <User size={21} />
     },
     {
       title: '$9,745',
+      id: 987,
       subtitle: 'Total Revenue',
       color: 'light-danger',
       icon: <Box size={21} />
     },
     {
       title: '230k',
+      id: 988,
       subtitle: 'Consumer Impact',
       color: 'light-success',
       icon: <DollarSign size={21} />
     },
     {
       title: '78%',
+      id: 989,
       subtitle: 'Response Date',
       color: 'light-success',
       icon: <DollarSign size={21} />
@@ -49,10 +56,11 @@ const DietationStatsCard = ({ cols }) => {
           })}
         >
           <Media>
-            <Avatar color={item.color} icon={item.icon} className='mr-1' />
-            <Media className='my-auto' body>
-              <h4 className='font-weight-bolder mb-0' style={{fontSize:'27px'}}>{item.title}</h4>
-              <CardText className='total-partnership consumer-impact'>{item.subtitle}</CardText>
+            <Avatar id={`av-tooltip-${item.id}`} color={item.color} icon={item.icon} className='mr-1' />
+          {item.subtitleHover && <UncontrolledTooltip placement='top' target={`av-tooltip-${item.id}`}>{item.subtitleHover}</UncontrolledTooltip>}
+            <Media className='media-avatar m-auto' body>
+              <h4 className='font-weight-bolder mb-0' style={{fontSize:'26px'}}>{item.title}</h4>
+              <CardText className='total-partnership'>{item.subtitle}</CardText>
             </Media>
           </Media>
         </Col>
