@@ -16,6 +16,13 @@ import '@styles/react/libs/swiper/swiper.scss'
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Breadcrumb, BreadcrumbItem, Col, Row } from 'reactstrap'
+import SwiperCore, {
+  Autoplay, EffectCoverflow, EffectCube, EffectFade,
+  Lazy, Navigation,
+  Pagination,
+  Virtual
+} from 'swiper'
+SwiperCore.use([Navigation, Pagination, EffectFade, EffectCube, EffectCoverflow, Autoplay, Lazy, Virtual])
 
 
 const BrandsDashboard = () => {
@@ -48,7 +55,7 @@ const BrandsDashboard = () => {
       </Row>
       <Row className='match-height'>
         <Col xl='12' md='12' xs='12' className="mb-2">
-          <RDStatsCard cols={{ xl: '', sm: '6', md: '4' }} />
+          <RDStatsCard cols={{ xl: '3', sm: '4', md: '4' }} />
         </Col>
         <Col lg='9' md='12'>
         <BarChartExpense primary={colors.primary.main} danger={colors.danger.main} />
@@ -59,15 +66,15 @@ const BrandsDashboard = () => {
       </Row>
       <Row className='match-height mb-2'>
         <Col xs='12'>
-          <InvoiceListRecommendedRds />
-          {/* <AdminRdSlides /> */}
+          {/* <InvoiceListRecommendedRds /> */}
+          <AdminRdSlides />
         </Col>
       </Row>
-      <Row className='match-height'>
+      {/* <Row className='match-height'>
         <Col xs='12'>
           <InvoiceListRecommendedRdOppo />
         </Col>
-      </Row>
+      </Row> */}
       <Row className='match-height mb-2'>
         <Col xs='12'>
           <InvoiceListMyPartnerships />

@@ -127,7 +127,7 @@ const AnalyticsDashboard = () => {
        
       <Row className='match-height'>
         <Col xl='12' md='12' xs='12'>
-          <StatsCard cols={{ xl: '', sm: '6', md: '4' }} />
+          <StatsCard cols={{ xl: '3', sm: '4', md: '4' }} />
         </Col>
       </Row>
       <Row className='match-height allRD'>
