@@ -52,6 +52,13 @@ const RdDashboard = () => {
       </Breadcrumb>
         </Col>
       </Row>
+      <Row className='match-height mb-2'>
+        <Col lg='12'>
+        <div className="card py-5">
+          <p className="text-center m-0">Place ads here</p>
+        </div>
+        </Col>
+      </Row>
       <Row className='match-height allRD mb-2'>
         <Col lg='4' sm='6'>
         <ApexRadiarChartRd />
@@ -62,7 +69,7 @@ const RdDashboard = () => {
       </Row>
       <Row className='match-height'>
         <Col xl='12' md='12' xs='12' className="mb-2">
-          <DietatioStatsCard cols={{ xl: '', sm: '6' }} />
+          <DietatioStatsCard cols={{ xl: '3', sm: '4' }} />
         </Col>
         <Col lg='6' md='12'>
         <ChartRdMyPartnership 

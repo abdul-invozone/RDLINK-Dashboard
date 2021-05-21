@@ -598,46 +598,80 @@
 
 
 // Recommended For You Cards-body Start
-.brandContent {
+.brandSlides {
+	position: relative;
+}
+.brandSlides .brandSlidesHeading {
+	position: absolute;
+	top: 10px;
+}
+.brandSlides .brandContent {
 	background-color: white;
 	border-radius: 20px !important;
-	padding: 3rem;
+	padding: 3.5rem 1rem 2.7rem;
 	text-align: center;
-	max-height: 380px;
+	min-height: 380px;
+	position: relative;
 }
-.brandContent .brandContent-img{
+.brandSlides .brandContent .newRd {
+	text-align: right;
+	padding: 0.5rem 0.5rem 1.5rem;
+	position:absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.brandSlides .brandContent .brandSlidesRd {
+	font-size: 19px;
+	color: #000;
+	font-weight: 600;
+}
+
+.brandSlides .brandContent .newRd .newRdText {
+	display:inline-block;
+	background-color: #571dd2;
+	color: #fff;
+	padding: 2px 8px; 
+	margin: 0;
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+.brandSlides .brandContent .brandContent-img{
 	min-height: 110px !important;
 }
 
-.brandContent .antonio {
+.brandSlides .brandContent .antonio {
 	margin: 16px;
 	color: #000518;
 	font-size: 19px;
 	font-weight: 650;
 }
-.brandContent .healthcare {
+.brandSlides .brandContent .healthcare {
 	border-radius: 3px;
-	margin: 0 0px 20px;
+	margin: 20px auto;
 	padding: 9px 6px;
 	font-size: 12px;
-	max-width: 100%;
+	width: 100%;
+	max-width: 250px;
 }
-.brandContent .general-wellness {
+.brandSlides .brandContent .general-wellness {
 	margin: 0;
 }
-.brandContent .social-media .social-media-icons {
+.brandSlides .brandContent .social-media .social-media-icons {
 	display: inline-block;
 	width: 46px;
 	height: 46px; 
 	margin: 0 3px; 
 	background-color:#e9f6fd;
 	border-radius: 999px;
+	line-height: 40px;
 }
 // .brandContent .social-media .social-media-icons .social-media-anchor {
 // 	position: relative;
 // 	top: 50px;
 // }
-.brandContent .brandContent-menu {
+.brandSlides .brandContent .brandContent-menu {
 	position: relative;
 	top: -60px;
 	left: 90px;
@@ -999,3 +1033,4 @@
 		top: -3px;
 	}
 }
+

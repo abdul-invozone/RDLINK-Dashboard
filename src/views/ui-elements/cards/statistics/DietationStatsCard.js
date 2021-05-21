@@ -1,7 +1,7 @@
 import Avatar from '@components/avatar'
 import classnames from 'classnames'
 import { Box, DollarSign, TrendingUp, User } from 'react-feather'
-import { Card, CardBody, CardText, Col, Media, Row } from 'reactstrap'
+import { Card, CardHeader, CardTitle, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown } from 'reactstrap'
 
 const DietationStatsCard = ({ cols }) => {
   const data = [
@@ -45,7 +45,7 @@ const DietationStatsCard = ({ cols }) => {
           key={index}
           {...cols}
           className={classnames({
-            [`mb-2 mb-${margin[0]}-0`]: index !== data.length - 1
+            [`mb-3`]: index !== data.length - 1
           })}
         >
           <Media>
@@ -62,12 +62,32 @@ const DietationStatsCard = ({ cols }) => {
 
   return (
     <Card className='card-statistics'>
+      <CardHeader>
+        <CardTitle style={{paddingLeft: 'auto'}}><h4 className="subconcardtitle subconcardtitle-gray">Statistics</h4></CardTitle>
+        <CardText className='card-text font-small-2 mr-25 mb-0'>
+        <UncontrolledButtonDropdown className="statsDropdownBrands">
+        <DropdownToggle color='flat-primary' className="dropdown-button">
+          ...
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href='/' tag='a'>
+            Month
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Quarter
+          </DropdownItem>
+          <DropdownItem href='/' tag='a'>
+            Year
+          </DropdownItem>
+        </DropdownMenu>
+      </UncontrolledButtonDropdown>
+        </CardText>
+      </CardHeader>
       {/* <CardHeader>
         <CardTitle tag='h4'>Statistics</CardTitle>
         <CardText className='card-text font-small-2 mr-25 mb-0'>Updated 1 month ago</CardText>
       </CardHeader> */}
       <CardBody className='statistics-body'>
-      <h4 className="statisticts-text">Statisticts</h4>
         <Row>{renderData()}</Row>
       </CardBody>
     </Card>

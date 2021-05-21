@@ -59,7 +59,7 @@ const RDStatsCard = ({ cols }) => {
           key={index}
           {...cols}
           className={classnames({
-            [`mb-2 mb-${margin[0]}-0`]: index !== data.length - 1
+            [`mb-3`]: index !== data.length - 1
           })} 
         >
           <Media data-toggle="tooltip" data-placement="top" title={item.subtitleHover}>

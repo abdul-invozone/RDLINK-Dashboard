@@ -103,11 +103,11 @@ const LoginV2 = () => {
             </Form>
             <p className='text-center mt-2'>
               <span className='mr-25'>New on our platform?</span>
-              <Link to='/pages/register-v2'>
+              <Link to='/createloginrd'>
                 <span>Create an account</span>
               </Link>
             </p>
-            <div className='divider my-2'>
+            {/* <div className='divider my-2'>
               <div className='divider-text'>or</div>
             </div>
             <div className='auth-footer-btn d-flex justify-content-center'>
@@ -123,7 +123,7 @@ const LoginV2 = () => {
               <Button.Ripple className='mr-0' color='github'>
                 <GitHub size={14} />
               </Button.Ripple>
-            </div>
+            </div> */}
           </Col>
         </Col>
       </Row>

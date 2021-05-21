@@ -26,7 +26,7 @@ const Createloginrd = () => {
               <CardTitle tag="h1">Create your Account</CardTitle>
               <CardText>
                 Already have an account?
-                <Link to='/pages/login-v2'> Sign in here</Link>
+                <Link to='/pages/login-rd'> Sign in here</Link>
                 <h3 className="mt-3 mb-2">Please select your role</h3>     
           <div>
           <ul className="list-unstyled">
