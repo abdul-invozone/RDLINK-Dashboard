@@ -124,7 +124,7 @@ const AnalyticsDashboard = () => {
 
   return (
     <div id='dashboard-analytics'>
-      <Row className="mx-0 mb-2 align-items-center">
+      <Row className="mx-0 mb-2 align-items-center mb-sm-1">
         <Col sm="6">
           <span>Admin Dashboard</span>
         </Col>
@@ -134,7 +134,7 @@ const AnalyticsDashboard = () => {
           <Link to='#'> Home </Link>
         </BreadcrumbItem>
         <BreadcrumbItem active>
-          <span> Admin Dashboardooooooo </span>
+          <span> Admin Dashboard </span>
         </BreadcrumbItem>
       </Breadcrumb>
         </Col>

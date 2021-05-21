@@ -124,7 +124,7 @@ const AnalyticsDashboard = () => {
 
   return (
     <div id='dashboard-analytics'>
-      <Row className="mx-0 mb-2 align-items-center">
+      <Row className="mx-0 mb-2 align-items-center mb-sm-1">
         <Col sm="6" className="justify-content-center">
           <span className="admin-dashboard">Admin Dashboard</span>
         </Col>

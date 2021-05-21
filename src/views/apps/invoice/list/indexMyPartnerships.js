@@ -414,8 +414,8 @@ const InvoiceListMyPartnerships = () => {
       <Card>
       <h2 className="main-heading">My Partnerships</h2>
         <div className='invoice-list-dataTable'>
-          <DataTable
-            noHeader
+          <DataTable 
+            noHeader 
             pagination
             paginationServer
             subHeader={true}
@@ -428,14 +428,14 @@ const InvoiceListMyPartnerships = () => {
             paginationComponent={CustomPagination}
             data={dataToRender()}
             subHeaderComponent={
-              <CustomHeader
+              <CustomHeader My Partnerships
                 value={value}
                 statusValue={statusValue}
                 rowsPerPage={rowsPerPage}
                 // handleFilter={handleFilter}
                 // handlePerPage={handlePerPage}
                 // handleStatusValue={handleStatusValue}
-              />
+              /> 
             }
           />
         <p className="showEntries">Showing 1 to {rowsPerPage} of {dummyData.total} entries</p>

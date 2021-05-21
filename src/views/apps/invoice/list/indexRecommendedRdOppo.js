@@ -24,7 +24,7 @@ const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, han
     <div className='invoice-list-table-header w-100 py-2'>
       <Row>
         <Col lg='6' className='d-flex align-items-center px-0 px-lg-1'>
-          <div className='d-flex align-items-center mr-2 Bold text'>
+          <div className='d-flex align-items-center mr-2 Bold text justify-content-sm-center'>
             <Label className="text-lg Bold text" for='rows-per-page'>Entries</Label>
             <CustomInput
               className='form-control ml-50 pr-3'
@@ -46,7 +46,7 @@ const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, han
           lg='6'
           className='actions-right d-flex align-items-center justify-content-lg-end flex-lg-nowrap flex-wrap mt-lg-0 mt-1 pr-lg-1 p-0'
         >
-          <div className='d-flex align-items-center'>
+          <div className='d-flex'>
             {/* <Label for='search-invoice'>Search</Label> */}
             <Input
               id='search-invoice'
@@ -57,7 +57,7 @@ const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, han
               placeholder='Search...'
             />
           </div>
-          <Input className='w-auto ' type='select' value={statusValue} onChange={handleStatusValue}>
+          <Input className='w-auto justify-content-sm-center' type='select' value={statusValue} onChange={handleStatusValue}>
             <option value=''>Select Status</option>
             <option value='downloaded'>Downloaded</option>
             <option value='draft'>Draft</option>
@@ -432,7 +432,7 @@ const InvoiceListRecommendedRdOppo = () => {
   return (
     <div className='invoice-list-wrapper recommended-rd'>
       <Card>
-      <h2 className="recommended-opportunities">Recommended RD Opportunities</h2>
+      <h2 className="recommended-opportunities justify-content-sm-center">Recommended RD Opportunities</h2>
         <div className='invoice-list-dataTable'>
           <DataTable
             noHeader

@@ -560,7 +560,7 @@
 // Recommended For You Cards-head Start
 
 .recommended-for-you .brands {
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 24px;
 	display: inline-block;
 }
@@ -683,7 +683,7 @@
 	#dashboard-brands .jenna-gorham {
 		justify-content: center;
 	} 
-	// (rd page) card-titles
+	//  card-titles
 	.collapse-title.card-title {
 		font-size: 16px;
 	}
@@ -696,6 +696,7 @@
 	.match-height {
 		> [class*='col'] > .card {
 			margin-bottom: 20px;
+			text-align: center;
 		  }
 		}
 		// Upcoming Opportunities 
@@ -718,6 +719,7 @@
 		.invoice-list-wrapper {
 		 .recommended-opportunities {
 			font-size: 12px;
+			justify-content: center !important;
 		}
 		.main-heading {
 			font-size: 15px;
@@ -744,18 +746,22 @@
 			}
 		}
 	}
-// Recommended-for-you Cards-head
 
+// Recommended-for-you Cards-head
 .recommended-for-you .brands {
-	font-size: 18px;
+	font-size: 16px;
+	margin-left: 10px;
+	font-weight: bold;
 }
 .recommended-for-you .showing-paid {
-	font-size: 14px;
+	font-size: 12px;
 }
+
 .card .card-header .card-title {
 	padding: 10px 0 0 10px;
 	margin-bottom: 0;
 } 
+
 // login/rd (RD-Link) subheading
 .auth-inner .welcome-rd-link {
 	font-size: 17px;
@@ -770,15 +776,11 @@
 	}
 }
 .admin-card-heading .admin-card-header {
-		
-			justify-content: center;
-		
+		justify-content: center;
 }
- .all-brands .subconcardtitle {
+.subconcard .subconcardtitle {
 	text-align: center !important;
-}
-.subconcardtitle, .allRdTopLinks {
-	justify-content: center !important;
+	width: 100%;
 }
 // admin card doughnut section 
 .admin-card-doughnut {
@@ -819,8 +821,7 @@
 }
 .invoice-list-table-header .invoicedata {
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center !important;
+	align-items: center;
 }
 .monthly-report {
 	.recurring {
@@ -846,6 +847,27 @@
 	  position: absolute;
 	  top: -20px;
 	}
+		// navbar
+		.header-navbar.floating-nav {
+			margin: 0 2rem !important;
+			padding: 0.50rem 0.5rem !important;
+		}
+		// card-titles
+	.collapse-title.card-title {
+		font-size: 22px;
+	}
+	// Upcoming Opportunities 
+	.rd-list-wrapper .opportunitie-heading{
+		font-size: 16px;
+	}
+	// Recommended-for-you Cards-head
+    .recommended-for-you .brands {
+    	font-size: 20px;
+    	margin-left: 0px;
+    }
+    .recommended-for-you .showing-paid {
+    	font-size: 12px;
+    }
   }
   
   // Medium devices (tablets, 768px and up)
@@ -865,6 +887,19 @@
 			min-width: 95px !important;
 		}
 	}
+			// navbar
+			.header-navbar.floating-nav {
+				margin: 0 2rem !important;
+				padding: 0.50rem 0.5rem !important;
+			}
+			// card-titles
+			.collapse-title.card-title {
+				font-size: 26px;
+			}
+			// Upcoming Opportunities 
+		.rd-list-wrapper .opportunitie-heading{
+			font-size: 20px;
+		}
 }
 
   // Large devices (desktops, 992px and up)
@@ -874,6 +909,10 @@
 	  position: absolute;
 	  top: -20px;
 	}
+				// card-titles
+				.collapse-title.card-title {
+					font-size: 26px;
+				}
   
 	// DASHBOARD BRANDS SECTION START
 }
