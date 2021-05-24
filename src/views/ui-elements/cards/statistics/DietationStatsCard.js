@@ -38,7 +38,7 @@ const DietationStatsCard = ({ cols }) => {
     {
       title: '78%',
       id: 989,
-      subtitle: 'Response Date',
+      subtitle: 'Response Rate',
       color: 'light-success',
       icon: <DollarSign size={21} />
     }

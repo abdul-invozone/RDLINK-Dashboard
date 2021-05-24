@@ -5,6 +5,7 @@ import InvoiceListRecommendedRdOppo from '@src/views/apps/invoice/list/indexReco
 import InvoiceListRecommendedRds from '@src/views/apps/invoice/list/indexRecommendedRds'
 import ApexRadiarChart2 from '@src/views/charts/apex/ApexDonutChart2'
 import AdminRdSlides from '@src/views/extensions/swiper/AdminRdSlides'
+import RdBrandsRecommendedSlides from '@src/views/extensions/swiper/RdBrandsRecommendedSlides'
 import BarChartExpense from '@src/views/charts/recharts/BarChartExpense'
 import RevenueReport2 from '@src/views/ui-elements/cards/analytics/RevenueReport2'
 import RDStatsCard from '@src/views/ui-elements/cards/statistics/RDStatsCard'
@@ -53,7 +54,13 @@ const BrandsDashboard = () => {
           <RDStatsCard cols={{ xl: '3', sm: '4', md: '4' }} />
         </Col>
         <Col lg='12' sm='12'>
-        <InvoiceListNewRds />
+        <RdBrandsRecommendedSlides />
+        </Col>
+      </Row>
+      <Row className='match-height mb-2'>
+        <Col xs='12'>
+          {/* <InvoiceListRecommendedRds /> */}
+          <AdminRdSlides />
         </Col>
       </Row>
       <Row className='match-height'>
@@ -65,12 +72,6 @@ const BrandsDashboard = () => {
         </Col>
         <Col lg='3' md='12'>
           <RevenueReport2 primary='#7468f1' warning={colors.warning.main} />
-        </Col>
-      </Row>
-      <Row className='match-height mb-2'>
-        <Col xs='12'>
-          {/* <InvoiceListRecommendedRds /> */}
-          <AdminRdSlides />
         </Col>
       </Row>
       {/* <Row className='match-height'>

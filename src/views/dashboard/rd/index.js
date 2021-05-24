@@ -6,7 +6,8 @@ import ApexRadiarChartRd from '@src/views/charts/apex/ApexDonutChartRd'
 import ChartRdDailySales from '@src/views/charts/apex/ChartRdDailySales'
 import ChartRdMyBrands from '@src/views/charts/chart-js/ChartRdMyBrands'
 import ChartRdMyPartnership from '@src/views/charts/chart-js/ChartRdMyPartnership'
-import RdBrandsSlides from '@src/views/extensions/swiper/RdBrandsSlides'
+import RdRecommendedSlides from '@src/views/extensions/swiper/RdRecommendedSlides'
+import RdCampaignsSlides from '@src/views/extensions/swiper/RdCampaignsSlides'
 import DietatioStatsCard from '@src/views/ui-elements/cards/statistics/DietationStatsCard'
 import '@styles/react/libs/charts/apex-charts.scss'
 import '@styles/react/libs/charts/recharts.scss'
@@ -59,6 +60,21 @@ const RdDashboard = () => {
         </div>
         </Col>
       </Row>
+      <Row className='match-height'>
+        <Col xl='12' md='12' xs='12' className="mb-2">
+          <DietatioStatsCard cols={{ xl: '3', sm: '4' }} />
+        </Col>
+        </Row>
+        <Row>
+        <Col xl='12' md='12' xs='12'>
+          <RdRecommendedSlides />
+          </Col>
+          </Row>
+        <Row>
+        <Col xl='12' md='12' xs='12'>
+          <RdCampaignsSlides />
+          </Col>
+          </Row>
       <Row className='match-height allRD mb-2'>
         <Col lg='4' sm='6'>
         <ApexRadiarChartRd />
@@ -68,9 +84,6 @@ const RdDashboard = () => {
         </Col>
       </Row>
       <Row className='match-height'>
-        <Col xl='12' md='12' xs='12' className="mb-2">
-          <DietatioStatsCard cols={{ xl: '3', sm: '4' }} />
-        </Col>
         <Col lg='6' md='12'>
         <ChartRdMyPartnership 
             warningColorShade={warningColorShade}
@@ -93,16 +106,11 @@ const RdDashboard = () => {
         <ChartRdDailySales />
         </Col>
       </Row>
-      <div className="recommended-for-you">
-        <h1 className="brands">Brands</h1>
-        <h6 className="showing-paid">(Showing Paid Brands Only)</h6>
-      </div>
-          <RdBrandsSlides />
-        <Row className='match-height mb-2'>
+        {/* <Row className='match-height mb-2'>
         <Col xs='12'>
           <InvoiceListRdBrandOppo />
         </Col>
-      </Row>
+      </Row> */}
       <Row className='match-height mb-2'>
         <Col xs='12'>
           <InvoiceListRdBrandPartnerships />

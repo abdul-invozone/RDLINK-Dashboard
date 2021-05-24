@@ -412,7 +412,7 @@ const InvoiceListRdBrandPartnerships = () => {
   return (
     <div className='invoice-list-wrapper'>
       <Card>
-      <h2 className="main-heading">Brand Partnerships</h2>
+      <h2 className="main-heading">My Partnerships</h2>
         <div className='invoice-list-dataTable'>
           <DataTable
             noHeader
