@@ -173,51 +173,59 @@ export const columnsMyPartnerships = [
   //   }
   // },
   {
-    name: 'Actions',
+    name: 'Agreement',
     minWidth: '130px',
     selector: '',
     sortable: true,
     justifyContent: 'center',
     cell: row => (
       <div className='column-action d-flex align-items-center'>
-        <Send size={17} id={`send-tooltip-${row.id}`} />
-        <UncontrolledTooltip placement='top' target={`send-tooltip-${row.id}`}>
-          Send Mail
-        </UncontrolledTooltip>
-        <Link to={`/apps/invoice/preview/${row.id}`} id={`pw-tooltip-${row.id}`}>
-          <Eye size={17} className='mx-1' />
-        </Link>
-        <UncontrolledTooltip placement='top' target={`pw-tooltip-${row.id}`}>
-          Preview Invoice
-        </UncontrolledTooltip>
         <UncontrolledDropdown>
           <DropdownToggle tag='span'>
             <MoreVertical size={17} className='cursor-pointer' />
           </DropdownToggle>
           <DropdownMenu right>
+          <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
+          <Eye size={17} className='mr-50' />
+              <span className='align-middle'>View</span>
+            </DropdownItem>
+            <DropdownItem tag={Link} to={`/apps/invoice/edit/${row.id}`} className='w-100'>
+              <Edit size={14} className='mr-50' />
+              <span className='align-middle'>Sign</span>
+            </DropdownItem>
             <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
               <Download size={14} className='mr-50' />
               <span className='align-middle'>Download</span>
             </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
+      </div>
+    )
+  },
+  {
+    name: 'Invoice',
+    minWidth: '130px',
+    selector: '',
+    sortable: true,
+    justifyContent: 'center',
+    cell: row => (
+      <div className='column-action d-flex align-items-center'>
+        <UncontrolledDropdown>
+          <DropdownToggle tag='span'>
+            <MoreVertical size={17} className='cursor-pointer' />
+          </DropdownToggle>
+          <DropdownMenu right>
+          <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
+          <Eye size={17} className='mr-50' />
+              <span className='align-middle'>View</span>
+            </DropdownItem>
             <DropdownItem tag={Link} to={`/apps/invoice/edit/${row.id}`} className='w-100'>
               <Edit size={14} className='mr-50' />
-              <span className='align-middle'>Edit</span>
-            </DropdownItem>
-            <DropdownItem
-              tag='a'
-              href='/'
-              className='w-100'
-              onClick={e => {
-                e.preventDefault()
-                store.dispatch(deleteInvoice(row.id))
-              }}
-            >
-              <Trash size={14} className='mr-50' />
-              <span className='align-middle'>Delete</span>
+              <span className='align-middle'>Pay</span>
             </DropdownItem>
             <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
-              <Copy size={14} className='mr-50' />
-              <span className='align-middle'>Duplicate</span>
+              <Download size={14} className='mr-50' />
+              <span className='align-middle'>Download</span>
             </DropdownItem>
           </DropdownMenu>
         </UncontrolledDropdown>

@@ -89,7 +89,7 @@ export const columnsRdBrandPartnerships = [
   //   }
   // },
   {
-    name: 'Rd name',
+    name: 'Company',
     minWidth: '300px',
     selector: 'client',
     sortable: true,
@@ -108,47 +108,73 @@ export const columnsRdBrandPartnerships = [
     }
   },
   {
+    name: 'Date',
+    selector: 'loginTime',
+    sortable: true,
+    minWidth: '130px',
+    cell: row => <span>{row.client.loginTime || 0}</span>
+  },
+  {
     name: 'Partnership',
     selector: 'partnership',
     sortable: true,
     minWidth: '180px',
     cell: row => row.client.partnership
   },
-  // {
-  //   name: 'Total',
-  //   selector: 'total',
-  //   sortable: true,
-  //   minWidth: '150px',
-  //   cell: row => <span>${row.total || 0}</span>
-  // },
   {
-    name: 'Amount/Product',
+    name: 'Agreement',
+    minWidth: '130px',
+    selector: '',
+    sortable: true,
+    justifyContent: 'center',
+    cell: row => (
+      <div className='column-action d-flex align-items-center'>
+        <UncontrolledDropdown>
+          <DropdownToggle tag='span'>
+            <MoreVertical size={17} className='cursor-pointer' />
+          </DropdownToggle>
+          <DropdownMenu right>
+            <DropdownItem tag={Link} to={`/apps/invoice/edit/${row.id}`} className='w-100'>
+              <Edit size={14} className='mr-50' />
+              <span className='align-middle'>Send</span>
+            </DropdownItem>
+          <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
+          <Eye size={17} className='mr-50' />
+              <span className='align-middle'>View</span>
+            </DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
+      </div>
+    )
+  },
+  {
+    name: 'Share Results',
+    selector: 'total',
+    sortable: true,
+    minWidth: '150px',
+    cell: row => <span>${row.total || 0}</span>
+  },
+  {
+    name: 'Send Invoice',
     selector: 'amountProduct',
     sortable: true,
     minWidth: '180px',
     className: 'text',
     cell: row => <span>{row.client.amountProduct || 0}</span>
-  },
-  {
-    name: 'Notes',
-    selector: 'notes',
-    sortable: true,
-    minWidth: '130px',
-    cell: row => <span>{row.client.notes || 0}</span>
-  },
+  }
+  // {
+  //   name: 'Notes',
+  //   selector: 'notes',
+  //   sortable: true,
+  //   minWidth: '130px',
+  //   cell: row => <span>{row.client.notes || 0}</span>
+  // },
   // {
   //   name: 'Monthly Logins',
   //   selector: 'monthlyLogins',
   //   sortable: true,
   //   minWidth: '130px',
   //   cell: row => <span>{row.client.monthlyLogins || 0}</span>
-  // },
-  // {
-  //   name: 'Login Time p/m',
-  //   selector: 'loginTime',
-  //   sortable: true,
-  //   minWidth: '130px',
-  //   cell: row => <span>{row.client.loginTime || 0}</span>
   // },
   // {
   //   name: 'Balance',
@@ -165,56 +191,56 @@ export const columnsRdBrandPartnerships = [
   //     )
   //   }
   // },
-  {
-    name: 'Actions',
-    minWidth: '110px',
-    selector: '',
-    sortable: true,
-    justifyContent: 'center',
-    cell: row => (
-      <div className='column-action d-flex align-items-center'>
-        <Send size={17} id={`send-tooltip-${row.id}`} />
-        <UncontrolledTooltip placement='top' target={`send-tooltip-${row.id}`}>
-          Send Mail
-        </UncontrolledTooltip>
-        <Link to={`/apps/invoice/preview/${row.id}`} id={`pw-tooltip-${row.id}`}>
-          <Eye size={17} className='mx-1' />
-        </Link>
-        <UncontrolledTooltip placement='top' target={`pw-tooltip-${row.id}`}>
-          Preview Invoice
-        </UncontrolledTooltip>
-        <UncontrolledDropdown>
-          <DropdownToggle tag='span'>
-            <MoreVertical size={17} className='cursor-pointer' />
-          </DropdownToggle>
-          <DropdownMenu right>
-            <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
-              <Download size={14} className='mr-50' />
-              <span className='align-middle'>Download</span>
-            </DropdownItem>
-            <DropdownItem tag={Link} to={`/apps/invoice/edit/${row.id}`} className='w-100'>
-              <Edit size={14} className='mr-50' />
-              <span className='align-middle'>Edit</span>
-            </DropdownItem>
-            <DropdownItem
-              tag='a'
-              href='/'
-              className='w-100'
-              onClick={e => {
-                e.preventDefault()
-                store.dispatch(deleteInvoice(row.id))
-              }}
-            >
-              <Trash size={14} className='mr-50' />
-              <span className='align-middle'>Delete</span>
-            </DropdownItem>
-            <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
-              <Copy size={14} className='mr-50' />
-              <span className='align-middle'>Duplicate</span>
-            </DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
-      </div>
-    )
-  }
+  // {
+  //   name: 'Actions',
+  //   minWidth: '110px',
+  //   selector: '',
+  //   sortable: true,
+  //   justifyContent: 'center',
+  //   cell: row => (
+  //     <div className='column-action d-flex align-items-center'>
+  //       <Send size={17} id={`send-tooltip-${row.id}`} />
+  //       <UncontrolledTooltip placement='top' target={`send-tooltip-${row.id}`}>
+  //         Send Mail
+  //       </UncontrolledTooltip>
+  //       <Link to={`/apps/invoice/preview/${row.id}`} id={`pw-tooltip-${row.id}`}>
+  //         <Eye size={17} className='mx-1' />
+  //       </Link>
+  //       <UncontrolledTooltip placement='top' target={`pw-tooltip-${row.id}`}>
+  //         Preview Invoice
+  //       </UncontrolledTooltip>
+  //       <UncontrolledDropdown>
+  //         <DropdownToggle tag='span'>
+  //           <MoreVertical size={17} className='cursor-pointer' />
+  //         </DropdownToggle>
+  //         <DropdownMenu right>
+  //           <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
+  //             <Download size={14} className='mr-50' />
+  //             <span className='align-middle'>Download</span>
+  //           </DropdownItem>
+  //           <DropdownItem tag={Link} to={`/apps/invoice/edit/${row.id}`} className='w-100'>
+  //             <Edit size={14} className='mr-50' />
+  //             <span className='align-middle'>Edit</span>
+  //           </DropdownItem>
+  //           <DropdownItem
+  //             tag='a'
+  //             href='/'
+  //             className='w-100'
+  //             onClick={e => {
+  //               e.preventDefault()
+  //               store.dispatch(deleteInvoice(row.id))
+  //             }}
+  //           >
+  //             <Trash size={14} className='mr-50' />
+  //             <span className='align-middle'>Delete</span>
+  //           </DropdownItem>
+  //           <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
+  //             <Copy size={14} className='mr-50' />
+  //             <span className='align-middle'>Duplicate</span>
+  //           </DropdownItem>
+  //         </DropdownMenu>
+  //       </UncontrolledDropdown>
+  //     </div>
+  //   )
+  // }
 ]

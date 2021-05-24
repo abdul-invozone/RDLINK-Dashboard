@@ -58,9 +58,9 @@ const StatsCard = ({ cols }) => {
       icon: <DollarSign size={31} />
     },
     {
-      title: '1329',
+      title: '29',
       id: 977,
-      subtitle: 'Churn',
+      subtitle: 'Brands Churned',
       color: 'light-danger',
       icon: <Box size={31} />
     }
