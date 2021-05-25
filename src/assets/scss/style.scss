@@ -28,7 +28,7 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 30px 0 0 !important;
+				margin: 10px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
@@ -53,7 +53,9 @@
 	}
 }
 .userDropDown {
-	padding: 30px 0 0;
+	padding: 30px 0;
+    border-bottom: 1px solid #303547;
+    margin-bottom: 10px;
 }
 .user-name {
 	font-size: 13px !important;
@@ -64,7 +66,7 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 30px 0 0 !important;
+				margin: 10px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
@@ -105,7 +107,7 @@
 			li.has-sub {
 				>a {
 					&:after {
-						top: 28px !important;
+						top: 22px !important;
 					}
 				}
 			}
@@ -1034,3 +1036,6 @@
 	}
 }
 
+.main-menu.menu-light .navigation > li ul .active {
+    box-shadow: none;
+}

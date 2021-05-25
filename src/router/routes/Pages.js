@@ -75,6 +75,10 @@ const PagesRoutes = [
     component: lazy(() => import('../../views/pages/faq'))
   },
   {
+    path: '/pages/faqRd',
+    component: lazy(() => import('../../views/pages/faqRd'))
+  },
+  {
     path: '/pages/knowledge-base',
     exact: true,
     component: lazy(() => import('../../views/pages/knowledge-base/KnowledgeBase'))
@@ -130,6 +134,37 @@ const PagesRoutes = [
     component: () => <Redirect to='/pages/blog/edit/1' />
   },
   {
+    path: '/pages/blogRd/list',
+    exact: true,
+    component: lazy(() => import('../../views/pages/blogRd/list'))
+  },
+  {
+    path: '/pages/blogRd/detail/:id',
+    exact: true,
+    component: lazy(() => import('../../views/pages/blogRd/details')),
+    meta: {
+      navLink: '/pages/blogRd/detail'
+    }
+  },
+  {
+    path: '/pages/blogRd/detail',
+    exact: true,
+    component: () => <Redirect to='/pages/blogRd/detail/1' />
+  },
+  {
+    path: '/pages/blogRd/edit/:id',
+    exact: true,
+    component: lazy(() => import('../../views/pages/blogRd/edit')),
+    meta: {
+      navLink: '/pages/blogRd/edit'
+    }
+  },
+  {
+    path: '/pages/blogRd/edit',
+    exact: true,
+    component: () => <Redirect to='/pages/blogRd/edit/1' />
+  },
+  {
     path: '/pages/pricing',
     component: lazy(() => import('../../views/pages/pricing'))
   },
@@ -165,22 +200,22 @@ const PagesRoutes = [
       publicRoute: true
     }
   },
-  {
-    path: '/dashboard/brands',
-    component: lazy(() => import('../../views/dashboard/brands')),
-    layout: 'VerticalLayoutBrands',
-    meta: {
-      publicRoute: true
-    }
-  },
-  {
-    path: '/dashboard/rd',
-    component: lazy(() => import('../../views/dashboard/rd')),
-    layout: 'VerticalLayoutRd',
-    meta: {
-      publicRoute: true
-    }
-  },
+  // {
+  //   path: '/dashboard/brands',
+  //   component: lazy(() => import('../../views/dashboard/brands')),
+  //   layout: 'VerticalLayoutBrands',
+  //   meta: {
+  //     publicRoute: true
+  //   }
+  // },
+  // {
+  //   path: '/dashboard/rd',
+  //   component: lazy(() => import('../../views/dashboard/rd')),
+  //   layout: 'VerticalLayoutRd',
+  //   meta: {
+  //     publicRoute: true
+  //   }
+  // },
   {
     path: '/loginrd',
     component: lazy(() => import('../../views/pages/rd/Loginrd')),
