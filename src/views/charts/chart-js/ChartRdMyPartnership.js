@@ -147,7 +147,7 @@ const ChartRdMyPartnership = ({
     <Card>
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
         <div>
-          <CardTitle className='mb-75' tag='h4'>
+          <CardTitle className='mb-75 mt-md-1 ml-md-75' tag='h4'>
             My Partnerships
           </CardTitle>
         </div>

@@ -435,7 +435,7 @@ const InvoiceListMyPartnerships = () => {
                 // handleFilter={handleFilter}
                 // handlePerPage={handlePerPage}
                 // handleStatusValue={handleStatusValue}
-              /> 
+              />
             }
           />
         <p className="showEntries">Showing 1 to {rowsPerPage} of {dummyData.total} entries</p>

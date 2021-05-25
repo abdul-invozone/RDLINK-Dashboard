@@ -85,7 +85,7 @@ const ChartRdDailySales = ({ direction }) => {
     <Card>
       <CardHeader className='d-flex flex-md-row flex-column justify-content-md-between justify-content-start align-items-md-center align-items-start'>
         <div>
-          <CardTitle className='mb-75' tag='h4'>
+          <CardTitle className='mb-75 mx-md-1 mt-md-1' tag='h4'>
             Daily Sales
           </CardTitle>
         </div>

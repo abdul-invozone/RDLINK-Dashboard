@@ -425,6 +425,7 @@
 	  display: inline-block;
 	  margin: 5rem 0;
 	  max-width: 100%;
+	  flex: none;
 	}
 	  .arrow-right {
 		position: absolute;
@@ -677,7 +678,7 @@
 	// (admin page) Subscription conversion rate 
 	.subconcardtitle {
 		font-size: 17px !important;
-		justify-content: center;
+		text-align: center;
 	}
 	// (rd page) Jenna Gorham's Dashboard
 	#dashboard-brands .jenna-gorham {
@@ -696,7 +697,7 @@
 	.match-height {
 		> [class*='col'] > .card {
 			margin-bottom: 20px;
-			text-align: center;
+			// text-align: center;
 		  }
 		}
 		// Upcoming Opportunities 
@@ -722,7 +723,7 @@
 			justify-content: center !important;
 		}
 		.main-heading {
-			font-size: 15px;
+			font-size: 18px;
 		}
 	} 
 	// Pagination entries 
@@ -868,6 +869,20 @@
     .recommended-for-you .showing-paid {
     	font-size: 12px;
     }
+	#dashboard-analytics {
+		.card-statistics {
+			.statistics-body {
+				padding: 3rem 2.8rem !important;
+			}
+		}
+	}
+	// brand-dashboard column 
+	.match-height {
+		> [class*='col'] > .card {
+			margin-bottom: 20px;
+			// text-align: center;
+		  }
+		}
   }
   
   // Medium devices (tablets, 768px and up)
@@ -900,6 +915,13 @@
 		.rd-list-wrapper .opportunitie-heading{
 			font-size: 20px;
 		}
+		// brand-dashboard column 
+	.match-height {
+		> [class*='col'] > .card {
+			margin-bottom: 20px;
+			// text-align: center;
+		  }
+		}
 }
 
   // Large devices (desktops, 992px and up)
@@ -909,10 +931,10 @@
 	  position: absolute;
 	  top: -20px;
 	}
-				// card-titles
-				.collapse-title.card-title {
-					font-size: 26px;
-				}
+	// card-titles
+	.collapse-title.card-title {
+		font-size: 26px;
+	}
   
 	// DASHBOARD BRANDS SECTION START
 }

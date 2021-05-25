@@ -222,7 +222,6 @@ const InvoiceListRdOppo = () => {
   //     })
   //   setCurrentPage(page.selected + 1)
   // }
-
   const CustomPagination = () => {
     const count = Number((dummyData.total / rowsPerPage).toFixed(0))
 

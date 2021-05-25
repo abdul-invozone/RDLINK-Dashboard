@@ -144,10 +144,10 @@ const ChartRdMyBrands = ({
   ]
 
   return (
-    <Card>
+    <Card className="">
       <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
         <div>
-          <CardTitle className='mb-75' tag='h4'>
+          <CardTitle className='mb-75 m-sm-1' tag='h4'>
             My Brands 
           </CardTitle>
           <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>

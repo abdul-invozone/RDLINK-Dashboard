@@ -56,10 +56,12 @@ const SubConversion = () => {
          <Col lg="6">
          <ChartjsDoughnutChart3 warningLightColor="#5167e1" successColorShade="#34ce86" />
          </Col>
-         <a href="#" className="view-more">
+         <div className="justify-content-center">
+         <a href="#" className="view-more my-sm-1">
               View More
               <ArrowRight className="arrow-right" size="15"/>
             </a>
+            </div>
         </CardBody>
     </Card>
     </>
