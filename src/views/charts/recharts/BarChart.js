@@ -118,11 +118,10 @@ const SimpleBarChart = () => {
         Sort by
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href='/' tag='a'>Option 1</DropdownItem>
-        <DropdownItem href='/' tag='a' disabled>
-          Option 2
+        <DropdownItem href='/' tag='a'>Price</DropdownItem>
+        <DropdownItem href='/' tag='a'>
+          Customers
         </DropdownItem>
-        <DropdownItem href='/' tag='a'>Option 3</DropdownItem>
       </DropdownMenu>
     </UncontrolledButtonDropdown>
       </CardHeader>

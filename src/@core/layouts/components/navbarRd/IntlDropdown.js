@@ -17,7 +17,9 @@ const IntlDropdown = () => {
     en: 'English',
     de: 'German',
     fr: 'French',
-    pt: 'Portuguese'
+    pt: 'Portuguese',
+    es: 'Spanish',
+    ca: 'Canada'
   }
 
   // ** Function to switch Language
@@ -41,7 +43,15 @@ const IntlDropdown = () => {
           <ReactCountryFlag className='country-flag' countryCode='us' svg />
           <span className='ml-1'>English</span>
         </DropdownItem>
-        <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'fr')}>
+        <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'es')}>
+          <ReactCountryFlag className='country-flag' countryCode='es' svg />
+          <span className='ml-1'>Spanish</span>
+        </DropdownItem>
+        <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'ca')}>
+          <ReactCountryFlag className='country-flag' countryCode='ca' svg />
+          <span className='ml-1'>Canada</span>
+        </DropdownItem>
+        {/* <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'fr')}>
           <ReactCountryFlag className='country-flag' countryCode='fr' svg />
           <span className='ml-1'>French</span>
         </DropdownItem>
@@ -52,7 +62,7 @@ const IntlDropdown = () => {
         <DropdownItem href='/' tag='a' onClick={e => handleLangUpdate(e, 'pt')}>
           <ReactCountryFlag className='country-flag' countryCode='pt' svg />
           <span className='ml-1'>Portuguese</span>
-        </DropdownItem>
+        </DropdownItem> */}
       </DropdownMenu>
     </UncontrolledDropdown>
   )

@@ -1,38 +1,23 @@
-import { useContext } from 'react'
-import { List } from 'react-feather'
-import { kFormatter } from '@utils'
 import Avatar from '@components/avatar'
-import Timeline from '@components/timeline'
 import AvatarGroup from '@components/avatar-group'
 import jsonImg from '@src/assets/images/icons/json.png'
-import InvoiceList from '@src/views/apps/invoice/list'
-import InvoiceListManageBrands from '@src/views/apps/invoice/list/indexManageBrands'
 import ceo from '@src/assets/images/portrait/small/avatar-s-9.jpg'
 import { ThemeColors } from '@src/utility/context/ThemeColors'
-import Sales from '@src/views/ui-elements/cards/analytics/Sales'
-import StatsCard from '@src/views/ui-elements/cards/statistics/StatsCard'
-import Revenue from '@src/views/ui-elements/cards/analytics/Revenue'
-import Customers from '@src/views/ui-elements/cards/analytics/Customers'
-import SessionByDevice from '@src/views/ui-elements/cards/analytics/SessionByDevice'
+import InvoiceList from '@src/views/apps/invoice/list'
+import InvoiceListManageBrands from '@src/views/apps/invoice/list/indexManageBrands'
 import ChartjsDoughnutChart from '@src/views/charts/chart-js/ChartjsDoughnutChart'
 import ChartjsDoughnutChart2 from '@src/views/charts/chart-js/ChartjsDoughnutChart2'
 import SubConversion from '@src/views/charts/chart-js/SubConversion'
 import AreaChart from '@src/views/charts/recharts/AreaChart'
 import BarChart from '@src/views/charts/recharts/BarChart'
-import PieChart from '@src/views/charts/recharts/PieChart'
-import AvgSessions from '@src/views/ui-elements/cards/analytics/AvgSessions'
-import CardAppDesign from '@src/views/ui-elements/cards/advance/CardAppDesign'
-import SupportTracker from '@src/views/ui-elements/cards/analytics/SupportTracker'
-import { Row, Col, Card, CardHeader, CardTitle, CardBody, Media, Breadcrumb, BreadcrumbItem } from 'reactstrap'
-import { Link } from 'react-router-dom'
-import OrdersReceived from '@src/views/ui-elements/cards/statistics/OrdersReceived'
-import CardCongratulations from '@src/views/ui-elements/cards/advance/CardCongratulations'
-import SubscribersGained from '@src/views/ui-elements/cards/statistics/SubscribersGained'
-
+import StatsCard from '@src/views/ui-elements/cards/statistics/StatsCard'
 import '@styles/react/libs/charts/apex-charts.scss'
+import '@styles/react/libs/charts/recharts.scss'
 // ** Styles
 import '@styles/react/libs/flatpickr/flatpickr.scss'
-import '@styles/react/libs/charts/recharts.scss'
+import { useContext } from 'react'
+import { Link } from 'react-router-dom'
+import { Breadcrumb, BreadcrumbItem, Col, Media, Row } from 'reactstrap'
 
 const AnalyticsDashboard = () => {
   const { colors } = useContext(ThemeColors)
@@ -125,11 +110,11 @@ const AnalyticsDashboard = () => {
   return (
     <div id='dashboard-analytics'>
       <Row className="mx-0 mb-2 align-items-center mb-sm-1">
-        <Col sm="6" className="justify-content-center">
+        <Col sm="6" className="justify-content-sm-end justify-content-center text-center-sm">
           <span className="admin-dashboard">Admin Dashboard</span>
         </Col>
         <Col sm="6">
-        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end'>
+        <Breadcrumb className='breadcrumb-slash d-flex justify-content-sm-end justify-content-center'>
         <BreadcrumbItem>
           <Link to='#'> Home </Link>
         </BreadcrumbItem>
@@ -142,41 +127,29 @@ const AnalyticsDashboard = () => {
        
       <Row className='match-height'>
         <Col xl='12' md='12' xs='12'>
-          <StatsCard cols={{ xl: '3', sm: '6' }} />
+          <StatsCard cols={{ xl: '3', sm: '4', md: '4' }} />
+        </Col>
+      </Row>
+      <Row className='match-height allRD'>
+        {/* <Col lg='3' sm='6'>
+        <ChartjsDoughnutChart2 primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
+        </Col> */}
+        <Col lg='3' sm='6'>
+          <ChartjsDoughnutChart primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
+        </Col>
+        <Col lg='9' sm='6'>
+        {/* <AreaChart primary={colors.primary.main} /> */}
+        <BarChart primary={colors.primary.main} danger={colors.danger.main} />
         </Col>
       </Row>
       {/* <Row className='match-height'>
-        <Col lg='3' sm='6'>
-        <Revenue />
-        </Col>
-        <Col lg='3' sm='6'>
-        <SessionByDevice />
-        </Col>
-        <Col lg='6' sm='12'>
-        <Customers />
-        </Col>
-      </Row> */}
-      <Row className='match-height allRD'>
-        <Col lg='3' sm='6'>
-        <ChartjsDoughnutChart2 primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
-        </Col>
-        <Col lg='3' sm='6'>
-          {/* <OrdersReceived kFormatter={kFormatter} warning={colors.warning.main} /> */}
-          <ChartjsDoughnutChart primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
-        </Col>
-        <Col lg='6' sm='12'>
-        <AreaChart primary={colors.primary.main} />
-        {/* <AvgSessions primary={colors.primary.main} /> */}
-        </Col>
-      </Row>
-      <Row className='match-height'>
       <Col lg='4' md='4' xs='12'>
           <SubConversion />
         </Col>
         <Col lg='8' xs='12'>
           <BarChart primary={colors.primary.main} danger={colors.danger.main} />
         </Col>
-      </Row>
+      </Row> */}
       <Row className='match-height'>
         <Col xs='12'>
           <InvoiceList />

@@ -5,7 +5,7 @@
 	.navbar-header {
 		.navbar-brand {
 			.brand-text {
-				font-size: 24px !important;
+				font-size: 22px !important;
 				font-weight: 500 !important;
 			}
 		}
@@ -28,7 +28,7 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 37px 0 0 !important;
+				margin: 30px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
@@ -43,8 +43,8 @@
 			}
 			li {
 				a {
-					padding: 20px !important;
-					font-size: 16px !important;
+					padding: 18px 20px !important;
+					font-size: 14px !important;
 					margin: 0 !important;
 					color: #fff !important;
 				}
@@ -53,7 +53,7 @@
 	}
 }
 .userDropDown {
-	padding: 37px 0 0;
+	padding: 30px 0 0;
 }
 .user-name {
 	font-size: 13px !important;
@@ -64,7 +64,7 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 37px 0 0 !important;
+				margin: 30px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
@@ -85,8 +85,8 @@
 			}
 			li {
 				a {
-					padding: 20px !important;
-					font-size: 16px !important;
+					padding: 18px 20px !important;
+					font-size: 14px !important;
 					margin: 0 !important;
 					color: #fff !important;
 				}
@@ -166,6 +166,25 @@
 		}
 	}
 }
+.statsDropdownBrands {
+	position: relative;
+	.btn-flat-primary {
+		font-size: 24px;
+		font-weight: 700;
+		letter-spacing: 4px;
+		color: #aeacb9;
+		&:hover {
+			&:not(.disabled) {
+				&:not(:disabled) {
+					background-color: transparent !important;
+				}
+			}
+		}
+		&:focus {
+			background-color: transparent !important;
+		}
+	}
+}
 .invoice-list-wrapper {
 	.card {
 		padding: 30px 0 0;
@@ -213,9 +232,9 @@
   // }
   
   .invoice-list-wrapper {
-	.invoice-list-dataTable .rdt_TableCol:last-child {
-	  justify-content: center;
-	}
+	// .invoice-list-dataTable .rdt_TableCol:last-child {
+	//   justify-content: center;
+	// }
   
 	.rdt_TableBody .rdt_TableRow .rdt_TableCell {
 	  font-weight: 500;
@@ -541,22 +560,26 @@
 	color: #404447;
 }
 	// Dasboard & Manage brands table cell  
-.recommended-rd .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
-.my-partnerships .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
-.manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4)
-// .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5),
-// .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
-// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(2),
-// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
-// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4), 
-// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5), 
-// .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
-// .upcoming-opportunitie .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
-// .upcoming-opportunitie .invoice-list-dataTable .react-dataTable .rdt_Table .rdt_TableHead .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable:nth-child(6) 
-{
-	justify-content: center;
-}
+// .recommended-rd .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+// .my-partnerships .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+// .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4)
+// // .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5),
+// // .manage-brands .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
+// // .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(2),
+// // .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+// // .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(4), 
+// // .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(5), 
+// // .manage-rds .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6)
+// // .upcoming-opportunitie .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
+// // .upcoming-opportunitie .invoice-list-dataTable .react-dataTable .rdt_Table .rdt_TableHead .rdt_TableHeadRow .rdt_TableCol .rdt_TableCol_Sortable:nth-child(6) 
+// {
+// 	justify-content: center;
+// }
 
+.invoice-list-dataTable-brands-dashboard .rdt_TableBody .rdt_TableRow .rdt_TableCell:first-child {
+	background-color: #7468f1;
+    color: #fff;
+}
 // DASHBOARD BRANDS SECTION END 
 // Recommended For You Cards-head Start
 
@@ -576,46 +599,80 @@
 
 
 // Recommended For You Cards-body Start
-.brandContent {
+.brandSlides {
+	position: relative;
+}
+.brandSlides .brandSlidesHeading {
+	position: absolute;
+	top: 10px;
+}
+.brandSlides .brandContent {
 	background-color: white;
 	border-radius: 20px !important;
-	padding: 3rem;
+	padding: 3.5rem 1rem 2.7rem;
 	text-align: center;
-	max-height: 380px;
+	min-height: 380px;
+	position: relative;
 }
-.brandContent .brandContent-img{
+.brandSlides .brandContent .newRd {
+	text-align: right;
+	padding: 0.5rem 0.5rem 1.5rem;
+	position:absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.brandSlides .brandContent .brandSlidesRd {
+	font-size: 19px;
+	color: #000;
+	font-weight: 600;
+}
+
+.brandSlides .brandContent .newRd .newRdText {
+	display:inline-block;
+	background-color: #571dd2;
+	color: #fff;
+	padding: 2px 8px; 
+	margin: 0;
+	border-radius: 3px;
+	font-size: 12px;
+}
+
+.brandSlides .brandContent .brandContent-img{
 	min-height: 110px !important;
 }
 
-.brandContent .antonio {
+.brandSlides .brandContent .antonio {
 	margin: 16px;
 	color: #000518;
 	font-size: 19px;
 	font-weight: 650;
 }
-.brandContent .healthcare {
+.brandSlides .brandContent .healthcare {
 	border-radius: 3px;
-	margin: 0 0px 20px;
+	margin: 20px auto;
 	padding: 9px 6px;
 	font-size: 12px;
-	max-width: 100%;
+	width: 100%;
+	max-width: 250px;
 }
-.brandContent .general-wellness {
+.brandSlides .brandContent .general-wellness {
 	margin: 0;
 }
-.brandContent .social-media .social-media-icons {
+.brandSlides .brandContent .social-media .social-media-icons {
 	display: inline-block;
 	width: 46px;
 	height: 46px; 
 	margin: 0 3px; 
 	background-color:#e9f6fd;
 	border-radius: 999px;
+	line-height: 40px;
 }
 // .brandContent .social-media .social-media-icons .social-media-anchor {
 // 	position: relative;
 // 	top: 50px;
 // }
-.brandContent .brandContent-menu {
+.brandSlides .brandContent .brandContent-menu {
 	position: relative;
 	top: -60px;
 	left: 90px;
@@ -658,6 +715,10 @@
   
   // Extra small devices (portrait phones, less than 576px)
   @media (max-width: 575.98px) {
+
+	.text-center-sm {
+		text-align: center;
+	}
   
 	.statsDropdown {
 	  position: absolute;
@@ -1047,6 +1108,7 @@
 }
 .statistics-sub-text .my-rds{
 	font-size: 11px !important;
+	line-height: 1.4;
 }
 
 // Recommended For You Cards-head Start
@@ -1119,4 +1181,12 @@
 	.rdLoginHeading {
 		font-size: 24px;
 	}
+	.navbarContainerBrands {
+		padding: 0.2rem 1rem !important;
+	}
+	.navbarContainerBrands .avatar {
+		position: relative;
+		top: -3px;
+	}
 }
+

@@ -98,7 +98,7 @@ const ApexRadiarChart2 = () => {
   const series = [85, 16, 50, 50]
 
   return (
-    <Card>
+    <Card style={{marginBottom: '0'}}>
       <CardHeader style={{borderBottom: 'none', padding: '2rem', marginBottom: '5px'}}>
                 <h4 className="subconcardtitle subconcardtitle-gray">New RDs</h4>
         </CardHeader>

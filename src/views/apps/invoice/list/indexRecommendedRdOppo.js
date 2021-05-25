@@ -334,7 +334,7 @@ const InvoiceListRecommendedRdOppo = () => {
   const [value, setValue] = useState('')
   const [currentPage, setCurrentPage] = useState(1)
   const [statusValue, setStatusValue] = useState('')
-  const [rowsPerPage, setRowsPerPage] = useState(10)
+  const [rowsPerPage, setRowsPerPage] = useState(3)
 
   // useEffect(() => {
   //     {
@@ -432,8 +432,8 @@ const InvoiceListRecommendedRdOppo = () => {
   return (
     <div className='invoice-list-wrapper recommended-rd'>
       <Card>
-      <h2 className="recommended-opportunities justify-content-sm-center">Recommended RD Opportunities</h2>
-        <div className='invoice-list-dataTable'>
+      <h2 className="recommended-opportunities justify-content-sm-center">Recommended Opportunities</h2>
+        <div className='invoice-list-dataTable invoice-list-dataTable-brands-dashboard'>
           <DataTable
             noHeader
             pagination
