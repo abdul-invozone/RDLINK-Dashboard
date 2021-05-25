@@ -8,13 +8,32 @@ export default [
     id: 'blog',
     title: 'Blog',
     icon: <Mail size={20} />,
-    navLink: '#'
+    children: [
+      {
+        id: 'blogList',
+        title: 'List',
+        permissions: ['admin', 'editor'],
+        navLink: '/pages/blogRd/list'
+      },
+      {
+        id: 'blogDetail',
+        title: 'Detail',
+        permissions: ['admin', 'editor'],
+        navLink: '/pages/blogRd/detail'
+      },
+      {
+        id: 'blogEdit',
+        title: 'Edit',
+        permissions: ['admin', 'editor'],
+        navLink: '/pages/blogRd/edit'
+      }
+    ]
   },
   {
     id: 'faqs',
     title: "FAQ's",
     icon: <MessageSquare size={20} />,
-    navLink: '#'
+    navLink: '/pages/faqRd'
   },
   {
     id: 'resoures',

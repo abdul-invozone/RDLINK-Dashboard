@@ -6,7 +6,9 @@ import auth from './auth'
 import navbar from './navbar'
 import layout from './layout'
 import chat from '@src/views/apps/chat/store/reducer'
+import chatRd from '@src/views/apps/chatRd/store/reducer'
 import todo from '@src/views/apps/todo/store/reducer'
+import todoRd from '@src/views/apps/todoRd/store/reducer'
 import users from '@src/views/apps/user/store/reducer'
 import email from '@src/views/apps/email/store/reducer'
 import invoice from '@src/views/apps/invoice/store/reducer'
@@ -17,7 +19,9 @@ import dataTables from '@src/views/tables/data-tables/store/reducer'
 const rootReducer = combineReducers({
   auth,
   todo,
+  todoRd,
   chat,
+  chatRd,
   email,
   users,
   navbar,

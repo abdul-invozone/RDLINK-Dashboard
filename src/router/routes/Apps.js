@@ -43,6 +43,12 @@ const AppRoutes = [
     component: lazy(() => import('../../views/apps/chat'))
   },
   {
+    path: '/apps/chat/chatRd',
+    appLayout: true,
+    className: 'chat-application',
+    component: lazy(() => import('../../views/apps/chatRd'))
+  },
+  {
     path: '/apps/todo',
     exact: true,
     appLayout: true,
@@ -66,6 +72,33 @@ const AppRoutes = [
     component: lazy(() => import('../../views/apps/todo')),
     meta: {
       navLink: '/apps/todo'
+    }
+  },
+  {
+    path: '/apps/todoRd',
+    exact: true,
+    appLayout: true,
+    // layout: 'VerticalLayoutRd',
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoRd'))
+  },
+  {
+    path: '/apps/todoRd/:filter',
+    appLayout: true,
+    exact: true,
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoRd')),
+    meta: {
+      navLink: '/apps/todoRd'
+    }
+  },
+  {
+    path: '/apps/todoRd/tag/:tag',
+    appLayout: true,
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoRd')),
+    meta: {
+      navLink: '/apps/todoRd'
     }
   },
   {

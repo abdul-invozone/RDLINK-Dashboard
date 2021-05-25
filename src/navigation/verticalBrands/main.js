@@ -5,12 +5,6 @@ export default [
     header: 'Main'
   },
   {
-    id: 'dashboard',
-    title: 'Dashboard',
-    icon: <Mail size={20} />,
-    navLink: '/dashboard/brands'
-  },
-  {
     id: 'nutritionExperts',
     title: "Nutrition Experts",
     icon: <MessageSquare size={20} />,
