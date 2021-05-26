@@ -610,7 +610,7 @@
 .brandSlides .brandContent {
 	background-color: white;
 	border-radius: 20px !important;
-	padding: 3.5rem 1rem 2.7rem;
+	padding: 1.7rem 1rem 2.7rem;
 	text-align: center;
 	min-height: 380px;
 	position: relative;
@@ -629,7 +629,7 @@
 	font-weight: 600;
 }
 
-.brandSlides .brandContent .newRd .newRdText {
+.brandSlides .brandContent .newRdText {
 	display:inline-block;
 	background-color: #571dd2;
 	color: #fff;
@@ -639,9 +639,9 @@
 	font-size: 12px;
 }
 
-.brandSlides .brandContent .brandContent-img{
-	min-height: 110px !important;
-}
+// .brandSlides .brandContent .brandContent-img{
+// 	min-height: 110px !important;
+// }
 
 .brandSlides .brandContent .antonio {
 	margin: 16px;
@@ -970,7 +970,7 @@
 }
 
 .brandContent .brandContent-img{
-	min-height: 70px !important;
+	// min-height: 70px !important;
 	max-width: 90px !important;
 }
 

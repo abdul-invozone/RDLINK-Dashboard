@@ -44,23 +44,22 @@ const AppRoutes = [
     component: lazy(() => import('../../views/apps/chat'))
   },
   {
-    path: '/apps/chat/chatAdmin',
+    path: '/admin/apps/chat/chatAdmin',
     appLayout: true,
-    layout: 'VerticalLayout',
     className: 'chat-application',
     component: lazy(() => import('../../views/apps/chatAdmin'))
   },
   {
-    path: '/apps/chat/chatBrands',
-    appLayout: true,
+    path: '/brands/apps/chat/chatBrands',
     layout: 'VerticalLayoutBrands',
+    appLayout: true,
     className: 'chat-application',
     component: lazy(() => import('../../views/apps/chatBrands'))
   },
   {
-    path: '/apps/chat/chatRd',
-    appLayout: true,
+    path: '/rd/apps/chat/chatRd',
     layout: 'VerticalLayoutRd',
+    appLayout: true,
     className: 'chat-application',
     component: lazy(() => import('../../views/apps/chatRd'))
   },
@@ -129,6 +128,7 @@ const AppRoutes = [
     path: '/apps/todoBrands/:filter',
     appLayout: true,
     exact: true,
+    layout: 'VerticalLayoutBrands',
     className: 'todo-application',
     component: lazy(() => import('../../views/apps/todoBrands')),
     meta: {
@@ -138,6 +138,7 @@ const AppRoutes = [
   {
     path: '/apps/todoBrands/tag/:tag',
     appLayout: true,
+    layout: 'VerticalLayoutBrands',
     className: 'todo-application',
     component: lazy(() => import('../../views/apps/todoBrands')),
     meta: {
@@ -156,6 +157,7 @@ const AppRoutes = [
     path: '/apps/todoRd/:filter',
     appLayout: true,
     exact: true,
+    layout: 'VerticalLayoutRd',
     className: 'todo-application',
     component: lazy(() => import('../../views/apps/todoRd')),
     meta: {
@@ -165,6 +167,7 @@ const AppRoutes = [
   {
     path: '/apps/todoRd/tag/:tag',
     appLayout: true,
+    layout: 'VerticalLayoutRd',
     className: 'todo-application',
     component: lazy(() => import('../../views/apps/todoRd')),
     meta: {
