@@ -28,12 +28,12 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 10px 0 0 !important;
+				margin: 0px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
 				color: #515974;
-				border-top: 1px solid #303547;
+				// border-top: 1px solid #303547;
 			}
 			>li.active {
 				border-left: 5px solid #208cd4;
@@ -55,7 +55,7 @@
 .userDropDown {
 	padding: 30px 0;
     border-bottom: 1px solid #303547;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .user-name {
 	font-size: 13px !important;
@@ -66,12 +66,12 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 10px 0 0 !important;
+				margin: 0px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
 				color: #515974;
-				border-top: 1px solid #303547;
+				// border-top: 1px solid #303547;
 			}
 			>li.active {
 				border-left: 5px solid #208cd4;

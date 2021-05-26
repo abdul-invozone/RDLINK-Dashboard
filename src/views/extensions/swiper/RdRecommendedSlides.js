@@ -94,7 +94,6 @@ const RdRecommendedSlides = () => {
           <div className="newRd"><p className="newRdText">Sponsored</p></div>
               <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">John Beans</h2>
-              <h6 className="brandSlidesRdLocation">Spain</h6>
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
                 <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
               </div>

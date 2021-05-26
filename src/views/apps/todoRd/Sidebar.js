@@ -46,7 +46,7 @@ const TodoSidebar = props => {
           <div className='todo-app-menu'>
             <div className='add-task'>
               <Button.Ripple color='primary' onClick={handleAddClick} block>
-                Add Reminder
+                Add Reminder Rd
               </Button.Ripple>
             </div>
             <PerfectScrollbar className='sidebar-menu-list' options={{ wheelPropagation: false }}>

@@ -43,7 +43,7 @@ export const searchArr = [
         isBookmarked: true,
         title: 'Todo',
         icon: 'CheckSquare',
-        link: '/apps/todoRd'
+        link: '#'
       },
       {
         id: 6,

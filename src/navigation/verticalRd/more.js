@@ -8,7 +8,7 @@ export default [
     id: 'calender',
     title: "Calender",
     icon: <MessageSquare size={20} />,
-    navLink: '#'
+    navLink: '/apps/calendarRd'
   },
   {
     id: 'resoures',

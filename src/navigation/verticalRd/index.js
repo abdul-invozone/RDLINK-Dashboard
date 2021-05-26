@@ -10,4 +10,4 @@ import dashboards from './dashboards'
 // import chartsAndMaps from './charts-maps'
 
 // ** Merge & Export
-export default [...dashboards, ...main, ...more]
+export default [...main, ...more]
