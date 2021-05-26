@@ -29,12 +29,12 @@ export default [
     navLink: '#'
   },
   {
-    id: 'chatConversations',
+    id: 'chatConversationsAdmin',
     title: 'Chat Conversations',
     icon: <FileText size={20} />,
     badge: 'danger',
     badgeText: '9',
-    navLink: '/apps/chat/chatAdmin'
+    navLink: '/admin/apps/chat/chatAdmin'
     // children: [
     //   {
     //     id: 'invoiceList',

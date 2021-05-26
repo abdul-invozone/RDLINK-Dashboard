@@ -35,12 +35,12 @@ export default [
     navLink: '#'
   },
   {
-    id: 'messages',
+    id: 'messagesBrands',
     title: 'Messages',
     icon: <FileText size={20} />,
     badge: 'danger',
     badgeText: '9',
-    navLink: '/apps/chat/chatBrands'
+    navLink: '/brands/apps/chat/chatBrands'
   },
   {
     id: 'payments',
