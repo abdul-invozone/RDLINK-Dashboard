@@ -1,5 +1,6 @@
 import { lazy } from 'react'
 import { Redirect } from 'react-router-dom'
+import VerticalLayoutBrands from '../../@core/layouts/VerticalLayoutBrands'
 
 const AppRoutes = [
   {
@@ -43,8 +44,23 @@ const AppRoutes = [
     component: lazy(() => import('../../views/apps/chat'))
   },
   {
+    path: '/apps/chat/chatAdmin',
+    appLayout: true,
+    layout: 'VerticalLayout',
+    className: 'chat-application',
+    component: lazy(() => import('../../views/apps/chatAdmin'))
+  },
+  {
+    path: '/apps/chat/chatBrands',
+    appLayout: true,
+    layout: 'VerticalLayoutBrands',
+    className: 'chat-application',
+    component: lazy(() => import('../../views/apps/chatBrands'))
+  },
+  {
     path: '/apps/chat/chatRd',
     appLayout: true,
+    layout: 'VerticalLayoutRd',
     className: 'chat-application',
     component: lazy(() => import('../../views/apps/chatRd'))
   },
@@ -75,10 +91,64 @@ const AppRoutes = [
     }
   },
   {
+    path: '/apps/todoAdmin',
+    exact: true,
+    appLayout: true,
+    layout: 'VerticalLayout',
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoAdmin'))
+  },
+  {
+    path: '/apps/todoAdmin/:filter',
+    appLayout: true,
+    exact: true,
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoAdmin')),
+    meta: {
+      navLink: '/apps/todoAdmin'
+    }
+  },
+  {
+    path: '/apps/todoAdmin/tag/:tag',
+    appLayout: true,
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoAdmin')),
+    meta: {
+      navLink: '/apps/todoAdmin'
+    }
+  },
+  {
+    path: '/apps/todoBrands',
+    exact: true,
+    appLayout: true,
+    layout: 'VerticalLayoutBrands',
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoBrands'))
+  },
+  {
+    path: '/apps/todoBrands/:filter',
+    appLayout: true,
+    exact: true,
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoBrands')),
+    meta: {
+      navLink: '/apps/todoBrands'
+    }
+  },
+  {
+    path: '/apps/todoBrands/tag/:tag',
+    appLayout: true,
+    className: 'todo-application',
+    component: lazy(() => import('../../views/apps/todoBrands')),
+    meta: {
+      navLink: '/apps/todoBrands'
+    }
+  },
+  {
     path: '/apps/todoRd',
     exact: true,
     appLayout: true,
-    // layout: 'VerticalLayoutRd',
+    layout: 'VerticalLayoutRd',
     className: 'todo-application',
     component: lazy(() => import('../../views/apps/todoRd'))
   },
@@ -104,6 +174,16 @@ const AppRoutes = [
   {
     path: '/apps/calendar',
     component: lazy(() => import('../../views/apps/calendar'))
+  },
+  {
+    path: '/apps/calendarBrands',
+    layout: 'VerticalLayoutBrands',
+    component: lazy(() => import('../../views/apps/calendarBrands'))
+  },
+  {
+    path: '/apps/calendarRd',
+    layout: 'VerticalLayoutRd',
+    component: lazy(() => import('../../views/apps/calendarRd'))
   },
   {
     path: '/apps/invoice/list',
