@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Facebook, Twitter, Linkedin, User, Mail } from 'react-feather'
-import { Card, CardHeader, CardTitle, CardBody, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle } from 'reactstrap'
+import { Facebook, Twitter, Linkedin, User, Mail, Heart } from 'react-feather'
+import { Card, CardHeader, CardTitle, CardBody, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle, Button } from 'reactstrap'
 import img1 from '@src/assets/images/banner/banner-41.jpg'
 import img2 from '@src/assets/images/banner/banner-42.jpg'
 import img3 from '@src/assets/images/banner/banner-43.jpg'
@@ -63,7 +63,19 @@ const RdRecommendedSlides = () => {
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledButtonDropdown> */}
-      <div className="newRd"><p className="newRdText">Sponsored</p></div>
+      <div className="row align-items-center justify-content-between">
+      <div className="col-auto mb-1"><Button
+                className='btn-wishlist'
+                color='light'
+              >
+                <Heart
+                  className=''
+                  size={14}
+                />
+                {/* <span>Add to Favorites</span> */}
+              </Button></div>
+      <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
+      </div>
       <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">Antonio Pastore</h2>
               <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
@@ -77,7 +89,19 @@ const RdRecommendedSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-          <div className="newRd"><p className="newRdText">Sponsored</p></div>
+          <div className="row align-items-center justify-content-between">
+      <div className="col-auto mb-1"><Button
+                className='btn-wishlist'
+                color='light'
+              >
+                <Heart
+                  className=''
+                  size={14}
+                />
+                {/* <span>Add to Favorites</span> */}
+              </Button></div>
+      <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
+      </div>
               <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">Jessica Miles</h2>
               <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
@@ -91,10 +115,21 @@ const RdRecommendedSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-          <div className="newRd"><p className="newRdText">Sponsored</p></div>
+          <div className="row align-items-center justify-content-between">
+      <div className="col-auto mb-1"><Button
+                className='btn-wishlist'
+                color='light'
+              >
+                <Heart
+                  className=''
+                  size={14}
+                />
+                {/* <span>Add to Favorites</span> */}
+              </Button></div>
+      <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
+      </div>
               <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">John Beans</h2>
-              <h6 className="brandSlidesRdLocation">Spain</h6>
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
                 <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
               </div>
@@ -106,6 +141,18 @@ const RdRecommendedSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
+          <div className="row align-items-center justify-content-between">
+      <div className="col-auto mb-1"><Button
+                className='btn-wishlist'
+                color='light'
+              >
+                <Heart
+                  className=''
+                  size={14}
+                />
+                {/* <span>Add to Favorites</span> */}
+              </Button></div>
+      </div>
               <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">Matt Pears</h2>
               <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
@@ -119,7 +166,18 @@ const RdRecommendedSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-          
+          <div className="row align-items-center justify-content-between">
+      <div className="col-auto mb-1"><Button
+                className='btn-wishlist'
+                color='light'
+              >
+                <Heart
+                  className=''
+                  size={14}
+                />
+                {/* <span>Add to Favorites</span> */}
+              </Button></div>
+      </div>
               <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">John Beans</h2>
               <div className="healthcare" style={{backgroundColor: '#b0cef2'}}>

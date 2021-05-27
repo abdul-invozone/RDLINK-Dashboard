@@ -5,7 +5,7 @@ export default [
     header: 'Main'
   },
   {
-    id: 'dashboard',
+    id: 'rdAdmin',
     title: 'Dashboard',
     icon: <Mail size={20} />,
     navLink: '/dashboard/admin'
@@ -29,12 +29,12 @@ export default [
     navLink: '#'
   },
   {
-    id: 'chatConversations',
+    id: 'chatConversationsAdmin',
     title: 'Chat Conversations',
     icon: <FileText size={20} />,
     badge: 'danger',
     badgeText: '9',
-    navLink: '#'
+    navLink: '/admin/apps/chat/chatAdmin'
     // children: [
     //   {
     //     id: 'invoiceList',

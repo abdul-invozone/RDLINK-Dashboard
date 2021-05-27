@@ -28,12 +28,12 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 30px 0 0 !important;
+				margin: 0px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
 				color: #515974;
-				border-top: 1px solid #303547;
+				// border-top: 1px solid #303547;
 			}
 			>li.active {
 				border-left: 5px solid #208cd4;
@@ -53,7 +53,9 @@
 	}
 }
 .userDropDown {
-	padding: 30px 0 0;
+	padding: 30px 0;
+    border-bottom: 1px solid #303547;
+    margin-bottom: 0px;
 }
 .user-name {
 	font-size: 13px !important;
@@ -64,12 +66,12 @@
 		.navigation {
 			.navigation-header {
 				text-transform: capitalize !important;
-				margin: 30px 0 0 !important;
+				margin: 0px 0 0 !important;
 				padding: 1.3rem 1.5rem !important;
 				font-size: 20px !important;
 				font-weight: 400 !important;
 				color: #515974;
-				border-top: 1px solid #303547;
+				// border-top: 1px solid #303547;
 			}
 			>li.active {
 				border-left: 5px solid #208cd4;
@@ -105,7 +107,7 @@
 			li.has-sub {
 				>a {
 					&:after {
-						top: 28px !important;
+						top: 22px !important;
 					}
 				}
 			}
@@ -609,7 +611,7 @@
 .brandSlides .brandContent {
 	background-color: white;
 	border-radius: 20px !important;
-	padding: 3.5rem 1rem 2.7rem;
+	padding: 1.7rem 1rem 2.7rem;
 	text-align: center;
 	min-height: 380px;
 	position: relative;
@@ -628,7 +630,7 @@
 	font-weight: 600;
 }
 
-.brandSlides .brandContent .newRd .newRdText {
+.brandSlides .brandContent .newRdText {
 	display:inline-block;
 	background-color: #571dd2;
 	color: #fff;
@@ -638,9 +640,9 @@
 	font-size: 12px;
 }
 
-.brandSlides .brandContent .brandContent-img{
-	min-height: 110px !important;
-}
+// .brandSlides .brandContent .brandContent-img{
+// 	min-height: 110px !important;
+// }
 
 .brandSlides .brandContent .antonio {
 	margin: 16px;
@@ -1134,7 +1136,7 @@
 }
 
 .brandContent .brandContent-img{
-	min-height: 70px !important;
+	// min-height: 70px !important;
 	max-width: 90px !important;
 }
 
@@ -1200,3 +1202,6 @@
 	}
 }
 
+.main-menu.menu-light .navigation > li ul .active {
+    box-shadow: none;
+}

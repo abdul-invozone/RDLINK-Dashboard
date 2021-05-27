@@ -5,7 +5,7 @@ export default [
     header: 'Main'
   },
   {
-    id: 'dashboard',
+    id: 'rdDash',
     title: 'Dashboard',
     icon: <Mail size={20} />,
     navLink: '/dashboard/rd'
@@ -35,12 +35,12 @@ export default [
     navLink: '#'
   },
   {
-    id: 'messages',
+    id: 'messagesRd',
     title: 'Messages',
     icon: <FileText size={20} />,
     badge: 'danger',
     badgeText: '9',
-    navLink: '#'
+    navLink: '/rd/apps/chat/chatRd'
   },
   {
     id: 'payments',

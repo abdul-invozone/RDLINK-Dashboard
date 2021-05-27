@@ -112,7 +112,7 @@ const VerticalNavMenuGroup = ({
         </span>
 
         {item.badge && item.badgeText ? (
-          <Badge className='ml-auto mr-1' color={item.badge} pill>
+          <Badge className='ml-auto mr-2' color={item.badge} pill>
             {item.badgeText}
           </Badge>
         ) : null}
