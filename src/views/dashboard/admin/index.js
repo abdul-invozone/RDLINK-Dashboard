@@ -131,13 +131,13 @@ const AnalyticsDashboard = () => {
         </Col>
       </Row>
       <Row className='match-height allRD'>
-        {/* <Col lg='3' sm='6'>
+        <Col lg='3' sm='6'>
         <ChartjsDoughnutChart2 primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
-        </Col> */}
+        </Col>
         <Col lg='3' sm='6'>
           <ChartjsDoughnutChart primary="#213f90" warningLightColor="red" successColorShade="#2cb6d1" />
         </Col>
-        <Col lg='9' sm='6'>
+        <Col lg='6' sm='12'>
         {/* <AreaChart primary={colors.primary.main} /> */}
         <BarChart primary={colors.primary.main} danger={colors.danger.main} />
         </Col>

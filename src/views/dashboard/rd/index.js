@@ -39,11 +39,11 @@ const RdDashboard = () => {
   return (
     <div id='dashboard-brands'>
       <Row className="mx-0 align-items-center my-2">
-        <Col sm="6" className="jenna-gorham">
+        <Col sm="6" className="jenna-gorham text-center-sm">
           <span>Jenna Gorham's Dashboard</span>
         </Col>
         <Col sm="6" className="jenna-gorham">
-        <Breadcrumb className='breadcrumb-slash d-flex justify-content-end'>
+        <Breadcrumb className='breadcrumb-slash d-flex justify-content-sm-end justify-content-center'>
         <BreadcrumbItem >
           <Link to='#'> Home </Link>
         </BreadcrumbItem>

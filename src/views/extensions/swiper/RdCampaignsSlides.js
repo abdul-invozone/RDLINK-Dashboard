@@ -70,10 +70,10 @@ const RdCampaignsSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Details
           </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Send Message
           </Button.Ripple>
             </div>
@@ -86,10 +86,10 @@ const RdCampaignsSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
                 <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
               </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Details
           </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Send Message
           </Button.Ripple>
             </div>
@@ -102,10 +102,10 @@ const RdCampaignsSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
                 <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
               </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Details
           </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Send Message
           </Button.Ripple>
             </div>
@@ -117,10 +117,10 @@ const RdCampaignsSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
                 <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
               </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Details
           </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Send Message
           </Button.Ripple>
             </div>
@@ -133,10 +133,10 @@ const RdCampaignsSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#b0cef2'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Details
           </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50 mb-75">
             Send Message
           </Button.Ripple>
             </div>

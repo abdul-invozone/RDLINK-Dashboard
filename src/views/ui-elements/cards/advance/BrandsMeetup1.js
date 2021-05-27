@@ -28,7 +28,7 @@ const BrandsMeetup1 = () => {
             <h3 className='mb-0'>24</h3>
           </div>
           <div className='my-auto'>
-            <CardTitle tag='h4' className='mb-25'>
+            <CardTitle tag='h4' className='mb-25 monthly-meetup'>
               Monthly Meetup of Nutrionists
             </CardTitle>
             <CardText className='mb-0'>Lorem Ipsum dolor sit amet, consectutr adipcing elit, sed do eiusmod tempor</CardText>
@@ -74,7 +74,7 @@ const BrandsMeetup1 = () => {
             <h3 className='mb-0'>24</h3>
           </div>
           <div className='my-auto'>
-            <CardTitle tag='h4' className='mb-25'>
+            <CardTitle tag='h4' className='mb-25 monthly-meetup'>
               Monthly Meetup of Nutrionists
             </CardTitle>
             <CardText className='mb-0'>Lorem Ipsum dolor sit amet, consectutr adipcing elit, sed do eiusmod tempor</CardText>
@@ -120,7 +120,7 @@ const BrandsMeetup1 = () => {
             <h3 className='mb-0'>24</h3>
           </div>
           <div className='my-auto'>
-            <CardTitle tag='h4' className='mb-25'>
+            <CardTitle tag='h4' className='mb-25 monthly-meetup'>
               Monthly Meetup of Nutrionists
             </CardTitle>
             <CardText className='mb-0'>Lorem Ipsum dolor sit amet, consectutr adipcing elit, sed do eiusmod tempor</CardText>

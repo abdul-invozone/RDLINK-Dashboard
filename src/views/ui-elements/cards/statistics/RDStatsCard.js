@@ -1,6 +1,6 @@
 import Avatar from '@components/avatar'
 import classnames from 'classnames'
-import { Box, DollarSign, TrendingUp, User } from 'react-feather'
+import { Box, DollarSign, TrendingUp, User, MoreHorizontal} from 'react-feather'
 import { Card, CardHeader, CardTitle, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown, UncontrolledTooltip } from 'reactstrap'
 
 
@@ -89,8 +89,8 @@ const RDStatsCard = ({ cols }) => {
         <CardTitle style={{paddingLeft: 'auto'}}><h4 className="subconcardtitle subconcardtitle-gray">Statistics</h4></CardTitle>
         <CardText className='card-text font-small-2 mr-25 mb-0'>
         <UncontrolledButtonDropdown className="statsDropdownBrands">
-        <DropdownToggle color='flat-primary' className="dropdown-button">
-          ...
+        <DropdownToggle color='flat-primary'>
+        <MoreHorizontal size={28} />
         </DropdownToggle>
         <DropdownMenu>
           <DropdownItem href='/' tag='a'>
@@ -107,7 +107,7 @@ const RDStatsCard = ({ cols }) => {
         </CardText>
       </CardHeader>
       <CardBody className='statistics-body stat-brands'>
-      {/* <h4 className="statisticts-text">Statisticts</h4> */}
+      {/* <h4 className="statisticts-text">Statistics</h4> */}
         <Row className="mx-1">{renderData()}</Row>
       </CardBody>
     </Card>

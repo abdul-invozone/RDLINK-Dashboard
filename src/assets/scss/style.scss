@@ -136,7 +136,7 @@
 	}
 	.card-statistics {
 		.statistics-body {
-			padding: 4.4rem 2.8rem !important;
+			padding: 2rem 2.8rem !important;
 		}
 	}
 }
@@ -729,7 +729,7 @@
 		align-items: center;
 	}
 	.allRdBrandsStats { 
-	margin-top: 20px;
+	margin-top: 10px;
 	}
 	// view-more btn 
 	.subconcard .view-more {
@@ -738,12 +738,12 @@
 	}
 	// (admin page) Subscription conversion rate 
 	.subconcardtitle {
-		font-size: 17px !important;
+		font-size: 22px !important;
 		text-align: center;
 	}
 	// (rd page) Jenna Gorham's Dashboard
 	#dashboard-brands .jenna-gorham {
-		justify-content: center;
+		justify-content: center !important;
 	} 
 	//  card-titles
 	.collapse-title.card-title {
@@ -757,7 +757,7 @@
 	// brand-dashboard column 
 	.match-height {
 		> [class*='col'] > .card {
-			margin-bottom: 20px;
+			margin-bottom: 20px !important;
 			// text-align: center;
 		  }
 		}
@@ -803,7 +803,7 @@
 		.statistics-body {
 			.statisticts-text {
 				font-size: 23px;
-				margin-bottom: 1.5rem;
+				margin-bottom: 1rem;
 				justify-content: center;
 			}
 		}
@@ -823,6 +823,9 @@
 	padding: 10px 0 0 10px;
 	margin-bottom: 0;
 } 
+.brandSlides .brandSlidesHeading {
+	font-size: 15px;
+}
 
 // login/rd (RD-Link) subheading
 .auth-inner .welcome-rd-link {
@@ -833,7 +836,7 @@
 #dashboard-analytics {
 	.card-statistics {
 		.statistics-body {
-			padding: 3rem 2rem !important;
+			padding: 2rem 2rem !important;
 		}
 	}
 }
@@ -900,6 +903,9 @@
 	justify-content: center !important;
 	margin-right: -19px;
 }
+.send-message {
+	margin-bottom: 10px !important;
+}
 }
   
   // Small devices (landscape phones, 576px and up)
@@ -944,6 +950,10 @@
 			// text-align: center;
 		  }
 		}
+		// (brand pg) monthly-meetup 
+    .monthly-meetup {
+    	font-size: 15px !important;
+    }
   }
   
   // Medium devices (tablets, 768px and up)
@@ -1120,7 +1130,7 @@
 // Recommended For You Cards-body Start
 .brandContent {
 	padding: 2rem 1rem;
-	max-height: 380px !important;
+	max-height: 400px !important;
 }
 
 .brandContent .brandContent-img{

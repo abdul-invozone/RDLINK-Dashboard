@@ -1,5 +1,6 @@
 import { Line } from 'react-chartjs-2'
 import { Card, CardHeader, CardTitle, CardBody, CardSubtitle, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle} from 'reactstrap'
+import {MoreHorizontal} from 'react-feather'
 
 const ChartRdMyBrands = ({
   tooltipShadow,
@@ -152,7 +153,7 @@ const ChartRdMyBrands = ({
           </CardTitle>
           <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
         <DropdownToggle color='flat-primary'>
-          ...
+        <MoreHorizontal size={28} />
         </DropdownToggle>
         <DropdownMenu>
           <DropdownItem href='/' tag='a'>

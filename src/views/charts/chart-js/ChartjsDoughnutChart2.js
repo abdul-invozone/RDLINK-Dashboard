@@ -65,10 +65,11 @@ const ChartjsRadarChart2 = ({ tooltipShadow, successColorShade, warningLightColo
         <div className="totalRD totalRDBrands"><p style={{fontWeight:'600'}}>1773</p><span>Total Brands</span></div>
           <Doughnut data={data} options={options} height={200} />
         </div>
+        <div className='text-center mt-2'>
         <div className='d-inline-flex justify-content-between mt-3 mb-1 mx-2 mt-sm-1 mt-md-2 mb-sm-75 mx-sm-1 justify-content-sm-center admin-card-subscribed'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-dark"></span>
-            <span className='font-weight-bold ml-75 mr-25'>Subscribed</span>
+            <span className='font-weight-bold ml-75 mr-75'>Subscribed</span>
           </div>
         </div>
         <div className='d-inline-flex justify-content-between mb-1 mr-2 mr-sm-75 mb-sm-75 admin-card-new'>
@@ -82,6 +83,7 @@ const ChartjsRadarChart2 = ({ tooltipShadow, successColorShade, warningLightColo
           <span className="dot dot-green"></span>
             <span className='font-weight-bold ml-75 mr-25'>Trial</span>
           </div>
+        </div>
         </div>
       </CardBody>
       <CardFooter className="allRdBrandsStats">
