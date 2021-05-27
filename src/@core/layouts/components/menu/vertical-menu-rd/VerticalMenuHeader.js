@@ -104,7 +104,7 @@ const VerticalMenuHeader = props => {
           <NavLink to="#" className="text-white"><User size={18} /></NavLink>
           </li>
           <li className="d-inline-block mr-1">
-          <NavLink to="/apps/chat/chatAdmin" className="text-white"><Mail size={18} /></NavLink>
+          <NavLink to="/brands/apps/chat/chatRd" className="text-white"><Mail size={18} /></NavLink>
           </li>
           {/* <li className="d-inline-block">
           <NavLink to="/apps/todoRd" className="text-white"><CheckSquare size={18} /></NavLink>
