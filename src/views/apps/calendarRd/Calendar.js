@@ -61,7 +61,7 @@ const Calendar = props => {
     initialView: 'dayGridMonth',
     headerToolbar: {
       start: 'sidebarToggle, prev,next, title',
-      end: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+      end: 'dayGridMonth,listMonth'
     },
     /*
       Enable dragging and resizing event

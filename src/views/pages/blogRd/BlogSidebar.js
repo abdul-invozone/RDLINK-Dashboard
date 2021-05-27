@@ -73,7 +73,7 @@ const BlogSidebar = () => {
       <div className='sidebar'>
         <div className='blog-sidebar right-sidebar my-2 my-lg-0'>
           <div className='right-sidebar-content'>
-            <div className='blog-search'>
+            {/* <div className='blog-search'>
               <InputGroup className='input-group-merge'>
                 <Input placeholder='Search here' />
                 <InputGroupAddon addonType='append'>
@@ -82,7 +82,7 @@ const BlogSidebar = () => {
                   </InputGroupText>
                 </InputGroupAddon>
               </InputGroup>
-            </div>
+            </div> */}
             {data !== null ? (
               <Fragment>
                 <div className='blog-recent-posts mt-3'>

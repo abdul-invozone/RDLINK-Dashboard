@@ -35,7 +35,7 @@ const SidebarLeft = props => {
             <span className='align-middle'>Add Opportunity</span>
           </Button.Ripple>
         </CardBody>
-        <CardBody>
+        {/* <CardBody>
           <h5 className='section-label mb-1'>
             <span className='align-middle'>Filter</span>
           </h5>
@@ -65,7 +65,7 @@ const SidebarLeft = props => {
                 )
               })}
           </div>
-        </CardBody>
+        </CardBody> */}
       </div>
       <div className='mt-auto'>
         <img className='img-fluid' src={illustration} alt='illustration' />
