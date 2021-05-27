@@ -89,10 +89,10 @@ const BlogSidebar = () => {
                   <h6 className='section-label'>Recent Posts</h6>
                   <div className='mt-75'>{renderRecentPosts()}</div>
                 </div>
-                <div className='blog-categories mt-3'>
+                {/* <div className='blog-categories mt-3'>
                   <h6 className='section-label'>Categories</h6>
                   <div className='mt-1'>{renderCategories()}</div>
-                </div>
+                </div> */}
               </Fragment>
             ) : null}
           </div>
