@@ -82,14 +82,14 @@ const BlogList = () => {
                   <small className='text-muted'>{item.blogPosted}</small>
                 </Media>
               </Media>
-              <div className='my-1 py-25'>{renderTags()}</div>
+              {/* <div className='my-1 py-25'>{renderTags()}</div> */}
               <CardText className='blog-content-truncate'>{item.excerpt}</CardText>
               <hr />
               <div className='d-flex justify-content-between align-items-center'>
-                <Link to={`/pages/blogRd/detail/${item.id}`}>
+                {/* <Link to={`/pages/blogRd/detail/${item.id}`}>
                   <MessageSquare size={15} className='text-body mr-50' />
                   <span className='text-body font-weight-bold'>{item.comment} Comments</span>
-                </Link>
+                </Link> */}
                 <Link className='font-weight-bold' to={`/pages/blogRd/detail/${item.id}`}>
                   Read More
                 </Link>

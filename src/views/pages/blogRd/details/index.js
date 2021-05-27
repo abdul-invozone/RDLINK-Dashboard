@@ -129,7 +129,7 @@ const BlogDetails = () => {
                           <small className='text-muted'>{data.blog.createdTime}</small>
                         </Media>
                       </Media>
-                      <div className='my-1 py-25'>{renderTags()}</div>
+                      {/* <div className='my-1 py-25'>{renderTags()}</div> */}
                       <div
                         dangerouslySetInnerHTML={{
                           __html: data.blog.content
@@ -146,7 +146,7 @@ const BlogDetails = () => {
                         </Media>
                       </Media>
                       <hr className='my-2' />
-                      <div className='d-flex align-items-center justify-content-between'>
+                      {/* <div className='d-flex align-items-center justify-content-between'>
                         <div className='d-flex align-items-center'>
                           <div className='d-flex align-items-center mr-1'>
                             <a className='mr-50' href='/' onClick={e => e.preventDefault()}>
@@ -187,11 +187,11 @@ const BlogDetails = () => {
                             </DropdownItem>
                           </DropdownMenu>
                         </UncontrolledDropdown>
-                      </div>
+                      </div> */}
                     </CardBody>
                   </Card>
                 </Col>
-                <Col sm='12'>
+                {/* <Col sm='12'>
                   <h6 className='section-label'>Comment</h6>
                   {renderComments()}
                 </Col>
@@ -237,7 +237,7 @@ const BlogDetails = () => {
                       </Form>
                     </CardBody>
                   </Card>
-                </Col>
+                </Col> */}
               </Row>
             ) : null}
           </div>

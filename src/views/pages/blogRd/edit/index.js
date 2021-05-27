@@ -103,7 +103,7 @@ const BlogEdit = () => {
                         <Input id='blog-edit-title' value={title} onChange={e => setTitle(e.target.value)} />
                       </FormGroup>
                     </Col>
-                    <Col md='6'>
+                    {/* <Col md='6'>
                       <FormGroup className='mb-2'>
                         <Label for='blog-edit-category'>Category</Label>
                         <Select
@@ -119,8 +119,8 @@ const BlogEdit = () => {
                           onChange={data => setBlogCategories(data)}
                         />
                       </FormGroup>
-                    </Col>
-                    <Col md='6'>
+                    </Col> */}
+                    {/* <Col md='6'>
                       <FormGroup className='mb-2'>
                         <Label for='blog-edit-slug'>Slug</Label>
                         <Input id='blog-edit-slug' value={slug} onChange={e => setSlug(e.target.value)} />
@@ -140,7 +140,7 @@ const BlogEdit = () => {
                           <option value='Draft'>Draft</option>
                         </Input>
                       </FormGroup>
-                    </Col>
+                    </Col> */}
                     <Col sm='12'>
                       <FormGroup className='mb-2'>
                         <Label>Content</Label>

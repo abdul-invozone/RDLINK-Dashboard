@@ -15,7 +15,7 @@ const ThemeNavbar = props => {
     <Fragment>
       <div className='bookmark-wrapper d-flex align-items-center'>
         {/* <NavbarBookmarks setMenuVisibility={setMenuVisibility} /> */}
-        <NavLink tag={Link} to="/apps/todoRd"><CheckSquare size="21" /></NavLink>
+        {/* <NavLink tag={Link} to="/apps/todoRd"><CheckSquare size="21" /></NavLink> */}
       </div>
       <NavbarUser skin={skin} setSkin={setSkin} />
     </Fragment>
