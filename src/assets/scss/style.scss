@@ -1,12 +1,16 @@
+.navbar-container .search-input.open {
+	top: -8px !important;
+}
 .main-menu {
-	border-radius: 0px 10px 10px 0px;
+	border-radius: 0px 0.428rem 0.428rem 0px;
 	height: 100vh;
 	overflow: auto;
 	.navbar-header {
 		.navbar-brand {
 			.brand-text {
-				font-size: 22px !important;
+				padding-left: 0 !important;
 				font-weight: 500 !important;
+				color: #fff !important;
 			}
 		}
 		padding: 9px 20px 65px !important;
@@ -29,8 +33,8 @@
 			.navigation-header {
 				text-transform: capitalize !important;
 				margin: 0px 0 0 !important;
-				padding: 1.3rem 1.5rem !important;
-				font-size: 20px !important;
+				padding: 1.1rem 1.5rem !important;
+				font-size: 18px !important;
 				font-weight: 400 !important;
 				color: #515974;
 				// border-top: 1px solid #303547;
@@ -43,7 +47,7 @@
 			}
 			li {
 				a {
-					padding: 18px 20px !important;
+					padding: 16px 20px !important;
 					font-size: 14px !important;
 					margin: 0 !important;
 					color: #fff !important;
@@ -59,7 +63,7 @@
 }
 .user-name {
 	font-size: 13px !important;
-	font-weight: 550;
+	font-weight: 400;
 }
 .menu-expanded {
 	.main-menu.menu-light {
@@ -67,8 +71,8 @@
 			.navigation-header {
 				text-transform: capitalize !important;
 				margin: 0px 0 0 !important;
-				padding: 1.3rem 1.5rem !important;
-				font-size: 20px !important;
+				padding: 1.1rem 1.5rem !important;
+				font-size: 18px !important;
 				font-weight: 400 !important;
 				color: #515974;
 				// border-top: 1px solid #303547;
@@ -87,7 +91,7 @@
 			}
 			li {
 				a {
-					padding: 18px 20px !important;
+					padding: 16px 20px !important;
 					font-size: 14px !important;
 					margin: 0 !important;
 					color: #fff !important;
@@ -98,8 +102,8 @@
 }
 .header-navbar.floating-nav {
 	margin: 0 2rem !important;
-	border-radius: 0px 0px 15px 15px !important;
-	padding: 1.2rem 1rem !important;
+	// border-radius: 0px 0px 15px 15px !important;
+	// padding: 1.2rem 1rem !important;
 }
 .vertical-layout.vertical-menu-modern.menu-expanded {
 	.main-menu {
@@ -114,34 +118,34 @@
 		}
 	}
 }
-.card-statistics {
-	.statistics-body {
-		.avatar {
-			.avatar-content {
-				width: 55px !important;
-				height: 55px !important;
-			}
-		}
-	}
-}
-.card-statistics {
-	.statistics-body {
-		.statisticts-text {
-			margin-bottom: 2rem; 
-			font-size: 26px;
-		}
-	}
-}
-#dashboard-analytics {
-	.card {
-		border-radius: 20px;
-	}
-	.card-statistics {
-		.statistics-body {
-			padding: 4.4rem 2.8rem !important;
-		}
-	}
-}
+// .card-statistics {
+// 	.statistics-body {
+// 		.avatar {
+// 			.avatar-content {
+// 				width: 55px !important;
+// 				height: 55px !important;
+// 			}
+// 		}
+// 	}
+// }
+// .card-statistics {
+// 	.statistics-body {
+// 		.statisticts-text {
+// 			margin-bottom: 2rem; 
+// 			font-size: 26px;
+// 		}
+// 	}
+// }
+// #dashboard-analytics {
+// 	.card {
+// 		border-radius: 20px;
+// 	}
+// 	.card-statistics {
+// 		.statistics-body {
+// 			padding: 4.4rem 2.8rem !important;
+// 		}
+// 	}
+// }
 .subconcard .Subscription{
 	color: #030303 !important;
 	font-weight: 950;
@@ -499,9 +503,9 @@
     left: calc(100% - -65px) !important;
 }
 
-#dashboard-brands .card {
-	border-radius: 20px;
-}
+// #dashboard-brands .card {
+// 	border-radius: 20px;
+// }
 #dashboard-brands .Milling {
 	color: #828594;
 }
@@ -514,10 +518,10 @@
 	box-shadow: none;
 }
 
-.collapse-title.card-title {
-	font-size: 20px;
-	font-weight: 600;
-}
+// .collapse-title.card-title {
+// 	font-size: 20px;
+// 	font-weight: 600;
+// }
 
 .app-collapse.card .card-header svg {
 	width: 30px !important;
@@ -534,10 +538,10 @@
     padding: 35px 0 5px;
 }
 
-.rd-list-wrapper .card {
-	border-radius: 0;
-	padding: 0;
-}
+// .rd-list-wrapper .card {
+// 	border-radius: 0;
+// 	padding: 0;
+// }
 
 .rd-list-wrapper .react-dataTable .rdt_TableHead .rdt_TableHeadRow {
 	height: 50px;
@@ -605,11 +609,11 @@
 }
 .brandSlides .brandSlidesHeading {
 	position: absolute;
-	top: 10px;
+	top: 15px;
 }
 .brandSlides .brandContent {
 	background-color: white;
-	border-radius: 20px !important;
+	border-radius: 0.428rem;
 	padding: 2rem 1.5rem;
 	text-align: center;
 	// min-height: 305px;
@@ -631,8 +635,8 @@
 
 .brandSlides .brandContent .newRdText {
 	display:inline-block;
-	background-color: #571dd2;
-	color: #fff;
+	border: 1px solid #c3bbbb;
+	color: #c3bbbb;
 	padding: 2px 8px; 
 	margin: 0;
 	border-radius: 3px;
@@ -685,10 +689,10 @@
 }
 .brandSlides .swiper-button-prev {
 	left: auto;
-	right: 50px;
+	right: 30px;
 }
 .brandSlides .swiper-button-next {
-	right: -35px;
+	right: 0px;
 }
 .brandSlides .swiper-button-prev,
 .brandSlides .swiper-button-next {
@@ -697,6 +701,19 @@
 	display: inline-flex;
 	float: right;
 	margin-bottom: 30px;
+}
+.brandSlides .swiper-button-prev,
+.brandSlides .swiper-button-next,
+.brandSlides .swiper-container-rtl .swiper-button-prev,
+.brandSlides .swiper-container-rtl .swiper-button-next {
+	width: 15px;
+	font-size: 1rem;
+}
+.brandSlides .swiper-button-prev:after,
+.brandSlides .swiper-button-next:after {
+	background-size: 25px !important;
+	width: 25px !important;
+	height: 25px !important;
 }
 // Recommended For You Cards-body End
 // Manage RDs >> My Statistics >> Statistics Section
@@ -746,9 +763,9 @@
 		justify-content: center;
 	} 
 	// (rd page) card-titles
-	.collapse-title.card-title {
-		font-size: 16px;
-	}
+	// .collapse-title.card-title {
+	// 	font-size: 16px;
+	// }
 	// navbar
 	.header-navbar.floating-nav {
 		margin: 0 1rem !important;
@@ -802,10 +819,10 @@
 .recommended-for-you .showing-paid {
 	font-size: 14px;
 }
-.card .card-header .card-title {
-	padding: 10px 0 0 10px;
-	margin-bottom: 0;
-}
+// .card .card-header .card-title {
+// 	padding: 10px 0 0 10px;
+// 	margin-bottom: 0;
+// }
   
   // Small devices (landscape phones, 576px and up)
   @media (min-width: 576px) and (max-width: 767.98px) {
@@ -863,54 +880,54 @@
   
 	// DASHBOARD BRANDS SECTION START
 
-	.card-statistics {
-		.statistics-body {
-			.avatar {
-				.avatar-content {
-					width: 45px !important;
-					height: 45px !important;
-				}
-			}
-		}
-	}
+	// .card-statistics {
+	// 	.statistics-body {
+	// 		.avatar {
+	// 			.avatar-content {
+	// 				width: 45px !important;
+	// 				height: 45px !important;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
   .monthly-report .sortby-btn::after {
 	right: 0 !important;
 	left: calc(100% - -65px) !important;
   }
   
-  #dashboard-brands .card {
-	border-radius: 20px;
-  }
+//   #dashboard-brands .card {
+// 	border-radius: 20px;
+//   }
   
   .app-collapse.card {
 	background-color: transparent;
 	box-shadow: none;
   }
   
-  .collapse-title.card-title {
-	font-size: 22px;
-	font-weight: 600;
-  }
+//   .collapse-title.card-title {
+// 	font-size: 22px;
+// 	font-weight: 600;
+//   }
   
-  .app-collapse.card .card-header svg {
-	width: 30px !important;
-	height: 30px !important;
-  }
+//   .app-collapse.card .card-header svg {
+// 	width: 30px !important;
+// 	height: 30px !important;
+//   }
   
-  [class*='collapse-'] .card:not(:last-of-type) {
-	border-bottom: none;
-  }
+//   [class*='collapse-'] .card:not(:last-of-type) {
+// 	border-bottom: none;
+//   }
   
   .rd-list-wrapper {
 	background: #fff;
 	border-radius: 20px;
 	padding: 35px 0 5px;
   }
-	.card {
-	  border-radius: 0;
-	  padding: 0;
-	}
+	// .card {
+	//   border-radius: 0;
+	//   padding: 0;
+	// }
   
 	.react-dataTable {
 	  .rdt_TableHead {
@@ -940,14 +957,14 @@
 		padding-left:5px;
 		padding-right:5px;
 	}
-		.card-statistics .statistics-body.stat-brands .avatar .avatar-content {
-		 width:35px !important; 
-		 height:35px !important;
-		}
-		.card-statistics .statistics-body.stat-brands .avatar .avatar-content svg {
-		 width:25px;
-		 height:25px;
-		}
+		// .card-statistics .statistics-body.stat-brands .avatar .avatar-content {
+		//  width:35px !important; 
+		//  height:35px !important;
+		// }
+		// .card-statistics .statistics-body.stat-brands .avatar .avatar-content svg {
+		//  width:25px;
+		//  height:25px;
+		// }
 .rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(3),
 .rd-list-wrapper .react-dataTable .rdt_TableBody .rdt_TableRow .rdt_TableCell:nth-child(6) {
 	justify-content: center;
