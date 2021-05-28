@@ -270,7 +270,7 @@ const InvoiceListNewRds = () => {
   return (
     <div className='rd-list-wrapper' style={{paddingTop: '0', paddingBottom: '0'}}>
       <Card style={{marginBottom: '0'}}>
-      <h2 className="opportunitie-heading" style={{padding: '25px'}}>Upcoming Opportunities</h2>
+      <h3 className="opportunitie-heading" style={{padding: '25px'}}>Upcoming Opportunities</h3>
         <div className='invoice-list-dataTable' style={{padding: '10px'}}>
           <DataTable
             noHeader

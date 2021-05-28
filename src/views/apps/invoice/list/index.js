@@ -213,7 +213,7 @@ const InvoiceList = () => {
               />
             }
           />
-        <p className="showEntries">Showing 1 to {rowsPerPage} of {store.total} entries</p>
+        <h6 className="showEntries">Showing 1 to {rowsPerPage} of {store.total} entries</h6>
         </div>
       </Card>
     </div>

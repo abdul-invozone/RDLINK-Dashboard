@@ -19,7 +19,7 @@ const BrandsMeetup1 = () => {
         </DropdownMenu>
       </UncontrolledButtonDropdown>
     <Row className="match-height">
-      <Col md="4">
+      <Col>
       <div className='card-developer-meetup' style={{borderRight: '1px solid #c7c5ce'}}>
       <CardBody>
         <div className='meetup-header d-flex align-items-center'>
@@ -28,9 +28,9 @@ const BrandsMeetup1 = () => {
             <h3 className='mb-0'>24</h3>
           </div>
           <div className='my-auto'>
-            <CardTitle tag='h4' className='mb-25 monthly-meetup'>
+            <h4 className='mb-25 monthly-meetup'>
               Monthly Meetup of Nutrionists
-            </CardTitle>
+            </h4>
             <CardText className='mb-0'>Lorem Ipsum dolor sit amet, consectutr adipcing elit, sed do eiusmod tempor</CardText>
           </div>
         </div>
@@ -65,7 +65,7 @@ const BrandsMeetup1 = () => {
       </CardBody>
     </div>
       </Col>
-      <Col md="4">
+      <Col>
       <div className='card-developer-meetup' style={{borderRight: '1px solid #c7c5ce'}}>
       <CardBody>
         <div className='meetup-header d-flex align-items-center'>
@@ -74,9 +74,9 @@ const BrandsMeetup1 = () => {
             <h3 className='mb-0'>24</h3>
           </div>
           <div className='my-auto'>
-            <CardTitle tag='h4' className='mb-25 monthly-meetup'>
+            <h4 className='mb-25 monthly-meetup'>
               Monthly Meetup of Nutrionists
-            </CardTitle>
+            </h4>
             <CardText className='mb-0'>Lorem Ipsum dolor sit amet, consectutr adipcing elit, sed do eiusmod tempor</CardText>
           </div>
         </div>
@@ -111,7 +111,7 @@ const BrandsMeetup1 = () => {
       </CardBody>
     </div>
       </Col>
-      <Col md="4">
+      <Col>
       <div className='card-developer-meetup'>
       <CardBody>
         <div className='meetup-header d-flex align-items-center'>
@@ -120,9 +120,9 @@ const BrandsMeetup1 = () => {
             <h3 className='mb-0'>24</h3>
           </div>
           <div className='my-auto'>
-            <CardTitle tag='h4' className='mb-25 monthly-meetup'>
+            <h4 className='mb-25 monthly-meetup'>
               Monthly Meetup of Nutrionists
-            </CardTitle>
+            </h4>
             <CardText className='mb-0'>Lorem Ipsum dolor sit amet, consectutr adipcing elit, sed do eiusmod tempor</CardText>
           </div>
         </div>

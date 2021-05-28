@@ -46,7 +46,7 @@ const params = {
 const RdCampaignsSlides = () => {
   return (
       <div className="brandSlides mb-2">
-      <h2 className="brandSlidesHeading">Recommended Opportunities</h2>
+      <h3 className="brandSlidesHeading">Recommended Opportunities</h3>
         <Swiper {...params}>
           <SwiperSlide>      
       <BrandsMeetup1 />

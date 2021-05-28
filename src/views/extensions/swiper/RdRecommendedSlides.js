@@ -43,7 +43,7 @@ const params = {
 const RdRecommendedSlides = () => {
   return (
       <div className="brandSlides mb-2">
-      <h2 className="brandSlidesHeading">Recommended Brands</h2>
+      <h3 className="brandSlidesHeading">Recommended Brands</h3>
         <Swiper {...params}>
           <SwiperSlide>
             <div className="brandContent">

@@ -81,7 +81,7 @@ const StatsCard = ({ cols }) => {
             <Avatar id={`av-tooltip-${item.id}`} color={item.color} icon={item.icon} className='mr-1' />
           {item.subtitleHover && <UncontrolledTooltip placement='top' target={`av-tooltip-${item.id}`}>{item.subtitleHover}</UncontrolledTooltip>}
             <Media className='media-avatar m-auto' body>
-              <h4 className='font-weight-bolder mb-0' style={{fontSize:'26px'}}>{item.title}</h4>
+              <h2 className='font-weight-bolder mb-0'>{item.title}</h2>
               <CardText className='total-partnership'>{item.subtitle}</CardText>
             </Media>
           </Media>
@@ -93,7 +93,7 @@ const StatsCard = ({ cols }) => {
   return (
     <Card className='card-statistics'>
       <CardHeader>
-        <CardTitle style={{paddingLeft: 'auto'}}><h4 className="subconcardtitle subconcardtitle-gray">Statistics</h4></CardTitle>
+        <CardTitle style={{paddingLeft: 'auto'}}><h2 className="subconcardtitle subconcardtitle-gray">Statistics</h2></CardTitle>
         <CardText className='card-text font-small-2 mr-25 mb-0'>
         <UncontrolledButtonDropdown className="statsDropdownBrands">
         <DropdownToggle color='flat-primary'>

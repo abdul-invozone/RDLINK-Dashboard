@@ -113,7 +113,7 @@ const SimpleBarChart = () => {
     <Card className="monthly-report">
       <CardHeader className='flex-sm-row flex-column justify-content-sm-between justify-content-center align-items-sm-center align-items-start'>
         <h4 className="subconcardtitle monthly-recurring">Monthly Recurring Revenue Report</h4>
-        <UncontrolledButtonDropdown>
+        <UncontrolledButtonDropdown className='mt-25'>
       <DropdownToggle outline color='primary' caret className="sortby-btn"> 
         Sort by
       </DropdownToggle>
