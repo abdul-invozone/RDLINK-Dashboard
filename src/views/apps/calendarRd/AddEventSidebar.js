@@ -89,6 +89,53 @@ const AddEventSidebar = props => {
     { value: 'Cheryl May', label: 'Cheryl May', avatar: img6 }
   ]
 
+  const countryOptions = [
+    { value: 'Canada', label: 'Canada' },
+    { value: 'USA', label: 'USA' },
+    { value: 'Spain', label: 'Spain' },
+    { value: 'United Kingdom', label: 'United Kingdom' }
+  ]
+
+  const cityOptions = [
+    { value: 'City1', label: 'City1' },
+    { value: 'City2', label: 'City2' },
+    { value: 'City3', label: 'City3' },
+    { value: 'City4', label: 'City4' }
+  ]
+
+  const stateOptions = [
+    { value: 'State1', label: 'State1' },
+    { value: 'State2', label: 'State2' },
+    { value: 'State3', label: 'State3' },
+    { value: 'State4', label: 'State4' }
+  ]
+
+  const attendeesOptions = [
+    { value: '2', label: '2' },
+    { value: '3', label: '3' },
+    { value: '4', label: '4' },
+    { value: '5', label: '5' }
+  ]
+
+  const eventOptions = [
+    { value: 'Event1', label: 'Event1' },
+    { value: 'Event2', label: 'Event2' },
+    { value: 'Event3', label: 'Event3' },
+    { value: 'Event4', label: 'Event4' }
+  ]
+
+  const audienceOptions = [
+    { value: 'Audience1', label: 'Audience1' },
+    { value: 'Audience2', label: 'Audience2' },
+    { value: 'Audience4', label: 'Audience4' },
+    { value: 'Audience4', label: 'Audience4' }
+  ]
+
+  const seekingOptions = [
+    { value: 'Free Product Samples', label: 'Free Product Samples' },
+    { value: 'Paid Partnership', label: 'Paid Partnership' }
+  ]
+
   // ** Custom select components
   const OptionComponent = ({ data, ...props }) => {
     return (
@@ -251,7 +298,7 @@ const AddEventSidebar = props => {
       return (
         <Fragment>
           <Button.Ripple className='mr-1' type='submit' color='primary'>
-            Add
+            Submit
           </Button.Ripple>
           <Button.Ripple color='secondary' type='reset' onClick={handleAddEventSidebar} outline>
             Cancel
@@ -325,6 +372,19 @@ const AddEventSidebar = props => {
           </FormGroup>
 
           <FormGroup>
+            <Label for='description'>Description</Label>
+            <Input
+              type='textarea'
+              name='text'
+              id='description'
+              rows='3'
+              value={desc}
+              onChange={e => setDesc(e.target.value)}
+              placeholder='Description'
+            />
+          </FormGroup>
+
+          {/* <FormGroup>
             <Label for='label'>Label</Label>
             <Select
               id='label'
@@ -339,7 +399,7 @@ const AddEventSidebar = props => {
                 Option: OptionComponent
               }}
             />
-          </FormGroup>
+          </FormGroup> */}
 
           <FormGroup>
             <Label for='startDate'>Start Date</Label>
@@ -376,6 +436,124 @@ const AddEventSidebar = props => {
           </FormGroup>
 
           <FormGroup>
+            <Label for='location'>Location</Label>
+            <Input id='location' value={location} onChange={e => setLocation(e.target.value)} placeholder='Location' />
+          </FormGroup>
+
+          <FormGroup>
+            <Label for='zipCode'>Zip Code <span className='text-danger'>*</span></Label>
+            <Input id='zipCode' type="number" placeholder='Zip Code' />
+          </FormGroup>
+
+          <FormGroup>
+            <Label for='city'>City <span className='text-danger'>*</span></Label>
+            <Select
+              id='city'
+              className=''
+              classNamePrefix='select'
+              isClearable={false}
+              options={cityOptions}
+              theme={selectThemeColors}
+            />
+          </FormGroup> 
+
+          <FormGroup>
+            <Label for='state'>State <span className='text-danger'>*</span></Label>
+            <Select
+              id='state'
+              className=''
+              classNamePrefix='select'
+              isClearable={false}
+              options={stateOptions}
+              theme={selectThemeColors}
+            />
+          </FormGroup> 
+            
+          <FormGroup>
+            <Label for='location'>Country <span className='text-danger'>*</span></Label>
+            <Select
+              id='location'
+              className=''
+              classNamePrefix='select'
+              isClearable={false}
+              options={countryOptions}
+              theme={selectThemeColors}
+            />
+          </FormGroup>
+
+          <FormGroup>
+            <Label for='expectedAttend'>Expected number of attendees(for in-person events)</Label>
+            <Select
+              id='expectedAttend'
+              className=''
+              classNamePrefix='select'
+              isClearable={false}
+              options={attendeesOptions}
+              theme={selectThemeColors}
+            />
+          </FormGroup>  
+
+          <FormGroup>
+            <Label for='numberFollowers'>Number of Followers (for social media partnerhips)</Label>
+            <Input id='numberFollowers' type="number" placeholder='Number' />
+          </FormGroup>
+
+          <FormGroup>
+            <Label for='expectedReach'>Expected Reach</Label>
+            <Input id='expectedReach' type="number" placeholder='Number' />
+          </FormGroup>
+
+          <FormGroup>
+            <Label for='typeOfEvent'>Type of event <span className='text-danger'>*</span></Label>
+            <Select
+              id='typeOfEvent'
+              className='react-select'
+              classNamePrefix='select'
+              isClearable={false}
+              options={eventOptions}
+              theme={selectThemeColors}
+            />
+          </FormGroup> 
+
+          <FormGroup>
+            <Label for='typeOfAudience'>Type of audience <span className='text-danger'>*</span></Label>
+            <Select
+              id='typeOfAudience'
+              className='react-select'
+              classNamePrefix='select'
+              isClearable={false}
+              options={audienceOptions}
+              theme={selectThemeColors}
+            />
+          </FormGroup> 
+
+              <FormGroup>
+          <Label for='seeking'>I am seeking <span className='text-danger'>*</span></Label>
+            <Select
+              id="seeking"
+              isClearable={false}
+              theme={selectThemeColors}
+              closeMenuOnSelect={false}
+              isMulti
+              options={seekingOptions}
+              className='react-select'
+              classNamePrefix='select'
+            />
+          </FormGroup>
+
+          <FormGroup>
+            <Label for='costOfPartnership'>Cost of partnerhip (if paid)</Label>
+            <Input id='costOfPartnership' type="number" placeholder='$100' disabled />
+          </FormGroup>
+
+          <FormGroup className="my-1">
+            <Label>
+            Upload Event Documents (additional details or sponsorship prospectus)
+              </Label>
+              <Input hidden="" accept="image/*" type="file" className="form-control-file mb-2" />
+          </FormGroup>
+
+          {/* <FormGroup>
             <CustomInput
               type='switch'
               id='allDay'
@@ -396,43 +574,8 @@ const AddEventSidebar = props => {
               onChange={e => setUrl(e.target.value)}
               placeholder='https://www.google.com'
             />
-          </FormGroup>
+          </FormGroup> */}
 
-          <FormGroup>
-            <Label for='guests'>Guests</Label>
-            <Select
-              isMulti
-              id='guests'
-              className='react-select'
-              classNamePrefix='select'
-              isClearable={false}
-              options={guestsOptions}
-              theme={selectThemeColors}
-              value={guests.length ? [...guests] : null}
-              onChange={data => setGuests([...data])}
-              components={{
-                Option: GuestsComponent
-              }}
-            />
-          </FormGroup>
-
-          <FormGroup>
-            <Label for='location'>Location</Label>
-            <Input id='location' value={location} onChange={e => setLocation(e.target.value)} placeholder='Office' />
-          </FormGroup>
-
-          <FormGroup>
-            <Label for='description'>Description</Label>
-            <Input
-              type='textarea'
-              name='text'
-              id='description'
-              rows='3'
-              value={desc}
-              onChange={e => setDesc(e.target.value)}
-              placeholder='Description'
-            />
-          </FormGroup>
           <FormGroup className='d-flex'>
             <EventActions />
           </FormGroup>

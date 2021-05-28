@@ -610,9 +610,9 @@
 .brandSlides .brandContent {
 	background-color: white;
 	border-radius: 20px !important;
-	padding: 1.7rem 1rem 2.7rem;
+	padding: 2rem 1.5rem;
 	text-align: center;
-	min-height: 380px;
+	// min-height: 305px;
 	position: relative;
 }
 .brandSlides .brandContent .newRd {
@@ -972,6 +972,8 @@
 .brandContent .brandContent-img{
 	// min-height: 70px !important;
 	max-width: 90px !important;
+	height: 50px;
+	object-fit: cover;
 }
 
 .brandContent .antonio {
@@ -1038,4 +1040,12 @@
 
 .main-menu.menu-light .navigation > li ul .active {
     box-shadow: none;
+}
+
+svg.text-fillLight {
+	stroke: #bfb7b7;
+}
+svg.text-fillDanger {
+		fill: #ea5455;
+		stroke: #ea5455;
 }

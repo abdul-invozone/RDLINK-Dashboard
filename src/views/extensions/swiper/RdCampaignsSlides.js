@@ -22,13 +22,17 @@ const params = {
   },
   navigation:true,
   breakpoints: {
-    1280: {
+    1600: {
       slidesPerView: 4,
       spaceBetween: 40
     },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
     768: {
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 20
     },
     640: {
       slidesPerView: 2,
@@ -65,7 +69,7 @@ const RdCampaignsSlides = () => {
         </DropdownMenu>
       </UncontrolledButtonDropdown> */}
       <div className="row align-items-center justify-content-between">
-      <div className="col-auto mb-1"><Button
+      {/* <div className="col-auto mb-1"><Button
                 className='btn-wishlist'
                 color='light'
               >
@@ -73,8 +77,7 @@ const RdCampaignsSlides = () => {
                   className=''
                   size={14}
                 />
-                {/* <span>Add to Favorites</span> */}
-              </Button></div>
+              </Button></div> */}
       </div>
       <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">Antonio Pastore</h2>
@@ -92,7 +95,7 @@ const RdCampaignsSlides = () => {
           <SwiperSlide>
           <div className="brandContent">
           <div className="row align-items-center justify-content-between">
-      <div className="col-auto mb-1"><Button
+      {/* <div className="col-auto mb-1"><Button
                 className='btn-wishlist'
                 color='light'
               >
@@ -100,8 +103,7 @@ const RdCampaignsSlides = () => {
                   className=''
                   size={14}
                 />
-                {/* <span>Add to Favorites</span> */}
-              </Button></div>
+              </Button></div> */}
       </div>
               <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">Jessica Miles</h2>
@@ -118,7 +120,7 @@ const RdCampaignsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
+          {/* <div className="row align-items-center justify-content-between">
       <div className="col-auto mb-1"><Button
                 className='btn-wishlist'
                 color='light'
@@ -127,9 +129,8 @@ const RdCampaignsSlides = () => {
                   className=''
                   size={14}
                 />
-                {/* <span>Add to Favorites</span> */}
               </Button></div>
-      </div>
+      </div> */}
               <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">John Beans</h2>
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
@@ -145,7 +146,7 @@ const RdCampaignsSlides = () => {
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
+          {/* <div className="row align-items-center justify-content-between">
       <div className="col-auto mb-1"><Button
                 className='btn-wishlist'
                 color='light'
@@ -154,9 +155,8 @@ const RdCampaignsSlides = () => {
                   className=''
                   size={14}
                 />
-                {/* <span>Add to Favorites</span> */}
               </Button></div>
-      </div>
+      </div> */}
               <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">Matt Pears</h2>
               <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
@@ -173,7 +173,7 @@ const RdCampaignsSlides = () => {
           <SwiperSlide>
           <div className="brandContent">
           <div className="row align-items-center justify-content-between">
-      <div className="col-auto mb-1"><Button
+      {/* <div className="col-auto mb-1"><Button
                 className='btn-wishlist'
                 color='light'
               >
@@ -181,8 +181,7 @@ const RdCampaignsSlides = () => {
                   className=''
                   size={14}
                 />
-                {/* <span>Add to Favorites</span> */}
-              </Button></div>
+              </Button></div> */}
       </div>
               <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
               <h2 className="brandSlidesRd">John Beans</h2>
