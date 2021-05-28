@@ -1,4 +1,4 @@
-import { Mail, MessageSquare, CheckSquare, Calendar, FileText, Circle, ShoppingCart, User } from 'react-feather'
+import { Home, Mail, MessageSquare, MessageCircle, CheckSquare, Calendar, FileText, Circle, ShoppingCart, Users, Trello } from 'react-feather'
 
 export default [
   {
@@ -7,44 +7,57 @@ export default [
   {
     id: 'rdDash',
     title: 'Dashboard',
-    icon: <Mail size={20} />,
+    icon: <Home size={20} />,
     navLink: '/dashboard/rd'
-  },
-  {
-    id: 'viewBrands',
-    title: "View Brands",
-    icon: <MessageSquare size={20} />,
-    navLink: '#'
-  },
-  {
-    id: 'opportunities',
-    title: 'Opportunities',
-    icon: <CheckSquare size={20} />,
-    navLink: '#'
-  },
-  {
-    id: 'myPartnerships',
-    title: 'My Partnerships',
-    icon: <Calendar size={20} />,
-    navLink: '#'
-  },
-  {
-    id: 'favorites',
-    title: 'Favorites',
-    icon: <Calendar size={20} />,
-    navLink: '#'
   },
   {
     id: 'messagesRd',
     title: 'Messages',
-    icon: <FileText size={20} />,
+    icon: <MessageCircle size={20} />,
     badge: 'danger',
     badgeText: '9',
     navLink: '/rd/apps/chat/chatRd'
   },
   {
-    id: 'payments',
-    title: 'Payments',
-    icon: <ShoppingCart size={20} />
+    id: 'viewBrands',
+    title: "Brands",
+    icon: <Users size={20} />,
+    children: [
+      {
+        id: 'viewAllBrands',
+        title: 'View All',
+        icon: <Circle size={12} />,
+        navLink: '#'
+      },
+      {
+        id: 'myBrands',
+        title: 'My Brands',
+        icon: <Circle size={12} />,
+        navLink: '#'
+      }
+    ]
+  },
+  {
+    id: 'opportunities',
+    title: 'Opportunities',
+    icon: <Trello size={20} />,
+    navLink: '#'
+  },
+  {
+    id: 'myPartnerships',
+    title: 'Manage Partnerships',
+    icon: <CheckSquare size={20} />,
+    navLink: '#'
   }
+  // {
+  //   id: 'favorites',
+  //   title: 'Favorites',
+  //   icon: <Calendar size={20} />,
+  //   navLink: '#'
+  // },
+  // {
+  //   id: 'payments',
+  //   title: 'Payments',
+  //   icon: <ShoppingCart size={20} />
+  // }
 ]

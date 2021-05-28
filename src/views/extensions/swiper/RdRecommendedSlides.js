@@ -29,7 +29,7 @@ const params = {
     },
     1280: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 30
     },
     768: {
       slidesPerView: 2,
@@ -57,8 +57,8 @@ const RdRecommendedSlides = () => {
     setShowWishlist(prevCheck => !prevCheck)
   }
   return (
-      <div className="brandSlides mb-2">
-      <h2 className="brandSlidesHeading">Recommended Brands</h2>
+      <div className="brandSlides mb-3">
+      <h4 className="brandSlidesHeading font-weight-bolder">Recommended Brands</h4>
         <Swiper {...params}>
           <SwiperSlide>
             <div className="brandContent">
@@ -79,6 +79,7 @@ const RdRecommendedSlides = () => {
         </DropdownMenu>
       </UncontrolledButtonDropdown> */}
       <div className="row align-items-center justify-content-between">
+        <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
       <div className="col-auto mb-1">
                 <Heart
                 onClick={() => handleShowWishlist(false)}
@@ -88,10 +89,9 @@ const RdRecommendedSlides = () => {
                     size={14}
                 />
               </div>
-      <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
       </div>
       <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
-              <h2 className="brandSlidesRd">Antonio Pastore</h2>
+              <h2 className="brandSlidesRd">Catalina Crunch</h2>
               <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
@@ -99,27 +99,35 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Details
+              {/* <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+            Profile
           </Button.Ripple>
                 <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
             Send Message
-          </Button.Ripple>
+          </Button.Ripple> */}
+          <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+        <User size={14} />
+        <span className='align-middle ml-50'>Profile</span>
+      </Button.Ripple>
+      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+        <Mail size={14} />
+        <span className='align-middle ml-50'>Send Message</span>
+      </Button.Ripple>
             </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
           <div className="row align-items-center justify-content-between">
+            <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
           <div className="col-auto mb-1">
                 <Heart
                   className='text-fillLight'
                   size={14}
                 />
               </div>
-      <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
       </div>
               <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
-              <h2 className="brandSlidesRd">Jessica Miles</h2>
+              <h2 className="brandSlidesRd">Wiinder</h2>
               <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
                 <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
               </div>
@@ -128,26 +136,28 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Details
-          </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Send Message
-          </Button.Ripple>
+        <User size={14} />
+        <span className='align-middle ml-50'>Profile</span>
+      </Button.Ripple>
+      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+        <Mail size={14} />
+        <span className='align-middle ml-50'>Send Message</span>
+      </Button.Ripple>
             </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
           <div className="row align-items-center justify-content-between">
+            <div className="col-auto mb-1"></div>
           <div className="col-auto mb-1">
                 <Heart
                   className='text-fillLight'
                   size={14}
                 />
               </div>
-      <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
       </div>
               <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <h2 className="brandSlidesRd">John Beans</h2>
+              <h2 className="brandSlidesRd">Munk Pack</h2>
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
                 <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
               </div>
@@ -156,26 +166,28 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Details
-          </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Send Message
-          </Button.Ripple>
+        <User size={14} />
+        <span className='align-middle ml-50'>Profile</span>
+      </Button.Ripple>
+      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+        <Mail size={14} />
+        <span className='align-middle ml-50'>Send Message</span>
+      </Button.Ripple>
             </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
           <div className="row align-items-center justify-content-between">
-      <div className="col-auto mb-1">
+            <div className="col-auto mb-1"></div>
+          <div className="col-auto mb-1">
                 <Heart
                   className='text-fillLight'
                   size={14}
                 />
               </div>
-              
       </div>
               <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
-              <h2 className="brandSlidesRd">Matt Pears</h2>
+              <h2 className="brandSlidesRd">Mush</h2>
               <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
                 <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
               </div>
@@ -184,16 +196,19 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Details
-          </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Send Message
-          </Button.Ripple>
+        <User size={14} />
+        <span className='align-middle ml-50'>Profile</span>
+      </Button.Ripple>
+      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+        <Mail size={14} />
+        <span className='align-middle ml-50'>Send Message</span>
+      </Button.Ripple>
             </div>
           </SwiperSlide>
           <SwiperSlide>
           <div className="brandContent">
           <div className="row align-items-center justify-content-between">
+            <div className="col-auto mb-1"></div>
           <div className="col-auto mb-1">
                 <Heart
                   className='text-fillLight'
@@ -202,7 +217,7 @@ const RdRecommendedSlides = () => {
               </div>
       </div>
               <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <h2 className="brandSlidesRd">John Beans</h2>
+              <h2 className="brandSlidesRd">Munk Pack</h2>
               <div className="healthcare" style={{backgroundColor: '#b0cef2'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
@@ -211,11 +226,13 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Details
-          </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
-            Send Message
-          </Button.Ripple>
+        <User size={14} />
+        <span className='align-middle ml-50'>Profile</span>
+      </Button.Ripple>
+      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+        <Mail size={14} />
+        <span className='align-middle ml-50'>Send Message</span>
+      </Button.Ripple>
             </div>
           </SwiperSlide>
         </Swiper>

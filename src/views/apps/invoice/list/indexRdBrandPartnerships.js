@@ -413,7 +413,7 @@ const InvoiceListRdBrandPartnerships = () => {
     <div className='invoice-list-wrapper'>
       <Card>
       <h2 className="main-heading">My Partnerships</h2>
-        <div className='invoice-list-dataTable'>
+        <div className='invoice-list-dataTable invoice-list-dataTableRd'>
           <DataTable
             noHeader
             pagination
