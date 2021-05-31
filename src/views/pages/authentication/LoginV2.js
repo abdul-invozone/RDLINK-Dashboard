@@ -71,7 +71,7 @@ const LoginV2 = () => {
           </div>
         </Col>
         <Col className='d-flex align-items-center auth-bg px-2 p-lg-5' lg='4' sm='12'>
-          <Col className='px-xl-2 mx-auto' sm='8' md='6' lg='12'>
+          <Col className='px-xl-2 mx-auto forgot-password' sm='8' md='6' lg='12'>
             <CardTitle tag='h2' className='font-weight-bold mb-1'>
               Welcome to RD LINK! 👋
             </CardTitle>

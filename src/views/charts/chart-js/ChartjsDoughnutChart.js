@@ -66,7 +66,7 @@ const ChartjsRadarChart = ({ tooltipShadow, successColorShade, warningLightColor
         <div className="totalRD"><p>6521</p><span>Total RD's</span></div>
           <Doughnut data={data} options={options} height={200} />
         </div>
-        <div>
+        <div className='text-align-sm-center text-align-md-center'>
         <div className='d-inline-flex justify-content-between mt-3 mb-1 mr-2 all-rds-speciality'>
           <div className='d-flex align-items-center'>
           <span className="dot dot-navy"></span>
