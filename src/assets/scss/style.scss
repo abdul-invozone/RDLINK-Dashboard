@@ -619,7 +619,7 @@
 	// min-height: 305px;
 	position: relative;
 }
-.brandSlides .brandContent .newRd {
+.brandContent .newRd {
 	text-align: right;
 	padding: 0.5rem 0.5rem 1.5rem;
 	position:absolute;
@@ -633,7 +633,7 @@
 	font-weight: 600;
 }
 
-.brandSlides .brandContent .newRdText {
+.brandContent .newRdText {
 	display:inline-block;
 	border: 1px solid #c3bbbb;
 	color: #c3bbbb;
@@ -653,7 +653,7 @@
 	font-size: 19px;
 	font-weight: 650;
 }
-.brandSlides .brandContent .healthcare {
+.brandContent .healthcare {
 	border-radius: 3px;
 	margin: 20px auto;
 	padding: 9px 6px;
@@ -661,7 +661,7 @@
 	width: 100%;
 	max-width: 250px;
 }
-.brandSlides .brandContent .general-wellness {
+.brandContent .general-wellness {
 	margin: 0;
 }
 .brandSlides .brandContent .social-media .social-media-icons {
@@ -721,13 +721,11 @@
 	font-size: 12px !important;
 }
 
-
-
-
-
-
-
-
+.brandContent-img {
+	height: 80px;
+    object-fit: cover;
+    max-width: 150px;
+}
 
 // RESPONSIVE
   
@@ -981,10 +979,10 @@
 }
 
 // Recommended For You Cards-body Start
-.brandContent {
-	padding: 2rem 1rem;
-	max-height: 380px !important;
-}
+// .brandContent {
+// 	padding: 2rem 1rem;
+// 	max-height: 380px !important;
+// }
 
 .brandContent .brandContent-img{
 	// min-height: 70px !important;
