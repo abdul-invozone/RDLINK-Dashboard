@@ -208,14 +208,14 @@ const PagesRoutes = [
   //     publicRoute: true
   //   }
   // },
-  // {
-  //   path: '/dashboard/rd',
-  //   component: lazy(() => import('../../views/dashboard/rd')),
-  //   layout: 'VerticalLayoutRd',
-  //   meta: {
-  //     publicRoute: true
-  //   }
-  // },
+  {
+    path: '/dashboard/rd/opportunities',
+    component: lazy(() => import('../../views/pages/opportunities-rd')),
+    layout: 'VerticalLayoutRd',
+    meta: {
+      publicRoute: true
+    }
+  },
   {
     path: '/loginrd',
     component: lazy(() => import('../../views/pages/rd/Loginrd')),

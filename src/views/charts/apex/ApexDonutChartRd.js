@@ -98,9 +98,9 @@ const ApexRadiarChartRd = () => {
   const series = [85, 16, 50, 50]
 
   return (
-    <Card style={{marginBottom: '0'}}>
-      <CardHeader style={{borderBottom: 'none', padding: '2rem', marginBottom: '5px'}}>
-                <h4 className="subconcardtitle subconcardtitle-gray">New Brands</h4>
+    <Card>
+      <CardHeader>
+                <CardTitle>New Brands</CardTitle>
         </CardHeader>
       <CardBody>
         <Chart options={options} series={series} type='donut' height={350} />

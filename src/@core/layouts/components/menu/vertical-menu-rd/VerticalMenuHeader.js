@@ -20,7 +20,8 @@ import { UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from
 import { User, Mail, CheckSquare, MessageSquare, Settings, CreditCard, HelpCircle, Power, Disc, X, Circle, LogOut } from 'react-feather'
 
 // ** Default Avatar Image
-import defaultAvatar from '@src/assets/images/portrait/small/avatar-s-11.jpg'
+// import defaultAvatar from '@src/assets/images/portrait/small/avatar-s-11.jpg'
+import defaultAvatar from '@src/assets/images/portrait/small/Jenna-Avatar.png'
 
 const VerticalMenuHeader = props => {
 
@@ -95,10 +96,10 @@ const VerticalMenuHeader = props => {
       <ul> 
       <div className='user-nav d-sm-flex d-none flex-row align-items-center'>
     <div className="col-auto">
-    <Avatar img={userAvatar} imgHeight='70' imgWidth='70' status='online' />
+    <Avatar img={defaultAvatar} imgHeight='70' imgWidth='70' status='online' />
       </div>
       <div className="col">
-      <Link to="/loginrd" className='user-name font-weight-medium text-white'>Jenna Gorham Rd</Link>
+      <Link to="/loginrd" className='user-name font-weight-medium text-white'>Jenna Gorham</Link>
       <ul>
         <li className="d-inline-block mr-50" style={{marginTop: '3px'}}>
           <NavLink to="#" className="text-white"><User size={14} /></NavLink>

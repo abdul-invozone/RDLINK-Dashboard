@@ -62,11 +62,11 @@ const RdCampaignsSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <List size={14} />
         <span className='align-middle ml-50'>Details</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -84,11 +84,11 @@ const RdCampaignsSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <List size={14} />
         <span className='align-middle ml-50'>Details</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -101,11 +101,11 @@ const RdCampaignsSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Cooking Class</p>
               </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <List size={14} />
         <span className='align-middle ml-50'>Details</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -123,11 +123,11 @@ const RdCampaignsSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <List size={14} />
         <span className='align-middle ml-50'>Details</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -145,11 +145,11 @@ const RdCampaignsSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <List size={14} />
         <span className='align-middle ml-50'>Details</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>

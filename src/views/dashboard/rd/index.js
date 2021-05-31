@@ -75,7 +75,7 @@ const RdDashboard = () => {
           <RdCampaignsSlides />
           </Col>
           </Row>
-      <Row className='match-height allRD mb-2'>
+      <Row className='match-height mb-1'>
         <Col lg='4' sm='6'>
         <ApexRadiarChartRd />
         </Col>
@@ -111,7 +111,7 @@ const RdDashboard = () => {
           <InvoiceListRdBrandOppo />
         </Col>
       </Row> */}
-      <Row className='match-height mb-2'>
+      <Row className='match-height mb-1'>
         <Col xs='12'>
           <InvoiceListRdBrandPartnerships />
         </Col>

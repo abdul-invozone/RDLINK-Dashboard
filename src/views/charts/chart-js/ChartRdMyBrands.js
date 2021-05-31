@@ -1,4 +1,5 @@
 import { Line } from 'react-chartjs-2'
+import { Box, DollarSign, MoreHorizontal, TrendingUp, User } from 'react-feather'
 import { Card, CardHeader, CardTitle, CardBody, CardSubtitle, UncontrolledButtonDropdown, DropdownMenu, DropdownItem, DropdownToggle} from 'reactstrap'
 
 const ChartRdMyBrands = ({
@@ -145,28 +146,26 @@ const ChartRdMyBrands = ({
 
   return (
     <Card>
-      <CardHeader className='d-flex justify-content-between align-items-sm-center align-items-start flex-sm-row flex-column'>
-        <div>
+      <CardHeader>
           <CardTitle className='mb-75' tag='h4'>
             My Brands 
           </CardTitle>
-          <UncontrolledButtonDropdown className="statsDropdown btn-group" style={{top: '0', right:'5px'}}>
-        <DropdownToggle color='flat-primary'>
-          ...
+          <UncontrolledButtonDropdown>
+        <DropdownToggle color='flat-primary' size="sm" className="dropdown-button">
+          <MoreHorizontal />
         </DropdownToggle>
         <DropdownMenu>
           <DropdownItem href='/' tag='a'>
-            Option 1
+            Month
           </DropdownItem>
           <DropdownItem href='/' tag='a'>
-            Option 2
+            Quarter
           </DropdownItem>
           <DropdownItem href='/' tag='a'>
-            Option 3
+            Year
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledButtonDropdown>
-        </div>
       </CardHeader>
       <CardBody>
         <div style={{ height: '450px' }}>

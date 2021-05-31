@@ -4,12 +4,12 @@ export default [
   {
     header: 'More'
   },
-  {
-    id: 'calender',
-    title: "Calender",
-    icon: <Calendar size={20} />,
-    navLink: '/apps/calendarRd'
-  },
+  // {
+  //   id: 'calender',
+  //   title: "Calender",
+  //   icon: <Calendar size={20} />,
+  //   navLink: '/apps/calendarRd'
+  // },
   {
     id: 'resoures',
     title: 'Resources',
