@@ -62,22 +62,6 @@ const RdRecommendedSlides = () => {
         <Swiper {...params}>
           <SwiperSlide>
             <div className="brandContent">
-            {/* <UncontrolledButtonDropdown className="btn-group">
-        <DropdownToggle color='flat-primary'>
-          ...
-        </DropdownToggle>
-        <DropdownMenu>
-          <DropdownItem href='/' tag='a'>
-            Option 1
-          </DropdownItem>
-          <DropdownItem href='/' tag='a'>
-            Option 2
-          </DropdownItem>
-          <DropdownItem href='/' tag='a'>
-            Option 3
-          </DropdownItem>
-        </DropdownMenu>
-      </UncontrolledButtonDropdown> */}
       <div className="row align-items-center justify-content-between">
         <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
       <div className="col-auto mb-1">
@@ -95,16 +79,6 @@ const RdRecommendedSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
-              {/* <ul className="list-unstyled social-media m-0">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
-              </ul> */}
-              {/* <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-            Profile
-          </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-            Send Message
-          </Button.Ripple> */}
           <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
@@ -131,10 +105,6 @@ const RdRecommendedSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
                 <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
               </div>
-              {/* <ul className="list-unstyled social-media m-0">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
-              </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
@@ -161,10 +131,6 @@ const RdRecommendedSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
                 <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
               </div>
-              {/* <ul className="list-unstyled social-media m-0">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
-              </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
@@ -191,10 +157,6 @@ const RdRecommendedSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
                 <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
               </div>
-              {/* <ul className="list-unstyled social-media m-0">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
-              </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
@@ -221,10 +183,6 @@ const RdRecommendedSlides = () => {
               <div className="healthcare" style={{backgroundColor: '#b0cef2'}}>
                 <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
               </div>
-              {/* <ul className="list-unstyled social-media m-0">
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
-                <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
-              </ul> */}
               <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
