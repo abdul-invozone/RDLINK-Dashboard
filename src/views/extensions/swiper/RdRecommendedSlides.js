@@ -99,17 +99,17 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              {/* <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              {/* <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
             Profile
           </Button.Ripple>
-                <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+                <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
             Send Message
           </Button.Ripple> */}
-          <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+          <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -135,11 +135,11 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -165,11 +165,11 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -195,11 +195,11 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>
@@ -225,11 +225,11 @@ const RdRecommendedSlides = () => {
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><User /></a></li>
                 <li className="social-media-icons"><a href="#" className="social-media-anchor"><Mail /></a></li>
               </ul> */}
-              <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Profile</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="mx-50">
+      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
         <Mail size={14} />
         <span className='align-middle ml-50'>Send Message</span>
       </Button.Ripple>

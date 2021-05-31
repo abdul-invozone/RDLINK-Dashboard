@@ -6,6 +6,11 @@ const FormRoutes = [
     component: lazy(() => import('../../views/forms/form-elements/input'))
   },
   {
+    path: '/dashboard/rd/opportunities-rdform',
+    component: lazy(() => import('../../views/forms/opportunities-rdForm')),
+    layout: 'VerticalLayoutRd'
+  },
+  {
     path: '/forms/elements/input-group',
     component: lazy(() => import('../../views/forms/form-elements/input-groups'))
   },

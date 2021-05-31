@@ -41,7 +41,7 @@ export default [
     id: 'opportunities',
     title: 'Opportunities',
     icon: <Trello size={20} />,
-    navLink: '#'
+    navLink: '/dashboard/rd/opportunities'
   },
   {
     id: 'myPartnerships',
