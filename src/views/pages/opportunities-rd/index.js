@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
+import Shop from '@src/views/apps/brandsRd/shop'
 import PaginationBasic from './RdPagination'
 import { Facebook, Twitter, Linkedin, User, Mail, Heart, List } from 'react-feather'
 import styled from 'styled-components'

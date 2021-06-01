@@ -22,21 +22,26 @@ export default [
     id: 'viewBrands',
     title: "Brands",
     icon: <Users size={20} />,
-    navLink: '#'
-    // children: [
-    //   {
-    //     id: 'viewAllBrands',
-    //     title: 'View All',
-    //     icon: <Circle size={12} />,
-    //     navLink: '#'
-    //   },
-    //   {
-    //     id: 'myBrands',
-    //     title: 'My Brands',
-    //     icon: <Circle size={12} />,
-    //     navLink: '#'
-    //   }
-    // ]
+    children: [
+      {
+        id: 'viewAllBrands',
+        title: 'View All',
+        icon: <Circle size={12} />,
+        navLink: '/dashboard/rd/brands'
+      },
+      {
+        id: 'myBrands',
+        title: 'My Brands',
+        icon: <Circle size={12} />,
+        navLink: '#'
+      },
+      {
+        id: 'favoritesBrands',
+        title: 'Favorites',
+        icon: <Circle size={12} />,
+        navLink: '#'
+      }
+    ]
   },
   {
     id: 'opportunities',

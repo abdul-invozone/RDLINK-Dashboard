@@ -255,6 +255,40 @@ const AppRoutes = [
     className: 'ecommerce-application',
     component: lazy(() => import('../../views/apps/ecommerce/checkout'))
   },
+
+  {
+    path: '/dashboard/rd/brands',
+    className: 'ecommerce-application',
+    component: lazy(() => import('../../views/apps/brandsRd/shop')),
+    layout: 'VerticalLayoutRd'
+  },
+  {
+    path: '/dashboard/rd/brands/favorites',
+    className: 'ecommerce-application',
+    component: lazy(() => import('../../views/apps/brandsRd/wishlist')),
+    layout: 'VerticalLayoutRd'
+  },
+  {
+    path: '/dashboard/rd/brands/brand-detail',
+    exact: true,
+    className: 'ecommerce-application',
+    component: () => <Redirect to='/apps/brandsRd/product-detail/apple-i-phone-11-64-gb-black-26' />
+  },
+  {
+    path: '/dashboard/rd/brands/brand-detail/:product',
+    exact: true,
+    className: 'ecommerce-application',
+    component: lazy(() => import('../../views/apps/brandsRd/detail')),
+    meta: {
+      navLink: '/apps/ecommerce/product-detail'
+    }
+  },
+  {
+    path: '/dashboard/rd/brands/checkout',
+    className: 'ecommerce-application',
+    component: lazy(() => import('../../views/apps/brandsRd/checkout'))
+  },
+
   {
     path: '/apps/user/list',
     component: lazy(() => import('../../views/apps/user/list'))
