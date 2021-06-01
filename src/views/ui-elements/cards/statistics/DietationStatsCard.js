@@ -1,6 +1,6 @@
 import Avatar from '@components/avatar'
 import classnames from 'classnames'
-import { Box, DollarSign, TrendingUp, User, MoreHorizontal} from 'react-feather'
+import { Box, DollarSign, MoreHorizontal, TrendingUp, User } from 'react-feather'
 import { Card, CardHeader, CardTitle, CardBody, CardText, Col, DropdownItem, DropdownMenu, DropdownToggle, Media, Row, UncontrolledButtonDropdown, UncontrolledTooltip } from 'reactstrap'
 
 const DietationStatsCard = ({ cols }) => {
@@ -52,15 +52,15 @@ const DietationStatsCard = ({ cols }) => {
           key={index}
           {...cols}
           className={classnames({
-            [`mb-3`]: index !== data.length - 1
+            [`mb-1`]: index !== data.length - 1
           })}
         >
           <Media>
             <Avatar id={`av-tooltip-${item.id}`} color={item.color} icon={item.icon} className='mr-1' />
           {item.subtitleHover && <UncontrolledTooltip placement='top' target={`av-tooltip-${item.id}`}>{item.subtitleHover}</UncontrolledTooltip>}
             <Media className='media-avatar m-auto' body>
-              <h2 className='font-weight-bolder mb-0'>{item.title}</h2>
-              <CardText className='total-partnership'>{item.subtitle}</CardText>
+              <h4 className='font-weight-bolder mb-0'>{item.title}</h4>
+              <h6 className='total-partnership'>{item.subtitle}</h6>
             </Media>
           </Media>
         </Col>
@@ -69,13 +69,12 @@ const DietationStatsCard = ({ cols }) => {
   }
 
   return (
-    <Card className='card-statistics'>
+    <Card>
       <CardHeader>
-        <CardTitle style={{paddingLeft: 'auto'}}><h2 className="subconcardtitle subconcardtitle-gray">Statistics</h2></CardTitle>
-        <CardText className='card-text font-small-2 mr-25 mb-0'>
-        <UncontrolledButtonDropdown className="statsDropdownBrands">
-        <DropdownToggle color='flat-primary'>
-        <MoreHorizontal size={28} />
+        <CardTitle>Statistics</CardTitle>
+        <UncontrolledButtonDropdown>
+        <DropdownToggle color='flat-primary' size="sm" className="dropdown-button">
+          <MoreHorizontal />
         </DropdownToggle>
         <DropdownMenu>
           <DropdownItem href='/' tag='a'>
@@ -89,13 +88,12 @@ const DietationStatsCard = ({ cols }) => {
           </DropdownItem>
         </DropdownMenu>
       </UncontrolledButtonDropdown>
-        </CardText>
       </CardHeader>
       {/* <CardHeader>
         <CardTitle tag='h4'>Statistics</CardTitle>
         <CardText className='card-text font-small-2 mr-25 mb-0'>Updated 1 month ago</CardText>
       </CardHeader> */}
-      <CardBody className='statistics-body'>
+      <CardBody>
         <Row>{renderData()}</Row>
       </CardBody>
     </Card>

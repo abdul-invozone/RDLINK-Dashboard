@@ -38,8 +38,13 @@ const RdDashboard = () => {
 
   return (
     <div id='dashboard-brands'>
+<<<<<<< HEAD
       <Row className="mx-0 align-items-center my-2">
         <Col sm="6" className="jenna-gorham text-center-sm">
+=======
+      <Row className="mx-0 align-items-center mb-3">
+        <Col sm="6" className="jenna-gorham">
+>>>>>>> 291368f6f17bbbf4a6af71836f23d8c9f12ec32a
           <span>Jenna Gorham's Dashboard</span>
         </Col>
         <Col sm="6" className="jenna-gorham">
@@ -53,16 +58,16 @@ const RdDashboard = () => {
       </Breadcrumb>
         </Col>
       </Row>
-      <Row className='match-height mb-2'>
+      <Row className='match-height mb-1'>
         <Col lg='12'>
         <div className="card py-5">
           <p className="text-center m-0">Place ads here</p>
         </div>
         </Col>
       </Row>
-      <Row className='match-height'>
-        <Col xl='12' md='12' xs='12' className="mb-2">
-          <DietatioStatsCard cols={{ xl: '3', sm: '4' }} />
+      <Row className='match-height mb-1'>
+        <Col>
+          <DietatioStatsCard cols={{ xl: '', sm: '4' }} />
         </Col>
         </Row>
         <Row>
@@ -75,7 +80,7 @@ const RdDashboard = () => {
           <RdCampaignsSlides />
           </Col>
           </Row>
-      <Row className='match-height allRD mb-2'>
+      <Row className='match-height mb-1'>
         <Col lg='4' sm='6'>
         <ApexRadiarChartRd />
         </Col>
@@ -111,7 +116,7 @@ const RdDashboard = () => {
           <InvoiceListRdBrandOppo />
         </Col>
       </Row> */}
-      <Row className='match-height mb-2'>
+      <Row className='match-height mb-1'>
         <Col xs='12'>
           <InvoiceListRdBrandPartnerships />
         </Col>

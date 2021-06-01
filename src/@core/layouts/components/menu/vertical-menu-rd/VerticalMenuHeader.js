@@ -17,10 +17,11 @@ import { handleLogout } from '@store/actions/auth'
 
 // ** Third Party Components
 import { UncontrolledDropdown, DropdownMenu, DropdownToggle, DropdownItem } from 'reactstrap'
-import { User, Mail, CheckSquare, MessageSquare, Settings, CreditCard, HelpCircle, Power, Disc, X, Circle } from 'react-feather'
+import { User, Mail, CheckSquare, MessageSquare, Settings, CreditCard, HelpCircle, Power, Disc, X, Circle, LogOut } from 'react-feather'
 
 // ** Default Avatar Image
-import defaultAvatar from '@src/assets/images/portrait/small/avatar-s-11.jpg'
+// import defaultAvatar from '@src/assets/images/portrait/small/avatar-s-11.jpg'
+import defaultAvatar from '@src/assets/images/portrait/small/Jenna-Avatar.png'
 
 const VerticalMenuHeader = props => {
 
@@ -80,7 +81,7 @@ const VerticalMenuHeader = props => {
             {/* <span className='brand-logo'>
               <img src={themeConfig.app.appLogoImage} alt='logo' />
             </span> */}
-            <h2 className='brand-text mb-0'>{themeConfig.app.appName}</h2>
+            <h4 className='brand-text mb-0'>{themeConfig.app.appName}</h4>
           </NavLink>
         </li>
         <li className='nav-item nav-toggle'>
@@ -95,20 +96,20 @@ const VerticalMenuHeader = props => {
       <ul> 
       <div className='user-nav d-sm-flex d-none flex-row align-items-center'>
     <div className="col-auto">
-    <Avatar img={userAvatar} imgHeight='91' imgWidth='91' status='online' />
+    <Avatar img={defaultAvatar} imgHeight='70' imgWidth='70' status='online' />
       </div>
       <div className="col">
-      <Link to="/loginrd" className='user-name font-weight-medium text-white'>Jenna Gorham Rd</Link>
+      <Link to="/loginrd" className='user-name font-weight-medium text-white'>Jenna Gorham</Link>
       <ul>
-        <li className="d-inline-block mr-1" style={{marginTop: '3px'}}>
-          <NavLink to="#" className="text-white"><User size={18} /></NavLink>
+        <li className="d-inline-block mr-50" style={{marginTop: '3px'}}>
+          <NavLink to="#" className="text-white"><User size={14} /></NavLink>
           </li>
-          <li className="d-inline-block mr-1">
-          <NavLink to="/brands/apps/chat/chatRd" className="text-white"><Mail size={18} /></NavLink>
+          <li className="d-inline-block mr-50">
+          <NavLink to="/apps/chat/chatRd" className="text-white"><Mail size={14} /></NavLink>
           </li>
-          {/* <li className="d-inline-block">
-          <NavLink to="/apps/todoRd" className="text-white"><CheckSquare size={18} /></NavLink>
-          </li> */}
+          <li className="d-inline-block" onClick={() => dispatch(handleLogout())}>
+          <NavLink to="#" className="text-white"><LogOut size={14} /></NavLink>
+          </li>
       </ul>
       </div>
     </div>

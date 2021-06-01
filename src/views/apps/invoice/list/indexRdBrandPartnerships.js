@@ -9,7 +9,7 @@ import { columnsRdBrandPartnerships } from './columnsRdBrandPartnerships'
 import ReactPaginate from 'react-paginate'
 import { ChevronDown } from 'react-feather'
 import DataTable from 'react-data-table-component'
-import { Button, Label, Input, CustomInput, Row, Col, Card } from 'reactstrap'
+import { Button, Label, Input, CustomInput, Row, Col, Card, CardHeader, CardTitle, CardBody } from 'reactstrap'
 
 // ** Store & Actions
 import { getData } from '../store/actions'
@@ -410,10 +410,9 @@ const InvoiceListRdBrandPartnerships = () => {
   }
 
   return (
-    <div className='invoice-list-wrapper'>
       <Card>
-      <h2 className="main-heading text-center-sm">My Partnerships</h2>
-        <div className='invoice-list-dataTable'>
+      <CardHeader><CardTitle>My Partnerships</CardTitle></CardHeader>
+        <div>
           <DataTable
             noHeader
             pagination
@@ -438,10 +437,9 @@ const InvoiceListRdBrandPartnerships = () => {
               />
             }
           />
-        <h6 className="showEntries">Showing 1 to {rowsPerPage} of {dummyData.total} entries</h6>
+          <CardBody><p className="showEntries" style={{margin: '0'}}>Showing 1 to {rowsPerPage} of {dummyData.total} entries</p></CardBody>
         </div>
       </Card>
-    </div>
   )
 }
 

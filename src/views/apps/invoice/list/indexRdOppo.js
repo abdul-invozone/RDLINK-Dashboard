@@ -9,7 +9,7 @@ import { columnsRdOppo } from './columnsRdOppo'
 import ReactPaginate from 'react-paginate'
 import { ChevronDown } from 'react-feather'
 import DataTable from 'react-data-table-component'
-import { Button, Label, Input, CustomInput, Row, Col, Card } from 'reactstrap'
+import { Button, Label, Input, CustomInput, Row, Col, Card, CardTitle } from 'reactstrap'
 
 // ** Store & Actions
 import { getData } from '../store/actions'
@@ -18,6 +18,7 @@ import { useDispatch, useSelector } from 'react-redux'
 // ** Styles
 import '@styles/react/apps/app-invoice.scss'
 import '@styles/react/libs/tables/react-dataTable-component.scss'
+import CardHeader from 'reactstrap/lib/CardHeader'
 
 const CustomHeader = ({ handleFilter, value, handleStatusValue, statusValue, handlePerPage, rowsPerPage }) => {
   return (
@@ -267,10 +268,9 @@ const InvoiceListRdOppo = () => {
   }
 
   return (
-    <div className='rd-list-wrapper upcoming-opportunities' style={{paddingTop: '0', paddingBottom: '0'}}>
-      <Card style={{marginBottom: '0'}}>
-      <h3 className="opportunitie-heading" style={{padding: '25px'}}>Upcoming Opportunities</h3>
-        <div className='invoice-list-dataTable' style={{padding: '10px'}}>
+    <Card>
+      <CardHeader><CardTitle>Upcoming Opportunities</CardTitle></CardHeader>
+        <div className='rd-upcoming-dataTable'>
           <DataTable
             noHeader
             pagination
@@ -294,8 +294,7 @@ const InvoiceListRdOppo = () => {
             // }
           />
         </div>
-      </Card>
-    </div>
+    </Card>
   )
 }
 

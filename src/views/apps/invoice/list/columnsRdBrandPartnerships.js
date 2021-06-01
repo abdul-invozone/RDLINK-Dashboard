@@ -17,7 +17,9 @@ import {
   DropdownMenu,
   DropdownToggle,
   DropdownItem,
-  UncontrolledTooltip
+  UncontrolledTooltip,
+  NavItem,
+  NavLink
 } from 'reactstrap'
 import {
   Eye,
@@ -129,21 +131,8 @@ export const columnsRdBrandPartnerships = [
     justifyContent: 'center',
     cell: row => (
       <div className='column-action d-flex align-items-center'>
-        <UncontrolledDropdown>
-          <DropdownToggle tag='span'>
-            <MoreVertical size={17} className='cursor-pointer' />
-          </DropdownToggle>
-          <DropdownMenu right>
-            <DropdownItem tag={Link} to={`/apps/invoice/edit/${row.id}`} className='w-100'>
-              <Edit size={14} className='mr-50' />
-              <span className='align-middle'>Send</span>
-            </DropdownItem>
-          <DropdownItem tag='a' href='/' className='w-100' onClick={e => e.preventDefault()}>
-          <Eye size={17} className='mr-50' />
-              <span className='align-middle'>View</span>
-            </DropdownItem>
-          </DropdownMenu>
-        </UncontrolledDropdown>
+              <Edit style={{cursor: 'pointer'}} tag={Link} to={`/apps/invoice/edit/${row.id}`} size={14} className='mr-50' />
+          <Eye style={{cursor: 'pointer'}} tag={Link} href='/' onClick={e => e.preventDefault()} size={16} className='mr-50' />
       </div>
     )
   },
