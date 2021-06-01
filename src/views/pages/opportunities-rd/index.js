@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import PaginationBasic from './RdPagination'
-import { Facebook, Twitter, Linkedin, User, Mail, Heart } from 'react-feather'
-import { TabContent, TabPane, Nav, NavItem, NavLink, Button, Row, Col, Card, CardTitle } from 'reactstrap'
+import { Facebook, Twitter, Linkedin, User, Mail, Heart, List } from 'react-feather'
+import styled from 'styled-components'
+import { TabContent, TabPane, Nav, NavItem, NavLink, Button, Row, Col, Card, CardHeader, CardTitle, CardBody } from 'reactstrap'
 
 import img1 from '@src/assets/images/banner/banner-41.jpg'
 import img2 from '@src/assets/images/banner/banner-42.jpg'
@@ -10,6 +11,7 @@ import img3 from '@src/assets/images/banner/banner-43.jpg'
 import img4 from '@src/assets/images/banner/banner-44.jpg'
 
 const TabsBasic = () => {
+
 
   const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ")
@@ -28,6 +30,24 @@ const TabsBasic = () => {
       setActive(tab)
     }
   }
+
+  const UpcomingOppoWrapper = styled.div`
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      font-weight: 600;
+      span {
+        display: inline-block;
+        margin-right: 25px;
+        font-weight: 400;
+        width: 6rem;
+        white-space: nowrap;
+      }
+    }
+  `
+
   return (
     <React.Fragment>
       <h4>Opportunities</h4>
@@ -62,655 +82,269 @@ const TabsBasic = () => {
       <TabContent className='py-50' activeTab={active}>
         <TabPane tabId='1'>
           <Row>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-      <div className="row align-items-center justify-content-between">
-        <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-      <div className="col-auto mb-1">
-                <Heart
-                onClick={() => handleShowWishlist(false)}
-                  className = {classNames(
-                    showWishlist ? "text-fillLight" : "text-fillDanger"
-                    )}
-                    size={14}
-                />
-              </div>
-      </div>
-      <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Catalina Crunch</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
-                <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
-              </div>
-          <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Keto Diet Awareness</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>San Diegi, CA91905, USA</li>
+                  <li><span>Date: </span>21 June, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
+        <List size={14} />
+        <span className='align-middle ml-50'>Manage</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Wiinder</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
-                <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Sports Presentation</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>California</li>
+                  <li><span>Date: </span>13 April, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
+        <List size={14} />
+        <span className='align-middle ml-50'>Manage</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Munk Pack</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
-                <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>8 Week Challenge</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>New York, USA</li>
+                  <li><span>Date: </span>21 February, 2019</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
+        <List size={14} />
+        <span className='align-middle ml-50'>Manage</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Mush</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
-                <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Sports Presentation</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>California</li>
+                  <li><span>Date: </span>13 April, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
+        <List size={14} />
+        <span className='align-middle ml-50'>Manage</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          {/* Second Row */}
-        <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Wiinder</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
-                <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>8 Week Challenge</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>New York, USA</li>
+                  <li><span>Date: </span>21 February, 2019</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
+        <List size={14} />
+        <span className='align-middle ml-50'>Manage</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Munk Pack</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
-                <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Keto Diet Awareness</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>San Diegi, CA91905, USA</li>
+                  <li><span>Date: </span>21 June, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
+        <List size={14} />
+        <span className='align-middle ml-50'>Manage</span>
       </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Mush</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
-                <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
-      </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-      <div className="row align-items-center justify-content-between">
-        <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-      <div className="col-auto mb-1">
-                <Heart
-                onClick={() => handleShowWishlist(false)}
-                  className = {classNames(
-                    showWishlist ? "text-fillLight" : "text-fillDanger"
-                    )}
-                    size={14}
-                />
-              </div>
-      </div>
-      <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Catalina Crunch</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
-                <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
-              </div>
-          <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
-      </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-      <div className="row align-items-center justify-content-between">
-        <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-      <div className="col-auto mb-1">
-                <Heart
-                onClick={() => handleShowWishlist(false)}
-                  className = {classNames(
-                    showWishlist ? "text-fillLight" : "text-fillDanger"
-                    )}
-                    size={14}
-                />
-              </div>
-      </div>
-      <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Catalina Crunch</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
-                <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
-              </div>
-          <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
-      </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Wiinder</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
-                <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
-      </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Munk Pack</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
-                <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
-      </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Mush</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
-                <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Profile</span>
-      </Button.Ripple>
-      <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <Mail size={14} />
-        <span className='align-middle ml-50'>Send Message</span>
-      </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
         </Row>
         <PaginationBasic />
         </TabPane>
         <TabPane tabId='2'>
-        <Row>
-          {/* Second Row */}
-        <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Wiinder</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
-                <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
+          <Row>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>8 Week Challenge</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>New York, USA</li>
+                  <li><span>Date: </span>21 February, 2019</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Feedback</span>
       </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Munk Pack</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
-                <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Sports Presentation</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>California</li>
+                  <li><span>Date: </span>13 April, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Feedback</span>
       </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Mush</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
-                <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>8 Week Challenge</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>New York, USA</li>
+                  <li><span>Date: </span>21 February, 2019</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Feedback</span>
       </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-      <div className="row align-items-center justify-content-between">
-        <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-      <div className="col-auto mb-1">
-                <Heart
-                onClick={() => handleShowWishlist(false)}
-                  className = {classNames(
-                    showWishlist ? "text-fillLight" : "text-fillDanger"
-                    )}
-                    size={14}
-                />
-              </div>
-      </div>
-      <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Catalina Crunch</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
-                <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
-              </div>
-          <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Keto Diet Awareness</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>San Diegi, CA91905, USA</li>
+                  <li><span>Date: </span>21 June, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Feedback</span>
       </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-      <div className="row align-items-center justify-content-between">
-        <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-      <div className="col-auto mb-1">
-                <Heart
-                onClick={() => handleShowWishlist(false)}
-                  className = {classNames(
-                    showWishlist ? "text-fillLight" : "text-fillDanger"
-                    )}
-                    size={14}
-                />
-              </div>
-      </div>
-      <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Catalina Crunch</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
-                <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
-              </div>
-          <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Keto Diet Awareness</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>San Diegi, CA91905, USA</li>
+                  <li><span>Date: </span>21 June, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Feedback</span>
       </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Wiinder</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
-                <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Sports Presentation</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>California</li>
+                  <li><span>Date: </span>13 April, 2021</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
         <User size={14} />
         <span className='align-middle ml-50'>Feedback</span>
       </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Munk Pack</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
-                <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Feedback</span>
+          <Col sm="6" md="4" lg="4">
+          <Card>
+            <CardHeader>
+              <CardTitle>8 Week Challenge</CardTitle>
+              </CardHeader>
+              <CardBody>
+                <UpcomingOppoWrapper>
+                  <ul>
+                  <li><span>Location: </span>New York, USA</li>
+                  <li><span>Date: </span>21 February, 2019</li>
+                  <li><span>Type of Event: </span>Presentation</li>
+                  </ul>
+                  <Button.Ripple tag={Link} to='#' color='secondary' className="round m-25">
+        <List size={14} />
+        <span className='align-middle ml-50'>Manage</span>
       </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Mush</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
-                <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Feedback</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-      <div className="row align-items-center justify-content-between">
-        <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-      <div className="col-auto mb-1">
-                <Heart
-                onClick={() => handleShowWishlist(false)}
-                  className = {classNames(
-                    showWishlist ? "text-fillLight" : "text-fillDanger"
-                    )}
-                    size={14}
-                />
-              </div>
-      </div>
-      <img src={img1} alt='swiper 1' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Catalina Crunch</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#e0f0ff'}}>
-                <p className="general-wellness" style={{color: '#3592fc'}}>Healthcare | General Wellness</p>
-              </div>
-          <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Feedback</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"><p className="newRdText">Sponsored</p></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img2} alt='swiper 2' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Wiinder</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#c9f7f5'}}>
-                <p className="general-wellness" style={{color: '#17c2ba'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Feedback</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img3} alt='swiper 3' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Munk Pack</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#fff4de'}}>
-                <p className="general-wellness" style={{color: '#ffa508'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Feedback</span>
-      </Button.Ripple>
-            </div>
-          </Card>
-          </Col>
-          <Col sm="6" md="4" lg="4" xl="3">
-          <Card className="p-2 text-center">
-          <div className="brandContent">
-          <div className="row align-items-center justify-content-between">
-            <div className="col-auto mb-1"></div>
-          <div className="col-auto mb-1">
-                <Heart
-                  className='text-fillLight'
-                  size={14}
-                />
-              </div>
-      </div>
-              <img src={img4} alt='swiper 4' className='brandContent-img mb-2' />
-              <CardTitle className="brandSlidesRd">Mush</CardTitle>
-              <div className="healthcare" style={{backgroundColor: '#ffe2e6'}}>
-                <p className="general-wellness"style={{color: '#f63f5d'}}>Healthcare | General Wellness</p>
-              </div>
-              <Button.Ripple tag={Link} to='#' color='secondary' className="m-25">
-        <User size={14} />
-        <span className='align-middle ml-50'>Feedback</span>
-      </Button.Ripple>
-            </div>
+                </UpcomingOppoWrapper>
+              </CardBody>
           </Card>
           </Col>
         </Row>

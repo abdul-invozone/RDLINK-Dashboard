@@ -104,9 +104,9 @@ const VerticalMenuHeader = props => {
         <li className="d-inline-block mr-50" style={{marginTop: '3px'}}>
           <NavLink to="#" className="text-white"><User size={14} /></NavLink>
           </li>
-          <li className="d-inline-block mr-50">
-          <NavLink to="/apps/chat/chatRd" className="text-white"><Mail size={14} /></NavLink>
-          </li>
+          {/* <li className="d-inline-block mr-50">
+          <NavLink to="" className="text-white"><Mail size={14} /></NavLink>
+          </li> */}
           <li className="d-inline-block" onClick={() => dispatch(handleLogout())}>
           <NavLink to="#" className="text-white"><LogOut size={14} /></NavLink>
           </li>
