@@ -722,7 +722,10 @@
 .main-menu.menu-light .navigation > li ul .active {
     box-shadow: none;
 }
-
+ // Developer Meetup Card
+ .card-developer-meetup {
+	border-right: 1px solid #c7c5ce;
+}
 
 
 
@@ -977,6 +980,7 @@
     // .monthly-meetup {
     // 	font-size: 15px !important;
     // }
+
 	.auth-inner .forgot-password {
 		margin-top: 5rem;
 	}
@@ -993,6 +997,10 @@
 		position: relative;
 		top: -3px;
 	}
+	 // Developer Meetup Card
+	 .card-developer-meetup {
+		 border-right: none;
+	  }
 }
 
   // Medium devices (tablets, 768px and up)
@@ -1032,6 +1040,10 @@
 			// text-align: center;
 		  }
 		}
+			 // Developer Meetup Card
+			 .card-developer-meetup {
+				border-right: none;
+			 }
 }
 
   // Large devices (desktops, 992px and up)
@@ -1045,8 +1057,10 @@
 	.collapse-title.card-title {
 		font-size: 26px;
 	}
-  
-	// DASHBOARD BRANDS SECTION START
+	 // Developer Meetup Card
+	 .card-developer-meetup {
+		border-right: none;
+	 }
 }
   
   // Extra large devices (large desktops, 1200px and up)

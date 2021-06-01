@@ -20,7 +20,7 @@ const BrandsMeetup2 = () => {
       </UncontrolledButtonDropdown>
     <Row className="match-height">
       <Col>
-      <div className='card-developer-meetup' style={{borderRight: '1px solid #c7c5ce'}}>
+      <div className='card-developer-meetup'>
       <CardBody>
         <div className='meetup-header d-flex align-items-center'>
           <div className='meetup-day'>
@@ -66,7 +66,7 @@ const BrandsMeetup2 = () => {
     </div>
       </Col>
       <Col>
-      <div className='card-developer-meetup' style={{borderRight: '1px solid #c7c5ce'}}>
+      <div className='card-developer-meetup'>
       <CardBody>
         <div className='meetup-header d-flex align-items-center'>
           <div className='meetup-day'>
