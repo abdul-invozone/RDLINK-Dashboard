@@ -26,13 +26,13 @@ export default [
         title: 'Tips & How To',
         icon: <Circle size={12} />,
         navLink: '#'
-      },
-      {
-        id: 'slack',
-        title: 'Slack',
-        icon: <Circle size={12} />,
-        navLink: '#'
       }
+      // {
+      //   id: 'slack',
+      //   title: 'Slack',
+      //   icon: <Circle size={12} />,
+      //   navLink: '#'
+      // }
     ]
   }
 ]
